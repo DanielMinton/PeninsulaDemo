@@ -1,0 +1,85 @@
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+MANIFEST
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+*.log
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# Build artifacts
+dist/
+build/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Tooling
+.claude/
+
+# Internal planning documents
+Basic_Scaffolding.txt
+Project Blueprint_ Peninsula Pickup Reclaim.md
+
+# Docker
+docker-compose.override.yml
+
+# Certificates
+*.pem
+*.key
+*.cert
+
+# Uploads
+uploads/
+
+# Coverage
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
