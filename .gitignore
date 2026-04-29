@@ -67,6 +67,9 @@ Thumbs.db
 Basic_Scaffolding.txt
 Project Blueprint_ Peninsula Pickup Reclaim.md
 
+# CI workflow - add back after workflow scope is configured in gh auth
+.github/workflows/ci.yml
+
 # Docker
 docker-compose.override.yml
 
