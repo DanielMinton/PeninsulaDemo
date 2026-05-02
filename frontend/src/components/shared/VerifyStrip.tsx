@@ -82,7 +82,7 @@ export default function VerifyStrip() {
     <section className="bg-charcoal-800 border-y border-charcoal-600" aria-label="Business verification">
       <FadeIn>
         <div className="container-max section-padding py-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {TRUST_ITEMS.map((item) => {
               const content = (
                 <div
@@ -92,8 +92,8 @@ export default function VerifyStrip() {
                   <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 group-hover:bg-orange-500/20 transition-colors">
                     {item.icon}
                   </div>
-                  <div>
-                    <p className="font-bold text-bone-100 text-sm leading-tight">{item.label}</p>
+                  <div className="min-w-0 w-full">
+                    <p className="font-bold text-bone-100 text-sm leading-tight truncate px-1">{item.label}</p>
                     <p className="text-steel-500 text-xs mt-0.5">{item.sublabel}</p>
                   </div>
                 </div>

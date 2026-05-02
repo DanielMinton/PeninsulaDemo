@@ -55,7 +55,12 @@ const SCHEMA = {
   },
   priceRange: '$$',
   hasMap: 'https://maps.google.com/?q=San+Carlos,+CA+94070',
-  sameAs: ['https://thepeninsulapickup.com'],
+  sameAs: [
+    'https://thepeninsulapickup.com',
+    'https://www.instagram.com/peninsulapickups/',
+    'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos',
+    'https://www.facebook.com/peninsulapickups/',
+  ],
   founder: [{ '@type': 'Person', name: 'Don' }, { '@type': 'Person', name: 'Melissa' }],
   foundingDate: '2021',
 }

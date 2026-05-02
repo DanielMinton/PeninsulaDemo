@@ -121,9 +121,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.55 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col xs:flex-row gap-4"
           >
-            <a href="#quote" className="btn-primary text-lg px-8 py-4 animate-pulse-glow">
+            <a href="#quote" className="btn-primary text-lg px-8 py-4 animate-pulse-glow justify-center sm:justify-start">
               Request a Pickup
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -135,7 +135,7 @@ export default function HeroSection() {
                 />
               </svg>
             </a>
-            <a href={PHONE_RAW} className="btn-secondary text-lg px-8 py-4">
+            <a href={PHONE_RAW} className="btn-secondary text-lg px-8 py-4 justify-center sm:justify-start">
               Call Now
             </a>
           </motion.div>

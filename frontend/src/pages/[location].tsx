@@ -154,7 +154,7 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
           {/* Verify strip */}
           <div className="bg-charcoal-800 border-y border-charcoal-600">
             <div className="container-max section-padding py-6">
-              <div className="flex flex-wrap items-center gap-6 text-sm">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
                 {[
                   { label: 'San Carlos, CA 94070', sub: 'Home Base' },
                   { label: 'Established 2021', sub: 'Serving the Peninsula' },
@@ -165,8 +165,8 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                   item.href ? (
                     <a key={item.label} href={item.href} className="flex items-center gap-2 group">
                       <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" aria-hidden="true" />
-                      <div>
-                        <p className="font-semibold text-orange-400 group-hover:text-orange-300 transition-colors tabular-nums">
+                      <div className="min-w-0">
+                        <p className="font-semibold text-orange-400 group-hover:text-orange-300 transition-colors tabular-nums truncate">
                           {item.label}
                         </p>
                         <p className="text-steel-500 text-xs">{item.sub}</p>
@@ -175,8 +175,8 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                   ) : (
                     <div key={item.label} className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" aria-hidden="true" />
-                      <div>
-                        <p className="font-semibold text-bone-100">{item.label}</p>
+                      <div className="min-w-0">
+                        <p className="font-semibold text-bone-100 truncate">{item.label}</p>
                         <p className="text-steel-500 text-xs">{item.sub}</p>
                       </div>
                     </div>

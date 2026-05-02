@@ -134,6 +134,34 @@ export default function Footer() {
               <span className="badge-verify">Insured</span>
               <span className="badge-verify">Local</span>
             </div>
+
+            <div className="mt-6">
+              <p className="text-steel-500 text-xs uppercase tracking-widest font-semibold mb-3">Find Us Online</p>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.instagram.com/peninsulapickups/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-charcoal-700 border border-charcoal-600 hover:border-orange-500/40 flex items-center justify-center text-steel-400 hover:text-bone-200 transition-all"
+                  aria-label="Peninsula Pick Ups on Instagram"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.yelp.com/biz/peninsula-pick-ups-san-carlos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-lg bg-charcoal-700 border border-charcoal-600 hover:border-orange-500/40 flex items-center justify-center hover:opacity-80 transition-all"
+                  aria-label="Peninsula Pick Ups on Yelp"
+                >
+                  <span className="font-black leading-none" style={{ color: '#d32323', fontSize: '11px' }}>yelp</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
