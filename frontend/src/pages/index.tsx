@@ -78,6 +78,18 @@ const Home: NextPage = () => {
             'Licensed junk removal, hauling, and cleanout services. Family owned in San Carlos since 2021. Fast scheduling, honest pricing. Call (650) 201-1543.',
           url: 'https://thepeninsulapickup.com',
           type: 'website',
+          images: [
+            {
+              url: 'https://thepeninsulapickup.com/api/og',
+              width: 1200,
+              height: 630,
+              alt: 'Peninsula Pick Ups — Junk Removal & Hauling, San Carlos, CA',
+            },
+          ],
+        }}
+        twitter={{
+          cardType: 'summary_large_image',
+          site: '@peninsulapickups',
         }}
         additionalMetaTags={[
           { name: 'keywords', content: 'junk removal San Carlos, Peninsula junk removal, hauling San Mateo County, cleanout service Peninsula, Peninsula Pick Ups' },

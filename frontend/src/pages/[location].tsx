@@ -56,6 +56,18 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
           description: area.seoDescription,
           url: `https://thepeninsulapickup.com/${area.slug}`,
           type: 'website',
+          images: [
+            {
+              url: `https://thepeninsulapickup.com/api/og?city=${encodeURIComponent(area.city)}`,
+              width: 1200,
+              height: 630,
+              alt: `Junk Removal in ${area.city}, CA — Peninsula Pick Ups`,
+            },
+          ],
+        }}
+        twitter={{
+          cardType: 'summary_large_image',
+          site: '@peninsulapickups',
         }}
         additionalMetaTags={[
           {
