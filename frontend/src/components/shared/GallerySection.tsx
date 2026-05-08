@@ -42,16 +42,9 @@ const GALLERY_PHOTOS = [
   },
   {
     src: '/images/gallery/job-work-01.jpeg',
-    alt: 'Peninsula Pick Ups job site',
+    alt: 'Truck loaded with hauled debris on a Peninsula Pick Ups job',
     label: 'Job Site',
     location: 'Bay Area, CA',
-    featured: false,
-  },
-  {
-    src: '/images/gallery/junkspots-featured.png',
-    alt: 'Peninsula Pick Ups featured junk removal service',
-    label: 'Featured Service',
-    location: 'San Carlos, CA',
     featured: false,
   },
 ]
