@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { SITE } from '@/content/site'
+import LocalePicker from './LocalePicker'
 
 function PUPLogo() {
   return (
@@ -44,15 +45,15 @@ export default function Nav() {
     >
       <div className="container-max section-padding">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-3 group" aria-label={t('nav.homeAriaLabel')}>
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group min-w-0 lg:min-w-fit" aria-label={t('nav.homeAriaLabel')}>
             <div className="group-hover:scale-105 transition-transform">
               <PUPLogo />
             </div>
-            <div className="leading-none">
-              <span className="font-bold text-bone-100 text-sm block group-hover:text-white transition-colors">
+            <div className="leading-none min-w-0 lg:min-w-fit">
+              <span className="font-bold text-bone-100 text-sm block group-hover:text-white transition-colors truncate lg:overflow-visible">
                 {SITE.name}
               </span>
-              <span className="text-steel-500 text-xs block mt-0.5">{t('nav.cityTagline')}</span>
+              <span className="text-steel-500 text-xs hidden sm:block mt-0.5">{t('nav.cityTagline')}</span>
             </div>
           </Link>
 
@@ -61,33 +62,31 @@ export default function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-steel-300 hover:text-bone-100 rounded-lg hover:bg-charcoal-700/50 transition-all duration-150"
+                className="px-2.5 xl:px-4 py-2 text-sm font-medium text-steel-300 hover:text-bone-100 rounded-lg hover:bg-charcoal-700/50 transition-all duration-150 whitespace-nowrap"
               >
                 {t(link.labelKey)}
               </a>
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="flex items-center gap-2 lg:gap-3">
+            <LocalePicker />
             <a
               href={SITE.phone.href}
-              className="font-bold text-orange-500 hover:text-orange-400 transition-colors tabular-nums text-sm"
+              className="hidden lg:inline-block font-bold text-orange-500 hover:text-orange-400 transition-colors tabular-nums text-sm whitespace-nowrap"
               dir="ltr"
             >
               {SITE.phone.display}
             </a>
-            <a href="#quote" className="btn-primary text-sm py-2 px-5">
+            <a href="#quote" className="hidden lg:inline-flex btn-primary text-sm py-2 px-3 xl:px-5 whitespace-nowrap">
               {t('nav.requestPickupCta')}
             </a>
-          </div>
-
-          <div className="flex lg:hidden items-center gap-2">
-            <a href={SITE.phone.href} className="btn-primary text-sm py-2 px-4">
+            <a href={SITE.phone.href} className="lg:hidden btn-primary text-sm py-2 px-4">
               {t('nav.callNowCta')}
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-steel-300 hover:text-bone-100 transition-colors rounded-lg hover:bg-charcoal-700/50"
+              className="lg:hidden p-2 text-steel-300 hover:text-bone-100 transition-colors rounded-lg hover:bg-charcoal-700/50"
               aria-label={mobileOpen ? t('nav.closeMenu') : t('nav.openMenu')}
               aria-expanded={mobileOpen}
             >

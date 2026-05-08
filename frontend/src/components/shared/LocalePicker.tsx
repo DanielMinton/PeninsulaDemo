@@ -260,11 +260,10 @@ export default function LocalePicker() {
   return (
     <>
       {/*
-        Floating trigger — pinned to top-right of the viewport (top-left under RTL),
-        anchored OUTSIDE the header so it never competes with header CTAs for the
-        same attention slot. z-[60] sits above the header (z-50) and below the open
-        panel (z-[81]). Position is `fixed` not `sticky` so it survives any parent
-        overflow context.
+        Inline trigger — placed inside the Nav's right cluster so it participates
+        in the header flex flow. No fixed positioning means no overlap with the
+        phone / Request Pickup CTAs at any breakpoint. The label collapses to the
+        locale code on mobile to keep the cluster compact.
       */}
       <button
         ref={triggerRef}
@@ -273,13 +272,12 @@ export default function LocalePicker() {
         aria-haspopup="dialog"
         aria-expanded={open}
         aria-label={t('picker.openLabel')}
-        className={`fixed top-3 sm:top-4 z-[60] inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-sm text-white bg-charcoal-800/95 backdrop-blur-md border border-orange-500/40 hover:border-orange-400 hover:bg-charcoal-700 shadow-lg shadow-charcoal-950/50 ring-1 ring-orange-500/10 transition-all duration-150 ${
-          isRtl(currentLocale) ? 'left-3 sm:left-4' : 'right-3 sm:right-4'
-        }`}
+        title={currentMeta.native}
+        className="inline-flex items-center justify-center gap-2 w-9 h-9 sm:w-auto sm:h-auto sm:px-3 sm:py-2 rounded-full text-sm text-white bg-charcoal-800/80 hover:bg-charcoal-700 border border-charcoal-600 hover:border-orange-400/60 transition-colors duration-150"
       >
         <span className="text-orange-400"><GlobeIcon /></span>
-        <span className="font-semibold tracking-tight">{currentMeta.native}</span>
-        <span className="text-steel-400"><ChevronDown /></span>
+        <span className="font-semibold tracking-tight hidden sm:inline">{currentMeta.native}</span>
+        <span className="text-steel-400 hidden sm:inline"><ChevronDown /></span>
       </button>
 
       <AnimatePresence>
