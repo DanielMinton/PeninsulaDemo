@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { AREAS } from '@/content/areas'
 import { SERVICES } from '@/content/services'
 import { SITE } from '@/content/site'
@@ -16,6 +18,7 @@ function PUPLogo() {
 }
 
 export default function Footer() {
+  const t = useTranslations()
   const year = new Date().getFullYear()
 
   return (
@@ -27,10 +30,7 @@ export default function Footer() {
               <PUPLogo />
               <span className="font-bold text-bone-100">{SITE.name}</span>
             </div>
-            <p className="text-steel-400 text-sm leading-relaxed mb-5">
-              Licensed junk removal and hauling on the San Francisco Peninsula. Family owned and operated by{' '}
-              {SITE.owners[0]} and {SITE.owners[1]} since {SITE.foundedYear}.
-            </p>
+            <p className="text-steel-400 text-sm leading-relaxed mb-5">{t('footer.tagline')}</p>
             <div className="space-y-2 text-sm">
               <p className="text-bone-300 flex items-center gap-2">
                 <svg
@@ -50,9 +50,11 @@ export default function Footer() {
                   />
                   <circle cx="7" cy="5" r="1.5" stroke="currentColor" strokeWidth="1.5" />
                 </svg>
-                {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}
+                <span dir="ltr">
+                  {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}
+                </span>
               </p>
-              <a href={SITE.phone.href} className="phone-display text-base flex items-center gap-2">
+              <a href={SITE.phone.href} className="phone-display text-base flex items-center gap-2" dir="ltr">
                 <svg
                   width="14"
                   height="14"
@@ -75,13 +77,13 @@ export default function Footer() {
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" aria-hidden="true">
                   <path d="M9.5 2.5L4.25 7.75 1.5 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                 </svg>
-                Verify this business
+                {t('footer.verifyBusinessLink')}
               </Link>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">Services</h3>
+            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">{t('footer.servicesHeading')}</h3>
             <ul className="space-y-2.5">
               {SERVICES.map((s) => (
                 <li key={s.slug}>
@@ -94,7 +96,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">Service Areas</h3>
+            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">{t('footer.areasHeading')}</h3>
             <ul className="space-y-2.5">
               {AREAS.slice(0, 8).map((area) => (
                 <li key={area.slug}>
@@ -107,26 +109,24 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">Get a Quote</h3>
-            <p className="text-steel-400 text-sm mb-5 leading-relaxed">
-              Ready to clear it out? Request a free quote or call us directly. We respond fast.
-            </p>
+            <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">{t('footer.getQuoteHeading')}</h3>
+            <p className="text-steel-400 text-sm mb-5 leading-relaxed">{t('footer.getQuoteSub')}</p>
             <div className="flex flex-col gap-3">
               <a href="#quote" className="btn-primary text-sm justify-center py-3">
-                Request Pickup
+                {t('footer.requestPickupCta')}
               </a>
               <a href={SITE.phone.href} className="btn-secondary text-sm justify-center py-3">
-                Call {SITE.phone.display}
+                {t('footer.callPrefix')} <span dir="ltr">{SITE.phone.display}</span>
               </a>
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
-              <span className="badge-verify">Licensed</span>
-              <span className="badge-verify">Insured</span>
-              <span className="badge-verify">Local</span>
+              <span className="badge-verify">{t('footer.licensedTag')}</span>
+              <span className="badge-verify">{t('footer.insuredTag')}</span>
+              <span className="badge-verify">{t('footer.localTag')}</span>
             </div>
 
             <div className="mt-6">
-              <p className="text-steel-500 text-xs uppercase tracking-widest font-semibold mb-3">Find Us Online</p>
+              <p className="text-steel-500 text-xs uppercase tracking-widest font-semibold mb-3">{t('footer.findUsOnline')}</p>
               <SocialIcons />
             </div>
           </div>
@@ -134,18 +134,17 @@ export default function Footer() {
 
         <div className="divider mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-steel-500 text-xs text-center sm:text-left">
-            &copy; {year} {SITE.name}. {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}. All rights
-            reserved.
+            &copy; {year} {SITE.name}. <span dir="ltr">{SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}.</span> {t('footer.allRightsReserved')}
           </p>
           <div className="flex gap-5 text-xs">
             <Link href="/verify" className="text-steel-500 hover:text-steel-400 transition-colors">
-              Verify
+              {t('footer.verifyLink')}
             </Link>
             <Link href="/privacy" className="text-steel-500 hover:text-steel-400 transition-colors">
-              Privacy Policy
+              {t('footer.privacyLink')}
             </Link>
             <Link href="/terms" className="text-steel-500 hover:text-steel-400 transition-colors">
-              Terms of Service
+              {t('footer.termsLink')}
             </Link>
           </div>
         </div>

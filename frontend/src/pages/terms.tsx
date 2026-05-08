@@ -1,9 +1,10 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Layout from '@/components/shared/Layout'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
-const Terms: NextPage = () => {
+const Terms: NextPage<LocaleProps> = () => {
   return (
     <>
       <NextSeo
@@ -76,5 +77,9 @@ const Terms: NextPage = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps<LocaleProps> = async (ctx) => ({
+  props: { ...localeProps(ctx) },
+})
 
 export default Terms

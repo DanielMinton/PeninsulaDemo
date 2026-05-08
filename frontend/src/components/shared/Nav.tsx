@@ -2,16 +2,9 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-
-const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Service Areas', href: '#service-areas' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
-]
+import { useTranslations } from 'next-intl'
+import { SITE } from '@/content/site'
+import LocalePicker from './LocalePicker'
 
 function PUPLogo() {
   return (
@@ -25,8 +18,16 @@ function PUPLogo() {
 }
 
 export default function Nav() {
+  const t = useTranslations()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+
+  const NAV_LINKS = [
+    { labelKey: 'nav.servicesLink', href: '#services' },
+    { labelKey: 'nav.areasLink', href: '#service-areas' },
+    { labelKey: 'nav.aboutLink', href: '#about' },
+    { labelKey: 'nav.contactLink', href: '#contact' },
+  ] as const
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48)
@@ -44,50 +45,53 @@ export default function Nav() {
     >
       <div className="container-max section-padding">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Peninsula Pick Ups home">
+          <Link href="/" className="flex items-center gap-3 group" aria-label={t('nav.homeAriaLabel')}>
             <div className="group-hover:scale-105 transition-transform">
               <PUPLogo />
             </div>
             <div className="leading-none">
               <span className="font-bold text-bone-100 text-sm block group-hover:text-white transition-colors">
-                Peninsula Pick Ups
+                {SITE.name}
               </span>
-              <span className="text-steel-500 text-xs block mt-0.5">San Carlos, CA</span>
+              <span className="text-steel-500 text-xs block mt-0.5">{t('nav.cityTagline')}</span>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-1" aria-label={t('nav.mainAriaLabel')}>
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 className="px-4 py-2 text-sm font-medium text-steel-300 hover:text-bone-100 rounded-lg hover:bg-charcoal-700/50 transition-all duration-150"
               >
-                {link.label}
+                {t(link.labelKey)}
               </a>
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            <LocalePicker />
             <a
-              href={PHONE_RAW}
+              href={SITE.phone.href}
               className="font-bold text-orange-500 hover:text-orange-400 transition-colors tabular-nums text-sm"
+              dir="ltr"
             >
-              {PHONE}
+              {SITE.phone.display}
             </a>
             <a href="#quote" className="btn-primary text-sm py-2 px-5">
-              Request Pickup
+              {t('nav.requestPickupCta')}
             </a>
           </div>
 
           <div className="flex lg:hidden items-center gap-2">
-            <a href={PHONE_RAW} className="btn-primary text-sm py-2 px-4">
-              Call Now
+            <LocalePicker />
+            <a href={SITE.phone.href} className="btn-primary text-sm py-2 px-4">
+              {t('nav.callNowCta')}
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 text-steel-300 hover:text-bone-100 transition-colors rounded-lg hover:bg-charcoal-700/50"
-              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-label={mobileOpen ? t('nav.closeMenu') : t('nav.openMenu')}
               aria-expanded={mobileOpen}
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -139,22 +143,23 @@ export default function Nav() {
                   onClick={() => setMobileOpen(false)}
                   className="py-3 px-2 text-bone-200 hover:text-white font-medium border-b border-charcoal-700 last:border-0 transition-colors"
                 >
-                  {link.label}
+                  {t(link.labelKey)}
                 </a>
               ))}
               <div className="pt-4 flex flex-col gap-3">
                 <a
-                  href={PHONE_RAW}
+                  href={SITE.phone.href}
                   className="text-center py-3 border border-orange-500/30 rounded-xl text-orange-400 font-bold text-lg hover:border-orange-500/60 transition-colors"
+                  dir="ltr"
                 >
-                  {PHONE}
+                  {SITE.phone.display}
                 </a>
                 <a
                   href="#quote"
                   onClick={() => setMobileOpen(false)}
                   className="btn-primary justify-center text-base py-3"
                 >
-                  Request a Pickup
+                  {t('nav.requestPickupLong')}
                 </a>
               </div>
             </div>

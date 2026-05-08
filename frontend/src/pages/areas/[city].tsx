@@ -11,22 +11,23 @@ import { serviceName } from '@/content/services'
 import { SITE } from '@/content/site'
 import { graph, localBusiness, service as serviceNode, breadcrumbs, faqPage } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
-interface AreaPageProps {
+interface AreaPageProps extends LocaleProps {
   area: Area
 }
 
-const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
+const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
   const path = `/areas/${area.slug}`
   const schema = graph(
-    localBusiness(),
-    serviceNode('junk-removal', area),
+    localBusiness(locale),
+    serviceNode('junk-removal', area, locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
       { name: 'Service Areas', url: '/#service-areas' },
       { name: `${area.city}, CA`, url: path },
-    ]),
-    ...(area.faqs && area.faqs.length > 0 ? [faqPage(area.faqs)] : []),
+    ], locale),
+    ...(area.faqs && area.faqs.length > 0 ? [faqPage(area.faqs, locale)] : []),
   )
 
   return (
@@ -36,9 +37,9 @@ const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
           title: area.seoTitle,
           description: area.seoDescription,
           path,
-          ogImagePath: `/api/og?city=${encodeURIComponent(area.slug)}`,
+          ogImagePath: `/api/og?city=${encodeURIComponent(area.slug)}&locale=${encodeURIComponent(locale)}`,
           ogImageAlt: `Junk Removal in ${area.city}, CA — ${SITE.name}`,
-        })}
+        }, locale)}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -272,11 +273,11 @@ export const getStaticPaths: GetStaticPaths = async () => ({
   fallback: false,
 })
 
-export const getStaticProps: GetStaticProps<AreaPageProps> = async ({ params }) => {
-  const slug = params?.city as string
+export const getStaticProps: GetStaticProps<AreaPageProps> = async (ctx) => {
+  const slug = ctx.params?.city as string
   const area = getAreaBySlug(slug)
   if (!area) return { notFound: true }
-  return { props: { area } }
+  return { props: { ...localeProps(ctx), area } }
 }
 
 export default AreaPage

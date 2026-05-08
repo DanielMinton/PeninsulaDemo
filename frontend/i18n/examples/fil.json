@@ -1,0 +1,5 @@
+{
+  "$schema": "Few-shot examples for fil. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$version": 1,
+  "examples": []
+}

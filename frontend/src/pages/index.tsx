@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 import Layout from '@/components/shared/Layout'
@@ -19,9 +19,10 @@ import { SITE } from '@/content/site'
 import { HOMEPAGE_FAQS } from '@/content/faqs'
 import { graph, organization, localBusiness, faqPage } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
-const Home: NextPage = () => {
-  const schema = graph(organization(), localBusiness(), faqPage(HOMEPAGE_FAQS))
+const Home: NextPage<LocaleProps> = ({ locale }) => {
+  const schema = graph(organization(locale), localBusiness(locale), faqPage(HOMEPAGE_FAQS, locale))
 
   return (
     <>
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
           description: `${SITE.name} provides junk removal, hauling, cleanouts, and construction debris removal across the SF Peninsula. Locally owned by ${SITE.owners[0]} and ${SITE.owners[1]} in ${SITE.address.city} since ${SITE.foundedYear}. Call ${SITE.phone.display}.`,
           path: '/',
           ogImageAlt: `${SITE.name} — Junk Removal & Hauling, ${SITE.address.city}, ${SITE.address.region}`,
-        })}
+        }, locale)}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -51,5 +52,9 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps<LocaleProps> = async (ctx) => ({
+  props: { ...localeProps(ctx) },
+})
 
 export default Home

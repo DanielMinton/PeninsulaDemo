@@ -1,23 +1,24 @@
 'use client'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
+import { SITE } from '@/content/site'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-
-const SERVICES = [
-  'Junk Removal',
-  'Construction Debris',
-  'Appliance Removal',
-  'Storage Cleanouts',
-  'Eviction Cleanouts',
-  'Commercial Hauling',
-]
+const SERVICE_KEYS = [
+  'hero.serviceJunkRemoval',
+  'hero.serviceConstructionDebris',
+  'hero.serviceApplianceRemoval',
+  'hero.serviceStorageCleanouts',
+  'hero.serviceEvictionCleanouts',
+  'hero.serviceCommercialHauling',
+] as const
 
 export default function HeroSection() {
+  const t = useTranslations()
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal-900 bg-grid-subtle"
-      aria-label="Peninsula Pick Ups hero"
+      aria-label={t('hero.heroAriaLabel')}
     >
       <div
         className="absolute inset-0 pointer-events-none"
@@ -49,7 +50,7 @@ export default function HeroSection() {
                   d="M8.53 2.22a.75.75 0 010 1.06L4.53 7.28a.75.75 0 01-1.06 0L1.47 5.28a.75.75 0 011.06-1.06L4 5.69l3.47-3.47a.75.75 0 011.06 0z"
                 />
               </svg>
-              San Carlos, CA. Licensed and insured since 2021.
+              {t('hero.badge')}
             </span>
           </motion.div>
 
@@ -59,7 +60,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-bone-100 leading-none tracking-tight mb-6"
           >
-            The Pickup
+            {t('hero.headlinePart1')}
             <br />
             <span
               style={{
@@ -69,7 +70,7 @@ export default function HeroSection() {
                 backgroundClip: 'text',
               }}
             >
-              You Can Count On.
+              {t('hero.headlinePart2')}
             </span>
           </motion.h1>
 
@@ -79,8 +80,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="text-xl sm:text-2xl text-steel-300 max-w-2xl leading-relaxed mb-10"
           >
-            Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the
-            entire Peninsula. Real owners. Real phone. Real results.
+            {t('hero.subhead')}
           </motion.p>
 
           <motion.div
@@ -89,7 +89,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.45 }}
             className="mb-10"
           >
-            <a href={PHONE_RAW} className="inline-flex items-center gap-4 group">
+            <a href={SITE.phone.href} className="inline-flex items-center gap-4 group">
               <div className="w-12 h-12 bg-orange-500/15 border border-orange-500/30 rounded-full flex items-center justify-center group-hover:bg-orange-500/25 transition-colors">
                 <svg
                   width="18"
@@ -109,9 +109,9 @@ export default function HeroSection() {
                 </svg>
               </div>
               <div>
-                <p className="text-xs text-steel-400 font-medium uppercase tracking-widest mb-1">Verified Business Line</p>
-                <p className="text-3xl font-black text-orange-500 group-hover:text-orange-400 transition-colors tabular-nums tracking-tight">
-                  {PHONE}
+                <p className="text-xs text-steel-400 font-medium uppercase tracking-widest mb-1">{t('hero.verifiedBusinessLine')}</p>
+                <p className="text-3xl font-black text-orange-500 group-hover:text-orange-400 transition-colors tabular-nums tracking-tight" dir="ltr">
+                  {SITE.phone.display}
                 </p>
               </div>
             </a>
@@ -124,7 +124,7 @@ export default function HeroSection() {
             className="flex flex-col xs:flex-row gap-4"
           >
             <a href="#quote" className="btn-primary text-lg px-8 py-4 animate-pulse-glow justify-center sm:justify-start">
-              Request a Pickup
+              {t('hero.requestPickupCta')}
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
@@ -135,8 +135,8 @@ export default function HeroSection() {
                 />
               </svg>
             </a>
-            <a href={PHONE_RAW} className="btn-secondary text-lg px-8 py-4 justify-center sm:justify-start">
-              Call Now
+            <a href={SITE.phone.href} className="btn-secondary text-lg px-8 py-4 justify-center sm:justify-start">
+              {t('hero.callNowCta')}
             </a>
           </motion.div>
 
@@ -145,12 +145,12 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.75 }}
             className="mt-12 flex flex-wrap gap-x-6 gap-y-2"
-            aria-label="Services offered"
+            aria-label={t('hero.servicesListAriaLabel')}
           >
-            {SERVICES.map((service) => (
-              <li key={service} className="flex items-center gap-2 text-sm text-steel-400">
+            {SERVICE_KEYS.map((key) => (
+              <li key={key} className="flex items-center gap-2 text-sm text-steel-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0" aria-hidden="true" />
-                {service}
+                {t(key)}
               </li>
             ))}
           </motion.ul>
@@ -164,7 +164,7 @@ export default function HeroSection() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-steel-600"
         aria-hidden="true"
       >
-        <span className="text-xs uppercase tracking-widest font-medium">Scroll</span>
+        <span className="text-xs uppercase tracking-widest font-medium">{t('hero.scrollIndicator')}</span>
         <motion.div
           animate={{ y: [0, 5, 0] }}
           transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}

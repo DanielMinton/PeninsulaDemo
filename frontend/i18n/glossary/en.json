@@ -1,0 +1,29 @@
+{
+  "$schema": "Brand-locked vocabulary in English. Other locales' glossaries (i18n/glossary/<locale>.json) override these per-locale; entries here are the authoritative source labels the translator anchors to.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "The Pickup You Can Count On.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Junk Removal",
+    "service_construction_debris": "Construction Debris Removal",
+    "service_appliance_removal": "Appliance Removal",
+    "service_storage_cleanout": "Storage Cleanouts",
+    "service_eviction_cleanout": "Eviction Cleanouts",
+    "service_commercial_hauling": "Commercial Hauling",
+    "service_residential_cleanout": "Residential Cleanouts",
+    "industry_term_hauling": "hauling",
+    "industry_term_cleanout": "cleanout",
+    "industry_term_pickup": "pickup",
+    "trust_phrase_licensed": "Licensed and insured",
+    "trust_phrase_family_owned": "Family owned",
+    "trust_phrase_locally_owned": "Locally owned",
+    "trust_phrase_same_day": "Same-day service",
+    "region_label": "SF Peninsula",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Verify this business"
+  }
+}

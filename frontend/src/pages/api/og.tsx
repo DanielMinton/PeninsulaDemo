@@ -12,6 +12,14 @@ const PHONE = SITE.phone.display
 const CITY_SLUGS: ReadonlySet<string> = new Set(AREAS.map((a) => a.slug))
 const SERVICE_SLUGS: ReadonlySet<string> = new Set(SERVICES.map((s) => s.slug))
 
+// Whitelist of valid OG locales — must mirror src/i18n/locales.ts.
+// Inlined here because /api/og runs on the Edge runtime and cannot import
+// the TypeScript types module at request time.
+const VALID_LOCALES: ReadonlySet<string> = new Set([
+  'en', 'es-MX', 'zh-Hans', 'ja', 'ko', 'vi', 'fil',
+  'pt-BR', 'ru', 'th', 'km', 'ur', 'to', 'yi', 'ga',
+])
+
 function notFound() {
   return new Response('Not Found', { status: 404, headers: { 'content-type': 'text/plain' } })
 }
@@ -45,9 +53,19 @@ export default function handler(req: NextRequest) {
   const { searchParams } = new URL(req.url)
   const city = searchParams.get('city')
   const serviceParam = searchParams.get('service')
+  const localeParam = searchParams.get('locale')
 
   if (city && !CITY_SLUGS.has(city)) return notFound()
   if (serviceParam && !SERVICE_SLUGS.has(serviceParam)) return notFound()
+  if (localeParam && !VALID_LOCALES.has(localeParam)) return notFound()
+
+  // The OG card text stays English by design: the OG image is consumed
+  // primarily by social platform previews and link-unfurlers, where English
+  // content is fine and where Satori font subsetting per-locale would
+  // require a much heavier asset pipeline. Locale tagging here is for
+  // future per-locale OG variants; treat as a placeholder until a cultural
+  // OG-card pass is scoped. Logged in SHIPLOG_I18N.md.
+  void localeParam
 
   const { headline, sub } = copyFor(city, serviceParam)
 

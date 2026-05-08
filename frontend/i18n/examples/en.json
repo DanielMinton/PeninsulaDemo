@@ -1,0 +1,18 @@
+{
+  "$schema": "Tagged source examples. Used to anchor the translator's tone for each content type. Each entry pairs an English source string with the tag it belongs to. The translator's prompt retrieves examples whose tag matches the segment being translated.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results." },
+    { "tag": "cta", "source": "Request a Pickup" },
+    { "tag": "cta", "source": "Call Now" },
+    { "tag": "cta", "source": "Get a Free Quote" },
+    { "tag": "trust", "source": "Licensed and insured since 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check." },
+    { "tag": "form-label", "source": "Service Location" },
+    { "tag": "form-error", "source": "Please enter a valid phone number." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service." }
+  ]
+}

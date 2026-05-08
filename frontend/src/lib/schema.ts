@@ -3,6 +3,7 @@ import { AREAS, type Area } from '@/content/areas'
 import { SERVICES, type Service, type ServiceSlug } from '@/content/services'
 import { aggregateRating, REVIEWS } from '@/content/reviews'
 import type { FAQ } from '@/content/services'
+import { DEFAULT_LOCALE, LOCALE_META, type Locale } from '@/i18n/locales'
 
 type JsonLd = Record<string, unknown> & { '@type': string }
 
@@ -17,15 +18,30 @@ const POSTAL_ADDRESS = {
 
 const SAME_AS = [...SITE.sameAs]
 
+/**
+ * @id fragments are intentionally locale-AGNOSTIC so the entity graph merges
+ * across locales. `sameAs` is a single global array (entity property, not
+ * per-locale). Translated fields per locale: `name`, `description`,
+ * BreadcrumbList.name, Service.name/description, FAQPage Q/A, reviewBody.
+ * Untranslated: address, phone, founder names, founding year, geo.
+ */
+
+function bcp47Underscore(locale: Locale): string {
+  // schema.org `inLanguage` accepts BCP-47 with hyphen, but many crawlers
+  // also tolerate underscore. We emit hyphen here (the spec form).
+  return locale
+}
+
 /** Wrap one or more nodes in a single @graph block. */
 export function graph(...nodes: JsonLd[]): Record<string, unknown> {
   return { '@context': 'https://schema.org', '@graph': nodes }
 }
 
-export function organization(): JsonLd {
+export function organization(locale: Locale = DEFAULT_LOCALE): JsonLd {
   return {
     '@type': 'Organization',
     '@id': `${SITE.url}/#org`,
+    inLanguage: bcp47Underscore(locale),
     name: SITE.name,
     alternateName: SITE.alternateName,
     url: SITE.url,
@@ -36,17 +52,21 @@ export function organization(): JsonLd {
   }
 }
 
-export function localBusiness(): JsonLd {
+export function localBusiness(
+  locale: Locale = DEFAULT_LOCALE,
+  translated?: { name?: string; description?: string },
+): JsonLd {
   const rating = aggregateRating()
   return {
     '@type': 'LocalBusiness',
     '@id': `${SITE.url}/#business`,
-    name: SITE.name,
+    inLanguage: bcp47Underscore(locale),
+    name: translated?.name ?? SITE.name,
     alternateName: SITE.alternateName,
     url: SITE.url,
     telephone: SITE.phone.e164,
     priceRange: SITE.priceRange,
-    description: SITE.imposterNote,
+    description: translated?.description ?? SITE.imposterNote,
     address: POSTAL_ADDRESS,
     geo: {
       '@type': 'GeoCoordinates',
@@ -82,6 +102,7 @@ export function localBusiness(): JsonLd {
       author: { '@type': 'Person', name: r.reviewer },
       reviewBody: r.text,
       datePublished: r.dateISO,
+      inLanguage: 'en',
     })),
   }
 }
@@ -99,7 +120,12 @@ export function aggregateRatingNode(): JsonLd {
 }
 
 /** Service node, optionally city-scoped. */
-export function service(slug: ServiceSlug, area?: Area): JsonLd {
+export function service(
+  slug: ServiceSlug,
+  area?: Area,
+  locale: Locale = DEFAULT_LOCALE,
+  translated?: { name?: string; description?: string },
+): JsonLd {
   const svc = SERVICES.find((s) => s.slug === slug) as Service
   const url = area
     ? absoluteUrl(`/areas/${area.slug}`)
@@ -107,9 +133,10 @@ export function service(slug: ServiceSlug, area?: Area): JsonLd {
   return {
     '@type': 'Service',
     '@id': `${url}#service`,
+    inLanguage: bcp47Underscore(locale),
     serviceType: svc.name,
-    name: area ? `${svc.name} in ${area.city}, CA` : svc.name,
-    description: area ? area.summary : svc.description,
+    name: translated?.name ?? (area ? `${svc.name} in ${area.city}, CA` : svc.name),
+    description: translated?.description ?? (area ? area.summary : svc.description),
     provider: { '@id': `${SITE.url}/#business` },
     areaServed: area
       ? { '@type': 'City', name: area.city }
@@ -118,9 +145,10 @@ export function service(slug: ServiceSlug, area?: Area): JsonLd {
   }
 }
 
-export function breadcrumbs(items: { name: string; url: string }[]): JsonLd {
+export function breadcrumbs(items: { name: string; url: string }[], locale: Locale = DEFAULT_LOCALE): JsonLd {
   return {
     '@type': 'BreadcrumbList',
+    inLanguage: bcp47Underscore(locale),
     itemListElement: items.map((it, i) => ({
       '@type': 'ListItem',
       position: i + 1,
@@ -130,13 +158,16 @@ export function breadcrumbs(items: { name: string; url: string }[]): JsonLd {
   }
 }
 
-export function faqPage(faqs: readonly FAQ[]): JsonLd {
+export function faqPage(faqs: readonly FAQ[], locale: Locale = DEFAULT_LOCALE): JsonLd {
   return {
     '@type': 'FAQPage',
+    inLanguage: bcp47Underscore(locale),
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: f.a, inLanguage: bcp47Underscore(locale) },
     })),
   }
 }
+
+void LOCALE_META

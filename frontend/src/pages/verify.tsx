@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Layout from '@/components/shared/Layout'
@@ -6,6 +6,7 @@ import FadeIn from '@/components/motion/FadeIn'
 import { SITE } from '@/content/site'
 import { graph, organization, localBusiness, breadcrumbs } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
 const FACTS = [
   { label: 'Legal name', value: SITE.legalName },
@@ -20,15 +21,15 @@ const FACTS = [
   { label: 'Licensed and insured', value: 'Yes' },
 ] as const
 
-const Verify: NextPage = () => {
+const Verify: NextPage<LocaleProps> = ({ locale }) => {
   const path = '/verify'
   const schema = graph(
-    organization(),
-    localBusiness(),
+    organization(locale),
+    localBusiness(locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
       { name: 'Verify', url: path },
-    ]),
+    ], locale),
   )
 
   return (
@@ -39,7 +40,7 @@ const Verify: NextPage = () => {
           description: `${SITE.name} operates from ${SITE.url} under verified business line ${SITE.phone.display}. This page documents our identity across every legitimate profile.`,
           path,
           ogImageAlt: `${SITE.name} — Identity Verification`,
-        })}
+        }, locale)}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -225,5 +226,9 @@ const Verify: NextPage = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps<LocaleProps> = async (ctx) => ({
+  props: { ...localeProps(ctx) },
+})
 
 export default Verify

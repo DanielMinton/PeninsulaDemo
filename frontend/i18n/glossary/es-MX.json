@@ -1,0 +1,29 @@
+{
+  "$schema": "Mexican Spanish glossary. Locked translations the translator must use verbatim.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "El servicio de recolección con el que sí se puede contar.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Recolección de chatarra",
+    "service_construction_debris": "Retiro de escombros de construcción",
+    "service_appliance_removal": "Retiro de electrodomésticos",
+    "service_storage_cleanout": "Vaciado de bodegas",
+    "service_eviction_cleanout": "Limpieza post-desalojo",
+    "service_commercial_hauling": "Acarreos comerciales",
+    "service_residential_cleanout": "Limpieza residencial",
+    "industry_term_hauling": "acarreo",
+    "industry_term_cleanout": "limpieza completa",
+    "industry_term_pickup": "recolección",
+    "trust_phrase_licensed": "Con licencia y seguro",
+    "trust_phrase_family_owned": "Negocio familiar",
+    "trust_phrase_locally_owned": "Negocio local",
+    "trust_phrase_same_day": "Servicio el mismo día",
+    "region_label": "Península de San Francisco",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Verifica este negocio"
+  }
+}

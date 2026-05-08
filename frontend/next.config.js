@@ -16,8 +16,34 @@ const AREA_SLUGS = [
   'millbrae',
 ]
 
+// Mirrors src/i18n/locales.ts. Update both when adding a locale.
+const LOCALES = [
+  'en',
+  'es-MX',
+  'zh-Hans',
+  'ja',
+  'ko',
+  'vi',
+  'fil',
+  'pt-BR',
+  'ru',
+  'th',
+  'km',
+  'ur',
+  'to',
+  'yi',
+  'ga',
+]
+
 const nextConfig = {
   reactStrictMode: true,
+  i18n: {
+    locales: LOCALES,
+    defaultLocale: 'en',
+    // We own detection via middleware so we can apply our precedence:
+    // URL prefix → NEXT_LOCALE cookie → Accept-Language → en.
+    localeDetection: false,
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'thepeninsulapickup.com' },

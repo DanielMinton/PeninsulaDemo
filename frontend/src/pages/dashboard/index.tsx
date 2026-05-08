@@ -1,8 +1,9 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
 const PHONE = '(650) 201-1543'
 const PHONE_RAW = 'tel:+16502011543'
@@ -76,7 +77,7 @@ const DASHBOARD_SECTIONS = [
   },
 ]
 
-const Dashboard: NextPage = () => {
+const Dashboard: NextPage<LocaleProps> = () => {
   return (
     <>
       <NextSeo
@@ -151,5 +152,9 @@ const Dashboard: NextPage = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps<LocaleProps> = async (ctx) => ({
+  props: { ...localeProps(ctx) },
+})
 
 export default Dashboard

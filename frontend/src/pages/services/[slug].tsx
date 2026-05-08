@@ -10,22 +10,23 @@ import { AREAS } from '@/content/areas'
 import { SITE } from '@/content/site'
 import { graph, localBusiness, service as serviceNode, breadcrumbs, faqPage } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
+import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
-interface ServicePageProps {
+interface ServicePageProps extends LocaleProps {
   service: Service
 }
 
-const ServicePage: NextPage<ServicePageProps> = ({ service }) => {
+const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
   const path = `/services/${service.slug}`
   const schema = graph(
-    localBusiness(),
-    serviceNode(service.slug),
+    localBusiness(locale),
+    serviceNode(service.slug, undefined, locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
       { name: 'Services', url: '/#services' },
       { name: service.name, url: path },
-    ]),
-    ...(service.faqs.length > 0 ? [faqPage(service.faqs)] : []),
+    ], locale),
+    ...(service.faqs.length > 0 ? [faqPage(service.faqs, locale)] : []),
   )
 
   return (
@@ -35,9 +36,9 @@ const ServicePage: NextPage<ServicePageProps> = ({ service }) => {
           title: `${service.name} on the SF Peninsula | ${SITE.name} | ${SITE.phone.display}`,
           description: `${service.blurb} Peninsula Pick Ups serves the entire SF Peninsula from ${SITE.address.city}, CA. Call ${SITE.phone.display}.`,
           path,
-          ogImagePath: `/api/og?service=${encodeURIComponent(service.slug)}`,
+          ogImagePath: `/api/og?service=${encodeURIComponent(service.slug)}&locale=${encodeURIComponent(locale)}`,
           ogImageAlt: `${service.name} — ${SITE.name}`,
-        })}
+        }, locale)}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -156,11 +157,11 @@ export const getStaticPaths: GetStaticPaths = async () => ({
   fallback: false,
 })
 
-export const getStaticProps: GetStaticProps<ServicePageProps> = async ({ params }) => {
-  const slug = params?.slug as string
+export const getStaticProps: GetStaticProps<ServicePageProps> = async (ctx) => {
+  const slug = ctx.params?.slug as string
   const service = getServiceBySlug(slug)
   if (!service) return { notFound: true }
-  return { props: { service } }
+  return { props: { ...localeProps(ctx), service } }
 }
 
 export default ServicePage
