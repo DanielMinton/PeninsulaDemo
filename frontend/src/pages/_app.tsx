@@ -18,7 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={inter.variable}>
       <DefaultSeo
         defaultTitle={`${SITE.name} | Junk Removal & Hauling | ${SITE.address.city}, ${SITE.address.region}`}
-        titleTemplate={`%s | ${SITE.name}`}
         openGraph={{ type: 'website', locale: 'en_US', siteName: SITE.name }}
         twitter={{ cardType: 'summary_large_image', site: '@peninsulapickups' }}
         additionalMetaTags={[
