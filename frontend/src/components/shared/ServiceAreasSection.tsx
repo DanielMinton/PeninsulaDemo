@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import FadeIn from '@/components/motion/FadeIn'
-import { SERVICE_AREAS } from '@/lib/serviceAreas'
+import { AREAS } from '@/content/areas'
+import { serviceShortName } from '@/content/services'
 
 export default function ServiceAreasSection() {
   return (
@@ -27,10 +28,10 @@ export default function ServiceAreasSection() {
         </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {SERVICE_AREAS.map((area, i) => (
+          {AREAS.map((area, i) => (
             <FadeIn key={area.slug} delay={i * 0.05} direction="up">
               <Link
-                href={`/${area.slug}`}
+                href={`/areas/${area.slug}`}
                 className="card-base card-hover p-5 flex items-start gap-4 group block h-full"
               >
                 <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0 group-hover:bg-orange-500/20 transition-colors">
@@ -50,7 +51,7 @@ export default function ServiceAreasSection() {
                     <p className="font-bold text-bone-100 text-sm group-hover:text-white transition-colors">
                       {area.city}
                     </p>
-                    {area.city === 'San Carlos' && (
+                    {area.isHomeBase && (
                       <span className="text-[10px] font-bold text-orange-500 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">
                         Home Base
                       </span>
@@ -58,7 +59,7 @@ export default function ServiceAreasSection() {
                   </div>
                   <p className="text-steel-500 text-xs">{area.county} County</p>
                   <p className="text-steel-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                    {area.services.slice(0, 3).join(', ')}
+                    {area.services.slice(0, 3).map(serviceShortName).join(', ')}
                     {area.services.length > 3 ? ` + ${area.services.length - 3} more` : ''}
                   </p>
                 </div>
@@ -70,11 +71,11 @@ export default function ServiceAreasSection() {
         <FadeIn delay={0.3}>
           <div className="mt-8 text-center">
             <p className="text-steel-500 text-sm">
-              Don't see your city?{' '}
+              Don&apos;t see your city?{' '}
               <a href="#quote" className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">
                 Request a quote
               </a>{' '}
-              and we'll confirm service availability.
+              and we&apos;ll confirm service availability.
             </p>
           </div>
         </FadeIn>

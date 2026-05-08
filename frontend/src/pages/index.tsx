@@ -9,97 +9,81 @@ import QuoteSelector from '@/components/shared/QuoteSelector'
 import GallerySection from '@/components/shared/GallerySection'
 import ServiceAreasSection from '@/components/shared/ServiceAreasSection'
 import TestimonialsSection from '@/components/shared/TestimonialsSection'
-import QuoteForm from '@/components/shared/QuoteForm'
+import { AREAS } from '@/content/areas'
+import { SITE, absoluteUrl } from '@/content/site'
+import { aggregateRating } from '@/content/reviews'
 
 const SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  '@id': 'https://thepeninsulapickup.com/#business',
-  name: 'Peninsula Pick Ups',
-  alternateName: 'The Peninsula Pickup',
-  url: 'https://thepeninsulapickup.com',
-  telephone: '+16502011543',
-  email: '',
-  description:
-    'Peninsula Pick Ups provides professional junk removal, hauling, construction debris removal, appliance removal, and cleanout services across the San Francisco Peninsula. Locally owned by Don and Melissa since 2021.',
+  '@id': `${SITE.url}/#business`,
+  name: SITE.name,
+  alternateName: SITE.alternateName,
+  url: SITE.url,
+  telephone: SITE.phone.e164,
+  description: SITE.imposterNote,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'San Carlos',
-    addressLocality: 'San Carlos',
-    addressRegion: 'CA',
-    postalCode: '94070',
-    addressCountry: 'US',
+    streetAddress: SITE.address.street,
+    addressLocality: SITE.address.city,
+    addressRegion: SITE.address.region,
+    postalCode: SITE.address.postalCode,
+    addressCountry: SITE.address.country,
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 37.5074,
-    longitude: -122.2585,
+    latitude: SITE.geo.lat,
+    longitude: SITE.geo.lng,
   },
-  areaServed: [
-    'San Carlos',
-    'San Mateo',
-    'Redwood City',
-    'Belmont',
-    'Burlingame',
-    'Palo Alto',
-    'Menlo Park',
-    'South San Francisco',
-    'Daly City',
-    'Millbrae',
-  ].map((city) => ({ '@type': 'City', name: city })),
+  areaServed: AREAS.map((a) => ({ '@type': 'City', name: a.city })),
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    opens: '07:00',
-    closes: '18:00',
+    dayOfWeek: [...SITE.hours.days],
+    opens: SITE.hours.opens,
+    closes: SITE.hours.closes,
   },
-  priceRange: '$$',
-  hasMap: 'https://maps.google.com/?q=San+Carlos,+CA+94070',
-  sameAs: [
-    'https://thepeninsulapickup.com',
-    'https://www.instagram.com/peninsulapickups/',
-    'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos',
-    'https://www.facebook.com/peninsulapickups/',
-  ],
-  founder: [{ '@type': 'Person', name: 'Don' }, { '@type': 'Person', name: 'Melissa' }],
-  foundingDate: '2021',
+  priceRange: SITE.priceRange,
+  hasMap: `https://maps.google.com/?q=${encodeURIComponent(`${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`)}`,
+  sameAs: [...SITE.sameAs],
+  founder: SITE.owners.map((name) => ({ '@type': 'Person', name })),
+  foundingDate: String(SITE.foundedYear),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ...aggregateRating(),
+  },
 }
 
 const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Peninsula Pick Ups | Junk Removal & Hauling | San Carlos, CA"
-        description="Peninsula Pick Ups provides junk removal, hauling, cleanouts, and construction debris removal across the SF Peninsula. Locally owned by Don and Melissa in San Carlos, CA since 2021. Call (650) 201-1543."
-        canonical="https://thepeninsulapickup.com"
+        title={`${SITE.name} | Junk Removal & Hauling | ${SITE.address.city}, ${SITE.address.region}`}
+        description={`${SITE.name} provides junk removal, hauling, cleanouts, and construction debris removal across the SF Peninsula. Locally owned by ${SITE.owners[0]} and ${SITE.owners[1]} in ${SITE.address.city}, ${SITE.address.region} since ${SITE.foundedYear}. Call ${SITE.phone.display}.`}
+        canonical={SITE.url}
         openGraph={{
-          title: 'Peninsula Pick Ups | Junk Removal & Hauling | San Carlos, CA',
-          description:
-            'Licensed junk removal, hauling, and cleanout services. Family owned in San Carlos since 2021. Fast scheduling, honest pricing. Call (650) 201-1543.',
-          url: 'https://thepeninsulapickup.com',
+          title: `${SITE.name} | Junk Removal & Hauling | ${SITE.address.city}, ${SITE.address.region}`,
+          description: `Licensed junk removal, hauling, and cleanout services. Family owned in ${SITE.address.city} since ${SITE.foundedYear}. Fast scheduling, honest pricing. Call ${SITE.phone.display}.`,
+          url: SITE.url,
           type: 'website',
           images: [
             {
-              url: 'https://thepeninsulapickup.com/api/og',
+              url: absoluteUrl('/api/og'),
               width: 1200,
               height: 630,
-              alt: 'Peninsula Pick Ups — Junk Removal & Hauling, San Carlos, CA',
+              alt: `${SITE.name} — Junk Removal & Hauling, ${SITE.address.city}, ${SITE.address.region}`,
             },
           ],
         }}
-        twitter={{
-          cardType: 'summary_large_image',
-          site: '@peninsulapickups',
-        }}
+        twitter={{ cardType: 'summary_large_image', site: '@peninsulapickups' }}
         additionalMetaTags={[
-          { name: 'keywords', content: 'junk removal San Carlos, Peninsula junk removal, hauling San Mateo County, cleanout service Peninsula, Peninsula Pick Ups' },
+          {
+            name: 'keywords',
+            content: `junk removal ${SITE.address.city}, Peninsula junk removal, hauling San Mateo County, cleanout service Peninsula, ${SITE.name}`,
+          },
         ]}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
 
       <Layout>
         <HeroSection />
@@ -110,7 +94,6 @@ const Home: NextPage = () => {
         <GallerySection />
         <ServiceAreasSection />
         <TestimonialsSection />
-        <QuoteForm />
       </Layout>
     </>
   )

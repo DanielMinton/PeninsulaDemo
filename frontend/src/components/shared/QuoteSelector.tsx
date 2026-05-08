@@ -2,20 +2,16 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLeadForm, type FormStep } from '@/hooks/useLeadForm'
-import { SERVICE_AREAS } from '@/lib/serviceAreas'
+import { AREAS } from '@/content/areas'
+import { SERVICES as CONTENT_SERVICES } from '@/content/services'
+import { SITE } from '@/content/site'
 import FadeIn from '@/components/motion/FadeIn'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
+const PHONE = SITE.phone.display
+const PHONE_RAW = SITE.phone.href
 
 const SERVICES = [
-  { value: 'junk_removal', label: 'Junk Removal' },
-  { value: 'construction_debris', label: 'Construction Debris' },
-  { value: 'appliance_removal', label: 'Appliance Removal' },
-  { value: 'storage_cleanout', label: 'Storage Cleanout' },
-  { value: 'eviction_cleanout', label: 'Eviction Cleanout' },
-  { value: 'commercial_hauling', label: 'Commercial Hauling' },
-  { value: 'residential_cleanout', label: 'Residential Cleanout' },
+  ...CONTENT_SERVICES.map((s) => ({ value: s.formValue, label: s.shortName })),
   { value: 'other', label: 'Not Sure / Other' },
 ]
 
@@ -278,7 +274,7 @@ export default function QuoteSelector() {
                           onChange={(e) => updateField('service_location', e.target.value)}
                         >
                           <option value="">Select a city...</option>
-                          {SERVICE_AREAS.map((area) => (
+                          {AREAS.map((area) => (
                             <option key={area.slug} value={area.city}>
                               {area.city}, CA
                             </option>

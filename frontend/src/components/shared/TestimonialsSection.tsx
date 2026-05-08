@@ -1,29 +1,9 @@
 import FadeIn from '@/components/motion/FadeIn'
+import { SITE } from '@/content/site'
+import { REVIEWS, TOTAL_REVIEW_COUNT } from '@/content/reviews'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-const YELP_URL = 'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos'
-
-const REVIEWS = [
-  {
-    text: "Don and crew were super nice and extremely professional, and the prices are VERY competitive. Would definitely recommend to anyone looking for a reliable, affordable junk removal service.",
-    service: 'Junk Removal',
-    location: 'San Carlos, CA',
-    stars: 5,
-  },
-  {
-    text: "Melissa was prompt to reply to my email. Donovan arrived on the scheduled date and on time! He was attentive in not damaging walls and floors when hauling the old stuff.",
-    service: 'Appliance Removal',
-    location: 'Redwood City, CA',
-    stars: 5,
-  },
-  {
-    text: "These people waste no time. They are super efficient, friendly, licensed and insured. The pricing is very reasonable too.",
-    service: 'Storage Cleanout',
-    location: 'San Mateo, CA',
-    stars: 5,
-  },
-]
+const YELP_URL = SITE.socials.find((s) => s.id === 'yelp')!.url
+const NEXTDOOR_URL = SITE.socials.find((s) => s.id === 'nextdoor')!.url
 
 function StarRating({ count }: { count: number }) {
   return (
@@ -61,10 +41,11 @@ export default function TestimonialsSection() {
                 What Customers Say
               </h2>
               <p className="section-subtitle mt-3 max-w-xl">
-                Real reviews from customers across the Peninsula. Peninsula Pick Ups has 22 reviews and counting on Yelp.
+                Real reviews from customers across the Peninsula. {SITE.name} has {TOTAL_REVIEW_COUNT} reviews and
+                counting on Yelp, plus recommendations on Nextdoor and Alignable.
               </p>
             </div>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex flex-wrap items-center gap-2">
               <a
                 href={YELP_URL}
                 target="_blank"
@@ -72,10 +53,18 @@ export default function TestimonialsSection() {
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-charcoal-600 bg-charcoal-700 hover:border-charcoal-500 transition-colors text-sm"
               >
                 <YelpWordmark />
-                <span className="text-steel-400">22 reviews</span>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-steel-600" aria-hidden="true">
-                  <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <span className="text-steel-400">{TOTAL_REVIEW_COUNT} reviews</span>
+              </a>
+              <a
+                href={NEXTDOOR_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-verify-500/30 bg-verify-500/5 hover:bg-verify-500/10 transition-colors text-sm text-verify-400"
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true">
+                  <path d="M6 1L1 5h1.5v6h2.5V8h2v3h2.5V5H11L6 1z" />
                 </svg>
+                Recommended on Nextdoor
               </a>
             </div>
           </div>
@@ -86,26 +75,27 @@ export default function TestimonialsSection() {
             <FadeIn key={i} delay={i * 0.1} direction="up">
               <article className="card-base p-6 flex flex-col gap-4 h-full">
                 <div className="flex items-center justify-between">
-                  <StarRating count={review.stars} />
+                  <StarRating count={review.rating} />
                   <a
-                    href={YELP_URL}
+                    href={review.url ?? YELP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-75 transition-opacity"
-                    aria-label="View on Yelp"
+                    aria-label={`View on ${review.source}`}
                   >
                     <YelpWordmark />
                   </a>
                 </div>
 
                 <blockquote className="flex-1">
-                  <p className="text-bone-200 text-sm leading-relaxed">
-                    &ldquo;{review.text}&rdquo;
-                  </p>
+                  <p className="text-bone-200 text-sm leading-relaxed">&ldquo;{review.text}&rdquo;</p>
                 </blockquote>
 
                 <div className="flex items-center gap-3 pt-3 border-t border-charcoal-600">
-                  <div className="w-8 h-8 rounded-full bg-orange-500/15 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0" aria-hidden="true">
+                  <div
+                    className="w-8 h-8 rounded-full bg-orange-500/15 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0"
+                    aria-hidden="true"
+                  >
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                       <path
                         d="M7 1.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM2.5 12a4.5 4.5 0 019 0"
@@ -117,9 +107,9 @@ export default function TestimonialsSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-bone-300 text-xs font-semibold">Verified Yelp Customer</p>
+                    <p className="text-bone-300 text-xs font-semibold">Verified {review.source} customer</p>
                     <p className="text-steel-500 text-xs mt-0.5">
-                      {review.service} &middot; {review.location}
+                      {review.service} &middot; {review.city}, CA
                     </p>
                   </div>
                 </div>
@@ -130,7 +120,10 @@ export default function TestimonialsSection() {
 
         <FadeIn delay={0.25}>
           <div className="max-w-2xl mx-auto text-center p-8 rounded-2xl bg-charcoal-700 border border-charcoal-500">
-            <div className="w-14 h-14 bg-orange-500/10 border border-orange-500/20 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-5" aria-hidden="true">
+            <div
+              className="w-14 h-14 bg-orange-500/10 border border-orange-500/20 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-5"
+              aria-hidden="true"
+            >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"
@@ -143,8 +136,8 @@ export default function TestimonialsSection() {
             </div>
             <h3 className="font-bold text-bone-100 text-xl mb-3">Had a Good Experience?</h3>
             <p className="text-steel-400 text-sm leading-relaxed mb-6">
-              If Peninsula Pick Ups hauled for you, we&apos;d love to hear about it. Reviews from confirmed customers
-              help neighbors find a reliable local service.
+              If {SITE.name} hauled for you, we&apos;d love to hear about it. Reviews from confirmed customers help
+              neighbors find a reliable local service.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
@@ -155,8 +148,8 @@ export default function TestimonialsSection() {
               >
                 Leave a Yelp Review
               </a>
-              <a href={PHONE_RAW} className="btn-primary justify-center w-full sm:w-auto">
-                Call {PHONE}
+              <a href={SITE.phone.href} className="btn-primary justify-center w-full sm:w-auto">
+                Call {SITE.phone.display}
               </a>
             </div>
           </div>

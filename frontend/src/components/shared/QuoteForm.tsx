@@ -2,22 +2,11 @@
 import { useState, type FormEvent } from 'react'
 import axios from 'axios'
 import FadeIn from '@/components/motion/FadeIn'
-import { SERVICE_AREAS } from '@/lib/serviceAreas'
+import { AREAS } from '@/content/areas'
+import { SERVICES } from '@/content/services'
+import { SITE } from '@/content/site'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
-
-const SERVICE_OPTIONS = [
-  { value: 'junk_removal', label: 'Junk Removal' },
-  { value: 'construction_debris', label: 'Construction Debris Removal' },
-  { value: 'appliance_removal', label: 'Appliance Removal' },
-  { value: 'storage_cleanout', label: 'Storage Cleanout' },
-  { value: 'eviction_cleanout', label: 'Eviction Cleanout' },
-  { value: 'commercial_hauling', label: 'Commercial Hauling' },
-  { value: 'residential_cleanout', label: 'Residential Cleanout' },
-  { value: 'other', label: 'Other / Not Sure' },
-]
 
 interface FormState {
   name: string
@@ -67,9 +56,13 @@ export default function QuoteForm() {
       if (axios.isAxiosError(err) && err.response?.data) {
         const data = err.response.data as Record<string, unknown>
         const first = Object.values(data)[0]
-        setError(Array.isArray(first) ? (first[0] as string) : 'Something went wrong. Call us at (650) 201-1543.')
+        setError(
+          Array.isArray(first)
+            ? (first[0] as string)
+            : `Something went wrong. Call us at ${SITE.phone.display}.`,
+        )
       } else {
-        setError('Unable to submit. Please call us directly at (650) 201-1543.')
+        setError(`Unable to submit. Please call us directly at ${SITE.phone.display}.`)
       }
     } finally {
       setSubmitting(false)
@@ -87,9 +80,9 @@ export default function QuoteForm() {
                 Tell Us About the Job
               </h2>
               <p className="section-subtitle mt-4">
-                Fill out the form and Peninsula Pick Ups will follow up directly. For faster response, call us at{' '}
-                <a href={PHONE_RAW} className="text-orange-400 font-semibold">
-                  {PHONE}
+                Fill out the form and {SITE.name} will follow up directly. For faster response, call us at{' '}
+                <a href={SITE.phone.href} className="text-orange-400 font-semibold">
+                  {SITE.phone.display}
                 </a>
                 .
               </p>
@@ -97,63 +90,34 @@ export default function QuoteForm() {
               <div className="mt-10 space-y-5">
                 {[
                   {
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                        <path
-                          d="M17 13.4v2.1a1.4 1.4 0 01-1.53 1.4A13.85 13.85 0 012.84 3.03 1.4 1.4 0 014.24 1.5H6.34c.7 0 1.3.5 1.41 1.2.22 1.3.6 2.55 1.1 3.73a1.4 1.4 0 01-.32 1.49l-.87.87a11.2 11.2 0 006.08 6.08l.87-.87a1.4 1.4 0 011.49-.32c1.18.5 2.43.88 3.73 1.1.7.11 1.2.71 1.2 1.41l-.04.47z"
-                          stroke="currentColor"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    ),
-                    title: PHONE,
-                    sub: 'Verified business line. Don and Melissa.',
-                    href: PHONE_RAW,
+                    title: SITE.phone.display,
+                    sub: `Verified business line. ${SITE.owners[0]} and ${SITE.owners[1]}.`,
+                    href: SITE.phone.href,
                   },
                   {
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                        <path
-                          d="M9 1C6.24 1 4 3.24 4 6c0 3.75 5 11 5 11s5-7.25 5-11c0-2.76-2.24-5-5-5z"
-                          stroke="currentColor"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <circle cx="9" cy="6" r="2" stroke="currentColor" strokeWidth="1.4" />
-                      </svg>
-                    ),
-                    title: 'San Carlos, CA 94070',
-                    sub: 'Home base since 2021.',
+                    title: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`,
+                    sub: `Home base since ${SITE.foundedYear}.`,
                     href: undefined,
                   },
                   {
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                        <circle cx="9" cy="9" r="7.5" stroke="currentColor" strokeWidth="1.4" />
-                        <path
-                          d="M9 5.5V9l2.5 2.5"
-                          stroke="currentColor"
-                          strokeWidth="1.4"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    ),
                     title: 'Same-day response',
                     sub: 'Most jobs scheduled within 48 hours.',
                     href: undefined,
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0">
-                      {item.icon}
+                    <div
+                      className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0"
+                      aria-hidden="true"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-orange-400" />
                     </div>
                     <div>
                       {item.href ? (
-                        <a href={item.href} className="font-semibold text-orange-400 hover:text-orange-300 transition-colors text-base">
+                        <a
+                          href={item.href}
+                          className="font-semibold text-orange-400 hover:text-orange-300 transition-colors text-base"
+                        >
                           {item.title}
                         </a>
                       ) : (
@@ -183,9 +147,9 @@ export default function QuoteForm() {
                 </div>
                 <h3 className="text-2xl font-bold text-bone-100 mb-3">Request Submitted</h3>
                 <p className="text-steel-400 mb-6">
-                  Peninsula Pick Ups will be in touch soon. For immediate help, call{' '}
-                  <a href={PHONE_RAW} className="text-orange-400 font-semibold">
-                    {PHONE}
+                  {SITE.name} will be in touch soon. For immediate help, call{' '}
+                  <a href={SITE.phone.href} className="text-orange-400 font-semibold">
+                    {SITE.phone.display}
                   </a>
                   .
                 </p>
@@ -256,9 +220,9 @@ export default function QuoteForm() {
                         onChange={(e) => update('service_requested', e.target.value)}
                       >
                         <option value="">Select a service...</option>
-                        {SERVICE_OPTIONS.map((s) => (
-                          <option key={s.value} value={s.value}>
-                            {s.label}
+                        {SERVICES.map((s) => (
+                          <option key={s.slug} value={s.formValue}>
+                            {s.name}
                           </option>
                         ))}
                       </select>
@@ -275,7 +239,7 @@ export default function QuoteForm() {
                         onChange={(e) => update('service_location', e.target.value)}
                       >
                         <option value="">Select city...</option>
-                        {SERVICE_AREAS.map((area) => (
+                        {AREAS.map((area) => (
                           <option key={area.slug} value={area.city}>
                             {area.city}, CA
                           </option>
@@ -322,13 +286,13 @@ export default function QuoteForm() {
                       onChange={(e) => update('consent', e.target.checked)}
                     />
                     <label htmlFor="qf-consent" className="text-xs text-steel-400 cursor-pointer leading-relaxed">
-                      I agree to be contacted by Peninsula Pick Ups regarding my quote request. Business line: {PHONE}.
-                      This form does not share your information with third parties.
+                      I agree to be contacted by {SITE.name} regarding my quote request. Business line:{' '}
+                      {SITE.phone.display}. This form does not share your information with third parties.
                     </label>
                   </div>
 
                   {error && (
-                    <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20">
+                    <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20" role="alert" aria-live="polite">
                       <p className="text-red-400 text-sm">{error}</p>
                     </div>
                   )}

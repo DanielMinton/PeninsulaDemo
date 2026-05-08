@@ -4,16 +4,15 @@ import Link from 'next/link'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
 import QuoteForm from '@/components/shared/QuoteForm'
-import { SERVICE_AREAS, getServiceAreaBySlug, type ServiceAreaData } from '@/lib/serviceAreas'
+import { AREAS, getAreaBySlug, type Area } from '@/content/areas'
+import { serviceName } from '@/content/services'
+import { SITE, absoluteUrl } from '@/content/site'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-
-interface LocationPageProps {
-  area: ServiceAreaData
+interface AreaPageProps {
+  area: Area
 }
 
-function buildSchema(area: ServiceAreaData) {
+function buildSchema(area: Area) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -21,47 +20,45 @@ function buildSchema(area: ServiceAreaData) {
     description: area.summary,
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Peninsula Pick Ups',
-      telephone: '+16502011543',
-      url: 'https://thepeninsulapickup.com',
+      name: SITE.name,
+      telephone: SITE.phone.e164,
+      url: SITE.url,
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'San Carlos',
-        addressRegion: 'CA',
-        postalCode: '94070',
-        addressCountry: 'US',
+        addressLocality: SITE.address.city,
+        addressRegion: SITE.address.region,
+        postalCode: SITE.address.postalCode,
+        addressCountry: SITE.address.country,
       },
     },
     areaServed: {
       '@type': 'City',
       name: area.city,
-      '@id': `https://www.wikidata.org/wiki/${encodeURIComponent(area.city)}`,
     },
-    url: `https://thepeninsulapickup.com/${area.slug}`,
+    url: absoluteUrl(`/areas/${area.slug}`),
   }
 }
 
-const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
+const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
   const schema = buildSchema(area)
-  const isHomeBase = area.city === 'San Carlos'
 
   return (
     <>
       <NextSeo
         title={area.seoTitle}
         description={area.seoDescription}
-        canonical={`https://thepeninsulapickup.com/${area.slug}`}
+        canonical={absoluteUrl(`/areas/${area.slug}`)}
         openGraph={{
           title: area.seoTitle,
           description: area.seoDescription,
-          url: `https://thepeninsulapickup.com/${area.slug}`,
+          url: absoluteUrl(`/areas/${area.slug}`),
           type: 'website',
           images: [
             {
-              url: `https://thepeninsulapickup.com/api/og?city=${encodeURIComponent(area.city)}`,
+              url: absoluteUrl(`/api/og?city=${encodeURIComponent(area.slug)}`),
               width: 1200,
               height: 630,
-              alt: `Junk Removal in ${area.city}, CA — Peninsula Pick Ups`,
+              alt: `Junk Removal in ${area.city}, CA — ${SITE.name}`,
             },
           ],
         }}
@@ -69,28 +66,15 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
           cardType: 'summary_large_image',
           site: '@peninsulapickups',
         }}
-        additionalMetaTags={[
-          {
-            name: 'keywords',
-            content: `junk removal ${area.city}, hauling ${area.city} CA, cleanout ${area.city}, Peninsula Pick Ups ${area.city}`,
-          },
-        ]}
       />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <Layout>
         <div className="min-h-screen bg-charcoal-900">
-          {/* Hero */}
           <div
             className="relative pt-28 pb-20 bg-grid-subtle overflow-hidden"
-            style={{
-              background:
-                '#0f0f0f url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.02\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            }}
+            style={{ backgroundColor: '#0f0f0f' }}
           >
             <div
               className="absolute inset-0 pointer-events-none"
@@ -104,7 +88,11 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
               <FadeIn>
                 <nav className="flex items-center gap-2 text-xs text-steel-500 mb-6" aria-label="Breadcrumb">
                   <Link href="/" className="hover:text-steel-400 transition-colors">
-                    Peninsula Pick Ups
+                    {SITE.name}
+                  </Link>
+                  <span aria-hidden="true">/</span>
+                  <Link href="/#service-areas" className="hover:text-steel-400 transition-colors">
+                    Service Areas
                   </Link>
                   <span aria-hidden="true">/</span>
                   <span className="text-bone-300">{area.city}, CA</span>
@@ -121,7 +109,7 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                     </svg>
                     {area.county} County
                   </span>
-                  {isHomeBase && <span className="badge-orange">Home Base</span>}
+                  {area.isHomeBase && <span className="badge-orange">Home Base</span>}
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-bone-100 leading-tight tracking-tight mb-5">
@@ -147,15 +135,15 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                   <a href="#quote" className="btn-primary text-lg px-7 py-4">
                     Request Pickup in {area.city}
                   </a>
-                  <a href={PHONE_RAW} className="btn-secondary text-lg px-7 py-4">
-                    Call {PHONE}
+                  <a href={SITE.phone.href} className="btn-secondary text-lg px-7 py-4">
+                    Call {SITE.phone.display}
                   </a>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  {area.services.map((service) => (
-                    <span key={service} className="badge-orange text-xs font-medium">
-                      {service}
+                  {area.services.map((slug) => (
+                    <span key={slug} className="badge-orange text-xs font-medium">
+                      {serviceName(slug)}
                     </span>
                   ))}
                 </div>
@@ -163,15 +151,14 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
             </div>
           </div>
 
-          {/* Verify strip */}
           <div className="bg-charcoal-800 border-y border-charcoal-600">
             <div className="container-max section-padding py-6">
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
                 {[
-                  { label: 'San Carlos, CA 94070', sub: 'Home Base' },
-                  { label: 'Established 2021', sub: 'Serving the Peninsula' },
-                  { label: PHONE, sub: 'Verified Line', href: PHONE_RAW },
-                  { label: 'Don and Melissa', sub: 'Local Owners' },
+                  { label: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`, sub: 'Home Base' },
+                  { label: `Established ${SITE.foundedYear}`, sub: 'Serving the Peninsula' },
+                  { label: SITE.phone.display, sub: 'Verified Line', href: SITE.phone.href },
+                  { label: `${SITE.owners[0]} and ${SITE.owners[1]}`, sub: 'Local Owners' },
                   { label: 'Licensed and Insured', sub: 'Professional Service' },
                 ].map((item) =>
                   item.href ? (
@@ -192,27 +179,27 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                         <p className="text-steel-500 text-xs">{item.sub}</p>
                       </div>
                     </div>
-                  )
+                  ),
                 )}
               </div>
             </div>
           </div>
 
-          {/* Services in this city */}
           <div className="bg-charcoal-900 py-20">
             <div className="container-max section-padding">
               <FadeIn>
-                <h2 className="text-3xl font-bold text-bone-100 mb-2">
-                  Services Available in {area.city}
-                </h2>
+                <h2 className="text-3xl font-bold text-bone-100 mb-2">Services Available in {area.city}</h2>
                 <p className="text-steel-400 mb-8">
-                  Peninsula Pick Ups provides the following services throughout {area.city}, CA.
+                  {SITE.name} provides the following services throughout {area.city}, CA.
                 </p>
               </FadeIn>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {area.services.map((service, i) => (
-                  <FadeIn key={service} delay={i * 0.06} direction="up">
-                    <div className="card-base p-5 flex items-center gap-4">
+                {area.services.map((slug, i) => (
+                  <FadeIn key={slug} delay={i * 0.06} direction="up">
+                    <Link
+                      href={`/services/${slug}`}
+                      className="card-base card-hover p-5 flex items-center gap-4 block"
+                    >
                       <div className="w-8 h-8 rounded-lg bg-verify-500/10 border border-verify-500/20 flex items-center justify-center text-verify-400 flex-shrink-0">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
                           <path
@@ -222,29 +209,26 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
                           />
                         </svg>
                       </div>
-                      <p className="font-semibold text-bone-100 text-sm">{service}</p>
-                    </div>
+                      <p className="font-semibold text-bone-100 text-sm">{serviceName(slug)}</p>
+                    </Link>
                   </FadeIn>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Nearby areas */}
-          {area.nearbyAreas && area.nearbyAreas.length > 0 && (
+          {area.nearbyAreas.length > 0 && (
             <div className="bg-charcoal-800 py-16">
               <div className="container-max section-padding">
                 <FadeIn>
-                  <h2 className="text-2xl font-bold text-bone-100 mb-6">
-                    Also Serving Nearby Areas
-                  </h2>
+                  <h2 className="text-2xl font-bold text-bone-100 mb-6">Also Serving Nearby Areas</h2>
                   <div className="flex flex-wrap gap-3">
                     {area.nearbyAreas.map((city) => {
-                      const nearbyArea = SERVICE_AREAS.find((a) => a.city === city)
+                      const nearbyArea = AREAS.find((a) => a.city === city)
                       return nearbyArea ? (
                         <Link
                           key={city}
-                          href={`/${nearbyArea.slug}`}
+                          href={`/areas/${nearbyArea.slug}`}
                           className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-charcoal-700 border border-charcoal-600 hover:border-orange-500/40 text-bone-200 hover:text-white text-sm font-medium transition-all duration-150"
                         >
                           <svg
@@ -272,17 +256,24 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
             </div>
           )}
 
-          {/* Quote form */}
           <QuoteForm />
 
-          {/* Back to home */}
           <div className="bg-charcoal-950 py-10 border-t border-charcoal-600">
             <div className="container-max section-padding text-center">
-              <Link href="/" className="text-steel-400 hover:text-bone-200 text-sm transition-colors inline-flex items-center gap-2">
+              <Link
+                href="/"
+                className="text-steel-400 hover:text-bone-200 text-sm transition-colors inline-flex items-center gap-2"
+              >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M9 2L4 7l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M9 2L4 7l5 5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
-                Back to Peninsula Pick Ups
+                Back to {SITE.name}
               </Link>
             </div>
           </div>
@@ -292,25 +283,16 @@ const LocationPage: NextPage<LocationPageProps> = ({ area }) => {
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = SERVICE_AREAS.map((area) => ({
-    params: { location: area.slug },
-  }))
+export const getStaticPaths: GetStaticPaths = async () => ({
+  paths: AREAS.map((area) => ({ params: { city: area.slug } })),
+  fallback: false,
+})
 
-  return { paths, fallback: false }
+export const getStaticProps: GetStaticProps<AreaPageProps> = async ({ params }) => {
+  const slug = params?.city as string
+  const area = getAreaBySlug(slug)
+  if (!area) return { notFound: true }
+  return { props: { area } }
 }
 
-export const getStaticProps: GetStaticProps<LocationPageProps> = async ({ params }) => {
-  const slug = params?.location as string
-  const area = getServiceAreaBySlug(slug)
-
-  if (!area) {
-    return { notFound: true }
-  }
-
-  return {
-    props: { area },
-  }
-}
-
-export default LocationPage
+export default AreaPage

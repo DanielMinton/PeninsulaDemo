@@ -1,18 +1,8 @@
 import Link from 'next/link'
-import { SERVICE_AREAS } from '@/lib/serviceAreas'
-
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-
-const SERVICES = [
-  { label: 'Junk Removal', href: '#services' },
-  { label: 'Construction Debris Removal', href: '#services' },
-  { label: 'Appliance Removal', href: '#services' },
-  { label: 'Storage Cleanouts', href: '#services' },
-  { label: 'Eviction Cleanouts', href: '#services' },
-  { label: 'Commercial Hauling', href: '#services' },
-  { label: 'Residential Cleanouts', href: '#services' },
-]
+import { AREAS } from '@/content/areas'
+import { SERVICES } from '@/content/services'
+import { SITE } from '@/content/site'
+import SocialIcons from './SocialIcons'
 
 function PUPLogo() {
   return (
@@ -35,11 +25,11 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <PUPLogo />
-              <span className="font-bold text-bone-100">Peninsula Pick Ups</span>
+              <span className="font-bold text-bone-100">{SITE.name}</span>
             </div>
             <p className="text-steel-400 text-sm leading-relaxed mb-5">
-              Licensed junk removal and hauling on the San Francisco Peninsula. Family owned and operated by Don and
-              Melissa since 2021.
+              Licensed junk removal and hauling on the San Francisco Peninsula. Family owned and operated by{' '}
+              {SITE.owners[0]} and {SITE.owners[1]} since {SITE.foundedYear}.
             </p>
             <div className="space-y-2 text-sm">
               <p className="text-bone-300 flex items-center gap-2">
@@ -60,9 +50,9 @@ export default function Footer() {
                   />
                   <circle cx="7" cy="5" r="1.5" stroke="currentColor" strokeWidth="1.5" />
                 </svg>
-                San Carlos, CA 94070
+                {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}
               </p>
-              <a href={PHONE_RAW} className="phone-display text-base flex items-center gap-2">
+              <a href={SITE.phone.href} className="phone-display text-base flex items-center gap-2">
                 <svg
                   width="14"
                   height="14"
@@ -79,14 +69,14 @@ export default function Footer() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                {PHONE}
+                {SITE.phone.display}
               </a>
-              <a
-                href="https://thepeninsulapickup.com"
-                className="text-steel-500 hover:text-steel-400 transition-colors text-xs"
-              >
-                thepeninsulapickup.com
-              </a>
+              <Link href="/verify" className="text-verify-400 hover:text-verify-300 transition-colors text-xs inline-flex items-center gap-1.5">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" aria-hidden="true">
+                  <path d="M9.5 2.5L4.25 7.75 1.5 5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                </svg>
+                Verify this business
+              </Link>
             </div>
           </div>
 
@@ -94,10 +84,10 @@ export default function Footer() {
             <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">Services</h3>
             <ul className="space-y-2.5">
               {SERVICES.map((s) => (
-                <li key={s.label}>
-                  <a href={s.href} className="text-steel-400 hover:text-bone-200 text-sm transition-colors">
-                    {s.label}
-                  </a>
+                <li key={s.slug}>
+                  <Link href={`/services/${s.slug}`} className="text-steel-400 hover:text-bone-200 text-sm transition-colors">
+                    {s.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -106,9 +96,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">Service Areas</h3>
             <ul className="space-y-2.5">
-              {SERVICE_AREAS.slice(0, 8).map((area) => (
+              {AREAS.slice(0, 8).map((area) => (
                 <li key={area.slug}>
-                  <Link href={`/${area.slug}`} className="text-steel-400 hover:text-bone-200 text-sm transition-colors">
+                  <Link href={`/areas/${area.slug}`} className="text-steel-400 hover:text-bone-200 text-sm transition-colors">
                     {area.city}, CA
                   </Link>
                 </li>
@@ -125,8 +115,8 @@ export default function Footer() {
               <a href="#quote" className="btn-primary text-sm justify-center py-3">
                 Request Pickup
               </a>
-              <a href={PHONE_RAW} className="btn-secondary text-sm justify-center py-3">
-                Call {PHONE}
+              <a href={SITE.phone.href} className="btn-secondary text-sm justify-center py-3">
+                Call {SITE.phone.display}
               </a>
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -137,39 +127,20 @@ export default function Footer() {
 
             <div className="mt-6">
               <p className="text-steel-500 text-xs uppercase tracking-widest font-semibold mb-3">Find Us Online</p>
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://www.instagram.com/peninsulapickups/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-charcoal-700 border border-charcoal-600 hover:border-orange-500/40 flex items-center justify-center text-steel-400 hover:text-bone-200 transition-all"
-                  aria-label="Peninsula Pick Ups on Instagram"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.yelp.com/biz/peninsula-pick-ups-san-carlos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg bg-charcoal-700 border border-charcoal-600 hover:border-orange-500/40 flex items-center justify-center hover:opacity-80 transition-all"
-                  aria-label="Peninsula Pick Ups on Yelp"
-                >
-                  <span className="font-black leading-none" style={{ color: '#d32323', fontSize: '11px' }}>yelp</span>
-                </a>
-              </div>
+              <SocialIcons />
             </div>
           </div>
         </div>
 
         <div className="divider mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-steel-500 text-xs text-center sm:text-left">
-            &copy; {year} Peninsula Pick Ups. San Carlos, CA 94070. All rights reserved.
+            &copy; {year} {SITE.name}. {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}. All rights
+            reserved.
           </p>
           <div className="flex gap-5 text-xs">
+            <Link href="/verify" className="text-steel-500 hover:text-steel-400 transition-colors">
+              Verify
+            </Link>
             <Link href="/privacy" className="text-steel-500 hover:text-steel-400 transition-colors">
               Privacy Policy
             </Link>
