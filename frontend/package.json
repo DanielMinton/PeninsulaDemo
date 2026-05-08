@@ -8,12 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit",
-    "postbuild": "next-sitemap"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@react-three/drei": "9.105.6",
-    "@react-three/fiber": "8.16.8",
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.38.0",
     "axios": "1.6.8",
@@ -22,19 +19,16 @@
     "libphonenumber-js": "^1.12.43",
     "next": "14.2.3",
     "next-seo": "6.5.0",
-    "next-sitemap": "4.2.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-hook-form": "7.51.3",
     "react-intersection-observer": "9.10.2",
-    "three": "0.164.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "20.12.7",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
-    "@types/three": "0.164.0",
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",

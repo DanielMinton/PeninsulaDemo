@@ -1,19 +1,55 @@
 import { ImageResponse } from 'next/og'
 import type { NextRequest } from 'next/server'
+import { AREAS } from '@/content/areas'
+import { SERVICES } from '@/content/services'
+import { SITE } from '@/content/site'
 
 export const config = { runtime: 'edge' }
 
-const SITE = 'thepeninsulapickup.com'
-const PHONE = '(650) 201-1543'
+const SITE_HOST = SITE.url.replace(/^https?:\/\//, '')
+const PHONE = SITE.phone.display
+
+const CITY_SLUGS: ReadonlySet<string> = new Set(AREAS.map((a) => a.slug))
+const SERVICE_SLUGS: ReadonlySet<string> = new Set(SERVICES.map((s) => s.slug))
+
+function notFound() {
+  return new Response('Not Found', { status: 404, headers: { 'content-type': 'text/plain' } })
+}
+
+interface CardCopy {
+  headline: string[]
+  sub: string
+}
+
+function copyFor(citySlug: string | null, serviceSlug: string | null): CardCopy {
+  if (citySlug) {
+    const area = AREAS.find((a) => a.slug === citySlug)
+    if (!area) return { headline: ['The Pickup', 'You Can Count On.'], sub: 'Junk removal, hauling & cleanouts' }
+    return {
+      headline: [`Junk Removal in`, `${area.city}, CA`],
+      sub: `Serving ${area.city} and the entire SF Peninsula`,
+    }
+  }
+  if (serviceSlug) {
+    const svc = SERVICES.find((s) => s.slug === serviceSlug)
+    if (!svc) return { headline: ['The Pickup', 'You Can Count On.'], sub: 'Junk removal, hauling & cleanouts' }
+    return {
+      headline: [svc.name, `On the SF Peninsula`],
+      sub: svc.blurb.length > 70 ? svc.blurb.slice(0, 70).trim() + '…' : svc.blurb,
+    }
+  }
+  return { headline: ['The Pickup', 'You Can Count On.'], sub: `Junk removal, hauling & cleanouts — ${SITE.address.city}, ${SITE.address.region}` }
+}
 
 export default function handler(req: NextRequest) {
   const { searchParams } = new URL(req.url)
   const city = searchParams.get('city')
+  const serviceParam = searchParams.get('service')
 
-  const headline = city ? `Junk Removal in\n${city}, CA` : `The Pickup\nYou Can Count On.`
-  const sub = city
-    ? `Serving ${city} and the entire SF Peninsula`
-    : 'Junk removal, hauling & cleanouts — San Carlos, CA'
+  if (city && !CITY_SLUGS.has(city)) return notFound()
+  if (serviceParam && !SERVICE_SLUGS.has(serviceParam)) return notFound()
+
+  const { headline, sub } = copyFor(city, serviceParam)
 
   return new ImageResponse(
     (
@@ -30,7 +66,6 @@ export default function handler(req: NextRequest) {
           fontFamily: 'sans-serif',
         }}
       >
-        {/* Orange glow — top left */}
         <div
           style={{
             position: 'absolute',
@@ -39,12 +74,10 @@ export default function handler(req: NextRequest) {
             width: '560px',
             height: '380px',
             borderRadius: '50%',
-            background:
-              'radial-gradient(ellipse at center, rgba(232,93,26,0.22) 0%, transparent 68%)',
+            background: 'radial-gradient(ellipse at center, rgba(232,93,26,0.22) 0%, transparent 68%)',
             display: 'flex',
           }}
         />
-        {/* Subtle glow — bottom right */}
         <div
           style={{
             position: 'absolute',
@@ -53,13 +86,11 @@ export default function handler(req: NextRequest) {
             width: '400px',
             height: '300px',
             borderRadius: '50%',
-            background:
-              'radial-gradient(ellipse at center, rgba(232,93,26,0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, rgba(232,93,26,0.07) 0%, transparent 70%)',
             display: 'flex',
           }}
         />
 
-        {/* Header: logo mark + name */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '44px' }}>
           <div
             style={{
@@ -72,41 +103,20 @@ export default function handler(req: NextRequest) {
               justifyContent: 'center',
             }}
           >
-            {/* Truck / "P" icon placeholder — Satori-safe SVG */}
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 16 16"
-              fill="none"
-            >
-              <path
-                d="M3 12L8 4L13 12"
-                stroke="white"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M5.5 12H10.5"
-                stroke="white"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-              />
+            <svg width="22" height="22" viewBox="0 0 16 16" fill="none">
+              <path d="M3 12L8 4L13 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M5.5 12H10.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
             </svg>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ color: '#faf8f5', fontSize: '19px', fontWeight: 700 }}>
-              Peninsula Pick Ups
-            </span>
+            <span style={{ color: '#faf8f5', fontSize: '19px', fontWeight: 700 }}>{SITE.name}</span>
             <span style={{ color: '#6b7585', fontSize: '13px', marginTop: '1px' }}>
-              San Carlos, CA · Est. 2021
+              {SITE.address.city}, {SITE.address.region} · Est. {SITE.foundedYear}
             </span>
           </div>
         </div>
 
-        {/* Main content area */}
         <div style={{ display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'center' }}>
-          {/* Verified badge */}
           <div style={{ display: 'flex', marginBottom: '22px' }}>
             <div
               style={{
@@ -120,13 +130,7 @@ export default function handler(req: NextRequest) {
               }}
             >
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M10.5 3L4.5 9 1.5 6"
-                  stroke="#22c57e"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
+                <path d="M10.5 3L4.5 9 1.5 6" stroke="#22c57e" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span style={{ color: '#22c57e', fontSize: '13px', fontWeight: 600 }}>
                 Licensed &amp; Insured · Family Owned
@@ -134,19 +138,12 @@ export default function handler(req: NextRequest) {
             </div>
           </div>
 
-          {/* Headline */}
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              marginBottom: '18px',
-            }}
-          >
-            {headline.split('\n').map((line, i) => (
+          <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '18px' }}>
+            {headline.map((line, i) => (
               <span
                 key={i}
                 style={{
-                  fontSize: city ? '76px' : '80px',
+                  fontSize: city || serviceParam ? '76px' : '80px',
                   fontWeight: 900,
                   lineHeight: 1.02,
                   letterSpacing: '-2.5px',
@@ -159,13 +156,9 @@ export default function handler(req: NextRequest) {
             ))}
           </div>
 
-          {/* Subline */}
-          <span style={{ color: '#8a96a8', fontSize: '22px', fontWeight: 400, display: 'flex' }}>
-            {sub}
-          </span>
+          <span style={{ color: '#8a96a8', fontSize: '22px', fontWeight: 400, display: 'flex' }}>{sub}</span>
         </div>
 
-        {/* Bottom strip */}
         <div
           style={{
             display: 'flex',
@@ -197,10 +190,14 @@ export default function handler(req: NextRequest) {
             ))}
           </div>
 
-          <span style={{ color: '#3a3a3a', fontSize: '15px', display: 'flex' }}>{SITE}</span>
+          <span style={{ color: '#3a3a3a', fontSize: '15px', display: 'flex' }}>{SITE_HOST}</span>
         </div>
       </div>
     ),
-    { width: 1200, height: 630 }
+    {
+      width: 1200,
+      height: 630,
+      headers: { 'cache-control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800' },
+    },
   )
 }
