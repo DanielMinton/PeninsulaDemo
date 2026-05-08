@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo'
 import Layout from '@/components/shared/Layout'
 import HeroSection from '@/components/shared/HeroSection'
@@ -10,6 +11,10 @@ import GallerySection from '@/components/shared/GallerySection'
 import ServiceAreasSection from '@/components/shared/ServiceAreasSection'
 import TestimonialsSection from '@/components/shared/TestimonialsSection'
 import FaqSection from '@/components/shared/FaqSection'
+
+// SSR-rendered so the SVG ships in static HTML for SEO + zero CLS;
+// JS hydrates after LCP for the hover/focus interactions.
+const PeninsulaMap = dynamic(() => import('@/components/map/PeninsulaMap'), { ssr: true })
 import { SITE } from '@/content/site'
 import { HOMEPAGE_FAQS } from '@/content/faqs'
 import { graph, organization, localBusiness, faqPage } from '@/lib/schema'
@@ -34,6 +39,7 @@ const Home: NextPage = () => {
       <Layout>
         <HeroSection />
         <VerifyStrip />
+        <PeninsulaMap />
         <ServicesGrid />
         <TrustSection />
         <QuoteSelector />
