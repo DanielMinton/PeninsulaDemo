@@ -13,9 +13,9 @@ PASS=0
 FAIL=0
 
 # Shipping locales — translation files committed.
-SHIPPING=(en es-MX zh-Hans vi ko ja ru fil pt-BR)
+SHIPPING=(en es-MX zh-Hans vi ko ja ru fil pt-BR id nl de he tlh)
 # Pending locales — corpus authored, awaiting `npm run translate`.
-PENDING=(id nl de he tlh)
+PENDING=()
 # Stub locales — corpus not authored.
 STUBS=(ur)
 
@@ -35,13 +35,15 @@ for loc in "${SHIPPING[@]}"; do
   fi
 done
 
-echo
-echo "=== Pending locales (corpus authored, awaiting translate run) ==="
-for loc in "${PENDING[@]}"; do
-  url="${HOST}/${loc}"
-  h1=$(curl -s -L "$url" | grep -oE '<h1[^>]*>[^<]+' | head -1 | sed -E 's/<h1[^>]*>//')
-  printf "  %-10s ⏳ english fallback: '%s'\n" "$loc" "$h1"
-done
+if (( ${#PENDING[@]} > 0 )); then
+  echo
+  echo "=== Pending locales (corpus authored, awaiting translate run) ==="
+  for loc in "${PENDING[@]}"; do
+    url="${HOST}/${loc}"
+    h1=$(curl -s -L "$url" | grep -oE '<h1[^>]*>[^<]+' | head -1 | sed -E 's/<h1[^>]*>//')
+    printf "  %-10s ⏳ english fallback: '%s'\n" "$loc" "$h1"
+  done
+fi
 
 echo
 echo "=== Stub locales (corpus not authored, English fallback expected) ==="
