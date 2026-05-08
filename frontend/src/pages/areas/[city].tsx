@@ -4,78 +4,48 @@ import Link from 'next/link'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
 import QuoteForm from '@/components/shared/QuoteForm'
+import FaqSection from '@/components/shared/FaqSection'
+import ShareCity from '@/components/shared/ShareCity'
 import { AREAS, getAreaBySlug, type Area } from '@/content/areas'
 import { serviceName } from '@/content/services'
-import { SITE, absoluteUrl } from '@/content/site'
+import { SITE } from '@/content/site'
+import { graph, localBusiness, service as serviceNode, breadcrumbs, faqPage } from '@/lib/schema'
+import { pageSeo } from '@/lib/seo'
 
 interface AreaPageProps {
   area: Area
 }
 
-function buildSchema(area: Area) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: `Junk Removal in ${area.city}, CA`,
-    description: area.summary,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: SITE.name,
-      telephone: SITE.phone.e164,
-      url: SITE.url,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: SITE.address.city,
-        addressRegion: SITE.address.region,
-        postalCode: SITE.address.postalCode,
-        addressCountry: SITE.address.country,
-      },
-    },
-    areaServed: {
-      '@type': 'City',
-      name: area.city,
-    },
-    url: absoluteUrl(`/areas/${area.slug}`),
-  }
-}
-
 const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
-  const schema = buildSchema(area)
+  const path = `/areas/${area.slug}`
+  const schema = graph(
+    localBusiness(),
+    serviceNode('junk-removal', area),
+    breadcrumbs([
+      { name: SITE.name, url: '/' },
+      { name: 'Service Areas', url: '/#service-areas' },
+      { name: `${area.city}, CA`, url: path },
+    ]),
+    ...(area.faqs && area.faqs.length > 0 ? [faqPage(area.faqs)] : []),
+  )
 
   return (
     <>
       <NextSeo
-        title={area.seoTitle}
-        description={area.seoDescription}
-        canonical={absoluteUrl(`/areas/${area.slug}`)}
-        openGraph={{
+        {...pageSeo({
           title: area.seoTitle,
           description: area.seoDescription,
-          url: absoluteUrl(`/areas/${area.slug}`),
-          type: 'website',
-          images: [
-            {
-              url: absoluteUrl(`/api/og?city=${encodeURIComponent(area.slug)}`),
-              width: 1200,
-              height: 630,
-              alt: `Junk Removal in ${area.city}, CA — ${SITE.name}`,
-            },
-          ],
-        }}
-        twitter={{
-          cardType: 'summary_large_image',
-          site: '@peninsulapickups',
-        }}
+          path,
+          ogImagePath: `/api/og?city=${encodeURIComponent(area.slug)}`,
+          ogImageAlt: `Junk Removal in ${area.city}, CA — ${SITE.name}`,
+        })}
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <Layout>
         <div className="min-h-screen bg-charcoal-900">
-          <div
-            className="relative pt-28 pb-20 bg-grid-subtle overflow-hidden"
-            style={{ backgroundColor: '#0f0f0f' }}
-          >
+          <div className="relative pt-28 pb-20 bg-grid-subtle overflow-hidden" style={{ backgroundColor: '#0f0f0f' }}>
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
@@ -127,20 +97,26 @@ const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
                   </span>
                 </h1>
 
-                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed mb-8">
-                  {area.summary}
-                </p>
+                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed mb-8">{area.summary}</p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-10">
+                <div className="flex flex-col sm:flex-row gap-4 mb-6">
                   <a href="#quote" className="btn-primary text-lg px-7 py-4">
                     Request Pickup in {area.city}
                   </a>
                   <a href={SITE.phone.href} className="btn-secondary text-lg px-7 py-4">
                     Call {SITE.phone.display}
                   </a>
+                  <a
+                    href={`${SITE.phone.smsHref}?body=${encodeURIComponent(`Hi Peninsula Pick Ups — I need a pickup in ${area.city}, CA.`)}`}
+                    className="btn-secondary text-lg px-7 py-4"
+                  >
+                    Text Us
+                  </a>
                 </div>
 
-                <div className="flex flex-wrap gap-3">
+                <ShareCity city={area.city} slug={area.slug} />
+
+                <div className="mt-8 flex flex-wrap gap-3">
                   {area.services.map((slug) => (
                     <span key={slug} className="badge-orange text-xs font-medium">
                       {serviceName(slug)}
@@ -254,6 +230,14 @@ const AreaPage: NextPage<AreaPageProps> = ({ area }) => {
                 </FadeIn>
               </div>
             </div>
+          )}
+
+          {area.faqs && area.faqs.length > 0 && (
+            <FaqSection
+              faqs={area.faqs}
+              heading={`${area.city} FAQ`}
+              intro={`Common questions about junk removal and hauling in ${area.city}, CA.`}
+            />
           )}
 
           <QuoteForm />
