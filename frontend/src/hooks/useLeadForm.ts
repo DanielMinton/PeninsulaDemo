@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import { SITE } from '@/content/site'
 
 export interface LeadFormData {
   name: string
@@ -13,6 +13,10 @@ export interface LeadFormData {
   message: string
   source_page: string
   consent: boolean
+  /** Honeypot. Bots will fill this in; real users won't see it. */
+  company: string
+  /** Cloudflare Turnstile token, set by TurnstileWidget. */
+  turnstileToken: string
 }
 
 export type FormStep = 'service' | 'load' | 'location' | 'urgency' | 'contact' | 'success'
@@ -29,15 +33,22 @@ const INITIAL_DATA: LeadFormData = {
   message: '',
   source_page: '',
   consent: false,
+  company: '',
+  turnstileToken: '',
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+interface ApiError {
+  ok: false
+  error: string
+  fields?: Record<string, string[]>
+}
 
 export function useLeadForm() {
   const [formData, setFormData] = useState<LeadFormData>(INITIAL_DATA)
   const [step, setStep] = useState<FormStep>('service')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string[]>>({})
   const [submitted, setSubmitted] = useState(false)
 
   function updateField<K extends keyof LeadFormData>(field: K, value: LeadFormData[K]) {
@@ -48,12 +59,14 @@ export function useLeadForm() {
     setFormData(INITIAL_DATA)
     setStep('service')
     setError(null)
+    setFieldErrors({})
     setSubmitted(false)
   }
 
   async function submitLead(overrides?: Partial<LeadFormData>) {
     setIsSubmitting(true)
     setError(null)
+    setFieldErrors({})
 
     const payload = {
       ...formData,
@@ -62,25 +75,36 @@ export function useLeadForm() {
     }
 
     try {
-      await axios.post(`${API_URL}/api/leads/`, payload)
-      setSubmitted(true)
-      setStep('success')
-    } catch (err: unknown) {
-      if (axios.isAxiosError(err) && err.response?.data) {
-        const data = err.response.data as Record<string, unknown>
-        const firstError = Object.values(data)[0]
-        setError(
-          Array.isArray(firstError)
-            ? (firstError[0] as string)
-            : 'Something went wrong. Please try again or call (650) 201-1543.'
-        )
-      } else {
-        setError('Unable to submit. Please call us directly at (650) 201-1543.')
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+        setStep('success')
+        return
       }
+      const data = (await res.json().catch(() => null)) as ApiError | null
+      if (data?.fields) setFieldErrors(data.fields)
+      setError(data?.error ?? `Something went wrong. Call us at ${SITE.phone.display}.`)
+    } catch {
+      setError(`Unable to submit. Please call us directly at ${SITE.phone.display}.`)
     } finally {
       setIsSubmitting(false)
     }
   }
 
-  return { formData, step, setStep, isSubmitting, error, submitted, updateField, submitLead, resetForm }
+  return {
+    formData,
+    step,
+    setStep,
+    isSubmitting,
+    error,
+    fieldErrors,
+    submitted,
+    updateField,
+    submitLead,
+    resetForm,
+  }
 }

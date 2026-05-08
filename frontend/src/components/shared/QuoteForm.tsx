@@ -1,12 +1,11 @@
 'use client'
 import { useState, type FormEvent } from 'react'
-import axios from 'axios'
+import Link from 'next/link'
 import FadeIn from '@/components/motion/FadeIn'
+import TurnstileWidget from '@/components/shared/TurnstileWidget'
 import { AREAS } from '@/content/areas'
 import { SERVICES } from '@/content/services'
 import { SITE } from '@/content/site'
-
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
 interface FormState {
   name: string
@@ -17,6 +16,9 @@ interface FormState {
   preferred_date: string
   message: string
   consent: boolean
+  /** Honeypot — must remain empty. */
+  company: string
+  turnstileToken: string
 }
 
 const EMPTY: FormState = {
@@ -28,46 +30,70 @@ const EMPTY: FormState = {
   preferred_date: '',
   message: '',
   consent: false,
+  company: '',
+  turnstileToken: '',
 }
+
+interface ApiError {
+  ok: false
+  error: string
+  fields?: Record<string, string[]>
+}
+
+const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
 export default function QuoteForm() {
   const [form, setForm] = useState<FormState>(EMPTY)
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string[]>>({})
 
-  function update(field: keyof FormState, value: string | boolean) {
+  function update<K extends keyof FormState>(field: K, value: FormState[K]) {
     setForm((prev) => ({ ...prev, [field]: value }))
+  }
+
+  function fieldError(name: string): string | undefined {
+    return fieldErrors[name]?.[0]
   }
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault()
     setSubmitting(true)
     setError(null)
+    setFieldErrors({})
 
     try {
-      await axios.post(`${API_URL}/api/leads/`, {
-        ...form,
-        source_page: typeof window !== 'undefined' ? window.location.href : '',
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...form,
+          source_page: typeof window !== 'undefined' ? window.location.href : '',
+        }),
       })
-      setSubmitted(true)
-      setForm(EMPTY)
-    } catch (err: unknown) {
-      if (axios.isAxiosError(err) && err.response?.data) {
-        const data = err.response.data as Record<string, unknown>
-        const first = Object.values(data)[0]
-        setError(
-          Array.isArray(first)
-            ? (first[0] as string)
-            : `Something went wrong. Call us at ${SITE.phone.display}.`,
-        )
-      } else {
-        setError(`Unable to submit. Please call us directly at ${SITE.phone.display}.`)
+      if (res.ok) {
+        setSubmitted(true)
+        setForm(EMPTY)
+        return
       }
+      const data = (await res.json().catch(() => null)) as ApiError | null
+      if (data?.fields) setFieldErrors(data.fields)
+      setError(data?.error ?? `Something went wrong. Call us at ${SITE.phone.display}.`)
+    } catch {
+      setError(`Unable to submit. Please call us directly at ${SITE.phone.display}.`)
     } finally {
       setSubmitting(false)
     }
   }
+
+  const submitDisabled =
+    submitting ||
+    !form.name ||
+    !form.phone ||
+    !form.service_location ||
+    !form.consent ||
+    (turnstileRequired && !form.turnstileToken)
 
   return (
     <section id="quote" className="bg-charcoal-900 py-24" aria-labelledby="quote-form-heading">
@@ -82,6 +108,10 @@ export default function QuoteForm() {
               <p className="section-subtitle mt-4">
                 Fill out the form and {SITE.name} will follow up directly. For faster response, call us at{' '}
                 <a href={SITE.phone.href} className="text-orange-400 font-semibold">
+                  {SITE.phone.display}
+                </a>{' '}
+                or text{' '}
+                <a href={SITE.phone.smsHref} className="text-orange-400 font-semibold">
                   {SITE.phone.display}
                 </a>
                 .
@@ -133,7 +163,7 @@ export default function QuoteForm() {
 
           <FadeIn direction="left" delay={0.1}>
             {submitted ? (
-              <div className="card-base p-8 text-center">
+              <div className="card-base p-8 text-center" role="status" aria-live="polite">
                 <div className="w-16 h-16 bg-verify-500/15 border border-verify-500/30 rounded-full flex items-center justify-center text-verify-400 mx-auto mb-6">
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                     <path
@@ -170,11 +200,19 @@ export default function QuoteForm() {
                         type="text"
                         autoComplete="name"
                         required
-                        className="input-base"
+                        maxLength={120}
+                        className={`input-base ${fieldError('name') ? 'border-red-500' : ''}`}
                         placeholder="Your full name"
+                        aria-invalid={!!fieldError('name')}
+                        aria-describedby={fieldError('name') ? 'qf-name-error' : undefined}
                         value={form.name}
                         onChange={(e) => update('name', e.target.value)}
                       />
+                      {fieldError('name') && (
+                        <p id="qf-name-error" className="text-red-400 text-xs mt-1">
+                          {fieldError('name')}
+                        </p>
+                      )}
                     </div>
                     <div>
                       <label htmlFor="qf-phone" className="block text-sm font-medium text-bone-300 mb-1.5">
@@ -185,11 +223,18 @@ export default function QuoteForm() {
                         type="tel"
                         autoComplete="tel"
                         required
-                        className="input-base"
+                        className={`input-base ${fieldError('phone') ? 'border-red-500' : ''}`}
                         placeholder="(650) 555-0100"
+                        aria-invalid={!!fieldError('phone')}
+                        aria-describedby={fieldError('phone') ? 'qf-phone-error' : undefined}
                         value={form.phone}
                         onChange={(e) => update('phone', e.target.value)}
                       />
+                      {fieldError('phone') && (
+                        <p id="qf-phone-error" className="text-red-400 text-xs mt-1">
+                          {fieldError('phone')}
+                        </p>
+                      )}
                     </div>
                   </div>
 
@@ -201,11 +246,13 @@ export default function QuoteForm() {
                       id="qf-email"
                       type="email"
                       autoComplete="email"
-                      className="input-base"
+                      maxLength={254}
+                      className={`input-base ${fieldError('email') ? 'border-red-500' : ''}`}
                       placeholder="you@example.com"
                       value={form.email}
                       onChange={(e) => update('email', e.target.value)}
                     />
+                    {fieldError('email') && <p className="text-red-400 text-xs mt-1">{fieldError('email')}</p>}
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -233,7 +280,7 @@ export default function QuoteForm() {
                       </label>
                       <select
                         id="qf-location"
-                        className="input-base"
+                        className={`input-base ${fieldError('service_location') ? 'border-red-500' : ''}`}
                         required
                         value={form.service_location}
                         onChange={(e) => update('service_location', e.target.value)}
@@ -269,10 +316,25 @@ export default function QuoteForm() {
                     <textarea
                       id="qf-message"
                       rows={4}
-                      className="input-base resize-none"
+                      maxLength={2000}
+                      className={`input-base resize-none ${fieldError('message') ? 'border-red-500' : ''}`}
                       placeholder="Describe what needs to be removed, any access notes, or specific questions..."
                       value={form.message}
                       onChange={(e) => update('message', e.target.value)}
+                    />
+                    {fieldError('message') && <p className="text-red-400 text-xs mt-1">{fieldError('message')}</p>}
+                  </div>
+
+                  {/* Honeypot — visually hidden, off-tab. */}
+                  <div aria-hidden="true" className="absolute -left-[10000px]" tabIndex={-1}>
+                    <label htmlFor="qf-company">Company (do not fill)</label>
+                    <input
+                      id="qf-company"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={form.company}
+                      onChange={(e) => update('company', e.target.value)}
                     />
                   </div>
 
@@ -286,10 +348,17 @@ export default function QuoteForm() {
                       onChange={(e) => update('consent', e.target.checked)}
                     />
                     <label htmlFor="qf-consent" className="text-xs text-steel-400 cursor-pointer leading-relaxed">
-                      I agree to be contacted by {SITE.name} regarding my quote request. Business line:{' '}
-                      {SITE.phone.display}. This form does not share your information with third parties.
+                      I agree to be contacted by {SITE.name} at the phone number and email above regarding my quote
+                      request, including by SMS and call. Consent is not a condition of service. Message and data rates
+                      may apply. Reply STOP to opt out at any time. See our{' '}
+                      <Link href="/privacy" className="text-orange-400 hover:text-orange-300 underline">
+                        Privacy Policy
+                      </Link>
+                      .
                     </label>
                   </div>
+
+                  <TurnstileWidget onToken={(t) => update('turnstileToken', t ?? '')} />
 
                   {error && (
                     <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20" role="alert" aria-live="polite">
@@ -299,7 +368,7 @@ export default function QuoteForm() {
 
                   <button
                     type="submit"
-                    disabled={submitting || !form.name || !form.phone || !form.service_location || !form.consent}
+                    disabled={submitDisabled}
                     className="btn-primary w-full justify-center py-4 text-base disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {submitting ? (

@@ -1,14 +1,18 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLeadForm, type FormStep } from '@/hooks/useLeadForm'
 import { AREAS } from '@/content/areas'
 import { SERVICES as CONTENT_SERVICES } from '@/content/services'
 import { SITE } from '@/content/site'
 import FadeIn from '@/components/motion/FadeIn'
+import TurnstileWidget from '@/components/shared/TurnstileWidget'
 
 const PHONE = SITE.phone.display
 const PHONE_RAW = SITE.phone.href
+
+const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
 const SERVICES = [
   ...CONTENT_SERVICES.map((s) => ({ value: s.formValue, label: s.shortName })),
@@ -412,6 +416,19 @@ export default function QuoteSelector() {
                               onChange={(e) => updateField('email', e.target.value)}
                             />
                           </div>
+                          {/* Honeypot — visually hidden, off-tab. */}
+                          <div aria-hidden="true" className="absolute -left-[10000px]" tabIndex={-1}>
+                            <label htmlFor="qs-company">Company (do not fill)</label>
+                            <input
+                              id="qs-company"
+                              type="text"
+                              tabIndex={-1}
+                              autoComplete="off"
+                              value={formData.company}
+                              onChange={(e) => updateField('company', e.target.value)}
+                            />
+                          </div>
+
                           <div className="flex items-start gap-3 p-3 rounded-lg bg-charcoal-700/50 border border-charcoal-600">
                             <input
                               id="qs-consent"
@@ -422,15 +439,27 @@ export default function QuoteSelector() {
                               required
                             />
                             <label htmlFor="qs-consent" className="text-xs text-steel-400 cursor-pointer leading-relaxed">
-                              I agree to be contacted by Peninsula Pick Ups about my quote request. Phone: {PHONE}.
+                              I agree to be contacted by {SITE.name} at the phone number above regarding my quote
+                              request, including by SMS and call. Consent is not a condition of service. Message and
+                              data rates may apply. Reply STOP to opt out. See our{' '}
+                              <Link href="/privacy" className="text-orange-400 hover:text-orange-300 underline">
+                                Privacy Policy
+                              </Link>
+                              .
                             </label>
                           </div>
+
+                          <TurnstileWidget onToken={(t) => updateField('turnstileToken', t ?? '')} />
                         </div>
 
                         {error && (
-                          <p className="text-red-400 text-sm mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/20">
+                          <div
+                            className="text-red-400 text-sm mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/20"
+                            role="alert"
+                            aria-live="polite"
+                          >
                             {error}
-                          </p>
+                          </div>
                         )}
 
                         <div className="flex gap-3">
@@ -443,7 +472,11 @@ export default function QuoteSelector() {
                           </button>
                           <button
                             type="submit"
-                            disabled={isSubmitting || !formData.consent}
+                            disabled={
+                              isSubmitting ||
+                              !formData.consent ||
+                              (turnstileRequired && !formData.turnstileToken)
+                            }
                             className="btn-primary flex-1 justify-center py-3 disabled:opacity-50 disabled:cursor-not-allowed"
                           >
                             {isSubmitting ? 'Sending...' : 'Request My Quote'}
