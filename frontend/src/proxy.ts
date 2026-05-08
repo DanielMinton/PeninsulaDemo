@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 import { match as matchLocale } from '@formatjs/intl-localematcher'
 
 /**
- * Composed middleware: locale detection + security headers.
+ * Composed proxy: locale detection + security headers.
  *
  * Locale detection precedence (per the i18n spec):
  *   1. Explicit URL prefix (highest).
@@ -121,7 +121,7 @@ function applySecurityHeaders(req: NextRequest, response: NextResponse): NextRes
   return response
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl
 
   // Skip _next, public files, and API routes — locale logic is for page paths.

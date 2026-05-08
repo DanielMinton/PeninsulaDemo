@@ -40,7 +40,6 @@ export default function App({ Component, pageProps }: AppProps<PageLocaleProps>)
           const entries = performance.getEntriesByName('pup.locale.switch', 'measure')
           const last = entries[entries.length - 1]
           if (last && process.env.NODE_ENV !== 'production') {
-            // eslint-disable-next-line no-console
             console.log(`[i18n] locale switch: ${last.duration.toFixed(1)}ms`)
           }
         } catch {
