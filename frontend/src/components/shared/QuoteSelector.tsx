@@ -37,8 +37,17 @@ const STEP_LABELS = ['Service', 'Load Size', 'Location', 'Urgency', 'Contact']
 
 function StepBar({ current }: { current: FormStep }) {
   const idx = STEPS.indexOf(current)
+  const total = STEPS.length
+  const stepNumber = Math.max(1, idx + 1)
   return (
-    <div className="flex items-center gap-1 mb-8" aria-label="Form progress">
+    <div
+      className="flex items-center gap-1 mb-8"
+      role="progressbar"
+      aria-label={`Quote form progress: step ${stepNumber} of ${total}, ${STEP_LABELS[idx] ?? 'done'}`}
+      aria-valuemin={1}
+      aria-valuemax={total}
+      aria-valuenow={stepNumber}
+    >
       {STEPS.map((step, i) => (
         <div key={step} className="flex items-center gap-1">
           <div
