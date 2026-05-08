@@ -2,40 +2,40 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { useLeadForm, type FormStep } from '@/hooks/useLeadForm'
 import { AREAS } from '@/content/areas'
 import { SERVICES as CONTENT_SERVICES } from '@/content/services'
+import { getServiceShortName } from '@/content/copy'
 import { SITE } from '@/content/site'
 import FadeIn from '@/components/motion/FadeIn'
 import TurnstileWidget from '@/components/shared/TurnstileWidget'
 
-const PHONE = SITE.phone.display
-const PHONE_RAW = SITE.phone.href
-
 const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
-const SERVICES = [
-  ...CONTENT_SERVICES.map((s) => ({ value: s.formValue, label: s.shortName })),
-  { value: 'other', label: 'Not Sure / Other' },
-]
-
-const LOAD_SIZES = [
-  { value: 'single_item', label: 'Single Item', sub: '1 large piece' },
-  { value: 'quarter_truck', label: 'Small Load', sub: '1/4 truck or less' },
-  { value: 'half_truck', label: 'Medium Load', sub: '1/2 truck' },
-  { value: 'full_truck', label: 'Full Load', sub: 'Full truck or more' },
-]
-
-const URGENCY_OPTIONS = [
-  { value: 'asap', label: 'ASAP', sub: 'Within 1-2 days' },
-  { value: 'this_week', label: 'This Week', sub: 'Within 7 days' },
-  { value: 'flexible', label: 'Flexible', sub: 'When available' },
-]
-
 const STEPS: FormStep[] = ['service', 'load', 'location', 'urgency', 'contact']
-const STEP_LABELS = ['Service', 'Load Size', 'Location', 'Urgency', 'Contact']
 
-function StepBar({ current }: { current: FormStep }) {
+const LOAD_SIZE_KEYS = [
+  ['single_item', 'quoteSelector.loadSingle', 'quoteSelector.loadSingleSub'],
+  ['quarter_truck', 'quoteSelector.loadQuarter', 'quoteSelector.loadQuarterSub'],
+  ['half_truck', 'quoteSelector.loadHalf', 'quoteSelector.loadHalfSub'],
+  ['full_truck', 'quoteSelector.loadFull', 'quoteSelector.loadFullSub'],
+] as const
+
+const URGENCY_KEYS = [
+  ['asap', 'quoteSelector.urgencyAsap', 'quoteSelector.urgencyAsapSub'],
+  ['this_week', 'quoteSelector.urgencyThisWeek', 'quoteSelector.urgencyThisWeekSub'],
+  ['flexible', 'quoteSelector.urgencyFlexible', 'quoteSelector.urgencyFlexibleSub'],
+] as const
+
+function StepBar({ current, t }: { current: FormStep; t: ReturnType<typeof useTranslations> }) {
+  const STEP_LABELS = [
+    t('quoteSelector.stepService'),
+    t('quoteSelector.stepLoad'),
+    t('quoteSelector.stepLocation'),
+    t('quoteSelector.stepUrgency'),
+    t('quoteSelector.stepContact'),
+  ]
   const idx = STEPS.indexOf(current)
   const total = STEPS.length
   const stepNumber = Math.max(1, idx + 1)
@@ -43,7 +43,7 @@ function StepBar({ current }: { current: FormStep }) {
     <div
       className="flex items-center gap-1 mb-8"
       role="progressbar"
-      aria-label={`Quote form progress: step ${stepNumber} of ${total}, ${STEP_LABELS[idx] ?? 'done'}`}
+      aria-label={t('quoteSelector.progressAria', { step: stepNumber, total, label: STEP_LABELS[idx] ?? '' })}
       aria-valuemin={1}
       aria-valuemax={total}
       aria-valuenow={stepNumber}
@@ -96,14 +96,14 @@ function OptionCard({
     <button
       type="button"
       onClick={onClick}
-      className={`relative p-4 rounded-xl border text-left transition-all duration-150 ${
+      className={`relative p-4 rounded-xl border text-start transition-all duration-150 ${
         selected
           ? 'border-orange-500 bg-orange-500/10 text-bone-100'
           : 'border-charcoal-600 bg-charcoal-700/50 text-bone-300 hover:border-charcoal-500 hover:bg-charcoal-700'
       }`}
     >
       {selected && (
-        <div className="absolute top-2.5 right-2.5 w-4 h-4 bg-orange-500 rounded-full flex items-center justify-center">
+        <div className="absolute top-2.5 end-2.5 w-4 h-4 bg-orange-500 rounded-full flex items-center justify-center">
           <svg width="8" height="8" viewBox="0 0 8 8" fill="white" aria-hidden="true">
             <path
               fillRule="evenodd"
@@ -120,18 +120,24 @@ function OptionCard({
 }
 
 export default function QuoteSelector() {
+  const t = useTranslations()
   const { formData, step, setStep, isSubmitting, error, submitted, updateField, submitLead } = useLeadForm()
   const [nameError, setNameError] = useState('')
   const [phoneError, setPhoneError] = useState('')
 
+  const SERVICES = [
+    ...CONTENT_SERVICES.map((s) => ({ value: s.formValue, label: getServiceShortName(s.slug, t) })),
+    { value: 'other', label: t('quoteSelector.serviceOther') },
+  ]
+
   function validateContact() {
     let valid = true
     if (formData.name.trim().length < 2) {
-      setNameError('Please enter your name.')
+      setNameError(t('errors.nameTooShort'))
       valid = false
     } else setNameError('')
     if (formData.phone.replace(/\D/g, '').length < 10) {
-      setPhoneError('Please enter a valid phone number.')
+      setPhoneError(t('errors.phoneInvalid'))
       valid = false
     } else setPhoneError('')
     return valid
@@ -149,13 +155,11 @@ export default function QuoteSelector() {
       <div className="container-max section-padding">
         <FadeIn>
           <div className="mb-12">
-            <span className="badge-orange mb-4">Fast Quote Path</span>
+            <span className="badge-orange mb-4">{t('quoteSelector.badge')}</span>
             <h2 id="quote-selector-heading" className="section-title mt-3">
-              Get a Quote in 60 Seconds
+              {t('quoteSelector.heading')}
             </h2>
-            <p className="section-subtitle mt-4 max-w-xl">
-              Pick your service, tell us the load, and drop your contact info. Peninsula Pick Ups will reach out fast.
-            </p>
+            <p className="section-subtitle mt-4 max-w-xl">{t('quoteSelector.sub')}</p>
           </div>
         </FadeIn>
 
@@ -178,23 +182,23 @@ export default function QuoteSelector() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-bone-100 mb-3">Quote Request Received</h3>
+                <h3 className="text-2xl font-bold text-bone-100 mb-3">{t('quoteSelector.successHeading')}</h3>
                 <p className="text-steel-400 mb-6 leading-relaxed">
-                  Peninsula Pick Ups will be in touch shortly. If you need an immediate response, call{' '}
-                  <a href={PHONE_RAW} className="text-orange-400 font-semibold">
-                    {PHONE}
+                  {t('quoteSelector.successSub')}{' '}
+                  <a href={SITE.phone.href} className="text-orange-400 font-semibold" dir="ltr">
+                    {SITE.phone.display}
                   </a>
                   .
                 </p>
                 <div className="flex justify-center gap-3">
-                  <a href={PHONE_RAW} className="btn-primary">
-                    Call Now
+                  <a href={SITE.phone.href} className="btn-primary">
+                    {t('hero.callNowCta')}
                   </a>
                 </div>
               </motion.div>
             ) : (
               <>
-                <StepBar current={step} />
+                <StepBar current={step} t={t} />
 
                 <AnimatePresence mode="wait">
                   {step === 'service' && (
@@ -205,7 +209,7 @@ export default function QuoteSelector() {
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <h3 className="font-bold text-bone-100 text-lg mb-4">What service do you need?</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-4">{t('quoteSelector.askService')}</h3>
                       <div className="grid grid-cols-2 gap-3 mb-6">
                         {SERVICES.map((s) => (
                           <OptionCard
@@ -222,7 +226,7 @@ export default function QuoteSelector() {
                         className="btn-primary w-full justify-center py-3"
                         disabled={!formData.service_requested}
                       >
-                        Continue
+                        {t('quoteSelector.continueCta')}
                       </button>
                     </motion.div>
                   )}
@@ -235,15 +239,15 @@ export default function QuoteSelector() {
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <h3 className="font-bold text-bone-100 text-lg mb-4">How much needs to go?</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-4">{t('quoteSelector.askLoad')}</h3>
                       <div className="grid grid-cols-2 gap-3 mb-6">
-                        {LOAD_SIZES.map((l) => (
+                        {LOAD_SIZE_KEYS.map(([value, labelKey, subKey]) => (
                           <OptionCard
-                            key={l.value}
-                            selected={formData.load_size === l.value}
-                            onClick={() => updateField('load_size', l.value)}
-                            label={l.label}
-                            sub={l.sub}
+                            key={value}
+                            selected={formData.load_size === value}
+                            onClick={() => updateField('load_size', value)}
+                            label={t(labelKey)}
+                            sub={t(subKey)}
                           />
                         ))}
                       </div>
@@ -253,7 +257,7 @@ export default function QuoteSelector() {
                           onClick={() => setStep('service')}
                           className="btn-secondary px-4 py-3"
                         >
-                          Back
+                          {t('quoteSelector.backCta')}
                         </button>
                         <button
                           type="button"
@@ -261,7 +265,7 @@ export default function QuoteSelector() {
                           className="btn-primary flex-1 justify-center py-3"
                           disabled={!formData.load_size}
                         >
-                          Continue
+                          {t('quoteSelector.continueCta')}
                         </button>
                       </div>
                     </motion.div>
@@ -275,10 +279,10 @@ export default function QuoteSelector() {
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <h3 className="font-bold text-bone-100 text-lg mb-4">Where is the pickup located?</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-4">{t('quoteSelector.askLocation')}</h3>
                       <div className="mb-4">
                         <label htmlFor="qs-city" className="block text-sm font-medium text-bone-300 mb-1.5">
-                          City or Address
+                          {t('quoteSelector.cityLabel')}
                         </label>
                         <select
                           id="qs-city"
@@ -286,25 +290,25 @@ export default function QuoteSelector() {
                           value={formData.service_location}
                           onChange={(e) => updateField('service_location', e.target.value)}
                         >
-                          <option value="">Select a city...</option>
+                          <option value="">{t('quoteSelector.cityDefault')}</option>
                           {AREAS.map((area) => (
                             <option key={area.slug} value={area.city}>
                               {area.city}, CA
                             </option>
                           ))}
-                          <option value="Other">Other / Not Listed</option>
+                          <option value="Other">{t('quoteSelector.cityOtherOption')}</option>
                         </select>
                       </div>
                       {formData.service_location === 'Other' && (
                         <div className="mb-4">
                           <label htmlFor="qs-city-other" className="block text-sm font-medium text-bone-300 mb-1.5">
-                            Enter your city or address
+                            {t('quoteSelector.cityOtherLabel')}
                           </label>
                           <input
                             id="qs-city-other"
                             type="text"
                             className="input-base"
-                            placeholder="e.g. Foster City, CA"
+                            placeholder={t('quoteSelector.cityOtherPlaceholder')}
                             onChange={(e) => updateField('service_location', e.target.value)}
                           />
                         </div>
@@ -315,7 +319,7 @@ export default function QuoteSelector() {
                           onClick={() => setStep('load')}
                           className="btn-secondary px-4 py-3"
                         >
-                          Back
+                          {t('quoteSelector.backCta')}
                         </button>
                         <button
                           type="button"
@@ -323,7 +327,7 @@ export default function QuoteSelector() {
                           className="btn-primary flex-1 justify-center py-3"
                           disabled={!formData.service_location || formData.service_location === 'Other / Not Listed'}
                         >
-                          Continue
+                          {t('quoteSelector.continueCta')}
                         </button>
                       </div>
                     </motion.div>
@@ -337,15 +341,15 @@ export default function QuoteSelector() {
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <h3 className="font-bold text-bone-100 text-lg mb-4">How soon do you need it done?</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-4">{t('quoteSelector.askUrgency')}</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-                        {URGENCY_OPTIONS.map((u) => (
+                        {URGENCY_KEYS.map(([value, labelKey, subKey]) => (
                           <OptionCard
-                            key={u.value}
-                            selected={formData.urgency === u.value}
-                            onClick={() => updateField('urgency', u.value)}
-                            label={u.label}
-                            sub={u.sub}
+                            key={value}
+                            selected={formData.urgency === value}
+                            onClick={() => updateField('urgency', value)}
+                            label={t(labelKey)}
+                            sub={t(subKey)}
                           />
                         ))}
                       </div>
@@ -355,14 +359,14 @@ export default function QuoteSelector() {
                           onClick={() => setStep('location')}
                           className="btn-secondary px-4 py-3"
                         >
-                          Back
+                          {t('quoteSelector.backCta')}
                         </button>
                         <button
                           type="button"
                           onClick={() => setStep('contact')}
                           className="btn-primary flex-1 justify-center py-3"
                         >
-                          Continue
+                          {t('quoteSelector.continueCta')}
                         </button>
                       </div>
                     </motion.div>
@@ -376,19 +380,19 @@ export default function QuoteSelector() {
                       exit={{ opacity: 0, x: -20 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <h3 className="font-bold text-bone-100 text-lg mb-4">Where should we send the quote?</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-4">{t('quoteSelector.askContact')}</h3>
                       <form onSubmit={handleSubmit} noValidate>
                         <div className="space-y-4 mb-5">
                           <div>
                             <label htmlFor="qs-name" className="block text-sm font-medium text-bone-300 mb-1.5">
-                              Your Name <span className="text-orange-500">*</span>
+                              {t('quoteSelector.nameLabel')} <span className="text-orange-500">*</span>
                             </label>
                             <input
                               id="qs-name"
                               type="text"
                               autoComplete="name"
                               className={`input-base ${nameError ? 'border-red-500' : ''}`}
-                              placeholder="Full name"
+                              placeholder={t('quoteSelector.namePlaceholder')}
                               value={formData.name}
                               onChange={(e) => updateField('name', e.target.value)}
                               required
@@ -397,36 +401,39 @@ export default function QuoteSelector() {
                           </div>
                           <div>
                             <label htmlFor="qs-phone" className="block text-sm font-medium text-bone-300 mb-1.5">
-                              Phone Number <span className="text-orange-500">*</span>
+                              {t('quoteSelector.phoneLabel')} <span className="text-orange-500">*</span>
                             </label>
                             <input
                               id="qs-phone"
                               type="tel"
                               autoComplete="tel"
                               className={`input-base ${phoneError ? 'border-red-500' : ''}`}
-                              placeholder="(650) 555-0100"
+                              placeholder={t('quoteSelector.phonePlaceholder')}
                               value={formData.phone}
                               onChange={(e) => updateField('phone', e.target.value)}
                               required
+                              dir="ltr"
                             />
                             {phoneError && <p className="text-red-400 text-xs mt-1">{phoneError}</p>}
                           </div>
                           <div>
                             <label htmlFor="qs-email" className="block text-sm font-medium text-bone-300 mb-1.5">
-                              Email <span className="text-steel-500 font-normal">(optional)</span>
+                              {t('quoteSelector.emailLabel')}{' '}
+                              <span className="text-steel-500 font-normal">{t('quoteSelector.emailOptional')}</span>
                             </label>
                             <input
                               id="qs-email"
                               type="email"
                               autoComplete="email"
                               className="input-base"
-                              placeholder="you@example.com"
+                              placeholder={t('quoteSelector.emailPlaceholder')}
                               value={formData.email}
                               onChange={(e) => updateField('email', e.target.value)}
+                              dir="ltr"
                             />
                           </div>
                           {/* Honeypot — visually hidden, off-tab. */}
-                          <div aria-hidden="true" className="absolute -left-[10000px]" tabIndex={-1}>
+                          <div aria-hidden="true" className="absolute -start-[10000px]" tabIndex={-1}>
                             <label htmlFor="qs-company">Company (do not fill)</label>
                             <input
                               id="qs-company"
@@ -448,17 +455,14 @@ export default function QuoteSelector() {
                               required
                             />
                             <label htmlFor="qs-consent" className="text-xs text-steel-400 cursor-pointer leading-relaxed">
-                              I agree to be contacted by {SITE.name} at the phone number above regarding my quote
-                              request, including by SMS and call. Consent is not a condition of service. Message and
-                              data rates may apply. Reply STOP to opt out. See our{' '}
+                              {t('quoteSelector.consentText')}{' '}
                               <Link href="/privacy" className="text-orange-400 hover:text-orange-300 underline">
-                                Privacy Policy
+                                {t('quoteSelector.privacyLink')}
                               </Link>
-                              .
                             </label>
                           </div>
 
-                          <TurnstileWidget onToken={(t) => updateField('turnstileToken', t ?? '')} />
+                          <TurnstileWidget onToken={(tk) => updateField('turnstileToken', tk ?? '')} />
                         </div>
 
                         {error && (
@@ -477,7 +481,7 @@ export default function QuoteSelector() {
                             onClick={() => setStep('urgency')}
                             className="btn-secondary px-4 py-3"
                           >
-                            Back
+                            {t('quoteSelector.backCta')}
                           </button>
                           <button
                             type="submit"
@@ -488,7 +492,7 @@ export default function QuoteSelector() {
                             }
                             className="btn-primary flex-1 justify-center py-3 disabled:opacity-50 disabled:cursor-not-allowed"
                           >
-                            {isSubmitting ? 'Sending...' : 'Request My Quote'}
+                            {isSubmitting ? t('quoteSelector.sendingCta') : t('quoteSelector.requestQuoteCta')}
                           </button>
                         </div>
                       </form>
@@ -500,9 +504,13 @@ export default function QuoteSelector() {
           </div>
 
           <p className="text-center text-steel-500 text-sm mt-4">
-            Prefer to call?{' '}
-            <a href={PHONE_RAW} className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">
-              {PHONE}
+            {t('quoteSelector.preferToCall')}{' '}
+            <a
+              href={SITE.phone.href}
+              className="text-orange-400 hover:text-orange-300 font-semibold transition-colors"
+              dir="ltr"
+            >
+              {SITE.phone.display}
             </a>
           </p>
         </div>

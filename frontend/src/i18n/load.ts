@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { DEFAULT_LOCALE, type Locale } from './locales'
 import enCatalog from '../../messages/en.json'
 
@@ -53,14 +55,25 @@ const EN_FLAT = flatten(enCatalog as unknown as CatalogShape)
  * any code that ships to the client; it requires a sync filesystem read for
  * non-default locales.
  */
+// Resolve messages/ at the project root via process.cwd() (the frontend dir
+// during `next build` and `next dev`). Read with fs so each call sees fresh
+// content — important so a `npm run translate` run lands without a dev server
+// restart.
+const MESSAGES_DIR = path.join(process.cwd(), 'messages')
+
 export function loadMessages(locale: Locale): NestedMessages {
   if (locale === DEFAULT_LOCALE) return nestKeys(EN_FLAT)
 
-  // Guarded require: dev/preview deploys often run before the translate pass
-  // has populated messages/<locale>.json. Falling back to the English source
-  // keeps the build green and the Beta label in the picker covers the gap.
+  const filePath = path.join(MESSAGES_DIR, `${locale}.json`)
+  if (!fs.existsSync(filePath)) {
+    // No translation file yet — fall back to English. The Beta label in the
+    // picker covers the gap.
+    return nestKeys(EN_FLAT)
+  }
+
   try {
-    const tgt = require(`../../messages/${locale}.json`) as CatalogShape
+    const raw = fs.readFileSync(filePath, 'utf-8')
+    const tgt = JSON.parse(raw) as CatalogShape
     return nestKeys({ ...EN_FLAT, ...flatten(tgt) })
   } catch {
     return nestKeys(EN_FLAT)

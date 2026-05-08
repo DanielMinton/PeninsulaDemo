@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { SITE } from '@/content/site'
-import LocalePicker from './LocalePicker'
 
 function PUPLogo() {
   return (
@@ -70,7 +69,6 @@ export default function Nav() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <LocalePicker />
             <a
               href={SITE.phone.href}
               className="font-bold text-orange-500 hover:text-orange-400 transition-colors tabular-nums text-sm"
@@ -84,7 +82,6 @@ export default function Nav() {
           </div>
 
           <div className="flex lg:hidden items-center gap-2">
-            <LocalePicker />
             <a href={SITE.phone.href} className="btn-primary text-sm py-2 px-4">
               {t('nav.callNowCta')}
             </a>

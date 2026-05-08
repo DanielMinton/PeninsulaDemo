@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for vi. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Vietnamese glossary. Locked translations the translator must use verbatim. Diacritics are mandatory.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "Dịch vụ thu gom bạn có thể tin cậy.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Dọn dẹp rác thải",
+    "service_construction_debris": "Dọn xà bần xây dựng",
+    "service_appliance_removal": "Dọn đồ gia dụng",
+    "service_storage_cleanout": "Dọn dẹp kho",
+    "service_eviction_cleanout": "Dọn dẹp sau đuổi nhà",
+    "service_commercial_hauling": "Vận chuyển thương mại",
+    "service_residential_cleanout": "Dọn dẹp nhà ở",
+    "industry_term_hauling": "vận chuyển",
+    "industry_term_cleanout": "dọn dẹp toàn bộ",
+    "industry_term_pickup": "thu gom",
+    "trust_phrase_licensed": "Có giấy phép và bảo hiểm đầy đủ",
+    "trust_phrase_family_owned": "Doanh nghiệp gia đình",
+    "trust_phrase_locally_owned": "Doanh nghiệp địa phương",
+    "trust_phrase_same_day": "Dịch vụ trong ngày",
+    "region_label": "Bán đảo San Francisco",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Xác minh doanh nghiệp này"
+  }
 }

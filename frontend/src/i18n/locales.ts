@@ -8,13 +8,17 @@
  * Decisions baked in:
  * - Filipino and Tagalog ship as a single `fil` entry. They are functionally
  *   the same target — Filipino is the standardized register of Tagalog.
- * - Khmer label reads "Khmer" (language-correct over the demonym "Cambodian").
- * - "Gaelic" defaults to Irish (`ga`). Flip to `gd` (Scottish) here if needed.
  * - Spanish is `es-MX` (Mexican variant — dominant in San Mateo County).
  * - Portuguese is `pt-BR` (Brazilian — dominant Bay Area Portuguese variant).
+ * - Hebrew (`he`) is Modern Israeli Hebrew, not Yiddish.
+ * - Klingon (`tlh`) ships in Latin transliteration following the KLI standard
+ *   (capitals are phonemically meaningful: D ≠ d, S ≠ s, Q ≠ q). The pIqaD
+ *   native script lives in Unicode Private Use and is intentionally not used
+ *   here — Latin transliteration is the universal, font-agnostic form.
  *
  * Locales flagged `experimental: true` ship behind a "Beta" tag in the picker
- * until a native-speaker review is logged in i18n/voice/<locale>.md.
+ * until a native-speaker review is logged in i18n/voice/<locale>.md. Klingon
+ * is permanently `experimental` because it has no native speakers.
  */
 
 export const LOCALES = [
@@ -27,12 +31,12 @@ export const LOCALES = [
   'fil',
   'pt-BR',
   'ru',
-  'th',
-  'km',
+  'id',
+  'nl',
+  'de',
+  'he',
   'ur',
-  'to',
-  'yi',
-  'ga',
+  'tlh',
 ] as const
 
 export type Locale = (typeof LOCALES)[number]
@@ -54,17 +58,9 @@ export interface LocaleMeta {
   /**
    * Font family token. `inter` = use the existing Inter (Latin/Cyrillic/
    * Vietnamese covered via subsets). Anything else is loaded conditionally
-   * via next/font/local in src/i18n/fonts.ts.
+   * via next/font in src/i18n/fonts.ts.
    */
-  font:
-    | 'inter'
-    | 'noto-sc'
-    | 'noto-jp'
-    | 'noto-kr'
-    | 'noto-thai'
-    | 'noto-khmer'
-    | 'noto-hebrew'
-    | 'noto-nastaliq'
+  font: 'inter' | 'noto-sc' | 'noto-jp' | 'noto-kr' | 'noto-hebrew' | 'noto-nastaliq'
 }
 
 export const LOCALE_META: Record<Locale, LocaleMeta> = {
@@ -77,12 +73,12 @@ export const LOCALE_META: Record<Locale, LocaleMeta> = {
   fil: { code: 'fil', english: 'Filipino', native: 'Filipino', dir: 'ltr', ogLocale: 'fil_PH', experimental: false, font: 'inter' },
   'pt-BR': { code: 'pt-BR', english: 'Portuguese (Brazil)', native: 'Português', dir: 'ltr', ogLocale: 'pt_BR', experimental: false, font: 'inter' },
   ru: { code: 'ru', english: 'Russian', native: 'Русский', dir: 'ltr', ogLocale: 'ru_RU', experimental: false, font: 'inter' },
-  th: { code: 'th', english: 'Thai', native: 'ไทย', dir: 'ltr', ogLocale: 'th_TH', experimental: false, font: 'noto-thai' },
-  km: { code: 'km', english: 'Khmer', native: 'ខ្មែរ', dir: 'ltr', ogLocale: 'km_KH', experimental: true, font: 'noto-khmer' },
+  id: { code: 'id', english: 'Indonesian', native: 'Bahasa Indonesia', dir: 'ltr', ogLocale: 'id_ID', experimental: false, font: 'inter' },
+  nl: { code: 'nl', english: 'Dutch', native: 'Nederlands', dir: 'ltr', ogLocale: 'nl_NL', experimental: false, font: 'inter' },
+  de: { code: 'de', english: 'German', native: 'Deutsch', dir: 'ltr', ogLocale: 'de_DE', experimental: false, font: 'inter' },
+  he: { code: 'he', english: 'Hebrew', native: 'עברית', dir: 'rtl', ogLocale: 'he_IL', experimental: false, font: 'noto-hebrew' },
   ur: { code: 'ur', english: 'Urdu', native: 'اُردُو', dir: 'rtl', ogLocale: 'ur_PK', experimental: false, font: 'noto-nastaliq' },
-  to: { code: 'to', english: 'Tongan', native: 'Lea Faka-Tonga', dir: 'ltr', ogLocale: 'to_TO', experimental: true, font: 'inter' },
-  yi: { code: 'yi', english: 'Yiddish', native: 'יידיש', dir: 'rtl', ogLocale: 'yi_001', experimental: true, font: 'noto-hebrew' },
-  ga: { code: 'ga', english: 'Irish (Gaelic)', native: 'Gaeilge', dir: 'ltr', ogLocale: 'ga_IE', experimental: true, font: 'inter' },
+  tlh: { code: 'tlh', english: 'Klingon', native: 'tlhIngan Hol', dir: 'ltr', ogLocale: 'tlh', experimental: true, font: 'inter' },
 }
 
 /** Type guard: is the value a recognized locale? */

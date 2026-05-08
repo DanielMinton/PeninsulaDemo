@@ -1,3 +1,5 @@
+import type { ServiceSlug } from './services'
+
 export type ReviewSource = 'yelp' | 'nextdoor' | 'google' | 'facebook'
 
 export interface Review {
@@ -6,7 +8,8 @@ export interface Review {
   reviewer: string
   rating: 1 | 2 | 3 | 4 | 5
   text: string
-  service: string
+  /** Service slug — translated for display via getServiceShortName(slug, t). */
+  serviceSlug: ServiceSlug
   city: string
   /** ISO 8601, YYYY-MM-DD. */
   dateISO: string
@@ -25,7 +28,7 @@ export const REVIEWS: readonly Review[] = [
     reviewer: 'Yelp customer',
     rating: 5,
     text: 'Don and crew were super nice and extremely professional, and the prices are VERY competitive. Would definitely recommend to anyone looking for a reliable, affordable junk removal service.',
-    service: 'Junk Removal',
+    serviceSlug: 'junk-removal',
     city: 'San Carlos',
     dateISO: '2024-08-12',
     url: 'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos',
@@ -35,7 +38,7 @@ export const REVIEWS: readonly Review[] = [
     reviewer: 'Yelp customer',
     rating: 5,
     text: 'Melissa was prompt to reply to my email. Donovan arrived on the scheduled date and on time! He was attentive in not damaging walls and floors when hauling the old stuff.',
-    service: 'Appliance Removal',
+    serviceSlug: 'appliance-removal',
     city: 'Redwood City',
     dateISO: '2024-09-03',
     url: 'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos',
@@ -45,7 +48,7 @@ export const REVIEWS: readonly Review[] = [
     reviewer: 'Yelp customer',
     rating: 5,
     text: 'These people waste no time. They are super efficient, friendly, licensed and insured. The pricing is very reasonable too.',
-    service: 'Storage Cleanout',
+    serviceSlug: 'storage-cleanout',
     city: 'San Mateo',
     dateISO: '2024-10-21',
     url: 'https://www.yelp.com/biz/peninsula-pick-ups-san-carlos',

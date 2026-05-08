@@ -1,3 +1,5 @@
+'use client'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 import { SITE } from '@/content/site'
 import type { FAQ } from '@/content/services'
@@ -8,15 +10,16 @@ interface Props {
   intro?: string
 }
 
-export default function FaqSection({ faqs, heading = 'Frequently Asked Questions', intro }: Props) {
+export default function FaqSection({ faqs, heading, intro }: Props) {
+  const t = useTranslations()
   if (faqs.length === 0) return null
   return (
     <section className="bg-charcoal-900 py-24" aria-labelledby="faq-heading">
       <div className="container-max section-padding max-w-4xl">
         <FadeIn>
-          <span className="badge-orange mb-4">FAQ</span>
+          <span className="badge-orange mb-4">{t('faqSection.badge')}</span>
           <h2 id="faq-heading" className="section-title mt-3">
-            {heading}
+            {heading ?? t('faqSection.defaultHeading')}
           </h2>
           {intro && <p className="section-subtitle mt-4 max-w-2xl">{intro}</p>}
         </FadeIn>
@@ -46,9 +49,9 @@ export default function FaqSection({ faqs, heading = 'Frequently Asked Questions
 
         <FadeIn delay={0.2}>
           <div className="mt-10 text-center text-steel-400 text-sm">
-            More questions?{' '}
+            {t('faqSection.moreQuestions')}{' '}
             <a href={SITE.phone.href} className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">
-              Call {SITE.phone.display}
+              {t('faqSection.callPrefix')} <span dir="ltr">{SITE.phone.display}</span>
             </a>
             .
           </div>

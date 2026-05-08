@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for zh-Hans. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Simplified Chinese glossary. Locked translations the translator must use verbatim.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "值得信赖的清运服务。",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "垃圾清运",
+    "service_construction_debris": "建筑废料清运",
+    "service_appliance_removal": "家电搬运清运",
+    "service_storage_cleanout": "仓库清理",
+    "service_eviction_cleanout": "房产腾退清理",
+    "service_commercial_hauling": "商业搬运",
+    "service_residential_cleanout": "住宅清理",
+    "industry_term_hauling": "搬运",
+    "industry_term_cleanout": "清理",
+    "industry_term_pickup": "上门收取",
+    "trust_phrase_licensed": "持证经营，全险保障",
+    "trust_phrase_family_owned": "家庭经营",
+    "trust_phrase_locally_owned": "本地经营",
+    "trust_phrase_same_day": "当天上门服务",
+    "region_label": "旧金山半岛",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "验证此业务"
+  }
 }

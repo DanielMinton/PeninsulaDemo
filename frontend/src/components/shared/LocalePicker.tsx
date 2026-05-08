@@ -142,6 +142,37 @@ export default function LocalePicker() {
 
   const close = useCallback(() => setOpen(false), [])
 
+  /**
+   * Prefetch the destination locale's _next/data JSON for the current path.
+   * Called on hover/focus of a row and on idle for the top-2 likely locales —
+   * makes the click-to-paint round-trip a cache hit.
+   */
+  const prefetchLocale = useCallback(
+    (locale: Locale) => {
+      if (locale === currentLocale) return
+      const { pathname, query, asPath } = router
+      router.prefetch(asPath, asPath, { locale }).catch(() => {
+        /* prefetch is best-effort — swallow */
+      })
+      void pathname
+      void query
+    },
+    [currentLocale, router],
+  )
+
+  // Idle prefetch: warm the top-2 likely locales (most-recent picks excluding
+  // the current one) when the picker first mounts. Bounded by requestIdleCallback.
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const candidates = recent.filter((l) => l !== currentLocale).slice(0, 2)
+    if (candidates.length === 0) return
+    const ric = (window as unknown as { requestIdleCallback?: (cb: () => void) => number })
+      .requestIdleCallback
+    const run = () => candidates.forEach(prefetchLocale)
+    if (ric) ric(run)
+    else window.setTimeout(run, 800)
+  }, [recent, currentLocale, prefetchLocale])
+
   const selectLocale = useCallback(
     (locale: Locale) => {
       setLocaleCookie(locale)
@@ -149,11 +180,23 @@ export default function LocalePicker() {
       setRecent(newRecent)
       writeRecent(newRecent)
       setAnnouncement(t('picker.announceChange', { native: LOCALE_META[locale].native }))
+      // Performance instrumentation: marks the start of the locale switch.
+      // The end mark fires in _app.tsx on the next paint after route resolution.
+      if (typeof performance !== 'undefined' && typeof performance.mark === 'function') {
+        try {
+          performance.mark('pup.locale.switch.start', {
+            detail: { from: currentLocale, to: locale },
+          } as PerformanceMarkOptions)
+        } catch {
+          /* older Safari ignores the second arg */
+          performance.mark('pup.locale.switch.start')
+        }
+      }
       // router.push uses Next.js i18n: same path, new locale.
       const { pathname, asPath, query } = router
       router.push({ pathname, query }, asPath, { locale }).then(() => setOpen(false))
     },
-    [recent, router, t],
+    [recent, router, t, currentLocale],
   )
 
   // Global keyboard handlers while open: Escape, arrows, Enter, Tab trap.
@@ -216,6 +259,13 @@ export default function LocalePicker() {
 
   return (
     <>
+      {/*
+        Floating trigger — pinned to top-right of the viewport (top-left under RTL),
+        anchored OUTSIDE the header so it never competes with header CTAs for the
+        same attention slot. z-[60] sits above the header (z-50) and below the open
+        panel (z-[81]). Position is `fixed` not `sticky` so it survives any parent
+        overflow context.
+      */}
       <button
         ref={triggerRef}
         type="button"
@@ -223,10 +273,12 @@ export default function LocalePicker() {
         aria-haspopup="dialog"
         aria-expanded={open}
         aria-label={t('picker.openLabel')}
-        className="inline-flex items-center gap-2 px-3 py-2 rounded-full text-sm text-bone-100 bg-charcoal-800 border border-charcoal-500 hover:bg-charcoal-700 hover:border-orange-500/50 hover:text-white shadow-sm transition-colors"
+        className={`fixed top-3 sm:top-4 z-[60] inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-sm text-white bg-charcoal-800/95 backdrop-blur-md border border-orange-500/40 hover:border-orange-400 hover:bg-charcoal-700 shadow-lg shadow-charcoal-950/50 ring-1 ring-orange-500/10 transition-all duration-150 ${
+          isRtl(currentLocale) ? 'left-3 sm:left-4' : 'right-3 sm:right-4'
+        }`}
       >
         <span className="text-orange-400"><GlobeIcon /></span>
-        <span className="font-semibold">{currentMeta.native}</span>
+        <span className="font-semibold tracking-tight">{currentMeta.native}</span>
         <span className="text-steel-400"><ChevronDown /></span>
       </button>
 
@@ -299,6 +351,7 @@ export default function LocalePicker() {
                     selected={locale === currentLocale}
                     active={activeIndex === i}
                     onClick={() => selectLocale(locale)}
+                    onPrefetch={() => prefetchLocale(locale)}
                     motionDelay={prefersReducedMotion ? 0 : Math.min(i, 6) * 0.04}
                     betaLabel={t('picker.beta')}
                   />
@@ -317,6 +370,7 @@ export default function LocalePicker() {
                       selected={locale === currentLocale}
                       active={activeIndex === idx}
                       onClick={() => selectLocale(locale)}
+                      onPrefetch={() => prefetchLocale(locale)}
                       motionDelay={prefersReducedMotion ? 0 : Math.min(idx, 6) * 0.04}
                       betaLabel={t('picker.beta')}
                     />
@@ -350,11 +404,12 @@ interface LocaleRowProps {
   selected: boolean
   active: boolean
   onClick: () => void
+  onPrefetch: () => void
   motionDelay: number
   betaLabel: string
 }
 
-function LocaleRow({ locale, selected, active, onClick, motionDelay, betaLabel }: LocaleRowProps) {
+function LocaleRow({ locale, selected, active, onClick, onPrefetch, motionDelay, betaLabel }: LocaleRowProps) {
   const meta = LOCALE_META[locale]
   return (
     <motion.li
@@ -368,6 +423,9 @@ function LocaleRow({ locale, selected, active, onClick, motionDelay, betaLabel }
       <button
         type="button"
         onClick={onClick}
+        onMouseEnter={onPrefetch}
+        onFocus={onPrefetch}
+        onTouchStart={onPrefetch}
         className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-start transition-colors ${
           active ? 'bg-charcoal-700' : 'hover:bg-charcoal-700/60'
         }`}

@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for ja. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Japanese glossary. Locked translations the translator must use verbatim.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "信頼できる回収サービス。",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "不用品回収",
+    "service_construction_debris": "建築廃材回収",
+    "service_appliance_removal": "家電回収",
+    "service_storage_cleanout": "倉庫片付け",
+    "service_eviction_cleanout": "退去後片付け",
+    "service_commercial_hauling": "業務用運搬",
+    "service_residential_cleanout": "住宅片付け",
+    "industry_term_hauling": "運搬",
+    "industry_term_cleanout": "片付け",
+    "industry_term_pickup": "回収",
+    "trust_phrase_licensed": "認可・保険完備",
+    "trust_phrase_family_owned": "家族経営",
+    "trust_phrase_locally_owned": "地域密着",
+    "trust_phrase_same_day": "当日対応",
+    "region_label": "SFペニンスラ地域",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "この事業者を確認"
+  }
 }

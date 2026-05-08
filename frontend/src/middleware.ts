@@ -32,12 +32,12 @@ const LOCALES = [
   'fil',
   'pt-BR',
   'ru',
-  'th',
-  'km',
+  'id',
+  'nl',
+  'de',
+  'he',
   'ur',
-  'to',
-  'yi',
-  'ga',
+  'tlh',
 ] as const
 type Locale = (typeof LOCALES)[number]
 const DEFAULT_LOCALE: Locale = 'en'

@@ -1,11 +1,13 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
 import QuoteForm from '@/components/shared/QuoteForm'
 import FaqSection from '@/components/shared/FaqSection'
 import { SERVICES, getServiceBySlug, type Service } from '@/content/services'
+import { getServiceCopy } from '@/content/copy'
 import { AREAS } from '@/content/areas'
 import { SITE } from '@/content/site'
 import { graph, localBusiness, service as serviceNode, breadcrumbs, faqPage } from '@/lib/schema'
@@ -17,16 +19,18 @@ interface ServicePageProps extends LocaleProps {
 }
 
 const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
+  const t = useTranslations()
+  const copy = getServiceCopy(service.slug, t)
   const path = `/services/${service.slug}`
   const schema = graph(
     localBusiness(locale),
     serviceNode(service.slug, undefined, locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
-      { name: 'Services', url: '/#services' },
-      { name: service.name, url: path },
+      { name: t('servicePage.breadcrumbServices'), url: '/#services' },
+      { name: copy.name, url: path },
     ], locale),
-    ...(service.faqs.length > 0 ? [faqPage(service.faqs, locale)] : []),
+    ...(copy.faqs.length > 0 ? [faqPage(copy.faqs, locale)] : []),
   )
 
   return (
@@ -62,26 +66,26 @@ const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
                   </Link>
                   <span aria-hidden="true">/</span>
                   <Link href="/#services" className="hover:text-steel-400 transition-colors">
-                    Services
+                    {t('servicePage.breadcrumbServices')}
                   </Link>
                   <span aria-hidden="true">/</span>
-                  <span className="text-bone-300">{service.name}</span>
+                  <span className="text-bone-300">{copy.name}</span>
                 </nav>
 
-                <span className="badge-orange mb-4">Service</span>
+                <span className="badge-orange mb-4">{t('servicePage.serviceBadge')}</span>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-bone-100 leading-tight tracking-tight mb-5 mt-3">
-                  {service.name}
+                  {copy.name}
                 </h1>
                 <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed mb-8">
-                  {service.description}
+                  {copy.description}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="#quote" className="btn-primary text-lg px-7 py-4">
-                    Request a Quote
+                    {t('servicePage.requestQuote')}
                   </a>
                   <a href={SITE.phone.href} className="btn-secondary text-lg px-7 py-4">
-                    Call {SITE.phone.display}
+                    {t('servicePage.callPrefix')} <span dir="ltr">{SITE.phone.display}</span>
                   </a>
                 </div>
               </FadeIn>
@@ -91,9 +95,9 @@ const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
           <section className="bg-charcoal-800 py-16 border-y border-charcoal-600">
             <div className="container-max section-padding">
               <FadeIn>
-                <h2 className="text-2xl font-bold text-bone-100 mb-2">Cities We Serve</h2>
+                <h2 className="text-2xl font-bold text-bone-100 mb-2">{t('servicePage.citiesWeServeHeading')}</h2>
                 <p className="text-steel-400 mb-8">
-                  {service.name} is available across every Peninsula Pick Ups service area.
+                  {t('servicePage.citiesWeServeSubhead', { service: copy.name })}
                 </p>
               </FadeIn>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
@@ -117,29 +121,32 @@ const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
             </div>
           </section>
 
-          {service.faqs.length > 0 && (
+          {copy.faqs.length > 0 && (
             <FaqSection
-              faqs={service.faqs}
-              heading={`${service.shortName} FAQ`}
-              intro={`Common questions about ${service.name.toLowerCase()} with ${SITE.name}.`}
+              faqs={copy.faqs}
+              heading={t('servicePage.faqHeading', { service: copy.shortName })}
+              intro={t('servicePage.faqSubhead', { service: copy.name.toLowerCase() })}
             />
           )}
 
           <section className="bg-charcoal-800 py-16 border-y border-charcoal-600">
             <div className="container-max section-padding">
               <FadeIn>
-                <h2 className="text-2xl font-bold text-bone-100 mb-6">Other Services</h2>
+                <h2 className="text-2xl font-bold text-bone-100 mb-6">{t('servicePage.otherServicesHeading')}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {SERVICES.filter((s) => s.slug !== service.slug).map((s) => (
-                    <Link
-                      key={s.slug}
-                      href={`/services/${s.slug}`}
-                      className="card-base card-hover p-5 block"
-                    >
-                      <p className="font-bold text-bone-100 text-sm mb-1">{s.name}</p>
-                      <p className="text-steel-400 text-xs leading-relaxed line-clamp-2">{s.blurb}</p>
-                    </Link>
-                  ))}
+                  {SERVICES.filter((s) => s.slug !== service.slug).map((s) => {
+                    const sc = getServiceCopy(s.slug, t)
+                    return (
+                      <Link
+                        key={s.slug}
+                        href={`/services/${s.slug}`}
+                        className="card-base card-hover p-5 block"
+                      >
+                        <p className="font-bold text-bone-100 text-sm mb-1">{sc.name}</p>
+                        <p className="text-steel-400 text-xs leading-relaxed line-clamp-2">{sc.blurb}</p>
+                      </Link>
+                    )
+                  })}
                 </div>
               </FadeIn>
             </div>

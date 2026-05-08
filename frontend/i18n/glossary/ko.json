@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for ko. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Korean glossary. Locked translations the translator must use verbatim.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "믿고 맡길 수 있는 수거 서비스.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "쓰레기 수거",
+    "service_construction_debris": "건축 폐기물 수거",
+    "service_appliance_removal": "가전제품 수거",
+    "service_storage_cleanout": "창고 정리",
+    "service_eviction_cleanout": "퇴거 정리",
+    "service_commercial_hauling": "상업용 운반",
+    "service_residential_cleanout": "가정 정리",
+    "industry_term_hauling": "운반",
+    "industry_term_cleanout": "정리",
+    "industry_term_pickup": "수거",
+    "trust_phrase_licensed": "정식 면허 및 보험 가입",
+    "trust_phrase_family_owned": "가족이 운영하는",
+    "trust_phrase_locally_owned": "지역에서 운영되는",
+    "trust_phrase_same_day": "당일 서비스",
+    "region_label": "샌프란시스코 페닌슐라",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "사업자 인증 확인"
+  }
 }

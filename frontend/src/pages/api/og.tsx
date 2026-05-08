@@ -17,7 +17,7 @@ const SERVICE_SLUGS: ReadonlySet<string> = new Set(SERVICES.map((s) => s.slug))
 // the TypeScript types module at request time.
 const VALID_LOCALES: ReadonlySet<string> = new Set([
   'en', 'es-MX', 'zh-Hans', 'ja', 'ko', 'vi', 'fil',
-  'pt-BR', 'ru', 'th', 'km', 'ur', 'to', 'yi', 'ga',
+  'pt-BR', 'ru', 'id', 'nl', 'de', 'he', 'ur', 'tlh',
 ])
 
 function notFound() {

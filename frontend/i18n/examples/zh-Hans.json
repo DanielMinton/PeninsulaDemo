@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for zh-Hans. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Simplified Chinese. Hand-curated source→target pairs the translator retrieves by tag.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "值得信赖的清运服务。" },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups 提供 San Carlos 及整个旧金山半岛的垃圾清运、搬运和全屋清理服务。真人老板，真实电话，真实可靠。" },
+    { "tag": "cta", "source": "Request a Pickup", "target": "申请上门服务" },
+    { "tag": "cta", "source": "Call Now", "target": "立即致电" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "获取免费报价" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "自 2021 年起持证经营，全险保障。" },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "由 Don 和 Melissa 家庭经营。" },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "我们负责装载、清扫并妥善处理废弃物。没有隐性费用，没有意外，到场后报价绝不变更。" },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "大多数工作可在 48 小时内安排。当天上门服务也常有 — 请致电 (650) 201-1543 确认。" },
+    { "tag": "form-label", "source": "Service Location", "target": "服务地点" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "请输入有效的电话号码。" },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "本人同意 Peninsula Pick Ups 通过上述电话和电子邮件就我的报价请求与我联系，包括短信和通话。同意并非接受服务的前提条件。" }
+  ]
 }

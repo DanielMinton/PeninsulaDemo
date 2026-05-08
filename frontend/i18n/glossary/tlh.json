@@ -1,0 +1,29 @@
+{
+  "$schema": "Klingon (tlhIngan Hol) glossary. KLI Latin transliteration — case is phonemic. Best-effort renderings for modern-business concepts that lack canonical Klingon.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "veQ teqwI' Daj wIghaj.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "veQ teq",
+    "service_construction_debris": "chenmoH veQ teq",
+    "service_appliance_removal": "jan teq",
+    "service_storage_cleanout": "pa' Say'moH",
+    "service_eviction_cleanout": "ghoSDI' rurnIS Say'moH",
+    "service_commercial_hauling": "Suy lup",
+    "service_residential_cleanout": "juH Say'moH",
+    "industry_term_hauling": "lup",
+    "industry_term_cleanout": "Say'moH",
+    "industry_term_pickup": "qem",
+    "trust_phrase_licensed": "chaw' wIghaj 'ej Hub wIghajqu'",
+    "trust_phrase_family_owned": "qorDu' Daj 'oH",
+    "trust_phrase_locally_owned": "Daq vam Daj 'oH",
+    "trust_phrase_same_day": "tu'be'lu'bogh jaj",
+    "region_label": "Sannveng Sech",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Suy vam yIlughmoH"
+  }
+}

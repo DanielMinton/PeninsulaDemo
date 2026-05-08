@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for vi. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Vietnamese. Hand-curated source→target pairs the translator retrieves by tag. Diacritics are mandatory.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "Dịch vụ thu gom bạn có thể tin cậy." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups xử lý dọn rác, vận chuyển và dọn dẹp toàn bộ tài sản ở San Carlos và khắp Bán đảo San Francisco. Chủ thật. Số điện thoại thật. Kết quả thật." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Yêu cầu thu gom" },
+    { "tag": "cta", "source": "Call Now", "target": "Gọi ngay" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Nhận báo giá miễn phí" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "Có giấy phép và bảo hiểm đầy đủ từ năm 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Doanh nghiệp gia đình do Don và Melissa điều hành." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Chúng tôi tự bốc xếp, quét dọn sau khi xong và xử lý có trách nhiệm. Không có phí ẩn, không có bất ngờ, và báo giá không thay đổi khi đã đến nơi." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Hầu hết các công việc được sắp xếp trong vòng 48 giờ. Thu gom trong ngày cũng thường có — hãy gọi (650) 201-1543 để xác nhận." },
+    { "tag": "form-label", "source": "Service Location", "target": "Địa điểm dịch vụ" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Vui lòng nhập số điện thoại hợp lệ." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Tôi đồng ý để Peninsula Pick Ups liên hệ với tôi qua số điện thoại và email ở trên về yêu cầu báo giá của tôi, bao gồm cả tin nhắn và cuộc gọi. Sự đồng ý không phải là điều kiện của dịch vụ." }
+  ]
 }

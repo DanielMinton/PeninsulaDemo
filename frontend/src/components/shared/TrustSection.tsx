@@ -1,59 +1,40 @@
+'use client'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
+import { SITE } from '@/content/site'
 
-const PHONE = '(650) 201-1543'
-const PHONE_RAW = 'tel:+16502011543'
-
-const TRUST_SIGNALS = [
-  {
-    title: 'One verified phone number',
-    body: `When you call (650) 201-1543, you reach Don and Melissa directly. No call center, no redirects, no runaround.`,
-  },
-  {
-    title: 'Based in San Carlos since 2021',
-    body: 'Peninsula Pick Ups was built on the Peninsula and has been serving the community since 2021. We know the neighborhoods, the roads, and what customers here expect.',
-  },
-  {
-    title: 'Real project photos on the way',
-    body: 'We back our work with before-and-after documentation on every job. Verified project media is being added continuously.',
-  },
-  {
-    title: 'Transparent pricing, no surprises',
-    body: 'Free quotes with no hidden fees. You know the number before we show up, and the price does not change on-site.',
-  },
-  {
-    title: 'Fast scheduling, human response',
-    body: 'We respond same day. Most jobs are schedulable within 48 hours. You deal with the owner, not a dispatcher.',
-  },
-  {
-    title: 'Licensed and insured',
-    body: 'Peninsula Pick Ups carries proper licensing and insurance for every job. Your property is covered, full stop.',
-  },
-]
+const SIGNAL_KEYS = [
+  ['trustSection.signal1Title', 'trustSection.signal1Body'],
+  ['trustSection.signal2Title', 'trustSection.signal2Body'],
+  ['trustSection.signal3Title', 'trustSection.signal3Body'],
+  ['trustSection.signal4Title', 'trustSection.signal4Body'],
+  ['trustSection.signal5Title', 'trustSection.signal5Body'],
+  ['trustSection.signal6Title', 'trustSection.signal6Body'],
+] as const
 
 export default function TrustSection() {
+  const t = useTranslations()
+
   return (
     <section id="about" className="bg-charcoal-800 py-24" aria-labelledby="trust-heading">
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <FadeIn direction="right">
             <div>
-              <span className="badge-verify mb-4">Why Peninsula Pick Ups</span>
+              <span className="badge-verify mb-4">{t('trustSection.badge')}</span>
               <h2 id="trust-heading" className="section-title mt-3">
-                Why Customers Trust
+                {t('trustSection.headlinePart1')}
                 <br />
-                the Real Peninsula Pick Ups
+                {t('trustSection.headlinePart2')}
               </h2>
-              <p className="section-subtitle mt-4 leading-relaxed">
-                Don and Melissa built Peninsula Pick Ups on one principle: show up, do the job right, and be reachable.
-                No mystery numbers. No vague addresses. A real San Carlos business you can verify.
-              </p>
+              <p className="section-subtitle mt-4 leading-relaxed">{t('trustSection.subhead')}</p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <a href="#quote" className="btn-primary">
-                  Request a Free Quote
+                  {t('trustSection.requestQuoteCta')}
                 </a>
-                <a href={PHONE_RAW} className="btn-secondary">
-                  Call {PHONE}
+                <a href={SITE.phone.href} className="btn-secondary">
+                  {t('trustSection.callCta')} <span dir="ltr">{SITE.phone.display}</span>
                 </a>
               </div>
 
@@ -71,12 +52,9 @@ export default function TrustSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-bold text-bone-100 text-base mb-1">Owners: Don and Melissa</p>
-                    <p className="text-steel-400 text-sm leading-relaxed">
-                      Family-operated out of San Carlos, CA 94070. When you request a quote or call the business line,
-                      you reach us directly. That is the point.
-                    </p>
-                    <p className="mt-2 text-orange-400 font-semibold text-sm">Established 2021 on the Peninsula.</p>
+                    <p className="font-bold text-bone-100 text-base mb-1">{t('trustSection.ownersTitle')}</p>
+                    <p className="text-steel-400 text-sm leading-relaxed">{t('trustSection.ownersBody')}</p>
+                    <p className="mt-2 text-orange-400 font-semibold text-sm">{t('trustSection.establishedNote')}</p>
                   </div>
                 </div>
               </div>
@@ -85,8 +63,8 @@ export default function TrustSection() {
 
           <FadeIn direction="left" delay={0.1}>
             <div className="grid grid-cols-1 gap-4">
-              {TRUST_SIGNALS.map((signal, i) => (
-                <FadeIn key={signal.title} delay={0.08 * i} direction="left">
+              {SIGNAL_KEYS.map(([titleKey, bodyKey], i) => (
+                <FadeIn key={titleKey} delay={0.08 * i} direction="left">
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-charcoal-700/50 border border-charcoal-600 hover:border-verify-500/30 transition-colors group">
                     <div className="w-6 h-6 rounded-full bg-verify-500/15 border border-verify-500/30 flex items-center justify-center text-verify-400 flex-shrink-0 mt-0.5 group-hover:bg-verify-500/25 transition-colors">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true">
@@ -98,8 +76,8 @@ export default function TrustSection() {
                       </svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-bone-100 text-sm mb-1">{signal.title}</p>
-                      <p className="text-steel-400 text-sm leading-relaxed">{signal.body}</p>
+                      <p className="font-semibold text-bone-100 text-sm mb-1">{t(titleKey)}</p>
+                      <p className="text-steel-400 text-sm leading-relaxed">{t(bodyKey)}</p>
                     </div>
                   </div>
                 </FadeIn>

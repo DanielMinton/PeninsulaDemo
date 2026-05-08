@@ -1,0 +1,29 @@
+{
+  "$schema": "German (Standard / Hochdeutsch) glossary. Locked translations the translator must use verbatim.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "Die Abholung, auf die Sie sich verlassen können.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Sperrmüllentsorgung",
+    "service_construction_debris": "Bauschuttentsorgung",
+    "service_appliance_removal": "Geräteentsorgung",
+    "service_storage_cleanout": "Lagerentrümpelung",
+    "service_eviction_cleanout": "Räumung nach Zwangsräumung",
+    "service_commercial_hauling": "Gewerblicher Transport",
+    "service_residential_cleanout": "Haushaltsentrümpelung",
+    "industry_term_hauling": "Transport",
+    "industry_term_cleanout": "Entrümpelung",
+    "industry_term_pickup": "Abholung",
+    "trust_phrase_licensed": "Lizenziert und versichert",
+    "trust_phrase_family_owned": "Familienbetrieb",
+    "trust_phrase_locally_owned": "Lokales Unternehmen",
+    "trust_phrase_same_day": "Service am gleichen Tag",
+    "region_label": "SF-Halbinsel",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Dieses Unternehmen verifizieren"
+  }
+}

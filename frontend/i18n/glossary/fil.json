@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for fil. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Filipino glossary. Locked translations the translator must use verbatim. Bay Area Filipino-American code-switching is natural.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "Ang Pickup na Mapagkakatiwalaan Niyo.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Junk Removal",
+    "service_construction_debris": "Construction Debris Removal",
+    "service_appliance_removal": "Appliance Removal",
+    "service_storage_cleanout": "Storage Cleanout",
+    "service_eviction_cleanout": "Eviction Cleanout",
+    "service_commercial_hauling": "Commercial Hauling",
+    "service_residential_cleanout": "Residential Cleanout",
+    "industry_term_hauling": "paghahakot",
+    "industry_term_cleanout": "paglilinis",
+    "industry_term_pickup": "pagkuha",
+    "trust_phrase_licensed": "May lisensya at insured",
+    "trust_phrase_family_owned": "Pag-aari ng pamilya",
+    "trust_phrase_locally_owned": "Lokal na negosyo",
+    "trust_phrase_same_day": "Service sa parehong araw",
+    "region_label": "SF Peninsula",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "I-verify ang business na ito"
+  }
 }

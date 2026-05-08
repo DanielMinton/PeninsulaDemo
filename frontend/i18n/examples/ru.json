@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for ru. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Russian. Hand-curated source→target pairs the translator retrieves by tag.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "Вывоз, на который можно положиться." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups занимается вывозом мусора, перевозками и полной расчисткой участков в San Carlos и по всему полуострову. Настоящие владельцы. Настоящий номер. Настоящие результаты." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Заказать вывоз" },
+    { "tag": "cta", "source": "Call Now", "target": "Позвоните сейчас" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Получите бесплатную оценку" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "С лицензией и страховкой с 2021 года." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Семейный бизнес, которым управляют Don и Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Мы сами загружаем всё, убираем за собой и утилизируем ответственно. Никаких скрытых платежей, никаких сюрпризов, и стоимость не меняется после нашего приезда." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Большинство заказов мы выполняем в течение 48 часов. Часто доступен выезд в тот же день — позвоните по (650) 201-1543, чтобы уточнить." },
+    { "tag": "form-label", "source": "Service Location", "target": "Адрес обслуживания" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Введите действительный номер телефона." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Я согласен(на), чтобы Peninsula Pick Ups связалась со мной по указанному выше телефону и электронной почте по поводу моего запроса оценки, в том числе по SMS и телефонным звонкам. Согласие не является обязательным условием для получения услуги." }
+  ]
 }

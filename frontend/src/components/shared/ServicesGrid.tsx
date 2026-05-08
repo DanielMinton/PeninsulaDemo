@@ -1,6 +1,9 @@
+'use client'
 import type { ReactNode } from 'react'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 import { SERVICES, type ServiceSlug } from '@/content/services'
+import { getServiceCopy } from '@/content/copy'
 
 const SERVICE_ICONS: Record<ServiceSlug, ReactNode> = {
   'junk-removal': (
@@ -82,21 +85,19 @@ const SERVICE_ICONS: Record<ServiceSlug, ReactNode> = {
 }
 
 export default function ServicesGrid() {
+  const t = useTranslations()
   return (
     <section id="services" className="bg-charcoal-900 py-24" aria-labelledby="services-heading">
       <div className="container-max section-padding">
         <FadeIn>
           <div className="mb-14">
-            <span className="badge-orange mb-4">What We Do</span>
+            <span className="badge-orange mb-4">{t('servicesGrid.badge')}</span>
             <h2 id="services-heading" className="section-title mt-3">
-              Full-Service Hauling
+              {t('servicesGrid.headlinePart1')}
               <br />
-              <span className="text-steel-400">From One Item to the Whole Property</span>
+              <span className="text-steel-400">{t('servicesGrid.headlinePart2')}</span>
             </h2>
-            <p className="section-subtitle max-w-2xl mt-4">
-              Peninsula Pick Ups handles residential and commercial jobs across the Peninsula. Whatever needs to go, we
-              load it up and clear it out.
-            </p>
+            <p className="section-subtitle max-w-2xl mt-4">{t('servicesGrid.subhead')}</p>
           </div>
         </FadeIn>
 
@@ -108,15 +109,15 @@ export default function ServicesGrid() {
                   {SERVICE_ICONS[service.slug]}
                 </div>
                 <div>
-                  <h3 className="font-bold text-bone-100 text-lg mb-2">{service.name}</h3>
-                  <p className="text-steel-400 text-sm leading-relaxed">{service.blurb}</p>
+                  <h3 className="font-bold text-bone-100 text-lg mb-2">{getServiceCopy(service.slug, t).name}</h3>
+                  <p className="text-steel-400 text-sm leading-relaxed">{getServiceCopy(service.slug, t).blurb}</p>
                 </div>
                 <div className="mt-auto pt-2 flex items-center gap-4">
                   <a
                     href={`/services/${service.slug}`}
                     className="text-orange-500 hover:text-orange-400 text-sm font-semibold flex items-center gap-1.5 transition-colors"
                   >
-                    Learn more
+                    {t('servicesGrid.learnMore')}
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                       <path
                         d="M2 6h8M6 2l4 4-4 4"
@@ -131,7 +132,7 @@ export default function ServicesGrid() {
                     href="#quote"
                     className="text-steel-500 hover:text-bone-200 text-sm font-medium transition-colors"
                   >
-                    Get a quote
+                    {t('servicesGrid.getQuote')}
                   </a>
                 </div>
               </article>

@@ -115,7 +115,7 @@ const Dashboard: NextPage<LocaleProps> = () => {
                     <div className="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0">
                       {section.icon}
                     </div>
-                    <div className="pr-16">
+                    <div className="pe-16">
                       <h2 className="font-bold text-bone-100 text-base mb-1">{section.title}</h2>
                       <p className="text-steel-400 text-sm leading-relaxed">{section.description}</p>
                     </div>

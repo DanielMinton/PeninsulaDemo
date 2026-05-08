@@ -1,0 +1,1951 @@
+{
+  "$version": 1,
+  "$sourceVersion": 1,
+  "segments": {
+    "picker.openLabel": {
+      "value": "언어 선택",
+      "tag": "picker",
+      "cacheKey": "de7a4bdefa4c2a94"
+    },
+    "picker.title": {
+      "value": "언어 선택",
+      "tag": "picker",
+      "cacheKey": "de7a4bdefa4c2a94"
+    },
+    "picker.searchPlaceholder": {
+      "value": "언어 검색…",
+      "tag": "picker",
+      "cacheKey": "598d3245a3865902"
+    },
+    "picker.recent": {
+      "value": "최근",
+      "tag": "picker",
+      "cacheKey": "a7f8c0feddb4fb96"
+    },
+    "picker.allLanguages": {
+      "value": "모든 언어",
+      "tag": "picker",
+      "cacheKey": "39a073647c6dfc6b"
+    },
+    "picker.beta": {
+      "value": "베타",
+      "tag": "picker",
+      "cacheKey": "775c952645b564c9"
+    },
+    "picker.noResults": {
+      "value": "일치하는 언어가 없어요.",
+      "tag": "picker",
+      "cacheKey": "ffbda3fbc3feadca"
+    },
+    "picker.footerReviewed": {
+      "value": "번역은 문화적 정확성을 위해 검토됩니다.",
+      "tag": "picker",
+      "cacheKey": "c6508eafe0711f3a"
+    },
+    "picker.footerReportLink": {
+      "value": "번역 문제 신고하기",
+      "tag": "picker",
+      "cacheKey": "184e4864ad4729d0"
+    },
+    "picker.announceChange": {
+      "value": "언어가 {native}(으)로 변경되었어요.",
+      "tag": "picker",
+      "cacheKey": "94964dcf00c2457b"
+    },
+    "picker.closeLabel": {
+      "value": "언어 선택기 닫기",
+      "tag": "picker",
+      "cacheKey": "ca7e7bbb61727170"
+    },
+    "nav.servicesLink": {
+      "value": "서비스",
+      "tag": "nav",
+      "cacheKey": "e86e5655e7a61c38"
+    },
+    "nav.areasLink": {
+      "value": "서비스 지역",
+      "tag": "nav",
+      "cacheKey": "06ff8a0f8c6b8d15"
+    },
+    "nav.aboutLink": {
+      "value": "소개",
+      "tag": "nav",
+      "cacheKey": "e0030504538ddb95"
+    },
+    "nav.contactLink": {
+      "value": "문의하기",
+      "tag": "nav",
+      "cacheKey": "7626250d780cf2cd"
+    },
+    "nav.requestPickupCta": {
+      "value": "수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "b894e8424fe9d933"
+    },
+    "nav.callNowCta": {
+      "value": "지금 전화하기",
+      "tag": "cta",
+      "cacheKey": "ab6a9244a75e75b3"
+    },
+    "nav.openMenu": {
+      "value": "메뉴 열기",
+      "tag": "nav",
+      "cacheKey": "1e6cd324ce0c762a"
+    },
+    "nav.closeMenu": {
+      "value": "메뉴 닫기",
+      "tag": "nav",
+      "cacheKey": "2ff19928db52a1da"
+    },
+    "nav.mainAriaLabel": {
+      "value": "메인 내비게이션",
+      "tag": "nav",
+      "cacheKey": "ff605e8a44213473"
+    },
+    "nav.homeAriaLabel": {
+      "value": "Peninsula Pick Ups 홈",
+      "tag": "nav",
+      "cacheKey": "e82472af5211ba81"
+    },
+    "nav.cityTagline": {
+      "value": "San Carlos, CA",
+      "tag": "misc",
+      "cacheKey": "a259f25a3be48316"
+    },
+    "nav.requestPickupLong": {
+      "value": "수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "9ab0b97da30212fb"
+    },
+    "hero.badge": {
+      "value": "San Carlos, CA. 2021년부터 정식 면허 및 보험 가입.",
+      "tag": "trust",
+      "cacheKey": "d3d0396eb668db1a"
+    },
+    "hero.headlinePart1": {
+      "value": "수거 서비스",
+      "tag": "hero",
+      "cacheKey": "69a5d0aa14859042"
+    },
+    "hero.headlinePart2": {
+      "value": "믿고 맡길 수 있는.",
+      "tag": "hero",
+      "cacheKey": "b5d63f446b0ff259"
+    },
+    "hero.subhead": {
+      "value": "Peninsula Pick Ups는 San Carlos와 전체 페닌슐라 지역에서 쓰레기 수거, 운반, 전체 부지 정리 서비스를 제공합니다. 실제 운영진, 실제 전화번호, 실제 결과.",
+      "tag": "hero",
+      "cacheKey": "a3881af8a84538f0"
+    },
+    "hero.verifiedBusinessLine": {
+      "value": "인증된 사업자 전화번호",
+      "tag": "trust",
+      "cacheKey": "5507d6ff59db15d2"
+    },
+    "hero.requestPickupCta": {
+      "value": "수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "9ab0b97da30212fb"
+    },
+    "hero.callNowCta": {
+      "value": "지금 전화하기",
+      "tag": "cta",
+      "cacheKey": "ab6a9244a75e75b3"
+    },
+    "hero.scrollIndicator": {
+      "value": "스크롤",
+      "tag": "misc",
+      "cacheKey": "6096460746dcd541"
+    },
+    "hero.heroAriaLabel": {
+      "value": "Peninsula Pick Ups 히어로 섹션",
+      "tag": "meta",
+      "cacheKey": "420ab106fa44ce5f"
+    },
+    "hero.servicesListAriaLabel": {
+      "value": "제공 서비스",
+      "tag": "meta",
+      "cacheKey": "e1ca255dc82b2645"
+    },
+    "hero.serviceJunkRemoval": {
+      "value": "쓰레기 수거",
+      "tag": "service-description",
+      "cacheKey": "073db7c639c037fa"
+    },
+    "hero.serviceConstructionDebris": {
+      "value": "건축 폐기물 수거",
+      "tag": "service-description",
+      "cacheKey": "b917c8c52a2dce59"
+    },
+    "hero.serviceApplianceRemoval": {
+      "value": "가전제품 수거",
+      "tag": "service-description",
+      "cacheKey": "432dc22b6f5c8195"
+    },
+    "hero.serviceStorageCleanouts": {
+      "value": "창고 정리",
+      "tag": "service-description",
+      "cacheKey": "b18382d0e620d3b2"
+    },
+    "hero.serviceEvictionCleanouts": {
+      "value": "퇴거 정리",
+      "tag": "service-description",
+      "cacheKey": "6fd75686414a1486"
+    },
+    "hero.serviceCommercialHauling": {
+      "value": "상업용 운반",
+      "tag": "service-description",
+      "cacheKey": "2dcb6d4ab25e8cc6"
+    },
+    "trust.heading": {
+      "value": "Peninsula Pick Ups를 선택하는 이유",
+      "tag": "trust",
+      "cacheKey": "1dc2af96eb05920a"
+    },
+    "trust.licensedTitle": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "654bd11daf9f852b"
+    },
+    "trust.licensedSub": {
+      "value": "일반 책임 보험 가입. 상업용 부동산을 위한 보험 가입 증명서(COI)도 제공해 드려요.",
+      "tag": "trust",
+      "cacheKey": "badc2ff76bfd78d5"
+    },
+    "trust.familyTitle": {
+      "value": "가족이 운영하는 사업체입니다.",
+      "tag": "trust",
+      "cacheKey": "bf91cbebad8c7f69"
+    },
+    "trust.familySub": {
+      "value": "Don과 Melissa가 직접 사업을 운영하고, 전화도 직접 받아요.",
+      "tag": "trust",
+      "cacheKey": "07deb91bcc733a09"
+    },
+    "trust.localTitle": {
+      "value": "San Carlos에서 지역에서 운영되는 사업체입니다.",
+      "tag": "trust",
+      "cacheKey": "6815f15d474cb125"
+    },
+    "trust.localSub": {
+      "value": "2021년부터 이곳이 저희 터전입니다. 샌프란시스코 페닌슐라의 모든 동네를 잘 알고 있어요.",
+      "tag": "trust",
+      "cacheKey": "a3585cb9c392fc48"
+    },
+    "trust.honestPricingTitle": {
+      "value": "정직한 가격",
+      "tag": "trust",
+      "cacheKey": "25dce75f4c5691bc"
+    },
+    "trust.honestPricingSub": {
+      "value": "작업 시작 전에 확정 견적을 드려요. 현장에서 가격이 바뀌지 않아요.",
+      "tag": "trust",
+      "cacheKey": "0efbe29837bf1be5"
+    },
+    "services.heading": {
+      "value": "저희가 하는 일",
+      "tag": "service-description",
+      "cacheKey": "194c072229a7726e"
+    },
+    "services.sub": {
+      "value": "단 하나의 물건이든, 건물 전체든 — 언제나 같은 침착한 팀, 변함없는 확실한 가격입니다.",
+      "tag": "service-description",
+      "cacheKey": "d895ffab72e2a3d2"
+    },
+    "services.learnMore": {
+      "value": "더 알아보기",
+      "tag": "cta",
+      "cacheKey": "ad5501fed3166e62"
+    },
+    "areas.heading": {
+      "value": "저희 서비스 지역",
+      "tag": "misc",
+      "cacheKey": "02a106538d5b4c6f"
+    },
+    "areas.sub": {
+      "value": "San Carlos는 저희 본거지예요. 샌프란시스코 페닌슐라 전역에 당일 서비스를 제공해요.",
+      "tag": "misc",
+      "cacheKey": "c4a21883666022d5"
+    },
+    "areas.viewArea": {
+      "value": "지역 보기",
+      "tag": "cta",
+      "cacheKey": "7c0e3077a519bfb5"
+    },
+    "testimonials.heading": {
+      "value": "Peninsula 고객님들의 이야기",
+      "tag": "testimonial",
+      "cacheKey": "69097e3bf0e96ec4"
+    },
+    "testimonials.sub": {
+      "value": "저희 인증된 Yelp 프로필의 리뷰입니다.",
+      "tag": "testimonial",
+      "cacheKey": "449b3364c0601bae"
+    },
+    "testimonials.readMore": {
+      "value": "Yelp에서 모든 리뷰 보기",
+      "tag": "cta",
+      "cacheKey": "c1436a0bce8fdf44"
+    },
+    "faq.heading": {
+      "value": "자주 묻는 질문",
+      "tag": "faq",
+      "cacheKey": "0223846090a675db"
+    },
+    "faq.sub": {
+      "value": "빠른 답변 모음입니다 — 원하시는 내용이 없으면 (650) 201-1543으로 전화 주세요.",
+      "tag": "faq",
+      "cacheKey": "26d3582ed8d997f0"
+    },
+    "verify.heading": {
+      "value": "좋은 경험을 하셨나요?",
+      "tag": "trust",
+      "cacheKey": "a1e4a53c2e5cdbd7"
+    },
+    "verify.sub": {
+      "value": "저희가 활동하는 모든 플랫폼에서 신원을 확인해 보세요. 실시간으로 확인하고 싶으신가요? (650) 201-1543으로 전화 주세요.",
+      "tag": "trust",
+      "cacheKey": "26174adae4fc0650"
+    },
+    "verify.confirmLive": {
+      "value": "직접 확인하고 싶으신가요?",
+      "tag": "trust",
+      "cacheKey": "8527d7c6c16da0b5"
+    },
+    "verify.businessOfRecord": {
+      "value": "공식 등록 사업체",
+      "tag": "trust",
+      "cacheKey": "64c1514c983d1c81"
+    },
+    "verify.findOnline": {
+      "value": "온라인에서 찾아보세요",
+      "tag": "trust",
+      "cacheKey": "72326c70070bb33e"
+    },
+    "quoteSelector.badge": {
+      "value": "빠른 견적 받기",
+      "tag": "cta",
+      "cacheKey": "a78d01f45cbba753"
+    },
+    "quoteSelector.heading": {
+      "value": "60초 안에 견적 받기",
+      "tag": "cta",
+      "cacheKey": "a020e826008aa700"
+    },
+    "quoteSelector.sub": {
+      "value": "서비스를 선택하고, 짐의 양을 알려주시고, 연락처를 남겨 주세요. Peninsula Pick Ups가 빠르게 연락드릴게요.",
+      "tag": "cta",
+      "cacheKey": "d6664ce7bff70799"
+    },
+    "quoteSelector.stepService": {
+      "value": "서비스 종류",
+      "tag": "form-label",
+      "cacheKey": "40d0f6645dc10b2f"
+    },
+    "quoteSelector.stepLoad": {
+      "value": "짐 크기",
+      "tag": "form-label",
+      "cacheKey": "8536278b5ee86fc0"
+    },
+    "quoteSelector.stepLocation": {
+      "value": "위치",
+      "tag": "form-label",
+      "cacheKey": "793602345bd47e84"
+    },
+    "quoteSelector.stepUrgency": {
+      "value": "긴급도",
+      "tag": "form-label",
+      "cacheKey": "64da2af1397c4bc3"
+    },
+    "quoteSelector.stepContact": {
+      "value": "연락처",
+      "tag": "form-label",
+      "cacheKey": "1f11dcb56fbf23fe"
+    },
+    "quoteSelector.askService": {
+      "value": "어떤 서비스가 필요하세요?",
+      "tag": "form-label",
+      "cacheKey": "14078b070d256af5"
+    },
+    "quoteSelector.askLoad": {
+      "value": "얼마나 많은 양인가요?",
+      "tag": "form-label",
+      "cacheKey": "1d212a6d3a02889a"
+    },
+    "quoteSelector.askLocation": {
+      "value": "수거 위치가 어디인가요?",
+      "tag": "form-label",
+      "cacheKey": "df034823cbec52fc"
+    },
+    "quoteSelector.askUrgency": {
+      "value": "언제까지 완료되어야 하나요?",
+      "tag": "form-label",
+      "cacheKey": "e5a9af6da94724a8"
+    },
+    "quoteSelector.askContact": {
+      "value": "견적을 어디로 보내드릴까요?",
+      "tag": "form-label",
+      "cacheKey": "5fdd143a46bac965"
+    },
+    "quoteSelector.cityLabel": {
+      "value": "도시 또는 주소",
+      "tag": "form-label",
+      "cacheKey": "f62e2e5870e24bfe"
+    },
+    "quoteSelector.cityDefault": {
+      "value": "도시를 선택하세요...",
+      "tag": "form-label",
+      "cacheKey": "52ef897bd373edbd"
+    },
+    "quoteSelector.cityOtherOption": {
+      "value": "기타 / 목록에 없음",
+      "tag": "form-label",
+      "cacheKey": "5672e3bfbc5f268c"
+    },
+    "quoteSelector.cityOtherLabel": {
+      "value": "도시 또는 주소를 입력해 주세요",
+      "tag": "form-label",
+      "cacheKey": "53ab9361e800d878"
+    },
+    "quoteSelector.cityOtherPlaceholder": {
+      "value": "예: Foster City, CA",
+      "tag": "form-label",
+      "cacheKey": "dd1c770da4735c9f"
+    },
+    "quoteSelector.loadSingle": {
+      "value": "단일 품목",
+      "tag": "form-label",
+      "cacheKey": "f66a3328b5cbae14"
+    },
+    "quoteSelector.loadSingleSub": {
+      "value": "대형 물품 1개",
+      "tag": "form-label",
+      "cacheKey": "ff7ff433ae230637"
+    },
+    "quoteSelector.loadQuarter": {
+      "value": "소량 짐",
+      "tag": "form-label",
+      "cacheKey": "ff64b41c7140518c"
+    },
+    "quoteSelector.loadQuarterSub": {
+      "value": "트럭 1/4 이하",
+      "tag": "form-label",
+      "cacheKey": "f43b34ea9beb944c"
+    },
+    "quoteSelector.loadHalf": {
+      "value": "중간 크기 짐",
+      "tag": "form-label",
+      "cacheKey": "94f86187c794f89c"
+    },
+    "quoteSelector.loadHalfSub": {
+      "value": "트럭 1/2 적재",
+      "tag": "form-label",
+      "cacheKey": "a2f9851d87511c7c"
+    },
+    "quoteSelector.loadFull": {
+      "value": "전체 적재량",
+      "tag": "form-label",
+      "cacheKey": "364139ce0c00cdee"
+    },
+    "quoteSelector.loadFullSub": {
+      "value": "트럭 한 대 이상",
+      "tag": "form-label",
+      "cacheKey": "7628c06bbea5415a"
+    },
+    "quoteSelector.urgencyAsap": {
+      "value": "최대한 빨리",
+      "tag": "form-label",
+      "cacheKey": "32639f3fff10ae1d"
+    },
+    "quoteSelector.urgencyAsapSub": {
+      "value": "1~2일 이내",
+      "tag": "form-label",
+      "cacheKey": "4f783be5c9ee8215"
+    },
+    "quoteSelector.urgencyThisWeek": {
+      "value": "이번 주",
+      "tag": "form-label",
+      "cacheKey": "74d192e4b4d449c7"
+    },
+    "quoteSelector.urgencyThisWeekSub": {
+      "value": "7일 이내",
+      "tag": "form-label",
+      "cacheKey": "70e66d90c8273400"
+    },
+    "quoteSelector.urgencyFlexible": {
+      "value": "유연한",
+      "tag": "form-label",
+      "cacheKey": "e490d4c03c0fcf4c"
+    },
+    "quoteSelector.urgencyFlexibleSub": {
+      "value": "가능한 경우",
+      "tag": "form-label",
+      "cacheKey": "0996a669974a7f15"
+    },
+    "quoteSelector.serviceOther": {
+      "value": "잘 모르겠음 / 기타",
+      "tag": "form-label",
+      "cacheKey": "a51669ae328d4d0f"
+    },
+    "quoteSelector.nameLabel": {
+      "value": "고객님 성함",
+      "tag": "form-label",
+      "cacheKey": "4d4f6630c1116e02"
+    },
+    "quoteSelector.namePlaceholder": {
+      "value": "성함",
+      "tag": "form-label",
+      "cacheKey": "f844831094e56f33"
+    },
+    "quoteSelector.phoneLabel": {
+      "value": "전화번호",
+      "tag": "form-label",
+      "cacheKey": "813fddfe0b525c3e"
+    },
+    "quoteSelector.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "2c2afe04ba0fbd0f"
+    },
+    "quoteSelector.emailLabel": {
+      "value": "이메일",
+      "tag": "form-label",
+      "cacheKey": "aef05d197a94fe25"
+    },
+    "quoteSelector.emailOptional": {
+      "value": "(선택 사항)",
+      "tag": "form-label",
+      "cacheKey": "f3cfc979900d1559"
+    },
+    "quoteSelector.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "960bf7df17f95630"
+    },
+    "quoteSelector.continueCta": {
+      "value": "계속하기",
+      "tag": "cta",
+      "cacheKey": "806f982ad9272640"
+    },
+    "quoteSelector.backCta": {
+      "value": "뒤로",
+      "tag": "cta",
+      "cacheKey": "7bc27dfab0910b80"
+    },
+    "quoteSelector.requestQuoteCta": {
+      "value": "견적 요청하기",
+      "tag": "cta",
+      "cacheKey": "346223e8da2fc90b"
+    },
+    "quoteSelector.sendingCta": {
+      "value": "전송 중...",
+      "tag": "cta",
+      "cacheKey": "4edc4cc59decb2a3"
+    },
+    "quoteSelector.preferToCall": {
+      "value": "전화를 선호하세요?",
+      "tag": "cta",
+      "cacheKey": "7cc2c4ee400e14b4"
+    },
+    "quoteSelector.successHeading": {
+      "value": "견적 요청이 접수되었어요",
+      "tag": "cta",
+      "cacheKey": "3ae68a0b526ccbe3"
+    },
+    "quoteSelector.successSub": {
+      "value": "Peninsula Pick Ups에서 곧 연락드릴 거예요. 즉시 답변이 필요하시면 전화 주세요.",
+      "tag": "cta",
+      "cacheKey": "b32ef14b40a45f3b"
+    },
+    "quoteSelector.consentText": {
+      "value": "본인은 견적 요청과 관련하여 Peninsula Pick Ups가 위에 기재한 전화번호로 SMS 및 전화를 포함하여 연락하는 것에 동의합니다. 동의는 서비스의 조건이 아닙니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 수신 거부를 원하시면 STOP으로 회신하세요.",
+      "tag": "legal",
+      "cacheKey": "e9b701c6b7283939"
+    },
+    "quoteSelector.privacyLink": {
+      "value": "저희 개인정보 보호 정책을 확인해 주세요.",
+      "tag": "legal",
+      "cacheKey": "d03cad3070e68af0"
+    },
+    "quoteSelector.progressAria": {
+      "value": "견적 양식 진행 상황: {total}단계 중 {step}단계, {label}",
+      "tag": "meta",
+      "cacheKey": "1234387580298904"
+    },
+    "quoteSelector.headingAria": {
+      "value": "견적 받기",
+      "tag": "meta",
+      "cacheKey": "5c1437024bd4a69e"
+    },
+    "quoteForm.badge": {
+      "value": "무료 견적 받기",
+      "tag": "cta",
+      "cacheKey": "47999d47807ffe1b"
+    },
+    "quoteForm.heading": {
+      "value": "작업 내용 알려주세요",
+      "tag": "cta",
+      "cacheKey": "8b6f7a5fc166e572"
+    },
+    "quoteForm.subPrefix": {
+      "value": "양식을 작성해 주시면 Peninsula Pick Ups에서 직접 연락드릴게요.",
+      "tag": "cta",
+      "cacheKey": "06280ed70e87166f"
+    },
+    "quoteForm.subFasterResponse": {
+      "value": "더 빠른 답변을 원하시면 전화나 문자를 주세요.",
+      "tag": "cta",
+      "cacheKey": "b6468429f1874753"
+    },
+    "quoteForm.contactPhoneSub": {
+      "value": "인증된 사업자 전화번호. Don과 Melissa.",
+      "tag": "trust",
+      "cacheKey": "82625d092935eec5"
+    },
+    "quoteForm.contactCitySub": {
+      "value": "2021년부터 이곳이 저희 터전입니다.",
+      "tag": "trust",
+      "cacheKey": "12627639f1c433ce"
+    },
+    "quoteForm.contactSameDayTitle": {
+      "value": "당일 응대",
+      "tag": "trust",
+      "cacheKey": "f17e1a9b94fa4ec1"
+    },
+    "quoteForm.contactSameDaySub": {
+      "value": "대부분의 작업은 48시간 이내에 일정이 잡혀요.",
+      "tag": "trust",
+      "cacheKey": "27c2fab84bc8a034"
+    },
+    "quoteForm.nameLabel": {
+      "value": "이름",
+      "tag": "form-label",
+      "cacheKey": "243dfedf0821cbfe"
+    },
+    "quoteForm.namePlaceholder": {
+      "value": "성함",
+      "tag": "form-label",
+      "cacheKey": "9fcf91b714eb8c0c"
+    },
+    "quoteForm.phoneLabel": {
+      "value": "전화번호",
+      "tag": "form-label",
+      "cacheKey": "fbda2881df4aa3dd"
+    },
+    "quoteForm.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "2c2afe04ba0fbd0f"
+    },
+    "quoteForm.emailLabel": {
+      "value": "이메일",
+      "tag": "form-label",
+      "cacheKey": "aef05d197a94fe25"
+    },
+    "quoteForm.emailOptional": {
+      "value": "(선택 사항)",
+      "tag": "form-label",
+      "cacheKey": "f3cfc979900d1559"
+    },
+    "quoteForm.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "960bf7df17f95630"
+    },
+    "quoteForm.serviceLabel": {
+      "value": "필요한 서비스",
+      "tag": "form-label",
+      "cacheKey": "9e43168c45bc530e"
+    },
+    "quoteForm.serviceDefault": {
+      "value": "서비스를 선택해 주세요...",
+      "tag": "form-label",
+      "cacheKey": "3ad5557b1a09c7bd"
+    },
+    "quoteForm.locationLabel": {
+      "value": "서비스 위치",
+      "tag": "form-label",
+      "cacheKey": "48f630f38462eb68"
+    },
+    "quoteForm.locationDefault": {
+      "value": "도시를 선택하세요...",
+      "tag": "form-label",
+      "cacheKey": "153e0368f83afb05"
+    },
+    "quoteForm.locationOther": {
+      "value": "기타",
+      "tag": "form-label",
+      "cacheKey": "d66a0ff660414a4c"
+    },
+    "quoteForm.dateLabel": {
+      "value": "희망 날짜",
+      "tag": "form-label",
+      "cacheKey": "b4bdc31074502a9d"
+    },
+    "quoteForm.messageLabel": {
+      "value": "메시지",
+      "tag": "form-label",
+      "cacheKey": "c699bce90ddab5ad"
+    },
+    "quoteForm.messagePlaceholder": {
+      "value": "수거가 필요한 항목, 접근 관련 참고 사항, 또는 궁금한 점을 적어 주세요...",
+      "tag": "form-label",
+      "cacheKey": "584c851fd0280a93"
+    },
+    "quoteForm.sendCta": {
+      "value": "견적 요청 보내기",
+      "tag": "cta",
+      "cacheKey": "cd005b4eb0f5ab6d"
+    },
+    "quoteForm.sendingCta": {
+      "value": "요청 전송 중...",
+      "tag": "cta",
+      "cacheKey": "2b5ce834e319f752"
+    },
+    "quoteForm.consentText": {
+      "value": "본인은 견적 요청과 관련하여 Peninsula Pick Ups가 위에 기재한 전화번호와 이메일로 SMS 및 전화를 포함하여 연락하는 것에 동의합니다. 동의는 서비스의 조건이 아닙니다. 메시지 및 데이터 요금이 부과될 수 있습니다. 수신 거부를 원하시면 언제든지 STOP으로 회신하십시오.",
+      "tag": "legal",
+      "cacheKey": "f3c2b7b67bdf5d53"
+    },
+    "quoteForm.consentSeePrivacy": {
+      "value": "저희 개인정보 처리방침을 확인해 주세요.",
+      "tag": "legal",
+      "cacheKey": "d03cad3070e68af0"
+    },
+    "quoteForm.successHeading": {
+      "value": "요청이 접수되었어요",
+      "tag": "cta",
+      "cacheKey": "e202af9b270dc9cf"
+    },
+    "quoteForm.successSub": {
+      "value": "Peninsula Pick Ups에서 곧 연락드릴 거예요.",
+      "tag": "cta",
+      "cacheKey": "4c4b9704b135784c"
+    },
+    "quoteForm.submitAnotherCta": {
+      "value": "다른 요청 제출하기",
+      "tag": "cta",
+      "cacheKey": "452804bfc8982cb2"
+    },
+    "quoteForm.errorFallback": {
+      "value": "문제가 발생했어요. (650) 201-1543으로 전화 주세요.",
+      "tag": "form-error",
+      "cacheKey": "97c18c95820b9888"
+    },
+    "quoteForm.errorUnavailable": {
+      "value": "제출할 수 없어요. 직접 전화 주세요: (650) 201-1543.",
+      "tag": "form-error",
+      "cacheKey": "8d95bb69e606e033"
+    },
+    "errors.nameRequired": {
+      "value": "이름을 알려 주세요.",
+      "tag": "form-error",
+      "cacheKey": "8d1d5db2a8c6ef9e"
+    },
+    "errors.nameTooShort": {
+      "value": "이름을 입력해 주세요.",
+      "tag": "form-error",
+      "cacheKey": "4abd886445237b9a"
+    },
+    "errors.phoneInvalid": {
+      "value": "유효한 전화번호를 입력해 주세요.",
+      "tag": "form-error",
+      "cacheKey": "acda54191b47beb0"
+    },
+    "errors.emailInvalid": {
+      "value": "유효한 이메일 주소를 입력해 주세요.",
+      "tag": "form-error",
+      "cacheKey": "edd056143138b9c5"
+    },
+    "errors.noUrls": {
+      "value": "URL은 입력할 수 없어요.",
+      "tag": "form-error",
+      "cacheKey": "88b77c150e0a54c9"
+    },
+    "errors.noBrackets": {
+      "value": "꺾쇠괄호(<>)는 사용할 수 없어요.",
+      "tag": "form-error",
+      "cacheKey": "7667b76d09811b12"
+    },
+    "errors.maxLength": {
+      "value": "{max}자 이하로 입력해 주세요.",
+      "tag": "form-error",
+      "cacheKey": "e57ea8cf383d9432"
+    },
+    "errors.consentRequired": {
+      "value": "동의가 필요합니다.",
+      "tag": "form-error",
+      "cacheKey": "fcc4b0a2502c502b"
+    },
+    "footer.tagline": {
+      "value": "샌프란시스코 페닌슐라의 정식 면허 및 보험 가입 쓰레기 수거 및 운반 서비스. 2021년부터 Don과 Melissa가 가족이 운영하는 사업체입니다.",
+      "tag": "trust",
+      "cacheKey": "add3c3077f44d40d"
+    },
+    "footer.servicesHeading": {
+      "value": "서비스",
+      "tag": "nav",
+      "cacheKey": "e86e5655e7a61c38"
+    },
+    "footer.areasHeading": {
+      "value": "서비스 지역",
+      "tag": "nav",
+      "cacheKey": "06ff8a0f8c6b8d15"
+    },
+    "footer.getQuoteHeading": {
+      "value": "견적 받기",
+      "tag": "cta",
+      "cacheKey": "62113ef60149fa72"
+    },
+    "footer.getQuoteSub": {
+      "value": "지금 바로 정리할 준비가 됐나요? 무료 견적을 요청하거나 저희에게 직접 전화 주세요. 빠르게 답해드릴게요.",
+      "tag": "cta",
+      "cacheKey": "b291328508d8831e"
+    },
+    "footer.requestPickupCta": {
+      "value": "수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "b894e8424fe9d933"
+    },
+    "footer.callPrefix": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "footer.licensedTag": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "017199ba2cf15647"
+    },
+    "footer.insuredTag": {
+      "value": "보험 가입 완료",
+      "tag": "trust",
+      "cacheKey": "516cdef9d775f7b8"
+    },
+    "footer.localTag": {
+      "value": "지역 업체",
+      "tag": "trust",
+      "cacheKey": "c529ff5188c249d5"
+    },
+    "footer.findUsOnline": {
+      "value": "온라인에서 찾아보세요",
+      "tag": "misc",
+      "cacheKey": "e9f4c0b316583080"
+    },
+    "footer.allRightsReserved": {
+      "value": "모든 권리 보유.",
+      "tag": "legal",
+      "cacheKey": "7b9dc908bf48f2e4"
+    },
+    "footer.verifyLink": {
+      "value": "사업자 인증 확인",
+      "tag": "nav",
+      "cacheKey": "85c1aff735bf2c65"
+    },
+    "footer.privacyLink": {
+      "value": "개인정보 처리방침",
+      "tag": "nav",
+      "cacheKey": "ddd891c1ca915189"
+    },
+    "footer.termsLink": {
+      "value": "서비스 이용약관",
+      "tag": "nav",
+      "cacheKey": "24ef5a6b6f51c32c"
+    },
+    "footer.verifyBusinessLink": {
+      "value": "사업자 인증 확인",
+      "tag": "trust",
+      "cacheKey": "e59cbe7a554b45b9"
+    },
+    "common.loading": {
+      "value": "로딩 중…",
+      "tag": "misc",
+      "cacheKey": "eedf8d4692e625ab"
+    },
+    "common.error": {
+      "value": "문제가 발생했어요.",
+      "tag": "misc",
+      "cacheKey": "495a3116a8df07c1"
+    },
+    "common.required": {
+      "value": "필수",
+      "tag": "form-label",
+      "cacheKey": "2985112464128e93"
+    },
+    "common.optional": {
+      "value": "선택 사항",
+      "tag": "form-label",
+      "cacheKey": "4f0db44e3d75213b"
+    },
+    "faqSection.badge": {
+      "value": "자주 묻는 질문",
+      "tag": "faq",
+      "cacheKey": "ff3e79acd9e95091"
+    },
+    "faqSection.defaultHeading": {
+      "value": "자주 묻는 질문",
+      "tag": "faq",
+      "cacheKey": "90e718004a5c0861"
+    },
+    "faqSection.moreQuestions": {
+      "value": "더 궁금한 점이 있으신가요?",
+      "tag": "faq",
+      "cacheKey": "9783990ca8b02025"
+    },
+    "faqSection.callPrefix": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "trustSection.badge": {
+      "value": "Peninsula Pick Ups를 선택하는 이유",
+      "tag": "trust",
+      "cacheKey": "1dc2af96eb05920a"
+    },
+    "trustSection.headlinePart1": {
+      "value": "손님들이 믿는 이유",
+      "tag": "trust",
+      "cacheKey": "6bbd6ff68d8a66a6"
+    },
+    "trustSection.headlinePart2": {
+      "value": "진짜 Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "089eb50667bab2f6"
+    },
+    "trustSection.subhead": {
+      "value": "Don과 Melissa는 하나의 원칙으로 Peninsula Pick Ups를 만들었어요. 제때 나타나고, 일을 제대로 하고, 언제든 연락이 닿는 것. 모르는 번호도 없고, 애매한 주소도 없어요. San Carlos에 실제로 있는 사업체로, 직접 확인하실 수 있어요.",
+      "tag": "trust",
+      "cacheKey": "2994ccfd11e608c3"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "무료 견적 요청하기",
+      "tag": "cta",
+      "cacheKey": "f697a7c51a77bf3b"
+    },
+    "trustSection.callCta": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "trustSection.ownersTitle": {
+      "value": "사업주: Don과 Melissa",
+      "tag": "trust",
+      "cacheKey": "55372e5539b5a2fc"
+    },
+    "trustSection.ownersBody": {
+      "value": "San Carlos, CA 94070에 자리 잡은 가족이 운영하는 사업체입니다. 견적을 요청하거나 사업자 전화로 연락하시면, 저희가 직접 받아요. 그게 저희의 방식이에요.",
+      "tag": "trust",
+      "cacheKey": "4d7b2ee4c5399582"
+    },
+    "trustSection.establishedNote": {
+      "value": "2021년 샌프란시스코 페닌슐라에서 시작했어요.",
+      "tag": "trust",
+      "cacheKey": "dd7dfccad9d48bbc"
+    },
+    "trustSection.signal1Title": {
+      "value": "인증된 사업자 전화번호 하나",
+      "tag": "trust",
+      "cacheKey": "2c479d225795d4af"
+    },
+    "trustSection.signal1Body": {
+      "value": "(650) 201-1543으로 전화하시면 Don과 Melissa에게 바로 연결돼요. 콜센터도 없고, 돌려 보내는 일도 없어요.",
+      "tag": "trust",
+      "cacheKey": "52754fd7b3effb4a"
+    },
+    "trustSection.signal2Title": {
+      "value": "2021년부터 San Carlos에 자리잡은 저희입니다.",
+      "tag": "trust",
+      "cacheKey": "c5966b891c560ea1"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups는 페닌슐라에서 시작해 2021년부터 지역 사회를 위해 일해 왔어요. 저희는 이 동네의 골목길과 손님들이 무엇을 기대하는지 잘 알고 있어요.",
+      "tag": "trust",
+      "cacheKey": "6bbed5eea0797150"
+    },
+    "trustSection.signal3Title": {
+      "value": "실제 작업 사진을 곧 올릴게요.",
+      "tag": "trust",
+      "cacheKey": "a5e170cae3ff545a"
+    },
+    "trustSection.signal3Body": {
+      "value": "저희는 모든 작업에 대해 전후 사진으로 작업 결과를 보증해요. 인증된 프로젝트 사진과 영상이 계속 추가되고 있어요.",
+      "tag": "trust",
+      "cacheKey": "79ba787541c79cbd"
+    },
+    "trustSection.signal4Title": {
+      "value": "투명한 가격, 예상치 못한 비용은 없어요.",
+      "tag": "trust",
+      "cacheKey": "ec92b94032e94f33"
+    },
+    "trustSection.signal4Body": {
+      "value": "숨겨진 비용 없이 무료 견적을 제공해요. 저희가 방문하기 전에 금액을 미리 알려드리고, 현장에서 가격이 바뀌는 일은 없어요.",
+      "tag": "trust",
+      "cacheKey": "ffc2bf0697571d20"
+    },
+    "trustSection.signal5Title": {
+      "value": "빠른 일정 조율, 사람이 직접 응답해요.",
+      "tag": "trust",
+      "cacheKey": "62baf2a1ab8d157b"
+    },
+    "trustSection.signal5Body": {
+      "value": "당일 답변해 드려요. 대부분의 작업은 48시간 이내에 예약 가능해요. 담당자가 아닌 사장님과 직접 소통하실 수 있어요.",
+      "tag": "trust",
+      "cacheKey": "f949ce05d1cc7d5d"
+    },
+    "trustSection.signal6Title": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "654bd11daf9f852b"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups는 모든 작업에 정식 면허 및 보험 가입을 갖추고 있어요. 손님의 재산은 확실히 보호됩니다.",
+      "tag": "trust",
+      "cacheKey": "6a2df8e196b44e1e"
+    },
+    "servicesGrid.badge": {
+      "value": "저희가 하는 일",
+      "tag": "service-description",
+      "cacheKey": "194c072229a7726e"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "풀서비스 운반",
+      "tag": "service-description",
+      "cacheKey": "7d669712264f5b8e"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "한 가지 물건부터 집 전체까지",
+      "tag": "service-description",
+      "cacheKey": "b947c4881d666f89"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups는 페닌슐라 전역에서 가정 및 상업용 작업을 담당합니다. 치워야 할 것이라면 무엇이든, 저희가 직접 싣고 깔끔하게 비워 드립니다.",
+      "tag": "service-description",
+      "cacheKey": "cdd39b93ef66db38"
+    },
+    "servicesGrid.learnMore": {
+      "value": "자세히 알아보기",
+      "tag": "cta",
+      "cacheKey": "ad5501fed3166e62"
+    },
+    "servicesGrid.getQuote": {
+      "value": "견적 받기",
+      "tag": "cta",
+      "cacheKey": "3c0ceab552e0f7b5"
+    },
+    "serviceAreas.badge": {
+      "value": "저희 서비스 지역",
+      "tag": "misc",
+      "cacheKey": "02a106538d5b4c6f"
+    },
+    "serviceAreas.heading": {
+      "value": "페닌슐라 전 지역 서비스",
+      "tag": "misc",
+      "cacheKey": "8ead566c6d0afc3f"
+    },
+    "serviceAreas.subhead": {
+      "value": "San Carlos에 위치한 Peninsula Pick Ups는 South San Francisco부터 Palo Alto까지 지역 곳곳을 찾아가요. 도시를 클릭하시면 해당 지역 서비스 정보를 확인하실 수 있어요.",
+      "tag": "misc",
+      "cacheKey": "89baa1fbef2c9a3f"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "b894e8424fe9d933"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "홈 베이스",
+      "tag": "misc",
+      "cacheKey": "c69f989aa2b53951"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "카운티",
+      "tag": "misc",
+      "cacheKey": "987f2d5ee10af81e"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "+ {count}개 더 보기",
+      "tag": "misc",
+      "cacheKey": "aa1be24c97b4efd2"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "찾으시는 도시가 없나요?",
+      "tag": "misc",
+      "cacheKey": "21e632311775be9d"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "견적 요청하기",
+      "tag": "cta",
+      "cacheKey": "cbd9e547924928fc"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "서비스 가능 여부를 확인해 드릴게요.",
+      "tag": "misc",
+      "cacheKey": "83789ac7fc9f175d"
+    },
+    "testimonialsSection.badge": {
+      "value": "고객 후기",
+      "tag": "testimonial",
+      "cacheKey": "311aadadc1f3c981"
+    },
+    "testimonialsSection.heading": {
+      "value": "손님들의 이야기",
+      "tag": "testimonial",
+      "cacheKey": "37063bb922d49d46"
+    },
+    "testimonialsSection.subhead": {
+      "value": "페닌슐라 전역 손님들의 진짜 후기예요. Peninsula Pick Ups는 Yelp에 {count}개의 리뷰가 있고 계속 늘어나고 있어요. Nextdoor와 Alignable에서도 추천을 받고 있답니다.",
+      "tag": "testimonial",
+      "cacheKey": "65ae0ac92a36bf9c"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count}개의 리뷰",
+      "tag": "testimonial",
+      "cacheKey": "d122ed065efd0ab9"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "Nextdoor에서 추천받았어요",
+      "tag": "testimonial",
+      "cacheKey": "76d25afb8c825119"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "{source}에서 인증된 손님",
+      "tag": "testimonial",
+      "cacheKey": "3111a80c9c57e0dc"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "{source}에서 보기",
+      "tag": "meta",
+      "cacheKey": "63da0fc440e86151"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "별점 5점 만점에 {count}점",
+      "tag": "meta",
+      "cacheKey": "4b98c702a4b72b46"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "좋은 경험을 하셨나요?",
+      "tag": "testimonial",
+      "cacheKey": "fe91352e098bff41"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "Peninsula Pick Ups를 이용해 보셨다면, 저희에게 후기를 남겨 주세요. 실제 손님들의 리뷰는 이웃 분들이 믿을 수 있는 지역 서비스를 찾는 데 큰 도움이 돼요.",
+      "tag": "testimonial",
+      "cacheKey": "5e44c18c912544b0"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "Yelp 리뷰 남기기",
+      "tag": "cta",
+      "cacheKey": "b82a03dbf0482231"
+    },
+    "testimonialsSection.callCta": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "사업자 인증",
+      "tag": "meta",
+      "cacheKey": "6c0e523da54dd6f3"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "거점 지역",
+      "tag": "trust",
+      "cacheKey": "a8a5c446aee37a0a"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "2021년부터 운영 중입니다.",
+      "tag": "trust",
+      "cacheKey": "7cd3d954ce311c4a"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "2021년 설립",
+      "tag": "trust",
+      "cacheKey": "1634f3bd4670144c"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "인증된 사업자 전화번호",
+      "tag": "trust",
+      "cacheKey": "5507d6ff59db15d2"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "Don과 Melissa",
+      "tag": "trust",
+      "cacheKey": "9005a2d7951ea54b"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "지역 주민이 운영해요.",
+      "tag": "trust",
+      "cacheKey": "4ed5e2d7f3c4731f"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "a51a0a135140647f"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "전문적인 서비스",
+      "tag": "trust",
+      "cacheKey": "116e3780c5555c7d"
+    },
+    "gallerySection.badge": {
+      "value": "진짜 일, 진짜 결과.",
+      "tag": "misc",
+      "cacheKey": "aed0d8ec499cfceb"
+    },
+    "gallerySection.heading": {
+      "value": "프로젝트 갤러리",
+      "tag": "misc",
+      "cacheKey": "356bf77c733a110f"
+    },
+    "gallerySection.subhead": {
+      "value": "Peninsula Pick Ups의 실제 작업 사진들 — 차고 정리, 폐기물 수거, 가전제품 운반, 그리고 페닌슐라 전역의 전체 부지 정리까지 담았어요.",
+      "tag": "misc",
+      "cacheKey": "be8c2a063fb7e0df"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "사진 58장",
+      "tag": "misc",
+      "cacheKey": "992fcea2e773ef85"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143개 이상의 게시물",
+      "tag": "misc",
+      "cacheKey": "63a483752ff177b3"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "Instagram에서 143개 이상의 작업 사진 보기",
+      "tag": "cta",
+      "cacheKey": "35402c86bc2ae7ae"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "팔로우하기",
+      "tag": "cta",
+      "cacheKey": "566c8ceb5af5d666"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "페닌슐라 전역의 차고 정리, 건축 폐기물 수거, 가전제품 수거 등 모든 작업의 전후 사진을 확인해 보세요.",
+      "tag": "cta",
+      "cacheKey": "b173d6a98eb13ebf"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "모든 사진 보기",
+      "tag": "cta",
+      "cacheKey": "2c7c97f5914c9434"
+    },
+    "gallerySection.photo1Label": {
+      "value": "수거 완료",
+      "tag": "misc",
+      "cacheKey": "f16a5be5294b515c"
+    },
+    "gallerySection.photo2Label": {
+      "value": "가정 정리",
+      "tag": "misc",
+      "cacheKey": "76dae415607623f2"
+    },
+    "gallerySection.photo3Label": {
+      "value": "전체 짐 운반",
+      "tag": "misc",
+      "cacheKey": "2510202c2f66b8e8"
+    },
+    "gallerySection.photo4Label": {
+      "value": "잔해물 수거",
+      "tag": "misc",
+      "cacheKey": "f9a165fc9607e8b3"
+    },
+    "gallerySection.photo5Label": {
+      "value": "부동산 정리",
+      "tag": "misc",
+      "cacheKey": "7a15f84912ffa14a"
+    },
+    "gallerySection.photo6Label": {
+      "value": "작업 현장",
+      "tag": "misc",
+      "cacheKey": "836abcb931e6a0b6"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "San Mateo County",
+      "tag": "misc",
+      "cacheKey": "c5caea2d71a5b2d3"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "샌프란시스코 페닌슐라, CA",
+      "tag": "misc",
+      "cacheKey": "dc31b11a9ceaa42f"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "샌프란시스코 베이 에어리어, CA",
+      "tag": "misc",
+      "cacheKey": "2b566bfe9b8f6ca1"
+    },
+    "shareCity.shareLabel": {
+      "value": "{city} 페이지 공유하기",
+      "tag": "cta",
+      "cacheKey": "7b4034cb79f6ea1c"
+    },
+    "shareCity.copied": {
+      "value": "링크가 복사되었어요",
+      "tag": "misc",
+      "cacheKey": "4b0c510ef501fc23"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups는 {city}, CA를 서비스합니다 — (650) 201-1543.",
+      "tag": "cta",
+      "cacheKey": "45ee11e1e6e6c748"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "서비스 지역",
+      "tag": "nav",
+      "cacheKey": "06ff8a0f8c6b8d15"
+    },
+    "areaPage.countyBadge": {
+      "value": "{county} 카운티",
+      "tag": "misc",
+      "cacheKey": "77f414c6c791b26b"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "거점 지역",
+      "tag": "trust",
+      "cacheKey": "a8a5c446aee37a0a"
+    },
+    "areaPage.headlinePart1": {
+      "value": "쓰레기 수거 서비스,",
+      "tag": "hero",
+      "cacheKey": "8aa3eeb1c2da149d"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "{city}에서 수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "8ca072a662531406"
+    },
+    "areaPage.callPrefix": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "areaPage.textUs": {
+      "value": "문자 보내기",
+      "tag": "cta",
+      "cacheKey": "f2e6a14d0d62db05"
+    },
+    "areaPage.textMessage": {
+      "value": "Peninsula Pick Ups 안녕하세요 — {city}, CA에서 수거를 요청드립니다.",
+      "tag": "cta",
+      "cacheKey": "dba1d76265c12c9c"
+    },
+    "areaPage.servicesHeading": {
+      "value": "{city}에서 이용 가능한 서비스",
+      "tag": "service-description",
+      "cacheKey": "279d526eb6ba511e"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups는 {city}, CA 전역에서 다음 서비스를 제공합니다.",
+      "tag": "service-description",
+      "cacheKey": "dd9b4c1f7da31ed8"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "인근 지역도 서비스합니다",
+      "tag": "misc",
+      "cacheKey": "e3675a05ae0d3f02"
+    },
+    "areaPage.faqHeading": {
+      "value": "{city} 자주 묻는 질문",
+      "tag": "faq",
+      "cacheKey": "97518a0e96d569e4"
+    },
+    "areaPage.faqSubhead": {
+      "value": "{city}, CA의 쓰레기 수거 및 운반에 관한 자주 묻는 질문들이에요.",
+      "tag": "faq",
+      "cacheKey": "bcfb0db7e8d212a3"
+    },
+    "areaPage.backToHome": {
+      "value": "Peninsula Pick Ups로 돌아가기",
+      "tag": "nav",
+      "cacheKey": "35b03bfce997e4a5"
+    },
+    "areaPage.statHomeBase": {
+      "value": "거점 지역",
+      "tag": "trust",
+      "cacheKey": "a8a5c446aee37a0a"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "페닌슐라 지역을 섬기고 있어요.",
+      "tag": "trust",
+      "cacheKey": "721ccf2428ceee33"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "인증된 사업자 전화번호",
+      "tag": "trust",
+      "cacheKey": "6511d2869a80d219"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "지역 주민이 직접 운영해요.",
+      "tag": "trust",
+      "cacheKey": "4ed5e2d7f3c4731f"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "전문적인 서비스",
+      "tag": "trust",
+      "cacheKey": "116e3780c5555c7d"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "a51a0a135140647f"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "정식 사업체 등록 완료.",
+      "tag": "trust",
+      "cacheKey": "fc224f91c846a6a1"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "서비스",
+      "tag": "nav",
+      "cacheKey": "e86e5655e7a61c38"
+    },
+    "servicePage.serviceBadge": {
+      "value": "서비스",
+      "tag": "service-description",
+      "cacheKey": "62aae731585359d8"
+    },
+    "servicePage.requestQuote": {
+      "value": "견적 요청하기",
+      "tag": "cta",
+      "cacheKey": "d1cc4aecd9e88d6f"
+    },
+    "servicePage.callPrefix": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "저희가 서비스하는 지역",
+      "tag": "misc",
+      "cacheKey": "58f777019c2e5b7e"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service}는 Peninsula Pick Ups의 모든 서비스 지역에서 이용하실 수 있습니다.",
+      "tag": "service-description",
+      "cacheKey": "6bc9294bf8c25699"
+    },
+    "servicePage.faqHeading": {
+      "value": "{service} 자주 묻는 질문",
+      "tag": "faq",
+      "cacheKey": "847c8411c1c01c08"
+    },
+    "servicePage.faqSubhead": {
+      "value": "Peninsula Pick Ups의 {service}에 관한 자주 묻는 질문들이에요.",
+      "tag": "faq",
+      "cacheKey": "40df609e1f69ec48"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "기타 서비스",
+      "tag": "service-description",
+      "cacheKey": "148bc3c056592a6c"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "사업자 인증 확인",
+      "tag": "nav",
+      "cacheKey": "85c1aff735bf2c65"
+    },
+    "verifyPage.badge": {
+      "value": "인증된 신원",
+      "tag": "trust",
+      "cacheKey": "15eae9ebc66610a5"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "이것은",
+      "tag": "hero",
+      "cacheKey": "2546e506121ae62f"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "정식 Peninsula Pick Ups.",
+      "tag": "hero",
+      "cacheKey": "d1369caea55a7c87"
+    },
+    "verifyPage.subhead": {
+      "value": "2021년부터 San Carlos, CA에 자리잡은 가족이 운영하는 쓰레기 수거 및 운반 사업체의 공공 기록 인증입니다.",
+      "tag": "trust",
+      "cacheKey": "8272838bfc0d612c"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "공식 등록 사업체",
+      "tag": "trust",
+      "cacheKey": "64c1514c983d1c81"
+    },
+    "verifyPage.factLegalName": {
+      "value": "법인 명칭",
+      "tag": "trust",
+      "cacheKey": "4e7470fd183c3e4b"
+    },
+    "verifyPage.factDomain": {
+      "value": "도메인",
+      "tag": "trust",
+      "cacheKey": "59c68e013f525d63"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "인증된 전화번호",
+      "tag": "trust",
+      "cacheKey": "8a1b9eee733815b1"
+    },
+    "verifyPage.factAddress": {
+      "value": "주소",
+      "tag": "trust",
+      "cacheKey": "e94e006d49c250fe"
+    },
+    "verifyPage.factOwners": {
+      "value": "대표자",
+      "tag": "trust",
+      "cacheKey": "5f32f4ff7355a768"
+    },
+    "verifyPage.factFounded": {
+      "value": "설립",
+      "tag": "trust",
+      "cacheKey": "64b61e382ce4771d"
+    },
+    "verifyPage.factLicensed": {
+      "value": "정식 면허 및 보험 가입",
+      "tag": "trust",
+      "cacheKey": "654bd11daf9f852b"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "네",
+      "tag": "trust",
+      "cacheKey": "090eec0346e49e00"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "사칭 사이트에 대한 안내",
+      "tag": "trust",
+      "cacheKey": "ace0c6f63ebdb35b"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "공식 프로필 및 리뷰 기록",
+      "tag": "trust",
+      "cacheKey": "4c36fbeb06973c91"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "아래의 모든 링크는 저희가 직접 운영하는 공개 프로필입니다. 저희 스키마와 이 사이트의 모든 페이지에서 공식적으로 안내하는 주소들이에요.",
+      "tag": "trust",
+      "cacheKey": "47a3d1cb0ee66f7a"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "직접 확인하고 싶으신가요?",
+      "tag": "trust",
+      "cacheKey": "8527d7c6c16da0b5"
+    },
+    "verifyPage.confirmBody": {
+      "value": "영업 시간인 월요일부터 토요일 사이에는 Don 또는 Melissa가 인증된 사업자 전화번호로 직접 전화를 받아요.",
+      "tag": "trust",
+      "cacheKey": "6acaadeb484d5599"
+    },
+    "verifyPage.callCta": {
+      "value": "전화하기",
+      "tag": "cta",
+      "cacheKey": "3f3221dbfe2d32b7"
+    },
+    "verifyPage.textCta": {
+      "value": "문자 보내기",
+      "tag": "cta",
+      "cacheKey": "f2e6a14d0d62db05"
+    },
+    "service.junk-removal.name": {
+      "value": "쓰레기 수거",
+      "tag": "service-description",
+      "cacheKey": "073db7c639c037fa"
+    },
+    "service.junk-removal.shortName": {
+      "value": "쓰레기 수거",
+      "tag": "service-description",
+      "cacheKey": "073db7c639c037fa"
+    },
+    "service.junk-removal.blurb": {
+      "value": "주택, 차고, 마당, 부동산 전체의 쓰레기 수거 서비스입니다. 저희가 직접 싣고, 운반하고, 깔끔하게 정리해 드립니다.",
+      "tag": "service-description",
+      "cacheKey": "5f869be501b5cb14"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups는 샌프란시스코 페닌슐라 전역에서 쓰레기 수거 서비스를 제공합니다 — 가구 한 점부터 차고 전체 정리까지 다 맡아드려요. 저희 팀은 제대로 된 트럭과 확실한 계획을 갖추고 방문합니다. 모든 적재 작업을 저희가 하고, 작업 후 청소까지 책임지며, 책임감 있게 처리합니다. 숨겨진 비용, 예상치 못한 추가 요금이 없으며, 현장에 도착한 후 견적이 달라지는 일도 없습니다.",
+      "tag": "service-description",
+      "cacheKey": "486e9e79d8a0ac37"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "어떤 종류의 물건을 수거해 드리나요?",
+      "tag": "faq",
+      "cacheKey": "d36b43084b6b3f64"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "가구, 매트리스, 가전제품, 전자 폐기물, 정원 쓰레기, 건축 폐기물, 집 안 잡동사니 등 위험하지 않은 것이라면 거의 다 수거해요. 확실하지 않으시면 (650) 201-1543으로 전화하실 때 사진을 보내 주시면 바로 알려 드릴게요.",
+      "tag": "faq",
+      "cacheKey": "1149cd6de6a995b1"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "요금은 어떻게 정해지나요?",
+      "tag": "faq",
+      "cacheKey": "d5e2fdebebbc8f64"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "요금은 트럭에 실리는 양과 특수 처리 여부에 따라 결정됩니다. 작업 시작 전에 확정 견적을 드리며, 현장에서 가격이 바뀌는 일은 없어요.",
+      "tag": "faq",
+      "cacheKey": "9002fa5b2af15569"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "얼마나 빨리 오실 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "40007e40fa0cae60"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "대부분의 작업은 48시간 이내에 예약됩니다. 당일 수거도 자주 가능하니 (650) 201-1543으로 전화하여 확인해 주세요.",
+      "tag": "faq",
+      "cacheKey": "3e590e994448895b"
+    },
+    "service.construction-debris.name": {
+      "value": "건축 폐기물 수거",
+      "tag": "service-description",
+      "cacheKey": "f9b5fc20418c9b72"
+    },
+    "service.construction-debris.shortName": {
+      "value": "건축 폐기물 수거",
+      "tag": "service-description",
+      "cacheKey": "b917c8c52a2dce59"
+    },
+    "service.construction-debris.blurb": {
+      "value": "리모델링 후 청소, 철거 폐기물, 석고보드, 목재, 콘크리트, 시공 잔재물까지 빠르게 운반해 드려요.",
+      "tag": "service-description",
+      "cacheKey": "5dc7ff3327b90a1a"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups는 샌프란시스코 페닌슐라 전역에서 리모델링 및 철거 후 발생하는 폐기물을 수거합니다 — 석고보드, 목재 자투리, 파손된 콘크리트, 타일, 바닥재, 찬장, 그리고 시공 현장 쓰레기까지요. 일반 도급업체, 리모델링 업체, 그리고 집주인 손님들과 함께 일하고 있어요. 작업 규모를 알려 주시면 견적을 드리고, 필요하실 때 현장에 바로 나가겠습니다.",
+      "tag": "service-description",
+      "cacheKey": "d5ed525919ff3c87"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "시공업체와 직접 작업하시나요?",
+      "tag": "faq",
+      "cacheKey": "8ce15b297bf40c04"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "네, 저희는 종합 건설사(GC)나 리모델링 업체를 위한 시공 후 현장 정리 작업을 정기적으로 맡고 있어요. 정기 일정으로도, 필요할 때 호출하는 방식으로도 예약하실 수 있어요.",
+      "tag": "faq",
+      "cacheKey": "540659ab5ca23d63"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "콘크리트와 타일도 처리할 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "f47f757ef285513f"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "네, 무거운 폐기물도 저희가 처리하는 작업 중 하나예요. 무게를 고려한 부피 기준 견적을 드릴게요.",
+      "tag": "faq",
+      "cacheKey": "cfe3efd0f936fd65"
+    },
+    "service.appliance-removal.name": {
+      "value": "가전제품 수거",
+      "tag": "service-description",
+      "cacheKey": "432dc22b6f5c8195"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "가전제품 수거",
+      "tag": "service-description",
+      "cacheKey": "432dc22b6f5c8195"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "냉장고, 세탁기, 건조기, 가스레인지 등 다양한 가전제품을 처리합니다. 저희가 직접 분리하고, 수거하여, 안전하게 운반해 드립니다.",
+      "tag": "service-description",
+      "cacheKey": "c9d1d0e375aebfbd"
+    },
+    "service.appliance-removal.description": {
+      "value": "현관에 오래된 냉장고가 있으신가요? 혼자 들기 힘든 세탁기·건조기 세트가 있으신가요? Peninsula Pick Ups는 적절한 장비를 사용해 바닥, 벽, 문틀을 보호하면서 모든 크기의 가전제품을 수거합니다. 냉매와 금속이 올바르게 처리될 수 있도록 적절한 폐기 및 재활용 절차도 저희가 책임집니다.",
+      "tag": "service-description",
+      "cacheKey": "54ffa0e8b12d0667"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "가전제품 분리는 해드리나요?",
+      "tag": "faq",
+      "cacheKey": "177acdd743ab318e"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "수도, 가스 차단, 플러그 분리처럼 일반적인 연결 해제는 저희가 처리해 드려요. 전문 배관사나 전기기사가 필요한 작업은 미리 솔직하게 말씀드릴게요.",
+      "tag": "faq",
+      "cacheKey": "3ed0876fbbf717c9"
+    },
+    "service.storage-cleanout.name": {
+      "value": "창고 정리",
+      "tag": "service-description",
+      "cacheKey": "b18382d0e620d3b2"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "창고 정리",
+      "tag": "service-description",
+      "cacheKey": "8fc009a32efa073f"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "창고 유닛, 차고, 창고방 정리를 도와드려요. 분류, 운반, 전체 구역 청소까지 저희가 처리합니다.",
+      "tag": "service-description",
+      "cacheKey": "aa689bd7e0cf15c6"
+    },
+    "service.storage-cleanout.description": {
+      "value": "창고, 다락방, 차고, 지하실 — Peninsula Pick Ups가 대신 깔끔하게 정리해 드립니다. 손님의 지시에 따라 기증 가능한 물건을 따로 분류해 두고, 무거운 짐 운반과 처리까지 모두 저희가 맡습니다. 이사, 다운사이징, 유산 정리 등에 자주 이용되는 서비스입니다.",
+      "tag": "service-description",
+      "cacheKey": "bd1f36ff2da556b5"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "기부할 물건을 따로 빼둘 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "b58c8854674c8d2a"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "네, 보관할 것, 기증할 것, 버릴 것을 알려 주시면 작업하면서 그에 맞게 분류해 드려요.",
+      "tag": "faq",
+      "cacheKey": "8540e7bc5c89216e"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "퇴거 정리",
+      "tag": "service-description",
+      "cacheKey": "6fd75686414a1486"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "퇴거 정리",
+      "tag": "service-description",
+      "cacheKey": "7895dde0113a5a77"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "임차인 퇴거 후 집주인과 부동산 관리자를 위한 전체 부지 정리 서비스입니다. 빠르고, 전문적이며, 조용히 처리합니다.",
+      "tag": "service-description",
+      "cacheKey": "e32ab44cfd60c278"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups는 Peninsula 지역의 집주인 및 부동산 관리자분들과 함께 퇴거 후 정리 작업을 진행합니다. 저희는 신속하게 도착해 효율적으로 작업하고, 작업 내용을 문서로 기록하며, 청소·도장·재임대 준비가 바로 가능한 상태로 유닛을 깔끔하게 마무리합니다. 세심하고, 전문적이며, 모든 작업이 기록으로 남습니다.",
+      "tag": "service-description",
+      "cacheKey": "82061cc47ea48ff6"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "작업 전후 사진을 제공하나요?",
+      "tag": "faq",
+      "cacheKey": "6ae7e9f956c11865"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "네 — 작업 시작 전과 완료 후에 각각 사진을 찍고, 당일 이메일로 관련 자료를 보내드려요.",
+      "tag": "faq",
+      "cacheKey": "a611c6dd38891c73"
+    },
+    "service.commercial-hauling.name": {
+      "value": "상업용 운반",
+      "tag": "service-description",
+      "cacheKey": "2dcb6d4ab25e8cc6"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "상업용 운반",
+      "tag": "service-description",
+      "cacheKey": "2dcb6d4ab25e8cc6"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "사무실 가구, 소매점 집기, 창고 팔레트, 대규모 상업용 폐기물까지. 저희는 크고 작은 작업을 모두 처리합니다.",
+      "tag": "service-description",
+      "cacheKey": "704208dbd4ba62af"
+    },
+    "service.commercial-hauling.description": {
+      "value": "사무실 정리, 소매점 집기 수거, 창고 팔레트 운반, 식당 장비 수거 등 — Peninsula Pick Ups는 페닌슐라 전역에서 상업 규모의 작업을 처리합니다. 필요한 경우 업무 시간 외에도 작업하며, 부동산 관리자와 출입 방법, 보험 증명서(COI), 엘리베이터 예약 등을 조율합니다.",
+      "tag": "service-description",
+      "cacheKey": "dbd4a38308be0889"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "상업용 부동산에 대한 보험도 가입되어 있나요?",
+      "tag": "faq",
+      "cacheKey": "d63165643ed6c6a4"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "네 — 저희는 일반 배상 책임 보험에 가입되어 있으며, 필요 시 해당 부동산을 피보험자로 명시한 보험 증명서를 제공해 드릴 수 있어요.",
+      "tag": "faq",
+      "cacheKey": "7fda991f13930882"
+    },
+    "service.residential-cleanout.name": {
+      "value": "가정 정리",
+      "tag": "service-description",
+      "cacheKey": "3e349b5277ed3e3a"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "가정 정리",
+      "tag": "service-description",
+      "cacheKey": "18cf60fdaaa4f0a1"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "집 전체 또는 유산 정리를 정성껏 처리해 드려요. 가족분들, 유언 집행인, 그리고 페닌슐라 지역 부동산 에이전트와 함께 일합니다.",
+      "tag": "service-description",
+      "cacheKey": "551c1ba1d9c7c9a9"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups는 완전한 가정 정리 서비스를 제공합니다 — 유산 정리, 이사 준비, 매매 전 준비, 세입자 퇴거 후 정리까지 모두 맡아드려요. 저희가 직접 분류하고, 운반하고, 청소까지 합니다. 가족이나 집주인 손님이 필요로 하는 속도에 맞춰 진행해 드려요. 특히 유산 관련 작업은 세심하고 신중하게 처리합니다.",
+      "tag": "service-description",
+      "cacheKey": "8b6847bcc540c58d"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos는 Peninsula Pick Ups의 본거지예요. Don과 Melissa가 2021년에 이곳에서 사업을 시작했고, 동네 구석구석을 직접 잘 알고 있어요. Burton Park부터 White Oaks까지, 저희는 San Carlos 전역의 가정과 사업체를 위해 쓰레기 수거, 운반, 그리고 전체 부지 정리를 담당하고 있어요.",
+      "tag": "service-description",
+      "cacheKey": "4ff5b9ecf9d51042"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "네, 저희는 San Carlos에 자리 잡고 있어요.",
+      "tag": "faq",
+      "cacheKey": "f83c1a5f1074cf94"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "네, Peninsula Pick Ups는 2021년부터 San Carlos, CA 94070에서 운영되고 있어요. (650) 201-1543으로 전화하시면 Don과 Melissa에게 바로 연결됩니다.",
+      "tag": "faq",
+      "cacheKey": "b664c36e39f4aa93"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "San Carlos에서 얼마나 빨리 오실 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "ef195288cccb6a1b"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlos는 저희 거점 지역이라 당일 서비스가 자주 가능해요. 대부분의 작업은 24시간 이내에 예약됩니다.",
+      "tag": "faq",
+      "cacheKey": "54148a3d1120112d"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups는 San Mateo 전역에 빠르고 전문적인 쓰레기 수거 및 운반 서비스를 제공해요. Shoreview에서 차고를 정리하든, 시내 근처에서 전체 부지 대청소를 하든, 리모델링 후 건축 폐기물을 처리하든, 저희 팀이 효율적이고 믿음직한 서비스를 드려요.",
+      "tag": "service-description",
+      "cacheKey": "1a4ba4cdc23a2363"
+    },
+    "area.redwood-city.summary": {
+      "value": "Broadway에서 Woodside Road까지, Peninsula Pick Ups는 Redwood City 전역에서 쓰레기 수거, 건축 폐기물 수거, 그리고 대규모 정리 작업을 담당합니다. 빠르고 전문적인 운반 서비스가 필요한 주택 소유자, 임대인, 사업체 모두와 함께합니다.",
+      "tag": "service-description",
+      "cacheKey": "a9abb527691f55c2"
+    },
+    "area.belmont.summary": {
+      "value": "Belmont의 주택 소유자와 사업체들은 믿을 수 있는 쓰레기 수거와 부동산 정리를 위해 Peninsula Pick Ups를 신뢰합니다. 저희는 San Carlos 거점에서 Belmont 지역을 정기적으로 서비스합니다. 빠른 일정 조율, 투명한 가격, 그리고 언제나 전문적인 팀이 함께합니다.",
+      "tag": "service-description",
+      "cacheKey": "7c244c955246b5a3"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups는 Burlingame 주민과 사업주 손님께 믿을 수 있는 쓰레기 수거 및 운반 서비스를 제공해요. 가전제품 하나를 치우는 일부터 사무실 전체 정리까지, 저희가 빠르게 일정을 잡고 제대로 마무리해 드려요.",
+      "tag": "service-description",
+      "cacheKey": "e8932eacea8fb327"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups는 페닌슐라 전역의 모든 작업에 적용하는 동일한 전문적인 기준으로 Palo Alto 손님들을 섬깁니다. 집주인, 임대인, 사업체 모두 저희의 효율적인 쓰레기 수거, 정리, 폐기물 운반 서비스를 믿고 이용하고 있습니다.",
+      "tag": "service-description",
+      "cacheKey": "ee9ce8b4b95797ae"
+    },
+    "area.menlo-park.summary": {
+      "value": "Belle Haven부터 Willows까지, Peninsula Pick Ups는 Menlo Park 쓰레기 수거를 전문성과 신속함으로 처리합니다. 저희는 손님의 일정에 맞춰 작업하고, 작업 후 깔끔하게 정리해 드립니다. 숨겨진 비용도, 예상치 못한 추가 요금도 없습니다.",
+      "tag": "service-description",
+      "cacheKey": "0e412a6c3c1dc244"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups는 South San Francisco 전역에서 쓰레기 수거, 운반, 상업용 정리 서비스를 제공합니다. 저희 팀은 이 지역을 잘 아는 숙련된 인력으로 구성되어 있으며, 어떤 규모의 작업이든 빠르고 전문적으로 처리할 준비가 되어 있습니다.",
+      "tag": "service-description",
+      "cacheKey": "c77013ed75d88d8f"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups는 Daly City의 주택 소유자와 건물 관리자에게 빠르고 합리적인 쓰레기 수거 서비스를 제공합니다. 저희는 해당 지역 전반에 걸쳐 가정 및 상업용 정리, 가전제품 수거, 폐기물 운반을 담당합니다.",
+      "tag": "service-description",
+      "cacheKey": "bfbfdf22a6e20f53"
+    },
+    "area.millbrae.summary": {
+      "value": "Millbrae에도 저희가 페닌슐라 전역의 모든 작업에서 보여드리는 같은 신뢰로 서비스합니다. Peninsula Pick Ups는 쓰레기 수거, 창고 정리, 가전제품 수거를 제때 도착해서 깔끔하게 마무리하는 팀과 함께 처리해 드립니다.",
+      "tag": "service-description",
+      "cacheKey": "6234903b74de3715"
+    },
+    "homepageFaq.0.q": {
+      "value": "Peninsula Pick Ups는 어디에 위치해 있나요?",
+      "tag": "faq",
+      "cacheKey": "b491815ecfada2a1"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups는 San Carlos, CA 94070을 거점으로 운영됩니다. 저희 사업주 Don과 Melissa는 2021년부터 페닌슐라 지역에서 이 사업을 운영해 왔어요. 인증된 사업자 전화번호는 (650) 201-1543입니다.",
+      "tag": "faq",
+      "cacheKey": "f966d39d0f65bfbb"
+    },
+    "homepageFaq.1.q": {
+      "value": "어느 지역에서 서비스를 제공하나요?",
+      "tag": "faq",
+      "cacheKey": "63d91f7874ed09ba"
+    },
+    "homepageFaq.1.a": {
+      "value": "저희는 Daly City와 South San Francisco부터 San Mateo, Belmont, San Carlos, Redwood City, Menlo Park, Palo Alto까지 샌프란시스코 페닌슐라 전역을 담당하고 있어요. 목록에 없는 지역이라도 (650) 201-1543으로 전화 주세요 — 대부분 가능해요.",
+      "tag": "faq",
+      "cacheKey": "a3dee19deb06a904"
+    },
+    "homepageFaq.2.q": {
+      "value": "얼마나 빨리 오실 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "d154109bc06b2297"
+    },
+    "homepageFaq.2.a": {
+      "value": "대부분의 작업은 24~48시간 이내에 예약됩니다. 당일 서비스도 자주 가능하며, 특히 San Carlos 및 인근 도시에서는 더욱 그렇습니다.",
+      "tag": "faq",
+      "cacheKey": "cc6cbcc5b519b564"
+    },
+    "homepageFaq.3.q": {
+      "value": "가격은 어떻게 정해지나요?",
+      "tag": "faq",
+      "cacheKey": "d5e2fdebebbc8f64"
+    },
+    "homepageFaq.3.a": {
+      "value": "요금은 트럭에 싣는 양과 특수 처리 여부에 따라 결정됩니다. 작업 시작 전에 확정 견적을 드리며, 현장에서 가격이 바뀌는 일은 없습니다.",
+      "tag": "faq",
+      "cacheKey": "9002fa5b2af15569"
+    },
+    "homepageFaq.4.q": {
+      "value": "제가 Peninsula Pick Ups가 맞는지 어떻게 확인할 수 있나요?",
+      "tag": "faq",
+      "cacheKey": "0035c4739728cf46"
+    },
+    "homepageFaq.4.a": {
+      "value": "저희 도메인은 thepeninsulapickup.com입니다. 인증된 사업자 전화번호는 (650) 201-1543이에요. Don과 Melissa가 직접 전화를 받습니다. Yelp, Instagram, Facebook, Nextdoor, Alignable, JunkSpots에 걸친 저희의 전체 사업자 정보는 /verify에서 확인하실 수 있어요.",
+      "tag": "faq",
+      "cacheKey": "669706593ffb286e"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | 쓰레기 수거 & 운반 | San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "ebf8f052210252c7"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups는 샌프란시스코 페닌슐라 전역에서 쓰레기 수거, 운반, 정리, 건축 폐기물 수거 서비스를 제공해요. 2021년부터 San Carlos에서 Don과 Melissa가 지역에서 운영하는 업체예요. 전화 주세요: (650) 201-1543.",
+      "tag": "meta",
+      "cacheKey": "63a05ef04c6bc154"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — 쓰레기 수거 & 운반, San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "0df2dbb08d831aa0"
+    },
+    "map.badge": {
+      "value": "샌프란시스코 페닌슐라",
+      "tag": "misc",
+      "cacheKey": "f0be7c4920261acd"
+    },
+    "map.heading": {
+      "value": "Peninsula Pick Ups가 서비스하는 지역",
+      "tag": "misc",
+      "cacheKey": "fb210b947e942997"
+    },
+    "map.sub": {
+      "value": "도시를 선택하시면 해당 지역 서비스 정보를 확인하실 수 있어요. 저희는 San Carlos에 자리 잡고 있으며, 샌프란시스코 페닌슐라 전역을 담당하고 있어요.",
+      "tag": "misc",
+      "cacheKey": "feb3af9cadb7906b"
+    },
+    "map.tooltipPreview": {
+      "value": "{city} 미리보기",
+      "tag": "meta",
+      "cacheKey": "a6f9746416679f9a"
+    },
+    "map.homeBaseTag": {
+      "value": "홈베이스",
+      "tag": "misc",
+      "cacheKey": "c69f989aa2b53951"
+    },
+    "map.servicesAvailable": {
+      "value": "{count}가지 서비스를 이용하실 수 있어요.",
+      "tag": "misc",
+      "cacheKey": "b83d9d25d6a31ed1"
+    },
+    "map.requestPickupHere": {
+      "value": "여기서 수거 요청하기",
+      "tag": "cta",
+      "cacheKey": "deb367d936da4043"
+    }
+  }
+}

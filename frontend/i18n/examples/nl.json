@@ -1,0 +1,18 @@
+{
+  "$schema": "Few-shot examples for Dutch (Netherlands). Hand-curated source→target pairs.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "De ophaaldienst waar u op kunt rekenen." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups verzorgt afvalverwijdering, transport en volledige ontruimingen in San Carlos en het hele schiereiland. Echte eigenaren. Echt telefoonnummer. Echte resultaten." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Vraag een ophaalbeurt aan" },
+    { "tag": "cta", "source": "Call Now", "target": "Bel nu" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Vraag een gratis offerte aan" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "Gecertificeerd en verzekerd sinds 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Familiebedrijf gerund door Don en Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Wij doen al het laadwerk, vegen na afloop schoon en verwerken verantwoord. Geen verborgen kosten, geen verrassingen, en geen prijzen die veranderen zodra we ter plaatse zijn." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "De meeste opdrachten worden binnen 48 uur ingepland. Ophaalbeurten op dezelfde dag zijn vaak mogelijk — bel (650) 201-1543 om dit te bevestigen." },
+    { "tag": "form-label", "source": "Service Location", "target": "Locatie van service" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Voer een geldig telefoonnummer in." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Ik ga ermee akkoord dat Peninsula Pick Ups contact met mij opneemt via het bovenstaande telefoonnummer en e-mailadres over mijn offerteaanvraag, inclusief sms en telefoon. Toestemming is geen voorwaarde voor de dienstverlening." }
+  ]
+}

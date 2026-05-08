@@ -1,0 +1,29 @@
+{
+  "$schema": "Hebrew (Modern Israeli) glossary. Locked translations. RTL — phone numbers wrapped dir=ltr at render time.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "שירות הפינוי שאפשר לסמוך עליו.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "פינוי גרוטאות",
+    "service_construction_debris": "פינוי פסולת בנייה",
+    "service_appliance_removal": "פינוי מוצרי חשמל",
+    "service_storage_cleanout": "פינוי מחסן",
+    "service_eviction_cleanout": "פינוי לאחר פינוי דייר",
+    "service_commercial_hauling": "הובלות עסקיות",
+    "service_residential_cleanout": "פינוי דירה",
+    "industry_term_hauling": "הובלה",
+    "industry_term_cleanout": "פינוי",
+    "industry_term_pickup": "איסוף",
+    "trust_phrase_licensed": "בעלי רישיון ומבוטחים",
+    "trust_phrase_family_owned": "עסק משפחתי",
+    "trust_phrase_locally_owned": "עסק מקומי",
+    "trust_phrase_same_day": "שירות באותו יום",
+    "region_label": "חצי האי סן פרנסיסקו",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "אימות העסק הזה"
+  }
+}

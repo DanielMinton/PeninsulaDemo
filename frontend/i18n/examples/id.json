@@ -1,0 +1,18 @@
+{
+  "$schema": "Few-shot examples for Indonesian. Hand-curated source→target pairs.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "Layanan pengangkutan yang bisa Anda andalkan." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups menangani pengangkutan barang bekas, transportasi, dan pembersihan properti secara menyeluruh di San Carlos dan seluruh Semenanjung. Pemilik asli. Telepon asli. Hasil nyata." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Minta penjemputan" },
+    { "tag": "cta", "source": "Call Now", "target": "Hubungi sekarang" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Dapatkan penawaran harga gratis" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "Berlisensi dan diasuransikan sejak 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Bisnis keluarga yang dimiliki dan dikelola oleh Don dan Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Kami yang melakukan semua pemuatan, membersihkan setelahnya, dan membuang dengan bertanggung jawab. Tidak ada biaya tersembunyi, tidak ada kejutan, dan harga tidak berubah setelah kami tiba di lokasi." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Sebagian besar pekerjaan dijadwalkan dalam 48 jam. Penjemputan di hari yang sama sering tersedia — hubungi (650) 201-1543 untuk konfirmasi." },
+    { "tag": "form-label", "source": "Service Location", "target": "Lokasi layanan" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Masukkan nomor telepon yang valid." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Saya setuju untuk dihubungi oleh Peninsula Pick Ups di nomor telepon dan email di atas terkait permintaan penawaran saya, termasuk melalui SMS dan panggilan telepon. Persetujuan ini bukan syarat untuk mendapatkan layanan." }
+  ]
+}

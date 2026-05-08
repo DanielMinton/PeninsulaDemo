@@ -15,23 +15,26 @@ import FaqSection from '@/components/shared/FaqSection'
 // SSR-rendered so the SVG ships in static HTML for SEO + zero CLS;
 // JS hydrates after LCP for the hover/focus interactions.
 const PeninsulaMap = dynamic(() => import('@/components/map/PeninsulaMap'), { ssr: true })
+import { useTranslations } from 'next-intl'
 import { SITE } from '@/content/site'
-import { HOMEPAGE_FAQS } from '@/content/faqs'
 import { graph, organization, localBusiness, faqPage } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
 import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
+import { getHomepageFaqs } from '@/content/copy'
 
 const Home: NextPage<LocaleProps> = ({ locale }) => {
-  const schema = graph(organization(locale), localBusiness(locale), faqPage(HOMEPAGE_FAQS, locale))
+  const t = useTranslations()
+  const homepageFaqs = getHomepageFaqs(t)
+  const schema = graph(organization(locale), localBusiness(locale), faqPage(homepageFaqs, locale))
 
   return (
     <>
       <NextSeo
         {...pageSeo({
-          title: `${SITE.name} | Junk Removal & Hauling | ${SITE.address.city}, ${SITE.address.region}`,
-          description: `${SITE.name} provides junk removal, hauling, cleanouts, and construction debris removal across the SF Peninsula. Locally owned by ${SITE.owners[0]} and ${SITE.owners[1]} in ${SITE.address.city} since ${SITE.foundedYear}. Call ${SITE.phone.display}.`,
+          title: t('meta.home.title'),
+          description: t('meta.home.description'),
           path: '/',
-          ogImageAlt: `${SITE.name} — Junk Removal & Hauling, ${SITE.address.city}, ${SITE.address.region}`,
+          ogImageAlt: t('meta.home.ogAlt'),
         }, locale)}
       />
 
@@ -47,7 +50,7 @@ const Home: NextPage<LocaleProps> = ({ locale }) => {
         <GallerySection />
         <ServiceAreasSection />
         <TestimonialsSection />
-        <FaqSection faqs={HOMEPAGE_FAQS} />
+        <FaqSection faqs={homepageFaqs} />
       </Layout>
     </>
   )

@@ -1,0 +1,29 @@
+{
+  "$schema": "Dutch (Netherlands) glossary. Locked translations the translator must use verbatim. Standard Netherlands Dutch — never Belgian/Flemish.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "De ophaaldienst waar u op kunt rekenen.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Afvalverwijdering",
+    "service_construction_debris": "Verwijdering van bouwafval",
+    "service_appliance_removal": "Verwijdering van apparatuur",
+    "service_storage_cleanout": "Opslag leegruimen",
+    "service_eviction_cleanout": "Ontruiming na uitzetting",
+    "service_commercial_hauling": "Zakelijk transport",
+    "service_residential_cleanout": "Woningontruiming",
+    "industry_term_hauling": "transport",
+    "industry_term_cleanout": "leegruimen",
+    "industry_term_pickup": "ophalen",
+    "trust_phrase_licensed": "Gecertificeerd en verzekerd",
+    "trust_phrase_family_owned": "Familiebedrijf",
+    "trust_phrase_locally_owned": "Lokaal bedrijf",
+    "trust_phrase_same_day": "Service op dezelfde dag",
+    "region_label": "SF-schiereiland",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Verifieer dit bedrijf"
+  }
+}

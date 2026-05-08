@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for fil. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Filipino. Hand-curated source→target pairs. Code-switching with English is natural for Bay Area Filipino-Americans.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "Ang Pickup na Mapagkakatiwalaan Niyo." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Ang Peninsula Pick Ups po ay nagbibigay ng junk removal, hauling, at full-property cleanout services sa San Carlos at sa buong Peninsula. Real owners. Real phone. Real results." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Humingi ng Pickup" },
+    { "tag": "cta", "source": "Call Now", "target": "Tumawag Po" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Kumuha ng Libreng Quotation" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "May lisensya at insured po simula 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Pag-aari at pinapatakbo ng pamilya nina Don at Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Kami po ang gagawa ng buong pagkarga, maglilinis pagkatapos, at responsableng magtatapon ng basura. Walang hidden fees, walang surprises, at hindi nagbabago ang quote pagdating namin sa lugar." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Karamihan ng trabaho ay naka-schedule sa loob ng 48 oras. Madalas mayroon ding same-day pickup — tumawag po sa (650) 201-1543 para mag-confirm." },
+    { "tag": "form-label", "source": "Service Location", "target": "Service Location" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Mangyaring maglagay ng wastong phone number." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Pumapayag akong makontak ako ng Peninsula Pick Ups sa phone number at email na nasa itaas tungkol sa aking quote request, kabilang ang SMS at tawag. Hindi ito kondisyon para makakuha ng serbisyo." }
+  ]
 }

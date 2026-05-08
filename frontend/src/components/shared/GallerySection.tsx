@@ -1,4 +1,6 @@
+'use client'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 
 const INSTAGRAM_URL = 'https://www.instagram.com/peninsulapickups/'
@@ -8,46 +10,46 @@ const GALLERY_PHOTOS = [
   {
     src: '/images/gallery/job-work-05.jpeg',
     alt: 'Junk removal job completed by Peninsula Pick Ups',
-    label: 'Haul Complete',
-    location: 'San Carlos, CA',
+    labelKey: 'gallerySection.photo1Label' as const,
+    locationKey: 'gallerySection.locationSanMateoCounty' as const,
     featured: true,
   },
   {
     src: '/images/gallery/job-work-02.jpeg',
     alt: 'Residential cleanout by Peninsula Pick Ups',
-    label: 'Residential Cleanout',
-    location: 'San Mateo County',
+    labelKey: 'gallerySection.photo2Label' as const,
+    locationKey: 'gallerySection.locationSanMateoCounty' as const,
     featured: false,
   },
   {
     src: '/images/gallery/job-work-03.jpeg',
     alt: 'Peninsula Pick Ups hauling job',
-    label: 'Full Load Haul',
-    location: 'Peninsula, CA',
+    labelKey: 'gallerySection.photo3Label' as const,
+    locationKey: 'gallerySection.locationPeninsula' as const,
     featured: false,
   },
   {
     src: '/images/gallery/job-debris-01.jpeg',
     alt: 'Brick grill and debris removal by Peninsula Pick Ups',
-    label: 'Debris Removal',
-    location: 'San Carlos, CA',
+    labelKey: 'gallerySection.photo4Label' as const,
+    locationKey: 'gallerySection.locationSanMateoCounty' as const,
     featured: false,
   },
   {
     src: '/images/gallery/job-work-04.jpeg',
     alt: 'Cleanout and hauling work by Peninsula Pick Ups',
-    label: 'Property Cleanout',
-    location: 'Peninsula, CA',
+    labelKey: 'gallerySection.photo5Label' as const,
+    locationKey: 'gallerySection.locationPeninsula' as const,
     featured: false,
   },
   {
     src: '/images/gallery/job-work-01.jpeg',
     alt: 'Truck loaded with hauled debris on a Peninsula Pick Ups job',
-    label: 'Job Site',
-    location: 'Bay Area, CA',
+    labelKey: 'gallerySection.photo6Label' as const,
+    locationKey: 'gallerySection.locationBayArea' as const,
     featured: false,
   },
-]
+] as const
 
 function InstagramIcon({ size = 20 }: { size?: number }) {
   return (
@@ -78,6 +80,7 @@ function YelpWordmark({ size = 14 }: { size?: number }) {
 }
 
 export default function GallerySection() {
+  const t = useTranslations()
   const [featured, ...rest] = GALLERY_PHOTOS
   const grid = rest.slice(0, 6)
 
@@ -87,14 +90,11 @@ export default function GallerySection() {
         <FadeIn>
           <div className="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div>
-              <span className="badge-orange mb-4">Real Work, Real Results</span>
+              <span className="badge-orange mb-4">{t('gallerySection.badge')}</span>
               <h2 id="gallery-heading" className="section-title mt-3">
-                Project Gallery
+                {t('gallerySection.heading')}
               </h2>
-              <p className="section-subtitle mt-3 max-w-lg">
-                Photos from real Peninsula Pick Ups jobs — garage cleanouts, debris removal, appliance hauls, and
-                full-property clearances across the Peninsula.
-              </p>
+              <p className="section-subtitle mt-3 max-w-lg">{t('gallerySection.subhead')}</p>
             </div>
             <div className="flex-shrink-0 flex items-center gap-3">
               <a
@@ -104,7 +104,7 @@ export default function GallerySection() {
                 className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-charcoal-800 border border-charcoal-600 hover:border-charcoal-500 transition-colors text-xs"
               >
                 <YelpWordmark size={12} />
-                <span className="text-steel-400">58 photos</span>
+                <span className="text-steel-400">{t('gallerySection.yelpPhotosCount')}</span>
               </a>
               <a
                 href={INSTAGRAM_URL}
@@ -113,7 +113,7 @@ export default function GallerySection() {
                 className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-charcoal-800 border border-charcoal-600 hover:border-charcoal-500 transition-colors text-xs text-steel-400"
               >
                 <InstagramIcon size={12} />
-                143+ posts
+                {t('gallerySection.instagramPostsCount')}
               </a>
             </div>
           </div>
@@ -134,9 +134,9 @@ export default function GallerySection() {
               className="absolute inset-0 bg-gradient-to-t from-charcoal-950/70 via-transparent to-transparent"
               aria-hidden="true"
             />
-            <div className="absolute bottom-4 left-5">
-              <p className="text-white font-bold text-sm">{featured.label}</p>
-              <p className="text-bone-300 text-xs mt-0.5">{featured.location}</p>
+            <div className="absolute bottom-4 start-5">
+              <p className="text-white font-bold text-sm">{t(featured.labelKey)}</p>
+              <p className="text-bone-300 text-xs mt-0.5">{t(featured.locationKey)}</p>
             </div>
           </div>
         </FadeIn>
@@ -157,9 +157,9 @@ export default function GallerySection() {
                   className="absolute inset-0 bg-gradient-to-t from-charcoal-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   aria-hidden="true"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-white text-xs font-semibold">{photo.label}</p>
-                  <p className="text-bone-300 text-[10px]">{photo.location}</p>
+                <div className="absolute bottom-0 start-0 end-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white text-xs font-semibold">{t(photo.labelKey)}</p>
+                  <p className="text-bone-300 text-[10px]">{t(photo.locationKey)}</p>
                 </div>
               </div>
             </FadeIn>
@@ -182,12 +182,10 @@ export default function GallerySection() {
                 <InstagramIcon size={28} />
               </div>
 
-              <div className="flex-1 text-center sm:text-left min-w-0">
-                <p className="font-bold text-bone-100 text-lg mb-1">
-                  143+ more job photos on Instagram
-                </p>
+              <div className="flex-1 text-center sm:text-start min-w-0">
+                <p className="font-bold text-bone-100 text-lg mb-1">{t('gallerySection.ctaTitle')}</p>
                 <p className="text-steel-400 text-sm leading-relaxed">
-                  Follow{' '}
+                  {t('gallerySection.ctaBodyPre')}{' '}
                   <a
                     href={INSTAGRAM_URL}
                     target="_blank"
@@ -196,8 +194,7 @@ export default function GallerySection() {
                   >
                     @peninsulapickups
                   </a>{' '}
-                  for before-and-after photos from every job — garage cleanouts, construction debris, appliance
-                  removals, and more across the Peninsula.
+                  {t('gallerySection.ctaBodyPost')}
                 </p>
               </div>
 
@@ -209,7 +206,7 @@ export default function GallerySection() {
                   className="btn-secondary w-full sm:w-auto justify-center gap-2 py-3 px-6 whitespace-nowrap"
                 >
                   <InstagramIcon size={16} />
-                  View All Photos
+                  {t('gallerySection.viewAllCta')}
                 </a>
               </div>
             </div>

@@ -1,0 +1,29 @@
+{
+  "$schema": "Indonesian (Bahasa Indonesia) glossary. Locked translations the translator must use verbatim.",
+  "$version": 1,
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "Layanan pengangkutan yang bisa Anda andalkan.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Pengangkutan barang bekas",
+    "service_construction_debris": "Pengangkutan puing konstruksi",
+    "service_appliance_removal": "Pengangkutan peralatan rumah tangga",
+    "service_storage_cleanout": "Pembersihan gudang",
+    "service_eviction_cleanout": "Pembersihan pasca-pengusiran",
+    "service_commercial_hauling": "Pengangkutan komersial",
+    "service_residential_cleanout": "Pembersihan rumah",
+    "industry_term_hauling": "pengangkutan",
+    "industry_term_cleanout": "pembersihan total",
+    "industry_term_pickup": "penjemputan",
+    "trust_phrase_licensed": "Berlisensi dan diasuransikan",
+    "trust_phrase_family_owned": "Bisnis keluarga",
+    "trust_phrase_locally_owned": "Bisnis lokal",
+    "trust_phrase_same_day": "Layanan di hari yang sama",
+    "region_label": "Semenanjung San Francisco",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Verifikasi bisnis ini"
+  }
+}

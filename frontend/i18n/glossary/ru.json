@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for ru. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Russian glossary. Locked translations the translator must use verbatim.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "Вывоз, на который можно положиться.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Вывоз мусора",
+    "service_construction_debris": "Вывоз строительного мусора",
+    "service_appliance_removal": "Вывоз бытовой техники",
+    "service_storage_cleanout": "Расчистка склада",
+    "service_eviction_cleanout": "Расчистка после выселения",
+    "service_commercial_hauling": "Коммерческие перевозки",
+    "service_residential_cleanout": "Расчистка жилых помещений",
+    "industry_term_hauling": "перевозка",
+    "industry_term_cleanout": "расчистка",
+    "industry_term_pickup": "вывоз",
+    "trust_phrase_licensed": "С лицензией и страховкой",
+    "trust_phrase_family_owned": "Семейный бизнес",
+    "trust_phrase_locally_owned": "Местная компания",
+    "trust_phrase_same_day": "Выезд в тот же день",
+    "region_label": "Полуостров Сан-Франциско",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Проверить эту компанию"
+  }
 }

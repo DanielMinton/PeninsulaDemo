@@ -1,0 +1,1951 @@
+{
+  "$version": 1,
+  "$sourceVersion": 1,
+  "segments": {
+    "picker.openLabel": {
+      "value": "言語を選択",
+      "tag": "picker",
+      "cacheKey": "1391e777e4a32b31"
+    },
+    "picker.title": {
+      "value": "言語を選択",
+      "tag": "picker",
+      "cacheKey": "1391e777e4a32b31"
+    },
+    "picker.searchPlaceholder": {
+      "value": "言語を検索…",
+      "tag": "picker",
+      "cacheKey": "5dcffaaba98100dc"
+    },
+    "picker.recent": {
+      "value": "最近の投稿",
+      "tag": "picker",
+      "cacheKey": "0d0932cf6a87e60b"
+    },
+    "picker.allLanguages": {
+      "value": "全言語",
+      "tag": "picker",
+      "cacheKey": "42f0951da95a0281"
+    },
+    "picker.beta": {
+      "value": "ベータ版",
+      "tag": "picker",
+      "cacheKey": "c8bf4a61be0d7fa7"
+    },
+    "picker.noResults": {
+      "value": "対応言語が見つかりません。",
+      "tag": "picker",
+      "cacheKey": "e66bf1b570e42abf"
+    },
+    "picker.footerReviewed": {
+      "value": "翻訳は文化的な正確さについて確認されています。",
+      "tag": "picker",
+      "cacheKey": "93d736748ab5966c"
+    },
+    "picker.footerReportLink": {
+      "value": "翻訳の問題を報告する",
+      "tag": "picker",
+      "cacheKey": "487ce5535c18ddb6"
+    },
+    "picker.announceChange": {
+      "value": "言語を{native}に変更しました。",
+      "tag": "picker",
+      "cacheKey": "0adbb562b164adda"
+    },
+    "picker.closeLabel": {
+      "value": "言語選択を閉じる",
+      "tag": "picker",
+      "cacheKey": "fe554f0f68f51328"
+    },
+    "nav.servicesLink": {
+      "value": "サービス",
+      "tag": "nav",
+      "cacheKey": "7ff6708e53639881"
+    },
+    "nav.areasLink": {
+      "value": "対応エリア",
+      "tag": "nav",
+      "cacheKey": "34b0eee378bcd020"
+    },
+    "nav.aboutLink": {
+      "value": "私たちについて",
+      "tag": "nav",
+      "cacheKey": "9869dc63094a40ef"
+    },
+    "nav.contactLink": {
+      "value": "お問い合わせ",
+      "tag": "nav",
+      "cacheKey": "6fd302436c93f8f0"
+    },
+    "nav.requestPickupCta": {
+      "value": "回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "4cf9db0ca5c24e85"
+    },
+    "nav.callNowCta": {
+      "value": "今すぐお電話",
+      "tag": "cta",
+      "cacheKey": "4da01d3825cf04ab"
+    },
+    "nav.openMenu": {
+      "value": "メニューを開く",
+      "tag": "nav",
+      "cacheKey": "d503b457ac4cf7a4"
+    },
+    "nav.closeMenu": {
+      "value": "メニューを閉じる",
+      "tag": "nav",
+      "cacheKey": "6b7da696edaea1b4"
+    },
+    "nav.mainAriaLabel": {
+      "value": "メインナビゲーション",
+      "tag": "nav",
+      "cacheKey": "ee97b66a9cdaddae"
+    },
+    "nav.homeAriaLabel": {
+      "value": "Peninsula Pick Ups ホーム",
+      "tag": "nav",
+      "cacheKey": "ba84c164e221a5ef"
+    },
+    "nav.cityTagline": {
+      "value": "San Carlos, CA",
+      "tag": "misc",
+      "cacheKey": "6ce72acfc3f44e91"
+    },
+    "nav.requestPickupLong": {
+      "value": "回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "76ab5be7487bf064"
+    },
+    "hero.badge": {
+      "value": "San Carlos, CA。2021年より認可・保険完備。",
+      "tag": "trust",
+      "cacheKey": "00c70d4bf6c176c9"
+    },
+    "hero.headlinePart1": {
+      "value": "回収サービス",
+      "tag": "hero",
+      "cacheKey": "2d3ec1a881abc62b"
+    },
+    "hero.headlinePart2": {
+      "value": "信頼できる。",
+      "tag": "hero",
+      "cacheKey": "411d569b35f5b8c5"
+    },
+    "hero.subhead": {
+      "value": "Peninsula Pick Upsは、San Carlosとペニンスラ地域全域で不用品回収、運搬、全敷地の片付けサービスを提供しています。本物のオーナー、本物の電話、確かな結果。",
+      "tag": "hero",
+      "cacheKey": "9d0d93f81be32cd3"
+    },
+    "hero.verifiedBusinessLine": {
+      "value": "認証済み事業者番号",
+      "tag": "trust",
+      "cacheKey": "ddd66567cc2698a3"
+    },
+    "hero.requestPickupCta": {
+      "value": "回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "76ab5be7487bf064"
+    },
+    "hero.callNowCta": {
+      "value": "今すぐお電話",
+      "tag": "cta",
+      "cacheKey": "4da01d3825cf04ab"
+    },
+    "hero.scrollIndicator": {
+      "value": "スクロール",
+      "tag": "misc",
+      "cacheKey": "fd74b031357bcebb"
+    },
+    "hero.heroAriaLabel": {
+      "value": "Peninsula Pick Ups ヒーロー",
+      "tag": "meta",
+      "cacheKey": "af43199a52a1ec21"
+    },
+    "hero.servicesListAriaLabel": {
+      "value": "提供サービス",
+      "tag": "meta",
+      "cacheKey": "d36913affe11a3af"
+    },
+    "hero.serviceJunkRemoval": {
+      "value": "不用品回収",
+      "tag": "service-description",
+      "cacheKey": "927f4efc92a977ad"
+    },
+    "hero.serviceConstructionDebris": {
+      "value": "建築廃材回収",
+      "tag": "service-description",
+      "cacheKey": "d02cc55773577707"
+    },
+    "hero.serviceApplianceRemoval": {
+      "value": "家電回収",
+      "tag": "service-description",
+      "cacheKey": "c5b947d5fcc2e7d0"
+    },
+    "hero.serviceStorageCleanouts": {
+      "value": "倉庫片付け",
+      "tag": "service-description",
+      "cacheKey": "2f558f7306305bbf"
+    },
+    "hero.serviceEvictionCleanouts": {
+      "value": "退去後片付け",
+      "tag": "service-description",
+      "cacheKey": "d4da08f4c4492e6b"
+    },
+    "hero.serviceCommercialHauling": {
+      "value": "業務用運搬",
+      "tag": "service-description",
+      "cacheKey": "5da9dbc20f673f2d"
+    },
+    "trust.heading": {
+      "value": "Peninsula Pick Ups を選ぶ理由",
+      "tag": "trust",
+      "cacheKey": "d9a7b9c1a640395b"
+    },
+    "trust.licensedTitle": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "8dca0a0a49d6514e"
+    },
+    "trust.licensedSub": {
+      "value": "一般賠償責任保険完備。商業施設向けに保険証明書（COI）もご用意できます。",
+      "tag": "trust",
+      "cacheKey": "5b817aa50ca0123d"
+    },
+    "trust.familyTitle": {
+      "value": "家族経営の事業です。",
+      "tag": "trust",
+      "cacheKey": "322e0aa6321fe1d5"
+    },
+    "trust.familySub": {
+      "value": "DonとMelissaが事業を運営しています。お電話にも、お二人が直接対応します。",
+      "tag": "trust",
+      "cacheKey": "d94908d5449f2426"
+    },
+    "trust.localTitle": {
+      "value": "San Carlosを拠点とする地域密着の事業です。",
+      "tag": "trust",
+      "cacheKey": "232b36109233ce94"
+    },
+    "trust.localSub": {
+      "value": "2021年からSan Carlosを拠点に、ペニンスラ全域の街並みを熟知しています。",
+      "tag": "trust",
+      "cacheKey": "cd6dff26b9f23fb2"
+    },
+    "trust.honestPricingTitle": {
+      "value": "正直な料金設定",
+      "tag": "trust",
+      "cacheKey": "aa55665f9bebd73d"
+    },
+    "trust.honestPricingSub": {
+      "value": "作業開始前に確定見積もりをご提示します。現場での価格変更はありません。",
+      "tag": "trust",
+      "cacheKey": "db9f4a426180ac17"
+    },
+    "services.heading": {
+      "value": "私たちのサービス",
+      "tag": "service-description",
+      "cacheKey": "9a225ff0a84213d4"
+    },
+    "services.sub": {
+      "value": "単品の回収から丸ごと一軒分の片付けまで、同じ落ち着いたスタッフが、同じ明確な料金でお伺いします。",
+      "tag": "service-description",
+      "cacheKey": "6e79a8cdfd6ed96c"
+    },
+    "services.learnMore": {
+      "value": "詳しく見る",
+      "tag": "cta",
+      "cacheKey": "af9f67ad58c15111"
+    },
+    "areas.heading": {
+      "value": "対応エリア",
+      "tag": "misc",
+      "cacheKey": "34bf595d51a66bb5"
+    },
+    "areas.sub": {
+      "value": "San Carlosが私たちの拠点です。SFペニンスラ地域全域で当日対応いたします。",
+      "tag": "misc",
+      "cacheKey": "f7df15494346eecc"
+    },
+    "areas.viewArea": {
+      "value": "エリアを確認する",
+      "tag": "cta",
+      "cacheKey": "f32a02616631f7d0"
+    },
+    "testimonials.heading": {
+      "value": "Peninsula Pickのお客様の声",
+      "tag": "testimonial",
+      "cacheKey": "67a00e9c43b06e57"
+    },
+    "testimonials.sub": {
+      "value": "認証済みYelpプロフィールからのレビューです。",
+      "tag": "testimonial",
+      "cacheKey": "1b73a0e725b083d9"
+    },
+    "testimonials.readMore": {
+      "value": "Yelp のレビューをすべて見る",
+      "tag": "cta",
+      "cacheKey": "975167704280022f"
+    },
+    "faq.heading": {
+      "value": "よくあるご質問",
+      "tag": "faq",
+      "cacheKey": "d80c3b4ed335270c"
+    },
+    "faq.sub": {
+      "value": "よくある質問への簡単な回答です。ここに載っていない場合は、(650) 201-1543までお電話ください。",
+      "tag": "faq",
+      "cacheKey": "97f669e59abaf872"
+    },
+    "verify.heading": {
+      "value": "ご満足いただけましたか？",
+      "tag": "trust",
+      "cacheKey": "e259d677768ece18"
+    },
+    "verify.sub": {
+      "value": "私たちが活動するすべてのプラットフォームで、事業者情報をご確認いただけます。リアルタイムで確認したい場合は、(650) 201-1543 までお電話ください。",
+      "tag": "trust",
+      "cacheKey": "b863b03841d4f80c"
+    },
+    "verify.confirmLive": {
+      "value": "直接確認したいことがありますか？",
+      "tag": "trust",
+      "cacheKey": "02fa567ba86e53fc"
+    },
+    "verify.businessOfRecord": {
+      "value": "正式登録事業者",
+      "tag": "trust",
+      "cacheKey": "c6b8bd6526c089bd"
+    },
+    "verify.findOnline": {
+      "value": "オンラインで検索できます",
+      "tag": "trust",
+      "cacheKey": "dc14c44a94cded62"
+    },
+    "quoteSelector.badge": {
+      "value": "素早い見積もりへ",
+      "tag": "cta",
+      "cacheKey": "78049996663ec759"
+    },
+    "quoteSelector.heading": {
+      "value": "60秒で見積もりを取得",
+      "tag": "cta",
+      "cacheKey": "339bc0df9914c8ec"
+    },
+    "quoteSelector.sub": {
+      "value": "サービスを選んで、荷物の量をお知らせいただき、連絡先をご入力ください。Peninsula Pick Ups がすぐにご連絡します。",
+      "tag": "cta",
+      "cacheKey": "32398e434d1a02b7"
+    },
+    "quoteSelector.stepService": {
+      "value": "サービス内容",
+      "tag": "form-label",
+      "cacheKey": "12ad5aa80de250cf"
+    },
+    "quoteSelector.stepLoad": {
+      "value": "積み荷のサイズ",
+      "tag": "form-label",
+      "cacheKey": "cf98075fc625282c"
+    },
+    "quoteSelector.stepLocation": {
+      "value": "場所",
+      "tag": "form-label",
+      "cacheKey": "f7c09b66da9ca981"
+    },
+    "quoteSelector.stepUrgency": {
+      "value": "緊急度",
+      "tag": "form-label",
+      "cacheKey": "fe38209fb8ac5843"
+    },
+    "quoteSelector.stepContact": {
+      "value": "お問い合わせ",
+      "tag": "form-label",
+      "cacheKey": "1d85a287bd228ff3"
+    },
+    "quoteSelector.askService": {
+      "value": "どのサービスが必要ですか？",
+      "tag": "form-label",
+      "cacheKey": "8fe62d083dc7cba6"
+    },
+    "quoteSelector.askLoad": {
+      "value": "どのくらいの量ですか？",
+      "tag": "form-label",
+      "cacheKey": "43523ad4c8c2984e"
+    },
+    "quoteSelector.askLocation": {
+      "value": "回収場所はどちらですか？",
+      "tag": "form-label",
+      "cacheKey": "68b388c2787c5aa2"
+    },
+    "quoteSelector.askUrgency": {
+      "value": "いつ頃作業を希望されますか？",
+      "tag": "form-label",
+      "cacheKey": "811a08576b40dcd0"
+    },
+    "quoteSelector.askContact": {
+      "value": "見積もりの送付先はどちらですか？",
+      "tag": "form-label",
+      "cacheKey": "a25522cfc0fd6e77"
+    },
+    "quoteSelector.cityLabel": {
+      "value": "市区町村または住所",
+      "tag": "form-label",
+      "cacheKey": "def8e2f9967cf4ae"
+    },
+    "quoteSelector.cityDefault": {
+      "value": "市区町村を選択してください…",
+      "tag": "form-label",
+      "cacheKey": "39170a51cecdb1a3"
+    },
+    "quoteSelector.cityOtherOption": {
+      "value": "その他／リストにない",
+      "tag": "form-label",
+      "cacheKey": "319c13e687d17703"
+    },
+    "quoteSelector.cityOtherLabel": {
+      "value": "市区町村または住所を入力してください",
+      "tag": "form-label",
+      "cacheKey": "ef047ea1e6b925e6"
+    },
+    "quoteSelector.cityOtherPlaceholder": {
+      "value": "例：Foster City, CA",
+      "tag": "form-label",
+      "cacheKey": "59ed2a0905a64705"
+    },
+    "quoteSelector.loadSingle": {
+      "value": "単品回収",
+      "tag": "form-label",
+      "cacheKey": "b7d016579d0f286d"
+    },
+    "quoteSelector.loadSingleSub": {
+      "value": "大型品1点",
+      "tag": "form-label",
+      "cacheKey": "12644d2b4e37ab5a"
+    },
+    "quoteSelector.loadQuarter": {
+      "value": "少量積み込み",
+      "tag": "form-label",
+      "cacheKey": "0c58b1f5bbb407ee"
+    },
+    "quoteSelector.loadQuarterSub": {
+      "value": "トラック1/4台分以下",
+      "tag": "form-label",
+      "cacheKey": "e8cce53f5dca0eed"
+    },
+    "quoteSelector.loadHalf": {
+      "value": "中程度の積載量",
+      "tag": "form-label",
+      "cacheKey": "c56b34e41761179b"
+    },
+    "quoteSelector.loadHalfSub": {
+      "value": "トラック1/2杯分",
+      "tag": "form-label",
+      "cacheKey": "798d59a9374f8506"
+    },
+    "quoteSelector.loadFull": {
+      "value": "満載",
+      "tag": "form-label",
+      "cacheKey": "53260ead5e61714d"
+    },
+    "quoteSelector.loadFullSub": {
+      "value": "トラック満載以上",
+      "tag": "form-label",
+      "cacheKey": "ee799cb8ee655a41"
+    },
+    "quoteSelector.urgencyAsap": {
+      "value": "できるだけ早く",
+      "tag": "form-label",
+      "cacheKey": "f912632c368ee3a5"
+    },
+    "quoteSelector.urgencyAsapSub": {
+      "value": "1〜2日以内",
+      "tag": "form-label",
+      "cacheKey": "a57c1dcda2fb9a2c"
+    },
+    "quoteSelector.urgencyThisWeek": {
+      "value": "今週",
+      "tag": "form-label",
+      "cacheKey": "dfed560154f2c7a9"
+    },
+    "quoteSelector.urgencyThisWeekSub": {
+      "value": "7日以内",
+      "tag": "form-label",
+      "cacheKey": "618d324cd34d8c79"
+    },
+    "quoteSelector.urgencyFlexible": {
+      "value": "柔軟対応",
+      "tag": "form-label",
+      "cacheKey": "d55ff00d3859820f"
+    },
+    "quoteSelector.urgencyFlexibleSub": {
+      "value": "空きがある場合",
+      "tag": "form-label",
+      "cacheKey": "5d660d035b640140"
+    },
+    "quoteSelector.serviceOther": {
+      "value": "不明・その他",
+      "tag": "form-label",
+      "cacheKey": "164b92ca597f4079"
+    },
+    "quoteSelector.nameLabel": {
+      "value": "お名前",
+      "tag": "form-label",
+      "cacheKey": "72282472fbed1902"
+    },
+    "quoteSelector.namePlaceholder": {
+      "value": "お名前",
+      "tag": "form-label",
+      "cacheKey": "34184d2f4c69cc55"
+    },
+    "quoteSelector.phoneLabel": {
+      "value": "電話番号",
+      "tag": "form-label",
+      "cacheKey": "016341ae606971b6"
+    },
+    "quoteSelector.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "32b5ec42b5914f4b"
+    },
+    "quoteSelector.emailLabel": {
+      "value": "メールアドレス",
+      "tag": "form-label",
+      "cacheKey": "ec91fe0bbecce828"
+    },
+    "quoteSelector.emailOptional": {
+      "value": "(任意)",
+      "tag": "form-label",
+      "cacheKey": "974f52c557d1de18"
+    },
+    "quoteSelector.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "5c9f458ad4a3dfe5"
+    },
+    "quoteSelector.continueCta": {
+      "value": "続ける",
+      "tag": "cta",
+      "cacheKey": "87e2e6c92f8d3f3b"
+    },
+    "quoteSelector.backCta": {
+      "value": "戻る",
+      "tag": "cta",
+      "cacheKey": "a8b3a02f89b4da94"
+    },
+    "quoteSelector.requestQuoteCta": {
+      "value": "見積もりを依頼する",
+      "tag": "cta",
+      "cacheKey": "b6a847afb970da28"
+    },
+    "quoteSelector.sendingCta": {
+      "value": "送信中…",
+      "tag": "cta",
+      "cacheKey": "cf7be17e23f9fcb0"
+    },
+    "quoteSelector.preferToCall": {
+      "value": "お電話がご希望ですか？",
+      "tag": "cta",
+      "cacheKey": "e8be5487cb6e3640"
+    },
+    "quoteSelector.successHeading": {
+      "value": "お見積もりのご依頼を受け付けました",
+      "tag": "cta",
+      "cacheKey": "d1ae33ebe2ab7396"
+    },
+    "quoteSelector.successSub": {
+      "value": "Peninsula Pick Ups より、まもなくご連絡いたします。すぐに対応が必要な場合は、お電話ください。",
+      "tag": "cta",
+      "cacheKey": "89ba7cf1b7c4d704"
+    },
+    "quoteSelector.consentText": {
+      "value": "見積もり依頼に関して、Peninsula Pick Upsから上記の電話番号へ、SMSや通話を含めて連絡を受けることに同意します。同意はサービス利用の条件ではありません。メッセージおよびデータ通信料が発生する場合があります。配信停止をご希望の場合はSTOPと返信してください。",
+      "tag": "legal",
+      "cacheKey": "8ef26b694fa91406"
+    },
+    "quoteSelector.privacyLink": {
+      "value": "プライバシーポリシーをご確認ください。",
+      "tag": "legal",
+      "cacheKey": "95742e28d912f9b5"
+    },
+    "quoteSelector.progressAria": {
+      "value": "見積もりフォームの進捗：{total}ステップ中{step}ステップ目、{label}",
+      "tag": "meta",
+      "cacheKey": "88259506a6b9a534"
+    },
+    "quoteSelector.headingAria": {
+      "value": "見積もりを取得する",
+      "tag": "meta",
+      "cacheKey": "c12db3731a337538"
+    },
+    "quoteForm.badge": {
+      "value": "無料見積もりを取得",
+      "tag": "cta",
+      "cacheKey": "118d7b86c951b382"
+    },
+    "quoteForm.heading": {
+      "value": "作業内容をお知らせください",
+      "tag": "cta",
+      "cacheKey": "51512a30cdb2800a"
+    },
+    "quoteForm.subPrefix": {
+      "value": "フォームにご記入ください。Peninsula Pick Ups より直接ご連絡いたします。",
+      "tag": "cta",
+      "cacheKey": "695c207f11bb5dab"
+    },
+    "quoteForm.subFasterResponse": {
+      "value": "より迅速な対応をご希望の場合は、お電話またはテキストメッセージでご連絡ください。",
+      "tag": "cta",
+      "cacheKey": "52b22e10658012b2"
+    },
+    "quoteForm.contactPhoneSub": {
+      "value": "認証済み事業者番号。DonとMelissa。",
+      "tag": "trust",
+      "cacheKey": "f28dea05809946e1"
+    },
+    "quoteForm.contactCitySub": {
+      "value": "2021年より地元で営業しています。",
+      "tag": "trust",
+      "cacheKey": "936b31d65c4beb75"
+    },
+    "quoteForm.contactSameDayTitle": {
+      "value": "当日対応",
+      "tag": "trust",
+      "cacheKey": "e09f96bc7dc0c74d"
+    },
+    "quoteForm.contactSameDaySub": {
+      "value": "ほとんどのご依頼は48時間以内にスケジュールできます。",
+      "tag": "trust",
+      "cacheKey": "63b4b9664eae6491"
+    },
+    "quoteForm.nameLabel": {
+      "value": "お名前",
+      "tag": "form-label",
+      "cacheKey": "791bb18e0cdecc7f"
+    },
+    "quoteForm.namePlaceholder": {
+      "value": "お客様のお名前（フルネーム）",
+      "tag": "form-label",
+      "cacheKey": "f339db041ad7e169"
+    },
+    "quoteForm.phoneLabel": {
+      "value": "電話番号",
+      "tag": "form-label",
+      "cacheKey": "72c23ce638b3027e"
+    },
+    "quoteForm.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "32b5ec42b5914f4b"
+    },
+    "quoteForm.emailLabel": {
+      "value": "メールアドレス",
+      "tag": "form-label",
+      "cacheKey": "ec91fe0bbecce828"
+    },
+    "quoteForm.emailOptional": {
+      "value": "(任意)",
+      "tag": "form-label",
+      "cacheKey": "974f52c557d1de18"
+    },
+    "quoteForm.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "5c9f458ad4a3dfe5"
+    },
+    "quoteForm.serviceLabel": {
+      "value": "ご希望のサービス",
+      "tag": "form-label",
+      "cacheKey": "0d1763ee8a7cfb4f"
+    },
+    "quoteForm.serviceDefault": {
+      "value": "サービスを選択してください…",
+      "tag": "form-label",
+      "cacheKey": "61d28fe4afc36d43"
+    },
+    "quoteForm.locationLabel": {
+      "value": "サービス場所",
+      "tag": "form-label",
+      "cacheKey": "7b2265e953acbc86"
+    },
+    "quoteForm.locationDefault": {
+      "value": "市区町村を選択...",
+      "tag": "form-label",
+      "cacheKey": "4e2ede43186504d4"
+    },
+    "quoteForm.locationOther": {
+      "value": "その他",
+      "tag": "form-label",
+      "cacheKey": "8190b21de8080b7f"
+    },
+    "quoteForm.dateLabel": {
+      "value": "ご希望の日付",
+      "tag": "form-label",
+      "cacheKey": "1d571f01f4b3a117"
+    },
+    "quoteForm.messageLabel": {
+      "value": "メッセージ",
+      "tag": "form-label",
+      "cacheKey": "c9fd4f16e9fdd6e7"
+    },
+    "quoteForm.messagePlaceholder": {
+      "value": "回収が必要なもの、アクセスに関するメモ、またはご質問をご記入ください…",
+      "tag": "form-label",
+      "cacheKey": "d6db6bc1b43af458"
+    },
+    "quoteForm.sendCta": {
+      "value": "見積もり依頼を送信する",
+      "tag": "cta",
+      "cacheKey": "9b23cc3b1dea37da"
+    },
+    "quoteForm.sendingCta": {
+      "value": "リクエスト送信中…",
+      "tag": "cta",
+      "cacheKey": "05399a61b48a1396"
+    },
+    "quoteForm.consentText": {
+      "value": "見積もり依頼に関して、Peninsula Pick Upsから上記の電話番号およびメールアドレスへ、SMSや通話を含めて連絡を受けることに同意します。同意はサービス利用の条件ではありません。メッセージおよびデータ通信料が発生する場合があります。配信停止を希望される場合は、いつでもSTOPと返信してください。",
+      "tag": "legal",
+      "cacheKey": "9a348bf16690c44a"
+    },
+    "quoteForm.consentSeePrivacy": {
+      "value": "プライバシーポリシーをご覧ください。",
+      "tag": "legal",
+      "cacheKey": "95742e28d912f9b5"
+    },
+    "quoteForm.successHeading": {
+      "value": "依頼を送信しました",
+      "tag": "cta",
+      "cacheKey": "367028fbca87cfe7"
+    },
+    "quoteForm.successSub": {
+      "value": "Peninsula Pick Ups からまもなくご連絡いたします。",
+      "tag": "cta",
+      "cacheKey": "2ea148d2cc4e20f3"
+    },
+    "quoteForm.submitAnotherCta": {
+      "value": "別のリクエストを送信する",
+      "tag": "cta",
+      "cacheKey": "77dcf4d11e72f1f7"
+    },
+    "quoteForm.errorFallback": {
+      "value": "エラーが発生しました。(650) 201-1543 までお電話ください。",
+      "tag": "form-error",
+      "cacheKey": "32bd48ea44439f97"
+    },
+    "quoteForm.errorUnavailable": {
+      "value": "送信できませんでした。直接お電話ください：(650) 201-1543。",
+      "tag": "form-error",
+      "cacheKey": "8917310945d462aa"
+    },
+    "errors.nameRequired": {
+      "value": "お名前を入力してください。",
+      "tag": "form-error",
+      "cacheKey": "a4d05612fcff147b"
+    },
+    "errors.nameTooShort": {
+      "value": "お名前を入力してください。",
+      "tag": "form-error",
+      "cacheKey": "f7d13d347c8da002"
+    },
+    "errors.phoneInvalid": {
+      "value": "有効な電話番号を入力してください。",
+      "tag": "form-error",
+      "cacheKey": "a34e939bdf94e991"
+    },
+    "errors.emailInvalid": {
+      "value": "有効なメールアドレスを入力してください。",
+      "tag": "form-error",
+      "cacheKey": "ec76806e61d790b1"
+    },
+    "errors.noUrls": {
+      "value": "URLは入力できません。",
+      "tag": "form-error",
+      "cacheKey": "1f22f1476f47d1d3"
+    },
+    "errors.noBrackets": {
+      "value": "山括弧は使用できません。",
+      "tag": "form-error",
+      "cacheKey": "4dac5b89427ee96a"
+    },
+    "errors.maxLength": {
+      "value": "{max}文字以内で入力してください。",
+      "tag": "form-error",
+      "cacheKey": "b9d7365cb9eae8c6"
+    },
+    "errors.consentRequired": {
+      "value": "同意が必要です。",
+      "tag": "form-error",
+      "cacheKey": "9a275238e32471de"
+    },
+    "footer.tagline": {
+      "value": "サンフランシスコ・ペニンスラで認可を受けた不用品回収・運搬サービスです。2021年よりDonとMelissaが運営する家族経営の事業です。",
+      "tag": "trust",
+      "cacheKey": "f6dcd4b569440788"
+    },
+    "footer.servicesHeading": {
+      "value": "サービス",
+      "tag": "nav",
+      "cacheKey": "7ff6708e53639881"
+    },
+    "footer.areasHeading": {
+      "value": "対応エリア",
+      "tag": "nav",
+      "cacheKey": "34b0eee378bcd020"
+    },
+    "footer.getQuoteHeading": {
+      "value": "見積もりを依頼する",
+      "tag": "cta",
+      "cacheKey": "31594038d889ab6f"
+    },
+    "footer.getQuoteSub": {
+      "value": "片付けの準備はできていますか？無料見積もりを依頼するか、直接お電話ください。迅速に対応します。",
+      "tag": "cta",
+      "cacheKey": "a4ac837419934866"
+    },
+    "footer.requestPickupCta": {
+      "value": "回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "4cf9db0ca5c24e85"
+    },
+    "footer.callPrefix": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "footer.licensedTag": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "ba32d24f216771fc"
+    },
+    "footer.insuredTag": {
+      "value": "保険完備",
+      "tag": "trust",
+      "cacheKey": "99918d15352bb962"
+    },
+    "footer.localTag": {
+      "value": "地域密着",
+      "tag": "trust",
+      "cacheKey": "423293ffa2f86563"
+    },
+    "footer.findUsOnline": {
+      "value": "オンラインで見つける",
+      "tag": "misc",
+      "cacheKey": "ee1d1de1d1ee2344"
+    },
+    "footer.allRightsReserved": {
+      "value": "無断転載・複製を禁じます。",
+      "tag": "legal",
+      "cacheKey": "3eb4bc9341fed9a1"
+    },
+    "footer.verifyLink": {
+      "value": "確認する",
+      "tag": "nav",
+      "cacheKey": "89ce006107c185a3"
+    },
+    "footer.privacyLink": {
+      "value": "プライバシーポリシー",
+      "tag": "nav",
+      "cacheKey": "23c0d532e6df627a"
+    },
+    "footer.termsLink": {
+      "value": "利用規約",
+      "tag": "nav",
+      "cacheKey": "2b712904b498c7b2"
+    },
+    "footer.verifyBusinessLink": {
+      "value": "この事業者を確認",
+      "tag": "trust",
+      "cacheKey": "66c645e84cd0c8bb"
+    },
+    "common.loading": {
+      "value": "読み込み中…",
+      "tag": "misc",
+      "cacheKey": "2dccdc0f1ca5f493"
+    },
+    "common.error": {
+      "value": "エラーが発生しました。",
+      "tag": "misc",
+      "cacheKey": "922a3c233b9cdbeb"
+    },
+    "common.required": {
+      "value": "必須",
+      "tag": "form-label",
+      "cacheKey": "0b6e7d05b1af4b66"
+    },
+    "common.optional": {
+      "value": "任意",
+      "tag": "form-label",
+      "cacheKey": "61981e3229f687c6"
+    },
+    "faqSection.badge": {
+      "value": "よくあるご質問",
+      "tag": "faq",
+      "cacheKey": "6ce1ad1e2d9a493f"
+    },
+    "faqSection.defaultHeading": {
+      "value": "よくあるご質問",
+      "tag": "faq",
+      "cacheKey": "9743ed63ef221694"
+    },
+    "faqSection.moreQuestions": {
+      "value": "ご不明な点はありますか？",
+      "tag": "faq",
+      "cacheKey": "05c3d5143ffc8416"
+    },
+    "faqSection.callPrefix": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "trustSection.badge": {
+      "value": "Peninsula Pick Ups が選ばれる理由",
+      "tag": "trust",
+      "cacheKey": "d9a7b9c1a640395b"
+    },
+    "trustSection.headlinePart1": {
+      "value": "お客様に信頼される理由",
+      "tag": "trust",
+      "cacheKey": "8e0bff5cdd2535f5"
+    },
+    "trustSection.headlinePart2": {
+      "value": "本物のPeninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "0ee28c248ab8f8c6"
+    },
+    "trustSection.subhead": {
+      "value": "DonとMelissaがPeninsula Pick Upsを築いたのは、ひとつの信念から。きちんと来て、仕事をしっかりやり遂げ、いつでも連絡が取れること。不明な番号も、曖昧な住所もありません。San Carlosで確認できる、本物の事業者です。",
+      "tag": "trust",
+      "cacheKey": "cbe3e7c26f07f6c5"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "無料見積もりを依頼する",
+      "tag": "cta",
+      "cacheKey": "5bd6679e4ac87b51"
+    },
+    "trustSection.callCta": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "trustSection.ownersTitle": {
+      "value": "オーナー：DonとMelissa",
+      "tag": "trust",
+      "cacheKey": "c29c5c4a8f5fc9aa"
+    },
+    "trustSection.ownersBody": {
+      "value": "San Carlos, CA 94070を拠点とする家族経営の事業です。お見積もりのご依頼やお電話の際は、私たちに直接つながります。それが、私たちのやり方です。",
+      "tag": "trust",
+      "cacheKey": "30a55919714fb6e0"
+    },
+    "trustSection.establishedNote": {
+      "value": "2021年、SFペニンスラ地域で創業。",
+      "tag": "trust",
+      "cacheKey": "c4294a93124850f7"
+    },
+    "trustSection.signal1Title": {
+      "value": "認証済みの電話番号はひとつだけ。",
+      "tag": "trust",
+      "cacheKey": "ceae039a50ba7866"
+    },
+    "trustSection.signal1Body": {
+      "value": "(650) 201-1543 にお電話いただくと、DonとMelissaに直接つながります。コールセンターなし、転送なし、たらい回しなし。",
+      "tag": "trust",
+      "cacheKey": "2b2557ef51d4fac6"
+    },
+    "trustSection.signal2Title": {
+      "value": "2021年よりSan Carlosを拠点としています。",
+      "tag": "trust",
+      "cacheKey": "5aec32645abd2fa5"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups はペニンスラで生まれ、2021年から地域の皆さまにサービスを提供してきました。この地域の街並みや道路、そしてお客様が何を大切にされているかをよく理解しています。",
+      "tag": "trust",
+      "cacheKey": "4c780b31378337ea"
+    },
+    "trustSection.signal3Title": {
+      "value": "実際のプロジェクト写真を近日公開予定です。",
+      "tag": "trust",
+      "cacheKey": "8cb52bfc85771325"
+    },
+    "trustSection.signal3Body": {
+      "value": "すべての作業で、施工前後の記録を残しています。確認済みのプロジェクト画像は随時追加中です。",
+      "tag": "trust",
+      "cacheKey": "89604397b9de6b05"
+    },
+    "trustSection.signal4Title": {
+      "value": "明確な料金設定で、予期せぬ請求はありません。",
+      "tag": "trust",
+      "cacheKey": "7b14c85147e81ec7"
+    },
+    "trustSection.signal4Body": {
+      "value": "無料見積もりで、隠れた費用は一切ありません。作業前に料金をお伝えし、現場での変更はありません。",
+      "tag": "trust",
+      "cacheKey": "d42ae0571966db85"
+    },
+    "trustSection.signal5Title": {
+      "value": "迅速なスケジュール調整、人による対応。",
+      "tag": "trust",
+      "cacheKey": "a1d07debcda39a78"
+    },
+    "trustSection.signal5Body": {
+      "value": "当日対応いたします。ほとんどのご依頼は48時間以内にスケジュール調整できます。担当するのはオーナー本人です。代理業者は通しません。",
+      "tag": "trust",
+      "cacheKey": "1c1f9ddc1e9c368a"
+    },
+    "trustSection.signal6Title": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "8dca0a0a49d6514e"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups は、すべての作業において適切な認可・保険完備で対応しています。お客様の財産はしっかりと保護されています。",
+      "tag": "trust",
+      "cacheKey": "b874886cbf761bd0"
+    },
+    "servicesGrid.badge": {
+      "value": "私たちのサービス",
+      "tag": "service-description",
+      "cacheKey": "9a225ff0a84213d4"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "全工程対応の運搬サービス",
+      "tag": "service-description",
+      "cacheKey": "d72f965ffeb926c7"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "1点から物件丸ごとまで対応いたします",
+      "tag": "service-description",
+      "cacheKey": "07ffd11421550edd"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups は、SFペニンスラ地域の住宅・商業施設を問わず対応いたします。不用品であれば何でも、私たちが積み込んで片付けます。",
+      "tag": "service-description",
+      "cacheKey": "3951317c664858e4"
+    },
+    "servicesGrid.learnMore": {
+      "value": "詳しく見る",
+      "tag": "cta",
+      "cacheKey": "af9f67ad58c15111"
+    },
+    "servicesGrid.getQuote": {
+      "value": "見積もりを取得",
+      "tag": "cta",
+      "cacheKey": "ff73d76a6623d0dd"
+    },
+    "serviceAreas.badge": {
+      "value": "対応エリア",
+      "tag": "misc",
+      "cacheKey": "34bf595d51a66bb5"
+    },
+    "serviceAreas.heading": {
+      "value": "SFペニンスラ地域全域に対応しています。",
+      "tag": "misc",
+      "cacheKey": "394522f345f42133"
+    },
+    "serviceAreas.subhead": {
+      "value": "San Carlos を拠点とする Peninsula Pick Ups は、South San Francisco から Palo Alto まで幅広い地域をカバーしています。お住まいの都市をクリックして、地域のサービス詳細をご確認ください。",
+      "tag": "misc",
+      "cacheKey": "6e2eea039fdc5ba8"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "4cf9db0ca5c24e85"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "拠点",
+      "tag": "misc",
+      "cacheKey": "781f72bdf5dec199"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "郡",
+      "tag": "misc",
+      "cacheKey": "3fc106e08ce5271b"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "さらに {count} 件",
+      "tag": "misc",
+      "cacheKey": "72f7ca0ca9f9666a"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "お住まいの地域が見つかりませんか？",
+      "tag": "misc",
+      "cacheKey": "b3f8dc83d5e064cc"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "見積もりを依頼する",
+      "tag": "cta",
+      "cacheKey": "1a629e45194588f8"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "サービスの対応状況をご確認いたします。",
+      "tag": "misc",
+      "cacheKey": "b59d25eaa5f076e6"
+    },
+    "testimonialsSection.badge": {
+      "value": "お客様のレビュー",
+      "tag": "testimonial",
+      "cacheKey": "407f568ee8179c81"
+    },
+    "testimonialsSection.heading": {
+      "value": "お客様の声",
+      "tag": "testimonial",
+      "cacheKey": "951be73b047ad762"
+    },
+    "testimonialsSection.subhead": {
+      "value": "SFペニンスラ地域のお客様からの本物のレビューです。Peninsula Pick UpsはYelpに{count}件のレビューを掲載中で、NextdoorやAlignable上でもおすすめいただいています。",
+      "tag": "testimonial",
+      "cacheKey": "1df6f67d6390d6de"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count}件のレビュー",
+      "tag": "testimonial",
+      "cacheKey": "3aec4bdfc66ed515"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "Nextdoorでおすすめされています。",
+      "tag": "testimonial",
+      "cacheKey": "7280a38317ba9f69"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "{source}の確認済みお客様",
+      "tag": "testimonial",
+      "cacheKey": "48c502cae1f110cd"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "{source}で見る",
+      "tag": "meta",
+      "cacheKey": "dec9ab35a5b8d379"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "5つ星のうち{count}つ",
+      "tag": "meta",
+      "cacheKey": "955369c02762cdcb"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "ご利用いただけましたか？",
+      "tag": "testimonial",
+      "cacheKey": "a2d26766ec490e60"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "Peninsula Pick Ups をご利用いただいたことがあれば、ぜひご感想をお聞かせください。実際にご利用されたお客様からのレビューは、地域の皆さんが信頼できるサービスを見つける助けになります。",
+      "tag": "testimonial",
+      "cacheKey": "3a49911ee774f19c"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "Yelpでレビューを書く",
+      "tag": "cta",
+      "cacheKey": "21f650eab6fd9dce"
+    },
+    "testimonialsSection.callCta": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "事業者確認",
+      "tag": "meta",
+      "cacheKey": "11ecea2cad015274"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "拠点",
+      "tag": "trust",
+      "cacheKey": "988288b74fb0cf88"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "2021年より営業中。",
+      "tag": "trust",
+      "cacheKey": "b925784819c44988"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "2021年創業。",
+      "tag": "trust",
+      "cacheKey": "d0bd66fa4ef88abc"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "認証済み事業者番号",
+      "tag": "trust",
+      "cacheKey": "ddd66567cc2698a3"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "DonとMelissa",
+      "tag": "trust",
+      "cacheKey": "9b82c3f7cb320f1d"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "地域密着のオーナーが運営しています。",
+      "tag": "trust",
+      "cacheKey": "707c6dfc125c3cd3"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "6380b8c7588c931e"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "プロフェッショナルなサービス",
+      "tag": "trust",
+      "cacheKey": "5a6341fe3e1738df"
+    },
+    "gallerySection.badge": {
+      "value": "確かな仕事、確かな結果。",
+      "tag": "misc",
+      "cacheKey": "b2a66e7cd64eac45"
+    },
+    "gallerySection.heading": {
+      "value": "施工事例ギャラリー",
+      "tag": "misc",
+      "cacheKey": "b2226c84399774d1"
+    },
+    "gallerySection.subhead": {
+      "value": "Peninsula Pick Ups の実際の作業写真です。ガレージの片付け、廃材回収、家電回収、そしてペニンスラ全域での建物丸ごとの片付けなど、さまざまな現場をご覧いただけます。",
+      "tag": "misc",
+      "cacheKey": "7e32114806c3c62f"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "写真58枚",
+      "tag": "misc",
+      "cacheKey": "1b394aedfe3d4ada"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143件以上の投稿",
+      "tag": "misc",
+      "cacheKey": "228949ae87fefd43"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "Instagramでさらに143件以上の作業写真を見る",
+      "tag": "cta",
+      "cacheKey": "21b2c222db1d7698"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "フォローする",
+      "tag": "cta",
+      "cacheKey": "acc111c1188c6242"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "すべての作業のビフォー・アフター写真はこちら — ガレージの片付け、建築廃材回収、家電回収など、SFペニンスラ地域の様々な現場をご覧ください。",
+      "tag": "cta",
+      "cacheKey": "7c48ca8b8e0e461d"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "すべての写真を見る",
+      "tag": "cta",
+      "cacheKey": "0939de90d362b2a8"
+    },
+    "gallerySection.photo1Label": {
+      "value": "回収完了",
+      "tag": "misc",
+      "cacheKey": "dc6c56e912a2a208"
+    },
+    "gallerySection.photo2Label": {
+      "value": "住宅片付け",
+      "tag": "misc",
+      "cacheKey": "dc945b66304f0494"
+    },
+    "gallerySection.photo3Label": {
+      "value": "満載運搬",
+      "tag": "misc",
+      "cacheKey": "34eae8ab47847fd1"
+    },
+    "gallerySection.photo4Label": {
+      "value": "廃材回収",
+      "tag": "misc",
+      "cacheKey": "e264fc29f3951a50"
+    },
+    "gallerySection.photo5Label": {
+      "value": "物件片付け",
+      "tag": "misc",
+      "cacheKey": "3e5b560c00cf3a61"
+    },
+    "gallerySection.photo6Label": {
+      "value": "現場",
+      "tag": "misc",
+      "cacheKey": "14c779544d1c9aaf"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "San Mateo County",
+      "tag": "misc",
+      "cacheKey": "1e7ea36e6f58be46"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "Peninsula, CA",
+      "tag": "misc",
+      "cacheKey": "b244a36a1842d3f4"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "ベイエリア、CA",
+      "tag": "misc",
+      "cacheKey": "75582b34118e60a3"
+    },
+    "shareCity.shareLabel": {
+      "value": "{city}のページをシェアする",
+      "tag": "cta",
+      "cacheKey": "c7b0aafb7c214954"
+    },
+    "shareCity.copied": {
+      "value": "リンクをコピーしました",
+      "tag": "misc",
+      "cacheKey": "abce3de0296d48bf"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups は {city}, CA にサービスを提供しています — (650) 201-1543。",
+      "tag": "cta",
+      "cacheKey": "9b3b08d9c82b63f4"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "対応エリア",
+      "tag": "nav",
+      "cacheKey": "34b0eee378bcd020"
+    },
+    "areaPage.countyBadge": {
+      "value": "{county}郡",
+      "tag": "misc",
+      "cacheKey": "36cd4f6d472d9621"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "拠点",
+      "tag": "trust",
+      "cacheKey": "988288b74fb0cf88"
+    },
+    "areaPage.headlinePart1": {
+      "value": "不用品回収サービス —",
+      "tag": "hero",
+      "cacheKey": "313208091a88ff52"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "{city}で回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "86d89bab8d67ae8a"
+    },
+    "areaPage.callPrefix": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "areaPage.textUs": {
+      "value": "テキストメッセージを送る",
+      "tag": "cta",
+      "cacheKey": "00ea9de230efd2a7"
+    },
+    "areaPage.textMessage": {
+      "value": "Peninsula Pick Ups へ ― {city}, CA で回収をお願いしたいです。",
+      "tag": "cta",
+      "cacheKey": "2e0a50bb5e4e92f5"
+    },
+    "areaPage.servicesHeading": {
+      "value": "{city}で利用できるサービス",
+      "tag": "service-description",
+      "cacheKey": "1fa74f33516bbb83"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups は、{city}, CA 全域で以下のサービスを提供しています。",
+      "tag": "service-description",
+      "cacheKey": "fc1c7a386c2f1464"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "近隣エリアにも対応しています",
+      "tag": "misc",
+      "cacheKey": "6e215a0fa12d127c"
+    },
+    "areaPage.faqHeading": {
+      "value": "{city} よくあるご質問",
+      "tag": "faq",
+      "cacheKey": "e1d81b3d9762c033"
+    },
+    "areaPage.faqSubhead": {
+      "value": "{city}、CA での不用品回収・運搬に関するよくある質問です。",
+      "tag": "faq",
+      "cacheKey": "337d40f18280ed6b"
+    },
+    "areaPage.backToHome": {
+      "value": "Peninsula Pick Ups に戻る",
+      "tag": "nav",
+      "cacheKey": "3c9ae8cf34ae8911"
+    },
+    "areaPage.statHomeBase": {
+      "value": "拠点",
+      "tag": "trust",
+      "cacheKey": "988288b74fb0cf88"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "SFペニンスラ地域で運営しています。",
+      "tag": "trust",
+      "cacheKey": "eba73b535cc1c4fa"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "認証済み事業者番号",
+      "tag": "trust",
+      "cacheKey": "961f2c9928b13290"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "地域密着のオーナーが運営しています。",
+      "tag": "trust",
+      "cacheKey": "707c6dfc125c3cd3"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "プロフェッショナルなサービス",
+      "tag": "trust",
+      "cacheKey": "5a6341fe3e1738df"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "6380b8c7588c931e"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "創業済み",
+      "tag": "trust",
+      "cacheKey": "85387c3358bef09e"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "サービス",
+      "tag": "nav",
+      "cacheKey": "7ff6708e53639881"
+    },
+    "servicePage.serviceBadge": {
+      "value": "サービス内容",
+      "tag": "service-description",
+      "cacheKey": "f396f87b3363983c"
+    },
+    "servicePage.requestQuote": {
+      "value": "見積もりを依頼する",
+      "tag": "cta",
+      "cacheKey": "51efafdf0c79f23e"
+    },
+    "servicePage.callPrefix": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "対応エリア",
+      "tag": "misc",
+      "cacheKey": "da552512271b0c02"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service}は、Peninsula Pick Upsのすべてのサービスエリアでご利用いただけます。",
+      "tag": "service-description",
+      "cacheKey": "f093ff2b3d911c96"
+    },
+    "servicePage.faqHeading": {
+      "value": "{service} よくあるご質問",
+      "tag": "faq",
+      "cacheKey": "b0a365a8e43b210c"
+    },
+    "servicePage.faqSubhead": {
+      "value": "Peninsula Pick Ups の{service}に関するよくあるご質問です。",
+      "tag": "faq",
+      "cacheKey": "647c933bd7c2b23a"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "その他のサービス",
+      "tag": "service-description",
+      "cacheKey": "cff62a54db20bf77"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "確認する",
+      "tag": "nav",
+      "cacheKey": "89ce006107c185a3"
+    },
+    "verifyPage.badge": {
+      "value": "本人確認済み",
+      "tag": "trust",
+      "cacheKey": "bece126212c2187d"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "これは",
+      "tag": "hero",
+      "cacheKey": "ddb68d421f66b8fa"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "正規のPeninsula Pick Upsです。",
+      "tag": "hero",
+      "cacheKey": "81de6a5f0b7258db"
+    },
+    "verifyPage.subhead": {
+      "value": "San Carlos, CA を拠点に2021年から営業する、家族経営の不用品回収・運搬事業の公的記録による認証です。",
+      "tag": "trust",
+      "cacheKey": "67496c7e09d463ee"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "正式登録事業者",
+      "tag": "trust",
+      "cacheKey": "c6b8bd6526c089bd"
+    },
+    "verifyPage.factLegalName": {
+      "value": "正式名称",
+      "tag": "trust",
+      "cacheKey": "fd11d4c79e0960ea"
+    },
+    "verifyPage.factDomain": {
+      "value": "ドメイン",
+      "tag": "trust",
+      "cacheKey": "a5ffd03685126fc5"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "認証済み電話番号",
+      "tag": "trust",
+      "cacheKey": "a3cbca22df750b1c"
+    },
+    "verifyPage.factAddress": {
+      "value": "住所",
+      "tag": "trust",
+      "cacheKey": "78e41d9e7a96fd01"
+    },
+    "verifyPage.factOwners": {
+      "value": "オーナー",
+      "tag": "trust",
+      "cacheKey": "a3e3d39eb1cbb467"
+    },
+    "verifyPage.factFounded": {
+      "value": "創業",
+      "tag": "trust",
+      "cacheKey": "cbf9991ada78874b"
+    },
+    "verifyPage.factLicensed": {
+      "value": "認可・保険完備",
+      "tag": "trust",
+      "cacheKey": "8dca0a0a49d6514e"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "はい",
+      "tag": "trust",
+      "cacheKey": "f8a3aaa3d420acca"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "なりすましサイトについてのご注意",
+      "tag": "trust",
+      "cacheKey": "0fe54c94cef8563b"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "実績のあるプロフィールとレビュー。",
+      "tag": "trust",
+      "cacheKey": "bbb150d0f63462b3"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "以下のリンクはすべて、私たちが運営する公開済みのプロフィールです。これらは、スキーマおよびこのサイトのすべてのページで参照される正規のリンク先です。",
+      "tag": "trust",
+      "cacheKey": "eed5a3404e6785a9"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "直接確認したいことがありますか？",
+      "tag": "trust",
+      "cacheKey": "02fa567ba86e53fc"
+    },
+    "verifyPage.confirmBody": {
+      "value": "営業時間中（月曜日から土曜日）は、DonまたはMelissaが認証済み事業者番号に直接対応します。",
+      "tag": "trust",
+      "cacheKey": "67631c51caae88f8"
+    },
+    "verifyPage.callCta": {
+      "value": "お電話",
+      "tag": "cta",
+      "cacheKey": "709b2e83143d06fa"
+    },
+    "verifyPage.textCta": {
+      "value": "テキストを送る",
+      "tag": "cta",
+      "cacheKey": "00ea9de230efd2a7"
+    },
+    "service.junk-removal.name": {
+      "value": "不用品回収",
+      "tag": "service-description",
+      "cacheKey": "927f4efc92a977ad"
+    },
+    "service.junk-removal.shortName": {
+      "value": "不用品回収",
+      "tag": "service-description",
+      "cacheKey": "927f4efc92a977ad"
+    },
+    "service.junk-removal.blurb": {
+      "value": "住宅・ガレージ・庭・不動産物件など、あらゆる場所の不用品回収に対応しています。積み込みから運搬まですべて私たちが行い、作業後はきれいな状態でお引き渡しします。",
+      "tag": "service-description",
+      "cacheKey": "ad989faa13b0fcdc"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups は、家具1点から車庫の全片付けまで、SFペニンスラ地域全体で不用品回収を承っています。私たちのスタッフは本物のトラックと確かな計画を持って伺います。積み込み作業はすべて私たちが行い、作業後の清掃まで責任を持ち、適切に処分いたします。隠れた費用や追加料金はなく、現場到着後に見積もりが変わることもありません。",
+      "tag": "service-description",
+      "cacheKey": "d8cb93197342b803"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "どのような不用品を回収していただけますか？",
+      "tag": "faq",
+      "cacheKey": "ce12d7113b7dd739"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "家具、マットレス、家電、電子廃棄物、庭のゴミ、建築廃材、家の中の不用品など、危険物でなければほぼ何でも回収できます。ご不明な場合は、(650) 201-1543にお電話の際に写真をお送りください。その場でお答えします。",
+      "tag": "faq",
+      "cacheKey": "0ec9e1939a6bdf31"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "料金はどのように決まりますか？",
+      "tag": "faq",
+      "cacheKey": "ad65afd9e1e8e28b"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "料金はトラックへの積載量と特別な取り扱いの有無によって決まります。作業開始前に確定した見積もりをお伝えし、現場での価格変更はありません。",
+      "tag": "faq",
+      "cacheKey": "5fca1bc6f695db32"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "どのくらい早く来ていただけますか？",
+      "tag": "faq",
+      "cacheKey": "cba522948aa6bd9b"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "ほとんどの作業は48時間以内に予約されます。当日対応も可能な場合が多いので、(650) 201-1543までお電話でご確認ください。",
+      "tag": "faq",
+      "cacheKey": "dae3bc60e10394e1"
+    },
+    "service.construction-debris.name": {
+      "value": "建築廃材回収",
+      "tag": "service-description",
+      "cacheKey": "aa3afa2c0db96f1c"
+    },
+    "service.construction-debris.shortName": {
+      "value": "建築廃材回収",
+      "tag": "service-description",
+      "cacheKey": "d02cc55773577707"
+    },
+    "service.construction-debris.blurb": {
+      "value": "リノベーション後の片付け、解体廃材、石膏ボード、木材、コンクリート、工事現場のスクラップなど、すばやく運搬いたします。",
+      "tag": "service-description",
+      "cacheKey": "5f030b1eae858e81"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups は、ペニンスラ全域で改装・解体後の廃材を回収いたします。石膏ボード、木材の端材、コンクリート片、タイル、床材、キャビネット類、業者ゴミなど幅広く対応しています。ゼネコン、リフォーム業者、一般のお客様を問わずご利用いただけます。作業範囲をお知らせいただければ、見積もりをご提示し、必要なタイミングに現場へお伺いします。",
+      "tag": "service-description",
+      "cacheKey": "d2ff44fc68fb35a3"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "業者の方と直接お取引することはできますか？",
+      "tag": "faq",
+      "cacheKey": "918ce114e460b7a1"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "はい。私たちの定期作業の多くは、ゼネコンやリフォーム業者向けの建築後の片付けです。定期スケジュールやオンコール対応も可能です。",
+      "tag": "faq",
+      "cacheKey": "be213038364451a0"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "コンクリートやタイルも対応できますか？",
+      "tag": "faq",
+      "cacheKey": "8a7d5da783731d20"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "はい、重い廃材の回収も私たちの得意とする作業です。重量を考慮した量ベースの見積もりをご提示します。",
+      "tag": "faq",
+      "cacheKey": "dee54dc5036e54a4"
+    },
+    "service.appliance-removal.name": {
+      "value": "家電回収",
+      "tag": "service-description",
+      "cacheKey": "c5b947d5fcc2e7d0"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "家電回収",
+      "tag": "service-description",
+      "cacheKey": "c5b947d5fcc2e7d0"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "冷蔵庫、洗濯機、乾燥機、コンロなど、さまざまな家電に対応しています。取り外しから運搬まで、古い家電を安全に回収いたします。",
+      "tag": "service-description",
+      "cacheKey": "63124c3e0eba9722"
+    },
+    "service.appliance-removal.description": {
+      "value": "玄関先に古い冷蔵庫がありますか？重くて持ち上げられない洗濯機や乾燥機はありませんか？Peninsula Pick Ups は、あらゆるサイズの家電を専用機材で回収し、床・壁・ドア枠を傷つけないよう丁寧に作業します。冷媒や金属が適切に処理されるよう、正しい廃棄とリサイクルも私たちが対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "35955fa5c2d411a4"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "家電の取り外しは行いますか？",
+      "tag": "faq",
+      "cacheKey": "6cb75d9b33fec2cb"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "水道・ガスの元栓やコンセントの取り外しなど標準的な作業は対応しています。配管工や電気技師の資格が必要な作業については、事前にお伝えします。",
+      "tag": "faq",
+      "cacheKey": "1e573e012701ba00"
+    },
+    "service.storage-cleanout.name": {
+      "value": "倉庫片付け",
+      "tag": "service-description",
+      "cacheKey": "2f558f7306305bbf"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "倉庫片付け",
+      "tag": "service-description",
+      "cacheKey": "fae6c6b26772a698"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "倉庫・ガレージ・物置の片付けを承ります。仕分け、運搬、建物全体の清掃まで、すべてお任せください。",
+      "tag": "service-description",
+      "cacheKey": "d93b9e7773ffa87d"
+    },
+    "service.storage-cleanout.description": {
+      "value": "倉庫・屋根裏・ガレージ・地下室など、Peninsula Pick Ups がまるごと片付けます。ご希望に応じて仕分けや寄付できるものの取り置きも行い、重いものの運搬から処分まで一手に引き受けます。住み替えや引っ越し、遺品整理などにもよくご利用いただいています。",
+      "tag": "service-description",
+      "cacheKey": "817b797deb47d93b"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "寄付用に取り分けておくことはできますか？",
+      "tag": "faq",
+      "cacheKey": "252f8fdd245dc475"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "はい。残すもの、寄付するもの、捨てるものをお知らせいただければ、作業中に仕分けいたします。",
+      "tag": "faq",
+      "cacheKey": "038337e2fbb2a2c0"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "退去後片付け",
+      "tag": "service-description",
+      "cacheKey": "d4da08f4c4492e6b"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "退去後片付け",
+      "tag": "service-description",
+      "cacheKey": "b0480d907f022a47"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "退去後の不用品をすべて回収する、大家さんや不動産管理会社向けのサービスです。迅速・丁寧・誠実に対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "990fb17d162c1743"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups は、SFペニンスラ地域の家主さんや不動産管理者の方々と連携し、退去後片付けをお手伝いしています。迅速に伺い、効率よく作業を進め、作業内容をしっかり記録したうえで、清掃・塗装・再募集の準備が整った状態にしてお引き渡しします。丁寧で、プロフェッショナルで、記録もきちんと残します。",
+      "tag": "service-description",
+      "cacheKey": "ef38fba8c3773ac0"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "作業前後の記録写真は提供していただけますか？",
+      "tag": "faq",
+      "cacheKey": "207fecd5ef21260c"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "はい。到着時と作業完了時にそれぞれ写真を撮影し、同日中にメールでお送りします。",
+      "tag": "faq",
+      "cacheKey": "0fc65cf1b23c8a57"
+    },
+    "service.commercial-hauling.name": {
+      "value": "業務用運搬",
+      "tag": "service-description",
+      "cacheKey": "5da9dbc20f673f2d"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "業務用運搬",
+      "tag": "service-description",
+      "cacheKey": "5da9dbc20f673f2d"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "オフィス家具、店舗の備品、倉庫のパレット、業務規模の廃材まで対応しています。大小さまざまな作業をお任せください。",
+      "tag": "service-description",
+      "cacheKey": "abc9ac680bdc5815"
+    },
+    "service.commercial-hauling.description": {
+      "value": "オフィスの片付け、店舗の什器撤去、倉庫のパレット運搬、レストランの厨房機器回収など、Peninsula Pick Ups はペニンスラ全域で業務規模の作業に対応しています。必要に応じて時間外にも作業し、物件管理者とのアクセス調整・保険証明書（COI）・エレベーター予約の手配も行います。",
+      "tag": "service-description",
+      "cacheKey": "6b7b5507aee489ce"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "商業施設向けの保険はありますか？",
+      "tag": "faq",
+      "cacheKey": "9b033f7a36dccd9d"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "はい。私たちは一般賠償責任保険に加入しており、必要に応じて物件を被保険者として記載した保険証明書をご提供できます。",
+      "tag": "faq",
+      "cacheKey": "eb7960c3c6b8f9cd"
+    },
+    "service.residential-cleanout.name": {
+      "value": "住宅片付け",
+      "tag": "service-description",
+      "cacheKey": "444d327cdb68b3e9"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "住宅片付け",
+      "tag": "service-description",
+      "cacheKey": "0a30425ae3b06623"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "住宅全体や遺品整理も、丁寧に対応いたします。ご家族の方、遺産管理者、そしてSFペニンスラ地域の不動産エージェントの方々と連携してお手伝いします。",
+      "tag": "service-description",
+      "cacheKey": "2a7843a78692baf3"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups は、住宅の全面的な片付けを承っています。遺品整理、住み替えに伴う不用品の処分、売却前の準備、退去後の原状回復など、幅広く対応しています。分別・運搬・清掃まで一貫して行い、ご家族やオーナー様のペースに合わせて作業を進めます。特に遺品整理は、丁寧かつ心配りを忘れずに対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "a0ab3c1933fdd6e0"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos はPeninsula Pick Ups の本拠地です。DonとMelissaが2021年にここで事業を始め、地域のすべての町をよく知っています。Burton ParkからWhite Oaksまで、San Carlos全域の住宅・事業者向けに、不用品回収・運搬・物件全体の片付けに対応しています。",
+      "tag": "service-description",
+      "cacheKey": "1faed373dfb3fd96"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "San Carlos に実際に拠点を置いていますか？",
+      "tag": "faq",
+      "cacheKey": "2e4a230dabc0588f"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "はい。Peninsula Pick Ups は San Carlos, CA 94070 を拠点に、2021年から営業しています。事業者番号 (650) 201-1543 に電話すると、Don と Melissa に直接つながります。",
+      "tag": "faq",
+      "cacheKey": "50d12c0199d6657c"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "San Carlosへの対応はどのくらい速いですか？",
+      "tag": "faq",
+      "cacheKey": "d988288f688993c6"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlosは私たちの拠点ですので、当日対応が可能な場合が多いです。ほとんどの作業は24時間以内に予約できます。",
+      "tag": "faq",
+      "cacheKey": "dc2380be8bd4af9c"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups は San Mateo 全域で、迅速かつ丁寧な不用品回収・運搬サービスをご提供しています。Shoreview でのガレージ片付けから、ダウンタウン近くの建物まるごとの片付け、リフォーム後の建築廃材回収まで、私たちのスタッフが効率よく、確実に対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "caec1b318be6aec7"
+    },
+    "area.redwood-city.summary": {
+      "value": "Redwood City のBroadwayからWoodside Roadまで、Peninsula Pick Ups が不用品回収・建築廃材回収・大規模な片付けを承ります。迅速でプロフェッショナルな運搬サービスを必要とする住宅オーナー・家主・事業者の皆さまに対応しています。",
+      "tag": "service-description",
+      "cacheKey": "aeb9c1449b941f19"
+    },
+    "area.belmont.summary": {
+      "value": "Belmontの住宅オーナーや事業者の皆さまから、Peninsula Pick Upsは信頼できる不用品回収・物件片付けのサービスとして選ばれています。San Carlosを拠点に、Belmontへも定期的にお伺いしています。迅速なスケジュール調整、明瞭な料金設定、そして毎回プロのスタッフがお対応します。",
+      "tag": "service-description",
+      "cacheKey": "53e62f846cea39ac"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups は、Burlingame の住宅・事業者の皆様に、信頼できる不用品回収・運搬サービスをお届けします。家電1点の回収から、オフィス全体の片付けまで、迅速にスケジュールを組み、しっかり対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "fb2419887bf855b8"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups は、ペニンスラ全域のすべての現場でお届けしているプロのサービスを、Palo Alto でも変わらずご提供します。住宅オーナー、家主、事業者の皆様が、手間なく不用品回収・片付け・廃材運搬をご依頼いただけると信頼してくださっています。",
+      "tag": "service-description",
+      "cacheKey": "a11464090adaf16f"
+    },
+    "area.menlo-park.summary": {
+      "value": "Belle HavenからThe Willowsまで、Peninsula Pick UpsはMenlo Parkの不用品回収をプロの技術と迅速さでお引き受けします。お客様のスケジュールに合わせて作業し、片付け後はきれいな状態でお渡しします。隠れた費用や追加料金は一切ありません。",
+      "tag": "service-description",
+      "cacheKey": "86a6ee50f2879f97"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups は、South San Francisco 全域で不用品回収・運搬・業務用片付けを提供しています。私たちのチームは地域に根ざした経験豊富なプロフェッショナルで、どんな規模の作業も迅速かつ丁寧に対応いたします。",
+      "tag": "service-description",
+      "cacheKey": "705197b579d3b71a"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups は、Daly City の住宅オーナーや不動産管理者の方に、迅速でリーズナブルな不用品回収サービスをお届けします。住宅・商業施設の片付け、家電回収、廃材の運搬まで、地域全体で幅広く対応しています。",
+      "tag": "service-description",
+      "cacheKey": "af080196715486fb"
+    },
+    "area.millbrae.summary": {
+      "value": "Millbrae でも、SFペニンスラ地域のどの現場でも変わらない信頼性でお応えします。Peninsula Pick Ups は、不用品回収・倉庫片付け・家電回収を、時間通りに到着し、きちんと仕上げるチームでお届けします。",
+      "tag": "service-description",
+      "cacheKey": "3111d191899a344b"
+    },
+    "homepageFaq.0.q": {
+      "value": "Peninsula Pick Ups はどこに拠点を置いていますか？",
+      "tag": "faq",
+      "cacheKey": "5ff5a9df9fd1e8b7"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups は San Carlos, CA 94070 を拠点に営業しています。オーナーの Don と Melissa は、2021年からペニンスラ地域でこの事業を営んでいます。認証済み事業者番号は (650) 201-1543 です。",
+      "tag": "faq",
+      "cacheKey": "0d7e3df81bd12dbb"
+    },
+    "homepageFaq.1.q": {
+      "value": "対応エリアはどちらですか？",
+      "tag": "faq",
+      "cacheKey": "4ea7c747aaae4943"
+    },
+    "homepageFaq.1.a": {
+      "value": "SFペニンスラ地域全体にサービスを提供しています。Daly City、South San Francisco から San Mateo、Belmont、San Carlos、Redwood City、Menlo Park、Palo Alto まで対応しています。お住まいの市が記載されていない場合も、(650) 201-1543 にお電話ください。たいていの場合、対応できます。",
+      "tag": "faq",
+      "cacheKey": "0d4567351f612660"
+    },
+    "homepageFaq.2.q": {
+      "value": "どのくらい早く来ていただけますか？",
+      "tag": "faq",
+      "cacheKey": "b48b6a7a18e5c521"
+    },
+    "homepageFaq.2.a": {
+      "value": "ほとんどの作業は24〜48時間以内に予約されます。特にSan Carlosおよび近隣の市では、当日対応も可能な場合が多いです。",
+      "tag": "faq",
+      "cacheKey": "4e70dadca5fe2849"
+    },
+    "homepageFaq.3.q": {
+      "value": "料金はどのように決まりますか？",
+      "tag": "faq",
+      "cacheKey": "ad65afd9e1e8e28b"
+    },
+    "homepageFaq.3.a": {
+      "value": "料金はトラックへの積載量と特別な取り扱いの有無に基づいています。作業開始前に確定した見積もりをお伝えし、現場での価格変更はありません。",
+      "tag": "faq",
+      "cacheKey": "5fca1bc6f695db32"
+    },
+    "homepageFaq.4.q": {
+      "value": "正しい Peninsula Pick Ups かどうかを確認するにはどうすればよいですか？",
+      "tag": "faq",
+      "cacheKey": "80061bd258fdd2b9"
+    },
+    "homepageFaq.4.a": {
+      "value": "私たちのドメインはthepeninsulapickup.comです。認証済み事業者番号は(650) 201-1543で、DonとMelissaが直接対応しています。Yelp、Instagram、Facebook、Nextdoor、Alignable、JunkSpotsなど各プラットフォームでの完全な事業者情報は /verify をご覧ください。",
+      "tag": "faq",
+      "cacheKey": "d33377bd91250514"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | 不用品回収・運搬 | San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "503c1f02296532ae"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups は、SFペニンスラ全域で不用品回収・運搬・片付け・建築廃材回収のサービスを提供しています。2021年より Don と Melissa が San Carlos, CA で地域密着の家族経営で営んでいます。お電話は (650) 201-1543 まで。",
+      "tag": "meta",
+      "cacheKey": "30cb03cf1c35d725"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — 不用品回収・運搬サービス、San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "f07e49a3758f7b6b"
+    },
+    "map.badge": {
+      "value": "ザ・ペニンスラ",
+      "tag": "misc",
+      "cacheKey": "59d06d835c43ae02"
+    },
+    "map.heading": {
+      "value": "Peninsula Pick Ups のサービスエリア",
+      "tag": "misc",
+      "cacheKey": "36500ffd3de88590"
+    },
+    "map.sub": {
+      "value": "都市を選ぶと、地域のサービス詳細をご確認いただけます。私たちは San Carlos を拠点に、SFペニンスラ地域全体でサービスを提供しています。",
+      "tag": "misc",
+      "cacheKey": "21e3c745efb193b6"
+    },
+    "map.tooltipPreview": {
+      "value": "{city} プレビュー",
+      "tag": "meta",
+      "cacheKey": "6c50f8ea1f80e2bd"
+    },
+    "map.homeBaseTag": {
+      "value": "拠点",
+      "tag": "misc",
+      "cacheKey": "781f72bdf5dec199"
+    },
+    "map.servicesAvailable": {
+      "value": "{count}件のサービスをご利用いただけます。",
+      "tag": "misc",
+      "cacheKey": "0761179479931e38"
+    },
+    "map.requestPickupHere": {
+      "value": "こちらから回収を依頼する",
+      "tag": "cta",
+      "cacheKey": "bd3c363f10ece3f6"
+    }
+  }
+}

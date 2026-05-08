@@ -1,10 +1,12 @@
 'use client'
 import { useState, type FormEvent } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 import TurnstileWidget from '@/components/shared/TurnstileWidget'
 import { AREAS } from '@/content/areas'
 import { SERVICES } from '@/content/services'
+import { getServiceName } from '@/content/copy'
 import { SITE } from '@/content/site'
 
 interface FormState {
@@ -43,6 +45,7 @@ interface ApiError {
 const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
 export default function QuoteForm() {
+  const t = useTranslations()
   const [form, setForm] = useState<FormState>(EMPTY)
   const [submitting, setSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -79,9 +82,9 @@ export default function QuoteForm() {
       }
       const data = (await res.json().catch(() => null)) as ApiError | null
       if (data?.fields) setFieldErrors(data.fields)
-      setError(data?.error ?? `Something went wrong. Call us at ${SITE.phone.display}.`)
+      setError(data?.error ?? t('quoteForm.errorFallback'))
     } catch {
-      setError(`Unable to submit. Please call us directly at ${SITE.phone.display}.`)
+      setError(t('quoteForm.errorUnavailable'))
     } finally {
       setSubmitting(false)
     }
@@ -101,17 +104,13 @@ export default function QuoteForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <FadeIn direction="right">
             <div>
-              <span className="badge-orange mb-4">Get a Free Quote</span>
+              <span className="badge-orange mb-4">{t('quoteForm.badge')}</span>
               <h2 id="quote-form-heading" className="section-title mt-3">
-                Tell Us About the Job
+                {t('quoteForm.heading')}
               </h2>
               <p className="section-subtitle mt-4">
-                Fill out the form and {SITE.name} will follow up directly. For faster response, call us at{' '}
-                <a href={SITE.phone.href} className="text-orange-400 font-semibold">
-                  {SITE.phone.display}
-                </a>{' '}
-                or text{' '}
-                <a href={SITE.phone.smsHref} className="text-orange-400 font-semibold">
+                {t('quoteForm.subPrefix')} {t('quoteForm.subFasterResponse')}{' '}
+                <a href={SITE.phone.href} className="text-orange-400 font-semibold" dir="ltr">
                   {SITE.phone.display}
                 </a>
                 .
@@ -119,23 +118,19 @@ export default function QuoteForm() {
 
               <div className="mt-10 space-y-5">
                 {[
+                  { titleEl: <span dir="ltr">{SITE.phone.display}</span>, sub: t('quoteForm.contactPhoneSub'), href: SITE.phone.href },
                   {
-                    title: SITE.phone.display,
-                    sub: `Verified business line. ${SITE.owners[0]} and ${SITE.owners[1]}.`,
-                    href: SITE.phone.href,
-                  },
-                  {
-                    title: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`,
-                    sub: `Home base since ${SITE.foundedYear}.`,
+                    titleEl: <span dir="ltr">{`${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`}</span>,
+                    sub: t('quoteForm.contactCitySub'),
                     href: undefined,
                   },
                   {
-                    title: 'Same-day response',
-                    sub: 'Most jobs scheduled within 48 hours.',
+                    titleEl: t('quoteForm.contactSameDayTitle'),
+                    sub: t('quoteForm.contactSameDaySub'),
                     href: undefined,
                   },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-start gap-4">
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4">
                     <div
                       className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 flex-shrink-0"
                       aria-hidden="true"
@@ -148,10 +143,10 @@ export default function QuoteForm() {
                           href={item.href}
                           className="font-semibold text-orange-400 hover:text-orange-300 transition-colors text-base"
                         >
-                          {item.title}
+                          {item.titleEl}
                         </a>
                       ) : (
-                        <p className="font-semibold text-bone-100 text-base">{item.title}</p>
+                        <p className="font-semibold text-bone-100 text-base">{item.titleEl}</p>
                       )}
                       <p className="text-steel-400 text-sm mt-0.5">{item.sub}</p>
                     </div>
@@ -175,16 +170,16 @@ export default function QuoteForm() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-bone-100 mb-3">Request Submitted</h3>
+                <h3 className="text-2xl font-bold text-bone-100 mb-3">{t('quoteForm.successHeading')}</h3>
                 <p className="text-steel-400 mb-6">
-                  {SITE.name} will be in touch soon. For immediate help, call{' '}
-                  <a href={SITE.phone.href} className="text-orange-400 font-semibold">
+                  {t('quoteForm.successSub')}{' '}
+                  <a href={SITE.phone.href} className="text-orange-400 font-semibold" dir="ltr">
                     {SITE.phone.display}
                   </a>
                   .
                 </p>
                 <button onClick={() => setSubmitted(false)} className="btn-secondary text-sm">
-                  Submit Another Request
+                  {t('quoteForm.submitAnotherCta')}
                 </button>
               </div>
             ) : (
@@ -193,7 +188,7 @@ export default function QuoteForm() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="qf-name" className="block text-sm font-medium text-bone-300 mb-1.5">
-                        Name <span className="text-orange-500">*</span>
+                        {t('quoteForm.nameLabel')} <span className="text-orange-500">*</span>
                       </label>
                       <input
                         id="qf-name"
@@ -202,7 +197,7 @@ export default function QuoteForm() {
                         required
                         maxLength={120}
                         className={`input-base ${fieldError('name') ? 'border-red-500' : ''}`}
-                        placeholder="Your full name"
+                        placeholder={t('quoteForm.namePlaceholder')}
                         aria-invalid={!!fieldError('name')}
                         aria-describedby={fieldError('name') ? 'qf-name-error' : undefined}
                         value={form.name}
@@ -216,7 +211,7 @@ export default function QuoteForm() {
                     </div>
                     <div>
                       <label htmlFor="qf-phone" className="block text-sm font-medium text-bone-300 mb-1.5">
-                        Phone <span className="text-orange-500">*</span>
+                        {t('quoteForm.phoneLabel')} <span className="text-orange-500">*</span>
                       </label>
                       <input
                         id="qf-phone"
@@ -224,11 +219,12 @@ export default function QuoteForm() {
                         autoComplete="tel"
                         required
                         className={`input-base ${fieldError('phone') ? 'border-red-500' : ''}`}
-                        placeholder="(650) 555-0100"
+                        placeholder={t('quoteForm.phonePlaceholder')}
                         aria-invalid={!!fieldError('phone')}
                         aria-describedby={fieldError('phone') ? 'qf-phone-error' : undefined}
                         value={form.phone}
                         onChange={(e) => update('phone', e.target.value)}
+                        dir="ltr"
                       />
                       {fieldError('phone') && (
                         <p id="qf-phone-error" className="text-red-400 text-xs mt-1">
@@ -240,7 +236,8 @@ export default function QuoteForm() {
 
                   <div>
                     <label htmlFor="qf-email" className="block text-sm font-medium text-bone-300 mb-1.5">
-                      Email <span className="text-steel-500 font-normal">(optional)</span>
+                      {t('quoteForm.emailLabel')}{' '}
+                      <span className="text-steel-500 font-normal">{t('quoteForm.emailOptional')}</span>
                     </label>
                     <input
                       id="qf-email"
@@ -248,9 +245,10 @@ export default function QuoteForm() {
                       autoComplete="email"
                       maxLength={254}
                       className={`input-base ${fieldError('email') ? 'border-red-500' : ''}`}
-                      placeholder="you@example.com"
+                      placeholder={t('quoteForm.emailPlaceholder')}
                       value={form.email}
                       onChange={(e) => update('email', e.target.value)}
+                      dir="ltr"
                     />
                     {fieldError('email') && <p className="text-red-400 text-xs mt-1">{fieldError('email')}</p>}
                   </div>
@@ -258,7 +256,7 @@ export default function QuoteForm() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="qf-service" className="block text-sm font-medium text-bone-300 mb-1.5">
-                        Service Needed
+                        {t('quoteForm.serviceLabel')}
                       </label>
                       <select
                         id="qf-service"
@@ -266,17 +264,17 @@ export default function QuoteForm() {
                         value={form.service_requested}
                         onChange={(e) => update('service_requested', e.target.value)}
                       >
-                        <option value="">Select a service...</option>
+                        <option value="">{t('quoteForm.serviceDefault')}</option>
                         {SERVICES.map((s) => (
                           <option key={s.slug} value={s.formValue}>
-                            {s.name}
+                            {getServiceName(s.slug, t)}
                           </option>
                         ))}
                       </select>
                     </div>
                     <div>
                       <label htmlFor="qf-location" className="block text-sm font-medium text-bone-300 mb-1.5">
-                        Service Location <span className="text-orange-500">*</span>
+                        {t('quoteForm.locationLabel')} <span className="text-orange-500">*</span>
                       </label>
                       <select
                         id="qf-location"
@@ -285,20 +283,21 @@ export default function QuoteForm() {
                         value={form.service_location}
                         onChange={(e) => update('service_location', e.target.value)}
                       >
-                        <option value="">Select city...</option>
+                        <option value="">{t('quoteForm.locationDefault')}</option>
                         {AREAS.map((area) => (
                           <option key={area.slug} value={area.city}>
                             {area.city}, CA
                           </option>
                         ))}
-                        <option value="Other">Other</option>
+                        <option value="Other">{t('quoteForm.locationOther')}</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="qf-date" className="block text-sm font-medium text-bone-300 mb-1.5">
-                      Preferred Date <span className="text-steel-500 font-normal">(optional)</span>
+                      {t('quoteForm.dateLabel')}{' '}
+                      <span className="text-steel-500 font-normal">{t('quoteForm.emailOptional')}</span>
                     </label>
                     <input
                       id="qf-date"
@@ -311,14 +310,15 @@ export default function QuoteForm() {
 
                   <div>
                     <label htmlFor="qf-message" className="block text-sm font-medium text-bone-300 mb-1.5">
-                      Message <span className="text-steel-500 font-normal">(optional)</span>
+                      {t('quoteForm.messageLabel')}{' '}
+                      <span className="text-steel-500 font-normal">{t('quoteForm.emailOptional')}</span>
                     </label>
                     <textarea
                       id="qf-message"
                       rows={4}
                       maxLength={2000}
                       className={`input-base resize-none ${fieldError('message') ? 'border-red-500' : ''}`}
-                      placeholder="Describe what needs to be removed, any access notes, or specific questions..."
+                      placeholder={t('quoteForm.messagePlaceholder')}
                       value={form.message}
                       onChange={(e) => update('message', e.target.value)}
                     />
@@ -326,7 +326,7 @@ export default function QuoteForm() {
                   </div>
 
                   {/* Honeypot — visually hidden, off-tab. */}
-                  <div aria-hidden="true" className="absolute -left-[10000px]" tabIndex={-1}>
+                  <div aria-hidden="true" className="absolute -start-[10000px]" tabIndex={-1}>
                     <label htmlFor="qf-company">Company (do not fill)</label>
                     <input
                       id="qf-company"
@@ -348,13 +348,10 @@ export default function QuoteForm() {
                       onChange={(e) => update('consent', e.target.checked)}
                     />
                     <label htmlFor="qf-consent" className="text-xs text-steel-400 cursor-pointer leading-relaxed">
-                      I agree to be contacted by {SITE.name} at the phone number and email above regarding my quote
-                      request, including by SMS and call. Consent is not a condition of service. Message and data rates
-                      may apply. Reply STOP to opt out at any time. See our{' '}
+                      {t('quoteForm.consentText')}{' '}
                       <Link href="/privacy" className="text-orange-400 hover:text-orange-300 underline">
-                        Privacy Policy
+                        {t('quoteForm.consentSeePrivacy')}
                       </Link>
-                      .
                     </label>
                   </div>
 
@@ -377,10 +374,10 @@ export default function QuoteForm() {
                           <circle cx="8" cy="8" r="6" stroke="currentColor" strokeOpacity="0.25" strokeWidth="2" />
                           <path d="M8 2a6 6 0 016 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                         </svg>
-                        Sending Request...
+                        {t('quoteForm.sendingCta')}
                       </span>
                     ) : (
-                      'Send Quote Request'
+                      t('quoteForm.sendCta')
                     )}
                   </button>
                 </div>

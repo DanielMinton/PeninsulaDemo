@@ -1,13 +1,14 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
 import QuoteForm from '@/components/shared/QuoteForm'
 import FaqSection from '@/components/shared/FaqSection'
 import ShareCity from '@/components/shared/ShareCity'
 import { AREAS, getAreaBySlug, type Area } from '@/content/areas'
-import { serviceName } from '@/content/services'
+import { getServiceName, getAreaCopy } from '@/content/copy'
 import { SITE } from '@/content/site'
 import { graph, localBusiness, service as serviceNode, breadcrumbs, faqPage } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
@@ -18,16 +19,18 @@ interface AreaPageProps extends LocaleProps {
 }
 
 const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
+  const t = useTranslations()
   const path = `/areas/${area.slug}`
+  const areaCopy = getAreaCopy(area.slug, t)
   const schema = graph(
     localBusiness(locale),
     serviceNode('junk-removal', area, locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
-      { name: 'Service Areas', url: '/#service-areas' },
+      { name: t('areaPage.breadcrumbServiceAreas'), url: '/#service-areas' },
       { name: `${area.city}, CA`, url: path },
     ], locale),
-    ...(area.faqs && area.faqs.length > 0 ? [faqPage(area.faqs, locale)] : []),
+    ...(areaCopy.faqs.length > 0 ? [faqPage(areaCopy.faqs, locale)] : []),
   )
 
   return (
@@ -63,7 +66,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                   </Link>
                   <span aria-hidden="true">/</span>
                   <Link href="/#service-areas" className="hover:text-steel-400 transition-colors">
-                    Service Areas
+                    {t('areaPage.breadcrumbServiceAreas')}
                   </Link>
                   <span aria-hidden="true">/</span>
                   <span className="text-bone-300">{area.city}, CA</span>
@@ -78,13 +81,13 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                         d="M8.53 2.22a.75.75 0 010 1.06L4.53 7.28a.75.75 0 01-1.06 0L1.47 5.28a.75.75 0 011.06-1.06L4 5.69 7.47 2.22a.75.75 0 011.06 0z"
                       />
                     </svg>
-                    {area.county} County
+                    {t('areaPage.countyBadge', { county: area.county })}
                   </span>
-                  {area.isHomeBase && <span className="badge-orange">Home Base</span>}
+                  {area.isHomeBase && <span className="badge-orange">{t('areaPage.homeBaseBadge')}</span>}
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-bone-100 leading-tight tracking-tight mb-5">
-                  Junk Removal in
+                  {t('areaPage.headlinePart1')}
                   <br />
                   <span
                     style={{
@@ -98,20 +101,20 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                   </span>
                 </h1>
 
-                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed mb-8">{area.summary}</p>
+                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed mb-8">{areaCopy.summary}</p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
                   <a href="#quote" className="btn-primary text-lg px-7 py-4">
-                    Request Pickup in {area.city}
+                    {t('areaPage.requestPickupIn', { city: area.city })}
                   </a>
                   <a href={SITE.phone.href} className="btn-secondary text-lg px-7 py-4">
-                    Call {SITE.phone.display}
+                    {t('areaPage.callPrefix')} <span dir="ltr">{SITE.phone.display}</span>
                   </a>
                   <a
-                    href={`${SITE.phone.smsHref}?body=${encodeURIComponent(`Hi Peninsula Pick Ups — I need a pickup in ${area.city}, CA.`)}`}
+                    href={`${SITE.phone.smsHref}?body=${encodeURIComponent(t('areaPage.textMessage', { city: area.city }))}`}
                     className="btn-secondary text-lg px-7 py-4"
                   >
-                    Text Us
+                    {t('areaPage.textUs')}
                   </a>
                 </div>
 
@@ -120,7 +123,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                 <div className="mt-8 flex flex-wrap gap-3">
                   {area.services.map((slug) => (
                     <span key={slug} className="badge-orange text-xs font-medium">
-                      {serviceName(slug)}
+                      {getServiceName(slug, t)}
                     </span>
                   ))}
                 </div>
@@ -132,11 +135,11 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
             <div className="container-max section-padding py-6">
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 text-sm">
                 {[
-                  { label: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`, sub: 'Home Base' },
-                  { label: `Established ${SITE.foundedYear}`, sub: 'Serving the Peninsula' },
-                  { label: SITE.phone.display, sub: 'Verified Line', href: SITE.phone.href },
-                  { label: `${SITE.owners[0]} and ${SITE.owners[1]}`, sub: 'Local Owners' },
-                  { label: 'Licensed and Insured', sub: 'Professional Service' },
+                  { label: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`, sub: t('areaPage.statHomeBase') },
+                  { label: `${t('areaPage.statEstablishedPrefix')} ${SITE.foundedYear}`, sub: t('areaPage.statServingPeninsula') },
+                  { label: SITE.phone.display, sub: t('areaPage.statVerifiedLine'), href: SITE.phone.href },
+                  { label: `${SITE.owners[0]} and ${SITE.owners[1]}`, sub: t('areaPage.statLocalOwners') },
+                  { label: t('areaPage.statLicensedAndInsured'), sub: t('areaPage.statProfessionalService') },
                 ].map((item) =>
                   item.href ? (
                     <a key={item.label} href={item.href} className="flex items-center gap-2 group">
@@ -165,10 +168,8 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
           <div className="bg-charcoal-900 py-20">
             <div className="container-max section-padding">
               <FadeIn>
-                <h2 className="text-3xl font-bold text-bone-100 mb-2">Services Available in {area.city}</h2>
-                <p className="text-steel-400 mb-8">
-                  {SITE.name} provides the following services throughout {area.city}, CA.
-                </p>
+                <h2 className="text-3xl font-bold text-bone-100 mb-2">{t('areaPage.servicesHeading', { city: area.city })}</h2>
+                <p className="text-steel-400 mb-8">{t('areaPage.servicesSubhead', { city: area.city })}</p>
               </FadeIn>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {area.services.map((slug, i) => (
@@ -186,7 +187,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                           />
                         </svg>
                       </div>
-                      <p className="font-semibold text-bone-100 text-sm">{serviceName(slug)}</p>
+                      <p className="font-semibold text-bone-100 text-sm">{getServiceName(slug, t)}</p>
                     </Link>
                   </FadeIn>
                 ))}
@@ -198,7 +199,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
             <div className="bg-charcoal-800 py-16">
               <div className="container-max section-padding">
                 <FadeIn>
-                  <h2 className="text-2xl font-bold text-bone-100 mb-6">Also Serving Nearby Areas</h2>
+                  <h2 className="text-2xl font-bold text-bone-100 mb-6">{t('areaPage.nearbyHeading')}</h2>
                   <div className="flex flex-wrap gap-3">
                     {area.nearbyAreas.map((city) => {
                       const nearbyArea = AREAS.find((a) => a.city === city)
@@ -233,11 +234,11 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
             </div>
           )}
 
-          {area.faqs && area.faqs.length > 0 && (
+          {areaCopy.faqs.length > 0 && (
             <FaqSection
-              faqs={area.faqs}
-              heading={`${area.city} FAQ`}
-              intro={`Common questions about junk removal and hauling in ${area.city}, CA.`}
+              faqs={areaCopy.faqs}
+              heading={t('areaPage.faqHeading', { city: area.city })}
+              intro={t('areaPage.faqSubhead', { city: area.city })}
             />
           )}
 
@@ -258,7 +259,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Back to {SITE.name}
+                {t('areaPage.backToHome')}
               </Link>
             </div>
           </div>

@@ -1,13 +1,16 @@
+'use client'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 import { SITE } from '@/content/site'
 import { REVIEWS, TOTAL_REVIEW_COUNT } from '@/content/reviews'
+import { getServiceShortName } from '@/content/copy'
 
 const YELP_URL = SITE.socials.find((s) => s.id === 'yelp')!.url
 const NEXTDOOR_URL = SITE.socials.find((s) => s.id === 'nextdoor')!.url
 
-function StarRating({ count }: { count: number }) {
+function StarRating({ count, label }: { count: number; label: string }) {
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${count} out of 5 stars`}>
+    <div className="flex items-center gap-0.5" aria-label={label}>
       {[...Array(5)].map((_, i) => (
         <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path
@@ -30,19 +33,19 @@ function YelpWordmark() {
 }
 
 export default function TestimonialsSection() {
+  const t = useTranslations()
   return (
     <section className="bg-charcoal-800 py-24" aria-labelledby="testimonials-heading">
       <div className="container-max section-padding">
         <FadeIn>
           <div className="mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div>
-              <span className="badge-verify mb-4">Customer Reviews</span>
+              <span className="badge-verify mb-4">{t('testimonialsSection.badge')}</span>
               <h2 id="testimonials-heading" className="section-title mt-3">
-                What Customers Say
+                {t('testimonialsSection.heading')}
               </h2>
               <p className="section-subtitle mt-3 max-w-xl">
-                Real reviews from customers across the Peninsula. {SITE.name} has {TOTAL_REVIEW_COUNT} reviews and
-                counting on Yelp, plus recommendations on Nextdoor and Alignable.
+                {t('testimonialsSection.subhead', { count: TOTAL_REVIEW_COUNT })}
               </p>
             </div>
             <div className="flex-shrink-0 flex flex-wrap items-center gap-2">
@@ -53,7 +56,9 @@ export default function TestimonialsSection() {
                 className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-charcoal-600 bg-charcoal-700 hover:border-charcoal-500 transition-colors text-sm"
               >
                 <YelpWordmark />
-                <span className="text-steel-400">{TOTAL_REVIEW_COUNT} reviews</span>
+                <span className="text-steel-400">
+                  {t('testimonialsSection.yelpReviewsCount', { count: TOTAL_REVIEW_COUNT })}
+                </span>
               </a>
               <a
                 href={NEXTDOOR_URL}
@@ -64,7 +69,7 @@ export default function TestimonialsSection() {
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true">
                   <path d="M6 1L1 5h1.5v6h2.5V8h2v3h2.5V5H11L6 1z" />
                 </svg>
-                Recommended on Nextdoor
+                {t('testimonialsSection.recommendedNextdoor')}
               </a>
             </div>
           </div>
@@ -75,13 +80,16 @@ export default function TestimonialsSection() {
             <FadeIn key={i} delay={i * 0.1} direction="up">
               <article className="card-base p-6 flex flex-col gap-4 h-full">
                 <div className="flex items-center justify-between">
-                  <StarRating count={review.rating} />
+                  <StarRating
+                    count={review.rating}
+                    label={t('testimonialsSection.starRatingLabel', { count: review.rating })}
+                  />
                   <a
                     href={review.url ?? YELP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:opacity-75 transition-opacity"
-                    aria-label={`View on ${review.source}`}
+                    aria-label={t('testimonialsSection.viewOnSource', { source: review.source })}
                   >
                     <YelpWordmark />
                   </a>
@@ -107,9 +115,11 @@ export default function TestimonialsSection() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-bone-300 text-xs font-semibold">Verified {review.source} customer</p>
+                    <p className="text-bone-300 text-xs font-semibold">
+                      {t('testimonialsSection.verifiedCustomer', { source: review.source })}
+                    </p>
                     <p className="text-steel-500 text-xs mt-0.5">
-                      {review.service} &middot; {review.city}, CA
+                      {getServiceShortName(review.serviceSlug, t)} &middot; {review.city}, CA
                     </p>
                   </div>
                 </div>
@@ -134,11 +144,8 @@ export default function TestimonialsSection() {
                 />
               </svg>
             </div>
-            <h3 className="font-bold text-bone-100 text-xl mb-3">Had a Good Experience?</h3>
-            <p className="text-steel-400 text-sm leading-relaxed mb-6">
-              If {SITE.name} hauled for you, we&apos;d love to hear about it. Reviews from confirmed customers help
-              neighbors find a reliable local service.
-            </p>
+            <h3 className="font-bold text-bone-100 text-xl mb-3">{t('testimonialsSection.experienceHeading')}</h3>
+            <p className="text-steel-400 text-sm leading-relaxed mb-6">{t('testimonialsSection.experienceBody')}</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
                 href={YELP_URL}
@@ -146,10 +153,10 @@ export default function TestimonialsSection() {
                 rel="noopener noreferrer"
                 className="btn-secondary text-sm py-2.5 px-5 justify-center w-full sm:w-auto"
               >
-                Leave a Yelp Review
+                {t('testimonialsSection.leaveYelpReview')}
               </a>
               <a href={SITE.phone.href} className="btn-primary justify-center w-full sm:w-auto">
-                Call {SITE.phone.display}
+                {t('testimonialsSection.callCta')} <span dir="ltr">{SITE.phone.display}</span>
               </a>
             </div>
           </div>

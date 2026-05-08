@@ -701,6 +701,862 @@
     "common.optional": {
       "value": "optional",
       "tag": "form-label"
+    },
+    "faqSection.badge": {
+      "value": "FAQ",
+      "tag": "faq"
+    },
+    "faqSection.defaultHeading": {
+      "value": "Frequently Asked Questions",
+      "tag": "faq"
+    },
+    "faqSection.moreQuestions": {
+      "value": "More questions?",
+      "tag": "faq"
+    },
+    "faqSection.callPrefix": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "trustSection.badge": {
+      "value": "Why Peninsula Pick Ups",
+      "tag": "trust"
+    },
+    "trustSection.headlinePart1": {
+      "value": "Why Customers Trust",
+      "tag": "trust"
+    },
+    "trustSection.headlinePart2": {
+      "value": "the Real Peninsula Pick Ups",
+      "tag": "trust"
+    },
+    "trustSection.subhead": {
+      "value": "Don and Melissa built Peninsula Pick Ups on one principle: show up, do the job right, and be reachable. No mystery numbers. No vague addresses. A real San Carlos business you can verify.",
+      "tag": "trust"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "Request a Free Quote",
+      "tag": "cta"
+    },
+    "trustSection.callCta": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "trustSection.ownersTitle": {
+      "value": "Owners: Don and Melissa",
+      "tag": "trust"
+    },
+    "trustSection.ownersBody": {
+      "value": "Family-operated out of San Carlos, CA 94070. When you request a quote or call the business line, you reach us directly. That is the point.",
+      "tag": "trust"
+    },
+    "trustSection.establishedNote": {
+      "value": "Established 2021 on the Peninsula.",
+      "tag": "trust"
+    },
+    "trustSection.signal1Title": {
+      "value": "One verified phone number",
+      "tag": "trust"
+    },
+    "trustSection.signal1Body": {
+      "value": "When you call (650) 201-1543, you reach Don and Melissa directly. No call center, no redirects, no runaround.",
+      "tag": "trust"
+    },
+    "trustSection.signal2Title": {
+      "value": "Based in San Carlos since 2021",
+      "tag": "trust"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups was built on the Peninsula and has been serving the community since 2021. We know the neighborhoods, the roads, and what customers here expect.",
+      "tag": "trust"
+    },
+    "trustSection.signal3Title": {
+      "value": "Real project photos on the way",
+      "tag": "trust"
+    },
+    "trustSection.signal3Body": {
+      "value": "We back our work with before-and-after documentation on every job. Verified project media is being added continuously.",
+      "tag": "trust"
+    },
+    "trustSection.signal4Title": {
+      "value": "Transparent pricing, no surprises",
+      "tag": "trust"
+    },
+    "trustSection.signal4Body": {
+      "value": "Free quotes with no hidden fees. You know the number before we show up, and the price does not change on-site.",
+      "tag": "trust"
+    },
+    "trustSection.signal5Title": {
+      "value": "Fast scheduling, human response",
+      "tag": "trust"
+    },
+    "trustSection.signal5Body": {
+      "value": "We respond same day. Most jobs are schedulable within 48 hours. You deal with the owner, not a dispatcher.",
+      "tag": "trust"
+    },
+    "trustSection.signal6Title": {
+      "value": "Licensed and insured",
+      "tag": "trust"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups carries proper licensing and insurance for every job. Your property is covered, full stop.",
+      "tag": "trust"
+    },
+    "servicesGrid.badge": {
+      "value": "What We Do",
+      "tag": "service-description"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "Full-Service Hauling",
+      "tag": "service-description"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "From One Item to the Whole Property",
+      "tag": "service-description"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups handles residential and commercial jobs across the Peninsula. Whatever needs to go, we load it up and clear it out.",
+      "tag": "service-description"
+    },
+    "servicesGrid.learnMore": {
+      "value": "Learn more",
+      "tag": "cta"
+    },
+    "servicesGrid.getQuote": {
+      "value": "Get a quote",
+      "tag": "cta"
+    },
+    "serviceAreas.badge": {
+      "value": "Where We Work",
+      "tag": "misc"
+    },
+    "serviceAreas.heading": {
+      "value": "Serving the Entire Peninsula",
+      "tag": "misc"
+    },
+    "serviceAreas.subhead": {
+      "value": "Based in San Carlos, Peninsula Pick Ups covers communities from South San Francisco down to Palo Alto. Click your city for local service details.",
+      "tag": "misc"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "Request Pickup",
+      "tag": "cta"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "Home Base",
+      "tag": "misc"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "County",
+      "tag": "misc"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "+ {count} more",
+      "tag": "misc"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "Don't see your city?",
+      "tag": "misc"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "Request a quote",
+      "tag": "cta"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "and we'll confirm service availability.",
+      "tag": "misc"
+    },
+    "testimonialsSection.badge": {
+      "value": "Customer Reviews",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.heading": {
+      "value": "What Customers Say",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.subhead": {
+      "value": "Real reviews from customers across the Peninsula. Peninsula Pick Ups has {count} reviews and counting on Yelp, plus recommendations on Nextdoor and Alignable.",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count} reviews",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "Recommended on Nextdoor",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "Verified {source} customer",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "View on {source}",
+      "tag": "meta"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "{count} out of 5 stars",
+      "tag": "meta"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "Had a Good Experience?",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "If Peninsula Pick Ups hauled for you, we'd love to hear about it. Reviews from confirmed customers help neighbors find a reliable local service.",
+      "tag": "testimonial"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "Leave a Yelp Review",
+      "tag": "cta"
+    },
+    "testimonialsSection.callCta": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "Business verification",
+      "tag": "meta"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "Home Base",
+      "tag": "trust"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "Operating since 2021",
+      "tag": "trust"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "Established 2021",
+      "tag": "trust"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "Verified Business Line",
+      "tag": "trust"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "Don and Melissa",
+      "tag": "trust"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "Local Owners",
+      "tag": "trust"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "Licensed and Insured",
+      "tag": "trust"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "Professional Service",
+      "tag": "trust"
+    },
+    "gallerySection.badge": {
+      "value": "Real Work, Real Results",
+      "tag": "misc"
+    },
+    "gallerySection.heading": {
+      "value": "Project Gallery",
+      "tag": "misc"
+    },
+    "gallerySection.subhead": {
+      "value": "Photos from real Peninsula Pick Ups jobs — garage cleanouts, debris removal, appliance hauls, and full-property clearances across the Peninsula.",
+      "tag": "misc"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "58 photos",
+      "tag": "misc"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143+ posts",
+      "tag": "misc"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "143+ more job photos on Instagram",
+      "tag": "cta"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "Follow",
+      "tag": "cta"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "for before-and-after photos from every job — garage cleanouts, construction debris, appliance removals, and more across the Peninsula.",
+      "tag": "cta"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "View All Photos",
+      "tag": "cta"
+    },
+    "gallerySection.photo1Label": {
+      "value": "Haul Complete",
+      "tag": "misc"
+    },
+    "gallerySection.photo2Label": {
+      "value": "Residential Cleanout",
+      "tag": "misc"
+    },
+    "gallerySection.photo3Label": {
+      "value": "Full Load Haul",
+      "tag": "misc"
+    },
+    "gallerySection.photo4Label": {
+      "value": "Debris Removal",
+      "tag": "misc"
+    },
+    "gallerySection.photo5Label": {
+      "value": "Property Cleanout",
+      "tag": "misc"
+    },
+    "gallerySection.photo6Label": {
+      "value": "Job Site",
+      "tag": "misc"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "San Mateo County",
+      "tag": "misc"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "Peninsula, CA",
+      "tag": "misc"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "Bay Area, CA",
+      "tag": "misc"
+    },
+    "shareCity.shareLabel": {
+      "value": "Share {city} page",
+      "tag": "cta"
+    },
+    "shareCity.copied": {
+      "value": "Link copied",
+      "tag": "misc"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups serves {city}, CA — (650) 201-1543.",
+      "tag": "cta"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "Service Areas",
+      "tag": "nav"
+    },
+    "areaPage.countyBadge": {
+      "value": "{county} County",
+      "tag": "misc"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "Home Base",
+      "tag": "trust"
+    },
+    "areaPage.headlinePart1": {
+      "value": "Junk Removal in",
+      "tag": "hero"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "Request Pickup in {city}",
+      "tag": "cta"
+    },
+    "areaPage.callPrefix": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "areaPage.textUs": {
+      "value": "Text Us",
+      "tag": "cta"
+    },
+    "areaPage.textMessage": {
+      "value": "Hi Peninsula Pick Ups — I need a pickup in {city}, CA.",
+      "tag": "cta"
+    },
+    "areaPage.servicesHeading": {
+      "value": "Services Available in {city}",
+      "tag": "service-description"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups provides the following services throughout {city}, CA.",
+      "tag": "service-description"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "Also Serving Nearby Areas",
+      "tag": "misc"
+    },
+    "areaPage.faqHeading": {
+      "value": "{city} FAQ",
+      "tag": "faq"
+    },
+    "areaPage.faqSubhead": {
+      "value": "Common questions about junk removal and hauling in {city}, CA.",
+      "tag": "faq"
+    },
+    "areaPage.backToHome": {
+      "value": "Back to Peninsula Pick Ups",
+      "tag": "nav"
+    },
+    "areaPage.statHomeBase": {
+      "value": "Home Base",
+      "tag": "trust"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "Serving the Peninsula",
+      "tag": "trust"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "Verified Line",
+      "tag": "trust"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "Local Owners",
+      "tag": "trust"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "Professional Service",
+      "tag": "trust"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "Licensed and Insured",
+      "tag": "trust"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "Established",
+      "tag": "trust"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "Services",
+      "tag": "nav"
+    },
+    "servicePage.serviceBadge": {
+      "value": "Service",
+      "tag": "service-description"
+    },
+    "servicePage.requestQuote": {
+      "value": "Request a Quote",
+      "tag": "cta"
+    },
+    "servicePage.callPrefix": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "Cities We Serve",
+      "tag": "misc"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service} is available across every Peninsula Pick Ups service area.",
+      "tag": "service-description"
+    },
+    "servicePage.faqHeading": {
+      "value": "{service} FAQ",
+      "tag": "faq"
+    },
+    "servicePage.faqSubhead": {
+      "value": "Common questions about {service} with Peninsula Pick Ups.",
+      "tag": "faq"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "Other Services",
+      "tag": "service-description"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "Verify",
+      "tag": "nav"
+    },
+    "verifyPage.badge": {
+      "value": "Verified Identity",
+      "tag": "trust"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "This is the",
+      "tag": "hero"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "legitimate Peninsula Pick Ups.",
+      "tag": "hero"
+    },
+    "verifyPage.subhead": {
+      "value": "Public-record verification for the family-owned junk removal and hauling business based in San Carlos, CA since 2021.",
+      "tag": "trust"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "Business of Record",
+      "tag": "trust"
+    },
+    "verifyPage.factLegalName": {
+      "value": "Legal name",
+      "tag": "trust"
+    },
+    "verifyPage.factDomain": {
+      "value": "Domain",
+      "tag": "trust"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "Verified phone",
+      "tag": "trust"
+    },
+    "verifyPage.factAddress": {
+      "value": "Address",
+      "tag": "trust"
+    },
+    "verifyPage.factOwners": {
+      "value": "Owners",
+      "tag": "trust"
+    },
+    "verifyPage.factFounded": {
+      "value": "Founded",
+      "tag": "trust"
+    },
+    "verifyPage.factLicensed": {
+      "value": "Licensed and insured",
+      "tag": "trust"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "Yes",
+      "tag": "trust"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "A note on imposter sites",
+      "tag": "trust"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "Profiles & Reviews of Record",
+      "tag": "trust"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "Every link below is a published profile we operate. These are the canonical destinations cited by our schema and by every page on this site.",
+      "tag": "trust"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "Need to confirm something live?",
+      "tag": "trust"
+    },
+    "verifyPage.confirmBody": {
+      "value": "Don or Melissa answers the verified business line directly during business hours, Monday through Saturday.",
+      "tag": "trust"
+    },
+    "verifyPage.callCta": {
+      "value": "Call",
+      "tag": "cta"
+    },
+    "verifyPage.textCta": {
+      "value": "Text Us",
+      "tag": "cta"
+    },
+    "service.junk-removal.name": {
+      "value": "Junk Removal",
+      "tag": "service-description"
+    },
+    "service.junk-removal.shortName": {
+      "value": "Junk Removal",
+      "tag": "service-description"
+    },
+    "service.junk-removal.blurb": {
+      "value": "Full-property junk removal for homes, garages, yards, and estates. We load it, haul it, and leave the space clean.",
+      "tag": "service-description"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups handles general junk removal across the SF Peninsula — from a single piece of furniture to a full garage clear-out. Our crew arrives with a real truck and a real plan: we do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.",
+      "tag": "service-description"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "What kind of junk do you take?",
+      "tag": "faq"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "Furniture, mattresses, appliances, e-waste, yard waste, construction debris, household clutter — almost anything non-hazardous. If you are not sure, send a photo when you call (650) 201-1543 and we will tell you on the spot.",
+      "tag": "faq"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "How is pricing set?",
+      "tag": "faq"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "Pricing is based on volume in the truck plus any special handling. We give a firm quote before any work starts and the price does not change on-site.",
+      "tag": "faq"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "How quickly can you come out?",
+      "tag": "faq"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.",
+      "tag": "faq"
+    },
+    "service.construction-debris.name": {
+      "value": "Construction Debris Removal",
+      "tag": "service-description"
+    },
+    "service.construction-debris.shortName": {
+      "value": "Construction Debris",
+      "tag": "service-description"
+    },
+    "service.construction-debris.blurb": {
+      "value": "Post-renovation cleanup, demolition debris, drywall, wood, concrete, and contractor scraps hauled away fast.",
+      "tag": "service-description"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups clears post-renovation and demolition debris across the Peninsula — drywall, framing scraps, broken concrete, tile, flooring, cabinetry, and contractor refuse. We work with general contractors, remodelers, and homeowners. Tell us the scope, we will quote it, and we will be on-site when you need the site cleared.",
+      "tag": "service-description"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "Do you work with contractors directly?",
+      "tag": "faq"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "Yes. Many of our regular jobs are post-build cleanups for GCs and remodelers. We can schedule on a rolling basis or on-call.",
+      "tag": "faq"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "Can you handle concrete and tile?",
+      "tag": "faq"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "Yes — heavy debris is part of what we do. We will give you a volume-based quote that accounts for weight.",
+      "tag": "faq"
+    },
+    "service.appliance-removal.name": {
+      "value": "Appliance Removal",
+      "tag": "service-description"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "Appliance Removal",
+      "tag": "service-description"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "Refrigerators, washers, dryers, stoves, and more. We disconnect, remove, and haul away old appliances safely.",
+      "tag": "service-description"
+    },
+    "service.appliance-removal.description": {
+      "value": "Old refrigerator on the porch? Washer-dryer pair you cannot lift? Peninsula Pick Ups removes appliances of every size with the right equipment to protect your floors, walls, and door frames. We also handle proper disposal and recycling so refrigerants and metals get processed correctly.",
+      "tag": "service-description"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "Do you disconnect appliances?",
+      "tag": "faq"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "Standard disconnections (water, gas-shutoff, plug) are part of the job. For anything that needs a licensed plumber or electrician we will tell you upfront.",
+      "tag": "faq"
+    },
+    "service.storage-cleanout.name": {
+      "value": "Storage Cleanouts",
+      "tag": "service-description"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "Storage Cleanout",
+      "tag": "service-description"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "Cleared-out storage units, garages, and storage rooms. We handle sorting, hauling, and full property cleanup.",
+      "tag": "service-description"
+    },
+    "service.storage-cleanout.description": {
+      "value": "Storage units, attics, garages, basements — Peninsula Pick Ups clears them out so you do not have to. We can sort, set aside donate-able items at your direction, and handle the heavy lifting and disposal. Common for downsizing, relocations, and estate work.",
+      "tag": "service-description"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "Can you set aside items for donation?",
+      "tag": "faq"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "Yes — tell us what to keep, donate, or trash, and we will sort accordingly while we work.",
+      "tag": "faq"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "Eviction Cleanouts",
+      "tag": "service-description"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "Eviction Cleanout",
+      "tag": "service-description"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "Full property clearance for landlords and property managers following tenant evictions. Efficient, professional, discreet.",
+      "tag": "service-description"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups works with Peninsula landlords and property managers on post-eviction cleanouts. We arrive fast, work efficiently, document the work, and leave the unit ready for cleaning, paint, and re-listing. Discreet, professional, and documented.",
+      "tag": "service-description"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "Do you provide before/after documentation?",
+      "tag": "faq"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "Yes — we photograph the unit on arrival and again at completion, and email you the documentation the same day.",
+      "tag": "faq"
+    },
+    "service.commercial-hauling.name": {
+      "value": "Commercial Hauling",
+      "tag": "service-description"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "Commercial Hauling",
+      "tag": "service-description"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "Office furniture, retail fixtures, warehouse pallets, and commercial-scale debris. We handle jobs big and small.",
+      "tag": "service-description"
+    },
+    "service.commercial-hauling.description": {
+      "value": "Office cleanouts, retail fixture removal, warehouse pallet hauling, restaurant equipment — Peninsula Pick Ups handles commercial-scale jobs across the Peninsula. We work after-hours when needed and coordinate with property managers on access, COIs, and elevator reservations.",
+      "tag": "service-description"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "Do you carry insurance for commercial properties?",
+      "tag": "faq"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "Yes — we carry general liability and can provide a Certificate of Insurance naming the property when required.",
+      "tag": "faq"
+    },
+    "service.residential-cleanout.name": {
+      "value": "Residential Cleanouts",
+      "tag": "service-description"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "Residential Cleanout",
+      "tag": "service-description"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "Whole-home and estate clearances handled with care. We work with families, executors, and Peninsula real-estate agents.",
+      "tag": "service-description"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups runs full residential cleanouts — estate clearances, downsizing, pre-sale prep, post-tenant turnovers. We sort, haul, and clean, and we work at the pace the family or owner needs. Estate work in particular is handled with discretion and care.",
+      "tag": "service-description"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos is home base for Peninsula Pick Ups. Don and Melissa built this business here in 2021 and know every neighborhood personally. From Burton Park to White Oaks, we handle junk removal, hauling, and full-property cleanouts for homeowners and businesses throughout San Carlos.",
+      "tag": "service-description"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "Are you actually based in San Carlos?",
+      "tag": "faq"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "Yes. Peninsula Pick Ups operates from San Carlos, CA 94070, and has since 2021. The business line (650) 201-1543 reaches Don and Melissa directly.",
+      "tag": "faq"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "How fast can you come out in San Carlos?",
+      "tag": "faq"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlos is our home base, so same-day service is often available. Most jobs are scheduled within 24 hours.",
+      "tag": "faq"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups serves all of San Mateo with fast, professional junk removal and hauling. Whether you are clearing a garage in Shoreview, doing a full property cleanout near downtown, or handling post-renovation debris, our crew delivers efficient, reliable service.",
+      "tag": "service-description"
+    },
+    "area.redwood-city.summary": {
+      "value": "From Broadway to Woodside Road, Peninsula Pick Ups handles junk removal, construction debris, and full-scale cleanouts throughout Redwood City. We work with homeowners, landlords, and businesses who need fast and professional hauling service.",
+      "tag": "service-description"
+    },
+    "area.belmont.summary": {
+      "value": "Belmont homeowners and businesses trust Peninsula Pick Ups for dependable junk removal and property cleanouts. We service Belmont regularly from our San Carlos base. Quick scheduling, honest pricing, and a professional crew every time.",
+      "tag": "service-description"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups brings reliable junk removal and hauling to Burlingame residents and business owners. Whether you need a single appliance removed or a full office cleared out, we schedule fast and get the job done right.",
+      "tag": "service-description"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups serves Palo Alto with the same professional standard we bring to every job across the Peninsula. Homeowners, landlords, and businesses rely on us for efficient junk removal, cleanouts, and debris hauling without the runaround.",
+      "tag": "service-description"
+    },
+    "area.menlo-park.summary": {
+      "value": "From Belle Haven to the Willows, Peninsula Pick Ups handles Menlo Park junk removal with professionalism and speed. We work around your schedule and leave the property clean. No hidden fees, no surprises.",
+      "tag": "service-description"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups provides junk removal, hauling, and commercial cleanouts throughout South San Francisco. Our team is local, experienced, and ready to handle projects of any size quickly and professionally.",
+      "tag": "service-description"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups brings fast, affordable junk removal to Daly City homeowners and property managers. We handle residential and commercial cleanouts, appliance removal, and debris hauling throughout the area.",
+      "tag": "service-description"
+    },
+    "area.millbrae.summary": {
+      "value": "Serving Millbrae with the same reliability we bring to every job on the Peninsula. Peninsula Pick Ups handles junk removal, storage cleanouts, and appliance hauls with a crew that shows up on time and leaves the job done right.",
+      "tag": "service-description"
+    },
+    "homepageFaq.0.q": {
+      "value": "Where is Peninsula Pick Ups based?",
+      "tag": "faq"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups operates from San Carlos, CA 94070. Owners Don and Melissa have run the business from the Peninsula since 2021. The verified business line is (650) 201-1543.",
+      "tag": "faq"
+    },
+    "homepageFaq.1.q": {
+      "value": "What areas do you serve?",
+      "tag": "faq"
+    },
+    "homepageFaq.1.a": {
+      "value": "We serve the SF Peninsula from Daly City and South San Francisco down through San Mateo, Belmont, San Carlos, Redwood City, Menlo Park, and Palo Alto. If your city is not listed, call (650) 201-1543 — we usually can.",
+      "tag": "faq"
+    },
+    "homepageFaq.2.q": {
+      "value": "How fast can you come out?",
+      "tag": "faq"
+    },
+    "homepageFaq.2.a": {
+      "value": "Most jobs are scheduled within 24 to 48 hours. Same-day service is often available, especially in San Carlos and adjacent cities.",
+      "tag": "faq"
+    },
+    "homepageFaq.3.q": {
+      "value": "How is pricing set?",
+      "tag": "faq"
+    },
+    "homepageFaq.3.a": {
+      "value": "Pricing is based on volume in the truck plus any special handling. We give a firm quote before any work starts and the price does not change on-site.",
+      "tag": "faq"
+    },
+    "homepageFaq.4.q": {
+      "value": "How do I know I have the right Peninsula Pick Ups?",
+      "tag": "faq"
+    },
+    "homepageFaq.4.a": {
+      "value": "Our domain is thepeninsulapickup.com. The verified business line is (650) 201-1543. Don and Melissa answer that line directly. See /verify for our complete identity record across Yelp, Instagram, Facebook, Nextdoor, Alignable, and JunkSpots.",
+      "tag": "faq"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | Junk Removal & Hauling | San Carlos, CA",
+      "tag": "meta"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups provides junk removal, hauling, cleanouts, and construction debris removal across the SF Peninsula. Locally owned by Don and Melissa in San Carlos since 2021. Call (650) 201-1543.",
+      "tag": "meta"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — Junk Removal & Hauling, San Carlos, CA",
+      "tag": "meta"
+    },
+    "map.badge": {
+      "value": "The Peninsula",
+      "tag": "misc"
+    },
+    "map.heading": {
+      "value": "Where Peninsula Pick Ups Works",
+      "tag": "misc"
+    },
+    "map.sub": {
+      "value": "Pick a city to see local service details. We are based in San Carlos and run the entire SF Peninsula from there.",
+      "tag": "misc"
+    },
+    "map.tooltipPreview": {
+      "value": "{city} preview",
+      "tag": "meta"
+    },
+    "map.homeBaseTag": {
+      "value": "Home Base",
+      "tag": "misc"
+    },
+    "map.servicesAvailable": {
+      "value": "{count} services available",
+      "tag": "misc"
+    },
+    "map.requestPickupHere": {
+      "value": "Request pickup here",
+      "tag": "cta"
     }
   }
 }

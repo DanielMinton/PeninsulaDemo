@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import Layout from '@/components/shared/Layout'
 import FadeIn from '@/components/motion/FadeIn'
 import { SITE } from '@/content/site'
@@ -8,29 +9,30 @@ import { graph, organization, localBusiness, breadcrumbs } from '@/lib/schema'
 import { pageSeo } from '@/lib/seo'
 import { localeProps, type LocaleProps } from '@/i18n/getStaticProps'
 
-const FACTS = [
-  { label: 'Legal name', value: SITE.legalName },
-  { label: 'Domain', value: 'thepeninsulapickup.com' },
-  { label: 'Verified phone', value: SITE.phone.display, href: SITE.phone.href },
-  {
-    label: 'Address',
-    value: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`,
-  },
-  { label: 'Owners', value: `${SITE.owners[0]} and ${SITE.owners[1]}` },
-  { label: 'Founded', value: String(SITE.foundedYear) },
-  { label: 'Licensed and insured', value: 'Yes' },
-] as const
-
 const Verify: NextPage<LocaleProps> = ({ locale }) => {
+  const t = useTranslations()
   const path = '/verify'
   const schema = graph(
     organization(locale),
     localBusiness(locale),
     breadcrumbs([
       { name: SITE.name, url: '/' },
-      { name: 'Verify', url: path },
+      { name: t('verifyPage.breadcrumb'), url: path },
     ], locale),
   )
+
+  const FACTS = [
+    { label: t('verifyPage.factLegalName'), value: SITE.legalName },
+    { label: t('verifyPage.factDomain'), value: 'thepeninsulapickup.com' },
+    { label: t('verifyPage.factVerifiedPhone'), value: SITE.phone.display, href: SITE.phone.href },
+    {
+      label: t('verifyPage.factAddress'),
+      value: `${SITE.address.city}, ${SITE.address.region} ${SITE.address.postalCode}`,
+    },
+    { label: t('verifyPage.factOwners'), value: `${SITE.owners[0]} and ${SITE.owners[1]}` },
+    { label: t('verifyPage.factFounded'), value: String(SITE.foundedYear) },
+    { label: t('verifyPage.factLicensed'), value: t('verifyPage.factLicensedYes') },
+  ]
 
   return (
     <>
@@ -63,12 +65,12 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
                     {SITE.name}
                   </Link>
                   <span aria-hidden="true">/</span>
-                  <span className="text-bone-300">Verify</span>
+                  <span className="text-bone-300">{t('verifyPage.breadcrumb')}</span>
                 </nav>
 
-                <span className="badge-verify mb-4">Verified Identity</span>
+                <span className="badge-verify mb-4">{t('verifyPage.badge')}</span>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-bone-100 leading-tight tracking-tight mt-3 mb-5">
-                  This is the
+                  {t('verifyPage.headlinePart1')}
                   <br />
                   <span
                     style={{
@@ -78,13 +80,10 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
                       backgroundClip: 'text',
                     }}
                   >
-                    legitimate {SITE.name}.
+                    {t('verifyPage.headlinePart2')}
                   </span>
                 </h1>
-                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed">
-                  Public-record verification for the family-owned junk removal and hauling business based in{' '}
-                  {SITE.address.city}, CA since {SITE.foundedYear}.
-                </p>
+                <p className="text-lg sm:text-xl text-steel-300 max-w-2xl leading-relaxed">{t('verifyPage.subhead')}</p>
               </FadeIn>
             </div>
           </section>
@@ -92,7 +91,7 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
           <section className="bg-charcoal-800 py-12 border-y border-charcoal-600">
             <div className="container-max section-padding max-w-4xl">
               <FadeIn>
-                <h2 className="text-xl font-bold text-bone-100 mb-6">Business of Record</h2>
+                <h2 className="text-xl font-bold text-bone-100 mb-6">{t('verifyPage.businessOfRecord')}</h2>
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-5">
                   {FACTS.map((fact) => (
                     <div key={fact.label} className="flex flex-col gap-1">
@@ -133,7 +132,7 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-bone-100 text-lg mb-2">A note on imposter sites</h3>
+                      <h3 className="font-bold text-bone-100 text-lg mb-2">{t('verifyPage.imposterHeading')}</h3>
                       <p className="text-steel-300 text-sm leading-relaxed">{SITE.imposterNote}</p>
                       <p className="text-steel-400 text-xs leading-relaxed mt-3">
                         If you reached us through a different domain or phone number and are not sure which one is real,
@@ -154,11 +153,8 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
           <section className="bg-charcoal-800 py-16 border-t border-charcoal-600">
             <div className="container-max section-padding max-w-4xl">
               <FadeIn>
-                <h2 className="text-2xl font-bold text-bone-100 mb-2">Profiles &amp; Reviews of Record</h2>
-                <p className="text-steel-400 text-sm mb-8">
-                  Every link below is a published profile we operate. These are the canonical destinations cited by our
-                  schema and by every page on this site.
-                </p>
+                <h2 className="text-2xl font-bold text-bone-100 mb-2">{t('verifyPage.profilesHeading')}</h2>
+                <p className="text-steel-400 text-sm mb-8">{t('verifyPage.profilesSubhead')}</p>
               </FadeIn>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {SITE.socials.map((s, i) => (
@@ -204,17 +200,14 @@ const Verify: NextPage<LocaleProps> = ({ locale }) => {
             <div className="container-max section-padding max-w-4xl">
               <FadeIn>
                 <div className="text-center">
-                  <h2 className="text-2xl font-bold text-bone-100 mb-3">Need to confirm something live?</h2>
-                  <p className="text-steel-400 text-sm mb-6 max-w-xl mx-auto">
-                    {SITE.owners[0]} or {SITE.owners[1]} answers the verified business line directly during business
-                    hours, Monday through Saturday.
-                  </p>
+                  <h2 className="text-2xl font-bold text-bone-100 mb-3">{t('verifyPage.confirmHeading')}</h2>
+                  <p className="text-steel-400 text-sm mb-6 max-w-xl mx-auto">{t('verifyPage.confirmBody')}</p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href={SITE.phone.href} className="btn-primary justify-center">
-                      Call {SITE.phone.display}
+                      {t('verifyPage.callCta')} <span dir="ltr">{SITE.phone.display}</span>
                     </a>
                     <a href={SITE.phone.smsHref} className="btn-secondary justify-center">
-                      Text Us
+                      {t('verifyPage.textCta')}
                     </a>
                   </div>
                 </div>

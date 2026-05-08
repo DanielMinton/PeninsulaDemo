@@ -1,5 +1,0 @@
-{
-  "$schema": "Few-shot examples for yi. Hand-curated source→target pairs the translator retrieves by tag.",
-  "$version": 1,
-  "examples": []
-}

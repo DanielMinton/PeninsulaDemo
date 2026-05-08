@@ -1,0 +1,1951 @@
+{
+  "$version": 1,
+  "$sourceVersion": 1,
+  "segments": {
+    "picker.openLabel": {
+      "value": "Elige el idioma",
+      "tag": "picker",
+      "cacheKey": "c29aef1ec280ed8d"
+    },
+    "picker.title": {
+      "value": "Elige el idioma",
+      "tag": "picker",
+      "cacheKey": "c29aef1ec280ed8d"
+    },
+    "picker.searchPlaceholder": {
+      "value": "Buscar idiomas…",
+      "tag": "picker",
+      "cacheKey": "e1150e0b6b0aaf8b"
+    },
+    "picker.recent": {
+      "value": "Recientes",
+      "tag": "picker",
+      "cacheKey": "364feb5e47c00ae7"
+    },
+    "picker.allLanguages": {
+      "value": "Todos los idiomas",
+      "tag": "picker",
+      "cacheKey": "86380006457a906d"
+    },
+    "picker.beta": {
+      "value": "Beta",
+      "tag": "picker",
+      "cacheKey": "084331355f2cef47"
+    },
+    "picker.noResults": {
+      "value": "Ningún idioma coincide.",
+      "tag": "picker",
+      "cacheKey": "2cd2273f8eedd6a9"
+    },
+    "picker.footerReviewed": {
+      "value": "Las traducciones se revisan para verificar su precisión cultural.",
+      "tag": "picker",
+      "cacheKey": "6601c62bce38f4c5"
+    },
+    "picker.footerReportLink": {
+      "value": "Reportar un problema de traducción",
+      "tag": "picker",
+      "cacheKey": "a7ac14d5fc05b8a0"
+    },
+    "picker.announceChange": {
+      "value": "Idioma cambiado a {native}.",
+      "tag": "picker",
+      "cacheKey": "63fbf472ad7f42a6"
+    },
+    "picker.closeLabel": {
+      "value": "Cerrar selector de idioma",
+      "tag": "picker",
+      "cacheKey": "d71ac82acdb4db51"
+    },
+    "nav.servicesLink": {
+      "value": "Servicios",
+      "tag": "nav",
+      "cacheKey": "b5262eed2b9d86a1"
+    },
+    "nav.areasLink": {
+      "value": "Áreas de Servicio",
+      "tag": "nav",
+      "cacheKey": "805be21f4ee6f5e0"
+    },
+    "nav.aboutLink": {
+      "value": "Nosotros",
+      "tag": "nav",
+      "cacheKey": "ffdc65750b5d39b6"
+    },
+    "nav.contactLink": {
+      "value": "Contacto",
+      "tag": "nav",
+      "cacheKey": "ee4e784cd02e9288"
+    },
+    "nav.requestPickupCta": {
+      "value": "Solicita una recolección",
+      "tag": "cta",
+      "cacheKey": "ec2e5511c1b1c231"
+    },
+    "nav.callNowCta": {
+      "value": "Llámanos ahora",
+      "tag": "cta",
+      "cacheKey": "01f9f7084e2cca0c"
+    },
+    "nav.openMenu": {
+      "value": "Abrir menú",
+      "tag": "nav",
+      "cacheKey": "0c9e0dcd9c36ebd5"
+    },
+    "nav.closeMenu": {
+      "value": "Cerrar menú",
+      "tag": "nav",
+      "cacheKey": "c0b51a33d94d37a7"
+    },
+    "nav.mainAriaLabel": {
+      "value": "Navegación principal",
+      "tag": "nav",
+      "cacheKey": "9bf2d8a4a1b4a0ce"
+    },
+    "nav.homeAriaLabel": {
+      "value": "Inicio de Peninsula Pick Ups",
+      "tag": "nav",
+      "cacheKey": "3fb2228b07f1b370"
+    },
+    "nav.cityTagline": {
+      "value": "San Carlos, CA",
+      "tag": "misc",
+      "cacheKey": "9223ad4910afc10b"
+    },
+    "nav.requestPickupLong": {
+      "value": "Solicita una recolección",
+      "tag": "cta",
+      "cacheKey": "0fff054688b863a9"
+    },
+    "hero.badge": {
+      "value": "San Carlos, CA. Con licencia y seguro desde 2021.",
+      "tag": "trust",
+      "cacheKey": "1bb43a4a8781dcb4"
+    },
+    "hero.headlinePart1": {
+      "value": "La Recolección",
+      "tag": "hero",
+      "cacheKey": "b7fe16e7bf48aab8"
+    },
+    "hero.headlinePart2": {
+      "value": "con el que sí se puede contar.",
+      "tag": "hero",
+      "cacheKey": "874b15845a001b1b"
+    },
+    "hero.subhead": {
+      "value": "Peninsula Pick Ups se encarga de la recolección de chatarra, acarreos y limpiezas completas de propiedades en San Carlos y toda la Península. Dueños reales. Teléfono real. Resultados reales.",
+      "tag": "hero",
+      "cacheKey": "365d8e5c61e5083a"
+    },
+    "hero.verifiedBusinessLine": {
+      "value": "Línea verificada del negocio",
+      "tag": "trust",
+      "cacheKey": "7eca9d72b078f472"
+    },
+    "hero.requestPickupCta": {
+      "value": "Solicita una recolección",
+      "tag": "cta",
+      "cacheKey": "0fff054688b863a9"
+    },
+    "hero.callNowCta": {
+      "value": "Llámanos ahora",
+      "tag": "cta",
+      "cacheKey": "01f9f7084e2cca0c"
+    },
+    "hero.scrollIndicator": {
+      "value": "Desplázate",
+      "tag": "misc",
+      "cacheKey": "c8051003f9cb44bb"
+    },
+    "hero.heroAriaLabel": {
+      "value": "Hero de Peninsula Pick Ups",
+      "tag": "meta",
+      "cacheKey": "0e1ce52dd6d8f96a"
+    },
+    "hero.servicesListAriaLabel": {
+      "value": "Servicios ofrecidos",
+      "tag": "meta",
+      "cacheKey": "f83138aaad2c2ab4"
+    },
+    "hero.serviceJunkRemoval": {
+      "value": "Recolección de chatarra",
+      "tag": "service-description",
+      "cacheKey": "c676b28bc1d409c9"
+    },
+    "hero.serviceConstructionDebris": {
+      "value": "Retiro de escombros de construcción",
+      "tag": "service-description",
+      "cacheKey": "12c66f00e8d3a181"
+    },
+    "hero.serviceApplianceRemoval": {
+      "value": "Retiro de electrodomésticos",
+      "tag": "service-description",
+      "cacheKey": "3c7eac5d59057a27"
+    },
+    "hero.serviceStorageCleanouts": {
+      "value": "Vaciado de bodegas",
+      "tag": "service-description",
+      "cacheKey": "9a759a361e20123a"
+    },
+    "hero.serviceEvictionCleanouts": {
+      "value": "Limpieza post-desalojo",
+      "tag": "service-description",
+      "cacheKey": "3587ef0053d7bd90"
+    },
+    "hero.serviceCommercialHauling": {
+      "value": "Acarreos comerciales",
+      "tag": "service-description",
+      "cacheKey": "046468c4cbb37d6d"
+    },
+    "trust.heading": {
+      "value": "Por qué Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "0dc6144a6437b5cc"
+    },
+    "trust.licensedTitle": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "bd50246f9d92aff5"
+    },
+    "trust.licensedSub": {
+      "value": "Cobertura de responsabilidad general. COIs disponibles para propiedades comerciales.",
+      "tag": "trust",
+      "cacheKey": "1c94841defe492a3"
+    },
+    "trust.familyTitle": {
+      "value": "Negocio familiar y operado por la familia",
+      "tag": "trust",
+      "cacheKey": "a2490a0d0e568b47"
+    },
+    "trust.familySub": {
+      "value": "Don y Melissa llevan el negocio. Ellos mismos contestan el teléfono.",
+      "tag": "trust",
+      "cacheKey": "3bd2930d7758e27e"
+    },
+    "trust.localTitle": {
+      "value": "Negocio local en San Carlos",
+      "tag": "trust",
+      "cacheKey": "68e62e45c791049e"
+    },
+    "trust.localSub": {
+      "value": "Aquí desde 2021. Conocemos cada colonia de la Península.",
+      "tag": "trust",
+      "cacheKey": "49e5f43299ac2291"
+    },
+    "trust.honestPricingTitle": {
+      "value": "Precios honestos",
+      "tag": "trust",
+      "cacheKey": "d92edd8e98230001"
+    },
+    "trust.honestPricingSub": {
+      "value": "Cotización firme antes de empezar. El precio no cambia en el lugar.",
+      "tag": "trust",
+      "cacheKey": "ddf56a616f01bca1"
+    },
+    "services.heading": {
+      "value": "Lo Que Hacemos",
+      "tag": "service-description",
+      "cacheKey": "84dd8b821059f3a3"
+    },
+    "services.sub": {
+      "value": "Desde un solo artículo hasta una propiedad completa — el mismo equipo de siempre, el mismo precio fijo.",
+      "tag": "service-description",
+      "cacheKey": "8caaa85ab4d1d7f4"
+    },
+    "services.learnMore": {
+      "value": "Saber más",
+      "tag": "cta",
+      "cacheKey": "858de8ac95639a28"
+    },
+    "areas.heading": {
+      "value": "Dónde trabajamos",
+      "tag": "misc",
+      "cacheKey": "6d1f1839b434c784"
+    },
+    "areas.sub": {
+      "value": "San Carlos es nuestra base. Servicio el mismo día en toda la Península de San Francisco.",
+      "tag": "misc",
+      "cacheKey": "0afed99659ec4f6d"
+    },
+    "areas.viewArea": {
+      "value": "Ver área",
+      "tag": "cta",
+      "cacheKey": "fa3aef19299b4e9c"
+    },
+    "testimonials.heading": {
+      "value": "Lo que dicen los clientes de la Península",
+      "tag": "testimonial",
+      "cacheKey": "82f70599bd85784e"
+    },
+    "testimonials.sub": {
+      "value": "Reseñas de nuestro perfil verificado en Yelp.",
+      "tag": "testimonial",
+      "cacheKey": "0567480538076a28"
+    },
+    "testimonials.readMore": {
+      "value": "Lee todas las reseñas en Yelp",
+      "tag": "cta",
+      "cacheKey": "869c3d8681972e9b"
+    },
+    "faq.heading": {
+      "value": "Preguntas frecuentes",
+      "tag": "faq",
+      "cacheKey": "d669b04a0d7d2a48"
+    },
+    "faq.sub": {
+      "value": "Respuestas rápidas — llámanos al (650) 201-1543 si la tuya no está aquí.",
+      "tag": "faq",
+      "cacheKey": "67a7a64c26f5fb53"
+    },
+    "verify.heading": {
+      "value": "¿Tuviste una buena experiencia?",
+      "tag": "trust",
+      "cacheKey": "4cb231cb12c8c6b5"
+    },
+    "verify.sub": {
+      "value": "Verifica nuestra identidad en cada plataforma donde operamos. ¿Necesitas confirmar algo en el momento? Llámanos al (650) 201-1543.",
+      "tag": "trust",
+      "cacheKey": "8b9aa75ad9b7b938"
+    },
+    "verify.confirmLive": {
+      "value": "¿Necesitas confirmar algo en tiempo real?",
+      "tag": "trust",
+      "cacheKey": "40f40f5e5899e29b"
+    },
+    "verify.businessOfRecord": {
+      "value": "Negocio registrado",
+      "tag": "trust",
+      "cacheKey": "fb26f0c7bfa27fe6"
+    },
+    "verify.findOnline": {
+      "value": "Encuéntranos en línea",
+      "tag": "trust",
+      "cacheKey": "947828c5db1a4f0d"
+    },
+    "quoteSelector.badge": {
+      "value": "Cotización rápida",
+      "tag": "cta",
+      "cacheKey": "987d4169162d2954"
+    },
+    "quoteSelector.heading": {
+      "value": "Recibe una cotización en 60 segundos",
+      "tag": "cta",
+      "cacheKey": "2dd61ae6cee029fb"
+    },
+    "quoteSelector.sub": {
+      "value": "Elige tu servicio, dinos cuánto tienes, y déjanos tus datos. Peninsula Pick Ups te contacta rápido.",
+      "tag": "cta",
+      "cacheKey": "30c4318677953564"
+    },
+    "quoteSelector.stepService": {
+      "value": "Servicio",
+      "tag": "form-label",
+      "cacheKey": "a600e5bce7d7deb6"
+    },
+    "quoteSelector.stepLoad": {
+      "value": "Tamaño de la carga",
+      "tag": "form-label",
+      "cacheKey": "0a0fb4099162795d"
+    },
+    "quoteSelector.stepLocation": {
+      "value": "Lugar",
+      "tag": "form-label",
+      "cacheKey": "d1a9e73abbae8fa6"
+    },
+    "quoteSelector.stepUrgency": {
+      "value": "Urgencia",
+      "tag": "form-label",
+      "cacheKey": "0fa2c5f70c63284b"
+    },
+    "quoteSelector.stepContact": {
+      "value": "Contacto",
+      "tag": "form-label",
+      "cacheKey": "0263b7920393d0c0"
+    },
+    "quoteSelector.askService": {
+      "value": "¿Qué servicio necesitas?",
+      "tag": "form-label",
+      "cacheKey": "ea4b549ebe61bd07"
+    },
+    "quoteSelector.askLoad": {
+      "value": "¿Cuánto hay que llevarse?",
+      "tag": "form-label",
+      "cacheKey": "ce9bf642b47117cf"
+    },
+    "quoteSelector.askLocation": {
+      "value": "¿Dónde está ubicado el lugar de recolección?",
+      "tag": "form-label",
+      "cacheKey": "b85732ddc57b20c3"
+    },
+    "quoteSelector.askUrgency": {
+      "value": "¿Para cuándo lo necesitas?",
+      "tag": "form-label",
+      "cacheKey": "7eb61c9dd1b85ab5"
+    },
+    "quoteSelector.askContact": {
+      "value": "¿A dónde te enviamos la cotización?",
+      "tag": "form-label",
+      "cacheKey": "cf026d450b0225aa"
+    },
+    "quoteSelector.cityLabel": {
+      "value": "Ciudad o dirección",
+      "tag": "form-label",
+      "cacheKey": "7192d75a44decaa3"
+    },
+    "quoteSelector.cityDefault": {
+      "value": "Selecciona una ciudad...",
+      "tag": "form-label",
+      "cacheKey": "500e94805d99678b"
+    },
+    "quoteSelector.cityOtherOption": {
+      "value": "Otro / No está en la lista",
+      "tag": "form-label",
+      "cacheKey": "1df3f0b46bfee417"
+    },
+    "quoteSelector.cityOtherLabel": {
+      "value": "Ingresa tu ciudad o dirección",
+      "tag": "form-label",
+      "cacheKey": "077a62deecd01d94"
+    },
+    "quoteSelector.cityOtherPlaceholder": {
+      "value": "p. ej. Foster City, CA",
+      "tag": "form-label",
+      "cacheKey": "7c5ea9f4ea9b013f"
+    },
+    "quoteSelector.loadSingle": {
+      "value": "Artículo individual",
+      "tag": "form-label",
+      "cacheKey": "7970456109d71bb8"
+    },
+    "quoteSelector.loadSingleSub": {
+      "value": "1 pieza grande",
+      "tag": "form-label",
+      "cacheKey": "a035f86693696281"
+    },
+    "quoteSelector.loadQuarter": {
+      "value": "Carga pequeña",
+      "tag": "form-label",
+      "cacheKey": "3a2816053b6bc452"
+    },
+    "quoteSelector.loadQuarterSub": {
+      "value": "1/4 de camión o menos",
+      "tag": "form-label",
+      "cacheKey": "212167387a2e95b3"
+    },
+    "quoteSelector.loadHalf": {
+      "value": "Carga mediana",
+      "tag": "form-label",
+      "cacheKey": "15762da0017e6bb7"
+    },
+    "quoteSelector.loadHalfSub": {
+      "value": "Media troca",
+      "tag": "form-label",
+      "cacheKey": "6fb405353ec6a9a9"
+    },
+    "quoteSelector.loadFull": {
+      "value": "Carga completa",
+      "tag": "form-label",
+      "cacheKey": "eac78a3ae16e7dbf"
+    },
+    "quoteSelector.loadFullSub": {
+      "value": "Camión lleno o más",
+      "tag": "form-label",
+      "cacheKey": "81c03d7138bb4287"
+    },
+    "quoteSelector.urgencyAsap": {
+      "value": "Lo antes posible",
+      "tag": "form-label",
+      "cacheKey": "3ed19a759ceb393d"
+    },
+    "quoteSelector.urgencyAsapSub": {
+      "value": "En 1 a 2 días",
+      "tag": "form-label",
+      "cacheKey": "f770ba465783da97"
+    },
+    "quoteSelector.urgencyThisWeek": {
+      "value": "Esta semana",
+      "tag": "form-label",
+      "cacheKey": "383393fd803ed085"
+    },
+    "quoteSelector.urgencyThisWeekSub": {
+      "value": "En los próximos 7 días",
+      "tag": "form-label",
+      "cacheKey": "88ed7fa229d14e82"
+    },
+    "quoteSelector.urgencyFlexible": {
+      "value": "Flexible",
+      "tag": "form-label",
+      "cacheKey": "f15795f5633fab29"
+    },
+    "quoteSelector.urgencyFlexibleSub": {
+      "value": "Cuando sea posible",
+      "tag": "form-label",
+      "cacheKey": "a823e4938870fa1f"
+    },
+    "quoteSelector.serviceOther": {
+      "value": "No sé / Otro",
+      "tag": "form-label",
+      "cacheKey": "dfb99308e89db25b"
+    },
+    "quoteSelector.nameLabel": {
+      "value": "Tu nombre",
+      "tag": "form-label",
+      "cacheKey": "16a96e54a69397d3"
+    },
+    "quoteSelector.namePlaceholder": {
+      "value": "Nombre completo",
+      "tag": "form-label",
+      "cacheKey": "8653d45e52afedf4"
+    },
+    "quoteSelector.phoneLabel": {
+      "value": "Número de teléfono",
+      "tag": "form-label",
+      "cacheKey": "b4e0ad356469f016"
+    },
+    "quoteSelector.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "a605a3ac042fdefb"
+    },
+    "quoteSelector.emailLabel": {
+      "value": "Correo electrónico",
+      "tag": "form-label",
+      "cacheKey": "bc466f8d2f0aa23e"
+    },
+    "quoteSelector.emailOptional": {
+      "value": "(opcional)",
+      "tag": "form-label",
+      "cacheKey": "1921790717e8d682"
+    },
+    "quoteSelector.emailPlaceholder": {
+      "value": "tú@ejemplo.com",
+      "tag": "form-label",
+      "cacheKey": "85b8ed309b133b2b"
+    },
+    "quoteSelector.continueCta": {
+      "value": "Continuar",
+      "tag": "cta",
+      "cacheKey": "1c25a8e815d7f58c"
+    },
+    "quoteSelector.backCta": {
+      "value": "Regresar",
+      "tag": "cta",
+      "cacheKey": "db71830347ef01f7"
+    },
+    "quoteSelector.requestQuoteCta": {
+      "value": "Solicita mi cotización",
+      "tag": "cta",
+      "cacheKey": "f59213441c019dbb"
+    },
+    "quoteSelector.sendingCta": {
+      "value": "Enviando...",
+      "tag": "cta",
+      "cacheKey": "ee0dbf9dc1d050cc"
+    },
+    "quoteSelector.preferToCall": {
+      "value": "¿Prefieres llamar?",
+      "tag": "cta",
+      "cacheKey": "c8bcfad8b70994bc"
+    },
+    "quoteSelector.successHeading": {
+      "value": "Solicitud de cotización recibida",
+      "tag": "cta",
+      "cacheKey": "ed6139136c1b1941"
+    },
+    "quoteSelector.successSub": {
+      "value": "Peninsula Pick Ups se pondrá en contacto contigo pronto. Si necesitas una respuesta inmediata, llámanos.",
+      "tag": "cta",
+      "cacheKey": "03f562a014b46f7a"
+    },
+    "quoteSelector.consentText": {
+      "value": "Acepto que Peninsula Pick Ups me contacte al teléfono arriba indicado sobre mi solicitud de cotización, incluyendo por SMS y llamada. El consentimiento no es condición del servicio. Pueden aplicar tarifas de mensajes y datos. Responde STOP para cancelar.",
+      "tag": "legal",
+      "cacheKey": "19c4c0a4515194a3"
+    },
+    "quoteSelector.privacyLink": {
+      "value": "Consulta nuestra Política de Privacidad.",
+      "tag": "legal",
+      "cacheKey": "313465dc1c4dd00c"
+    },
+    "quoteSelector.progressAria": {
+      "value": "Formulario de cotización: paso {step} de {total}, {label}",
+      "tag": "meta",
+      "cacheKey": "a4f58e365920f3ab"
+    },
+    "quoteSelector.headingAria": {
+      "value": "Pide tu cotización",
+      "tag": "meta",
+      "cacheKey": "516808ab39a3b1dd"
+    },
+    "quoteForm.badge": {
+      "value": "Recibe una cotización gratis",
+      "tag": "cta",
+      "cacheKey": "4f79ec989a3f06a1"
+    },
+    "quoteForm.heading": {
+      "value": "Cuéntanos sobre el trabajo",
+      "tag": "cta",
+      "cacheKey": "736b2b77b7f5a49b"
+    },
+    "quoteForm.subPrefix": {
+      "value": "Llena el formulario y Peninsula Pick Ups te contactará directamente.",
+      "tag": "cta",
+      "cacheKey": "f9d989081ac8531f"
+    },
+    "quoteForm.subFasterResponse": {
+      "value": "Para una respuesta más rápida, llámanos o mándanos un mensaje.",
+      "tag": "cta",
+      "cacheKey": "2fea6473d3e269f8"
+    },
+    "quoteForm.contactPhoneSub": {
+      "value": "Línea verificada del negocio. Don y Melissa.",
+      "tag": "trust",
+      "cacheKey": "7e124069946a2ea6"
+    },
+    "quoteForm.contactCitySub": {
+      "value": "Con base en San Carlos desde 2021.",
+      "tag": "trust",
+      "cacheKey": "97569eb2738d3711"
+    },
+    "quoteForm.contactSameDayTitle": {
+      "value": "Respuesta el mismo día",
+      "tag": "trust",
+      "cacheKey": "3b16571f534382e6"
+    },
+    "quoteForm.contactSameDaySub": {
+      "value": "La mayoría de los trabajos se programan en menos de 48 horas.",
+      "tag": "trust",
+      "cacheKey": "82766adb2a3feec8"
+    },
+    "quoteForm.nameLabel": {
+      "value": "Nombre",
+      "tag": "form-label",
+      "cacheKey": "c66f0edf49887a6e"
+    },
+    "quoteForm.namePlaceholder": {
+      "value": "Tu nombre completo",
+      "tag": "form-label",
+      "cacheKey": "58e53824fbb53c36"
+    },
+    "quoteForm.phoneLabel": {
+      "value": "Teléfono",
+      "tag": "form-label",
+      "cacheKey": "30870e1e728c1564"
+    },
+    "quoteForm.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "a605a3ac042fdefb"
+    },
+    "quoteForm.emailLabel": {
+      "value": "Correo electrónico",
+      "tag": "form-label",
+      "cacheKey": "bc466f8d2f0aa23e"
+    },
+    "quoteForm.emailOptional": {
+      "value": "(opcional)",
+      "tag": "form-label",
+      "cacheKey": "1921790717e8d682"
+    },
+    "quoteForm.emailPlaceholder": {
+      "value": "tú@ejemplo.com",
+      "tag": "form-label",
+      "cacheKey": "85b8ed309b133b2b"
+    },
+    "quoteForm.serviceLabel": {
+      "value": "Servicio que necesitas",
+      "tag": "form-label",
+      "cacheKey": "90996ab449f05247"
+    },
+    "quoteForm.serviceDefault": {
+      "value": "Selecciona un servicio...",
+      "tag": "form-label",
+      "cacheKey": "62a01f40cce9f1a1"
+    },
+    "quoteForm.locationLabel": {
+      "value": "Lugar del servicio",
+      "tag": "form-label",
+      "cacheKey": "ef65ea9168d48504"
+    },
+    "quoteForm.locationDefault": {
+      "value": "Selecciona tu ciudad...",
+      "tag": "form-label",
+      "cacheKey": "def4604c51f135b9"
+    },
+    "quoteForm.locationOther": {
+      "value": "Otro",
+      "tag": "form-label",
+      "cacheKey": "d946247917195a77"
+    },
+    "quoteForm.dateLabel": {
+      "value": "Fecha preferida",
+      "tag": "form-label",
+      "cacheKey": "b9b17a212d84e7c0"
+    },
+    "quoteForm.messageLabel": {
+      "value": "Mensaje",
+      "tag": "form-label",
+      "cacheKey": "9aa22a2238ebd092"
+    },
+    "quoteForm.messagePlaceholder": {
+      "value": "Describe lo que necesitas que retiremos, cualquier nota de acceso o preguntas específicas...",
+      "tag": "form-label",
+      "cacheKey": "1c5d1e614d7d7d05"
+    },
+    "quoteForm.sendCta": {
+      "value": "Envía tu solicitud de cotización",
+      "tag": "cta",
+      "cacheKey": "b7eacdf959792719"
+    },
+    "quoteForm.sendingCta": {
+      "value": "Enviando solicitud...",
+      "tag": "cta",
+      "cacheKey": "c7584d96342255af"
+    },
+    "quoteForm.consentText": {
+      "value": "Acepto que Peninsula Pick Ups me contacte al teléfono y correo arriba indicados sobre mi solicitud de cotización, incluyendo por SMS y llamada. El consentimiento no es condición del servicio. Pueden aplicarse tarifas de mensajes y datos. Responde STOP para cancelar en cualquier momento.",
+      "tag": "legal",
+      "cacheKey": "bed9754ec3569126"
+    },
+    "quoteForm.consentSeePrivacy": {
+      "value": "Consulta nuestra Política de privacidad.",
+      "tag": "legal",
+      "cacheKey": "313465dc1c4dd00c"
+    },
+    "quoteForm.successHeading": {
+      "value": "Solicitud enviada",
+      "tag": "cta",
+      "cacheKey": "f2f6d39b34ae356d"
+    },
+    "quoteForm.successSub": {
+      "value": "Peninsula Pick Ups se pondrá en contacto contigo pronto.",
+      "tag": "cta",
+      "cacheKey": "0101deaeef7e9d73"
+    },
+    "quoteForm.submitAnotherCta": {
+      "value": "Envía otra solicitud",
+      "tag": "cta",
+      "cacheKey": "0a20c0ef8925ac7f"
+    },
+    "quoteForm.errorFallback": {
+      "value": "Algo salió mal. Llámanos al (650) 201-1543.",
+      "tag": "form-error",
+      "cacheKey": "b2b5a2b78f2fafa9"
+    },
+    "quoteForm.errorUnavailable": {
+      "value": "No se pudo enviar. Llámanos directamente al (650) 201-1543.",
+      "tag": "form-error",
+      "cacheKey": "8f65bd6b06f99606"
+    },
+    "errors.nameRequired": {
+      "value": "Dinos tu nombre",
+      "tag": "form-error",
+      "cacheKey": "d677e6e203845cd3"
+    },
+    "errors.nameTooShort": {
+      "value": "Ingresa tu nombre.",
+      "tag": "form-error",
+      "cacheKey": "69ceed2c4080b7ab"
+    },
+    "errors.phoneInvalid": {
+      "value": "Ingresa un número de teléfono válido.",
+      "tag": "form-error",
+      "cacheKey": "5a3a1aafba4a7dad"
+    },
+    "errors.emailInvalid": {
+      "value": "Ingresa un correo electrónico válido.",
+      "tag": "form-error",
+      "cacheKey": "8fd1aa57bbc23bd9"
+    },
+    "errors.noUrls": {
+      "value": "No se permiten URLs.",
+      "tag": "form-error",
+      "cacheKey": "7c3390f10cc6bd28"
+    },
+    "errors.noBrackets": {
+      "value": "No se permiten signos de mayor o menor que.",
+      "tag": "form-error",
+      "cacheKey": "c2ed1ed706e48cf5"
+    },
+    "errors.maxLength": {
+      "value": "Debe tener {max} caracteres o menos.",
+      "tag": "form-error",
+      "cacheKey": "85639ba9d6c5d7d2"
+    },
+    "errors.consentRequired": {
+      "value": "Se requiere tu consentimiento.",
+      "tag": "form-error",
+      "cacheKey": "6151538c1be8059f"
+    },
+    "footer.tagline": {
+      "value": "Con licencia y seguro para recolección de chatarra y acarreo en la Península de San Francisco. Negocio familiar operado por Don y Melissa desde 2021.",
+      "tag": "trust",
+      "cacheKey": "ceac74c6f16bab2e"
+    },
+    "footer.servicesHeading": {
+      "value": "Servicios",
+      "tag": "nav",
+      "cacheKey": "b5262eed2b9d86a1"
+    },
+    "footer.areasHeading": {
+      "value": "Áreas de servicio",
+      "tag": "nav",
+      "cacheKey": "805be21f4ee6f5e0"
+    },
+    "footer.getQuoteHeading": {
+      "value": "Recibe una cotización gratis",
+      "tag": "cta",
+      "cacheKey": "d624721eadfeb256"
+    },
+    "footer.getQuoteSub": {
+      "value": "¿Listo para deshacerte de todo? Solicita una cotización gratis o llámanos directo. Respondemos rápido.",
+      "tag": "cta",
+      "cacheKey": "21dfedf2016f3197"
+    },
+    "footer.requestPickupCta": {
+      "value": "Solicita una recolección",
+      "tag": "cta",
+      "cacheKey": "ec2e5511c1b1c231"
+    },
+    "footer.callPrefix": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "footer.licensedTag": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "f1a903e00ca3105b"
+    },
+    "footer.insuredTag": {
+      "value": "Con seguro",
+      "tag": "trust",
+      "cacheKey": "266c6949449a6677"
+    },
+    "footer.localTag": {
+      "value": "Negocio local",
+      "tag": "trust",
+      "cacheKey": "9ecdf526c91a81d5"
+    },
+    "footer.findUsOnline": {
+      "value": "Encuéntranos en línea",
+      "tag": "misc",
+      "cacheKey": "778e7777cbc1ed7f"
+    },
+    "footer.allRightsReserved": {
+      "value": "Todos los derechos reservados.",
+      "tag": "legal",
+      "cacheKey": "1fd0562d28759348"
+    },
+    "footer.verifyLink": {
+      "value": "Verificar",
+      "tag": "nav",
+      "cacheKey": "ea9cb0ae62e88af4"
+    },
+    "footer.privacyLink": {
+      "value": "Política de privacidad",
+      "tag": "nav",
+      "cacheKey": "a198145dccc477ed"
+    },
+    "footer.termsLink": {
+      "value": "Términos de servicio",
+      "tag": "nav",
+      "cacheKey": "f6e99f0e6a178199"
+    },
+    "footer.verifyBusinessLink": {
+      "value": "Verifica este negocio",
+      "tag": "trust",
+      "cacheKey": "e49eed23334d0a5e"
+    },
+    "common.loading": {
+      "value": "Cargando…",
+      "tag": "misc",
+      "cacheKey": "ef46e6168711ff8f"
+    },
+    "common.error": {
+      "value": "Algo salió mal.",
+      "tag": "misc",
+      "cacheKey": "a512bb130740508d"
+    },
+    "common.required": {
+      "value": "obligatorio",
+      "tag": "form-label",
+      "cacheKey": "808b9b41b3ad8b11"
+    },
+    "common.optional": {
+      "value": "opcional",
+      "tag": "form-label",
+      "cacheKey": "84699f31f6b65429"
+    },
+    "faqSection.badge": {
+      "value": "Preguntas frecuentes",
+      "tag": "faq",
+      "cacheKey": "ece097733ac2b3d6"
+    },
+    "faqSection.defaultHeading": {
+      "value": "Preguntas frecuentes",
+      "tag": "faq",
+      "cacheKey": "e79e950d19bae27e"
+    },
+    "faqSection.moreQuestions": {
+      "value": "¿Tienes más preguntas?",
+      "tag": "faq",
+      "cacheKey": "d1c6618e15f28581"
+    },
+    "faqSection.callPrefix": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "trustSection.badge": {
+      "value": "Por qué Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "0dc6144a6437b5cc"
+    },
+    "trustSection.headlinePart1": {
+      "value": "Por qué los clientes confían en nosotros",
+      "tag": "trust",
+      "cacheKey": "f1b730aee1d0e99d"
+    },
+    "trustSection.headlinePart2": {
+      "value": "El verdadero Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "dd58f6d0415d93b7"
+    },
+    "trustSection.subhead": {
+      "value": "Don y Melissa construyeron Peninsula Pick Ups sobre un principio: llegar, hacer el trabajo bien y estar disponibles. Sin números desconocidos. Sin direcciones vagas. Un negocio real en San Carlos que puedes verificar.",
+      "tag": "trust",
+      "cacheKey": "9fb249d3792ee7a3"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "Solicita una cotización gratis",
+      "tag": "cta",
+      "cacheKey": "de8b71aba78bcb89"
+    },
+    "trustSection.callCta": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "trustSection.ownersTitle": {
+      "value": "Propietarios: Don y Melissa",
+      "tag": "trust",
+      "cacheKey": "97d8560fe9f9b07d"
+    },
+    "trustSection.ownersBody": {
+      "value": "Negocio familiar con base en San Carlos, CA 94070. Cuando pides una cotización o llamas a la línea del negocio, nos comunicas directamente con nosotros. Eso es lo que importa.",
+      "tag": "trust",
+      "cacheKey": "c689b586d05cd6d1"
+    },
+    "trustSection.establishedNote": {
+      "value": "Con nosotros desde 2021 en la Península.",
+      "tag": "trust",
+      "cacheKey": "61c5d023564a868f"
+    },
+    "trustSection.signal1Title": {
+      "value": "Un número de teléfono verificado",
+      "tag": "trust",
+      "cacheKey": "fe07efd93f1e7eb7"
+    },
+    "trustSection.signal1Body": {
+      "value": "Cuando llamas al (650) 201-1543, hablas directamente con Don y Melissa. Sin centro de llamadas, sin redireccionamientos, sin rodeos.",
+      "tag": "trust",
+      "cacheKey": "0cc0e8bb4999eed2"
+    },
+    "trustSection.signal2Title": {
+      "value": "Con base en San Carlos desde 2021",
+      "tag": "trust",
+      "cacheKey": "f93d9c502e98a2b2"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups nació en la Península y lleva sirviendo a la comunidad desde 2021. Conocemos los vecindarios, las calles y lo que los clientes de aquí esperan.",
+      "tag": "trust",
+      "cacheKey": "d9fbaba866ee439d"
+    },
+    "trustSection.signal3Title": {
+      "value": "Fotos reales del proyecto próximamente",
+      "tag": "trust",
+      "cacheKey": "3d0e1bd28ee9c0c2"
+    },
+    "trustSection.signal3Body": {
+      "value": "Respaldamos nuestro trabajo con documentación de antes y después en cada trabajo. Fotos y videos verificados de proyectos se siguen agregando continuamente.",
+      "tag": "trust",
+      "cacheKey": "abaa14e273bb344a"
+    },
+    "trustSection.signal4Title": {
+      "value": "Precios claros, sin sorpresas",
+      "tag": "trust",
+      "cacheKey": "6989431de0983a32"
+    },
+    "trustSection.signal4Body": {
+      "value": "Cotización gratis sin cargos ocultos. Sabes el precio antes de que lleguemos, y no cambia cuando estamos ahí.",
+      "tag": "trust",
+      "cacheKey": "ac7d20af6eb2ee77"
+    },
+    "trustSection.signal5Title": {
+      "value": "Agendamos rápido y te responde una persona real",
+      "tag": "trust",
+      "cacheKey": "1a2826e94afef962"
+    },
+    "trustSection.signal5Body": {
+      "value": "Respondemos el mismo día. La mayoría de los trabajos se pueden agendar en menos de 48 horas. Tratas directo con el dueño, no con un despachador.",
+      "tag": "trust",
+      "cacheKey": "e2f2c3af4c9edca2"
+    },
+    "trustSection.signal6Title": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "bd50246f9d92aff5"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups cuenta con licencia y seguro en regla para cada trabajo. Tu propiedad está protegida, punto.",
+      "tag": "trust",
+      "cacheKey": "783e01cb46f89c69"
+    },
+    "servicesGrid.badge": {
+      "value": "Lo Que Hacemos",
+      "tag": "service-description",
+      "cacheKey": "84dd8b821059f3a3"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "Acarreo de servicio completo",
+      "tag": "service-description",
+      "cacheKey": "e1a37a5ecae296b4"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "Desde una sola pieza hasta toda la propiedad",
+      "tag": "service-description",
+      "cacheKey": "5351c7ca5f454924"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups se encarga de trabajos residenciales y comerciales en toda la Península. Lo que sea que necesites sacar, nosotros lo cargamos y lo retiramos.",
+      "tag": "service-description",
+      "cacheKey": "8b32e00f6b2e1e3f"
+    },
+    "servicesGrid.learnMore": {
+      "value": "Aprende más",
+      "tag": "cta",
+      "cacheKey": "858de8ac95639a28"
+    },
+    "servicesGrid.getQuote": {
+      "value": "Recibe una cotización gratis",
+      "tag": "cta",
+      "cacheKey": "cbbb53957eeaa1a2"
+    },
+    "serviceAreas.badge": {
+      "value": "Dónde Trabajamos",
+      "tag": "misc",
+      "cacheKey": "6d1f1839b434c784"
+    },
+    "serviceAreas.heading": {
+      "value": "Servicio en toda la Península",
+      "tag": "misc",
+      "cacheKey": "8643ae0cd0d052e6"
+    },
+    "serviceAreas.subhead": {
+      "value": "Con base en San Carlos, Peninsula Pick Ups da servicio a comunidades desde South San Francisco hasta Palo Alto. Haz clic en tu ciudad para ver los detalles del servicio local.",
+      "tag": "misc",
+      "cacheKey": "de70920de1cd1131"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "Solicita tu recolección",
+      "tag": "cta",
+      "cacheKey": "ec2e5511c1b1c231"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "Base de operaciones",
+      "tag": "misc",
+      "cacheKey": "f6bf6db7b481f451"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "Condado",
+      "tag": "misc",
+      "cacheKey": "cbd8cf7d2503a5b4"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "+ {count} más",
+      "tag": "misc",
+      "cacheKey": "7b52e2f4790ebc72"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "¿No ves tu ciudad?",
+      "tag": "misc",
+      "cacheKey": "fcae9889ed5bd040"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "Solicita una cotización",
+      "tag": "cta",
+      "cacheKey": "ea8fc11b4c63f819"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "y confirmamos disponibilidad de servicio.",
+      "tag": "misc",
+      "cacheKey": "e6c3f1b4a9a11a8c"
+    },
+    "testimonialsSection.badge": {
+      "value": "Reseñas de clientes",
+      "tag": "testimonial",
+      "cacheKey": "da67ec0993f523a9"
+    },
+    "testimonialsSection.heading": {
+      "value": "Lo que dicen nuestros clientes",
+      "tag": "testimonial",
+      "cacheKey": "c750727129677d51"
+    },
+    "testimonialsSection.subhead": {
+      "value": "Reseñas reales de clientes en toda la Península. Peninsula Pick Ups tiene {count} reseñas y contando en Yelp, además de recomendaciones en Nextdoor y Alignable.",
+      "tag": "testimonial",
+      "cacheKey": "29a1c2a8fe2a1864"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count} reseñas",
+      "tag": "testimonial",
+      "cacheKey": "c595c0ffa6839066"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "Recomendado en Nextdoor",
+      "tag": "testimonial",
+      "cacheKey": "888c9d0068f68ce7"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "Cliente verificado de {source}",
+      "tag": "testimonial",
+      "cacheKey": "3c3bcc0922fb3db5"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "Ver en {source}",
+      "tag": "meta",
+      "cacheKey": "1f5454a945872166"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "{count} de 5 estrellas",
+      "tag": "meta",
+      "cacheKey": "6fa49c9d667e68db"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "¿Tuviste una buena experiencia?",
+      "tag": "testimonial",
+      "cacheKey": "5c771b8cde56c826"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "Si Peninsula Pick Ups hizo una recolección para ti, nos encantaría escucharlo. Las reseñas de clientes confirmados ayudan a los vecinos a encontrar un servicio local de confianza.",
+      "tag": "testimonial",
+      "cacheKey": "dd2e2285150fb713"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "Déjanos una reseña en Yelp",
+      "tag": "cta",
+      "cacheKey": "b53e861b1eae2576"
+    },
+    "testimonialsSection.callCta": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "Verificación del negocio",
+      "tag": "meta",
+      "cacheKey": "bbd3852aec441e39"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "Sede principal",
+      "tag": "trust",
+      "cacheKey": "ef6761d85af19b71"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "En operación desde 2021",
+      "tag": "trust",
+      "cacheKey": "64a201f520c10ee9"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "Desde 2021",
+      "tag": "trust",
+      "cacheKey": "7ca22606413f4857"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "Línea verificada del negocio",
+      "tag": "trust",
+      "cacheKey": "7eca9d72b078f472"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "Don y Melissa",
+      "tag": "trust",
+      "cacheKey": "ca0caa9ec324aa5a"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "Dueños locales",
+      "tag": "trust",
+      "cacheKey": "fa7cf7b5075725c7"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "72367e92ab418f55"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "Servicio profesional",
+      "tag": "trust",
+      "cacheKey": "aaeb916ca1063975"
+    },
+    "gallerySection.badge": {
+      "value": "Trabajo real, resultados reales",
+      "tag": "misc",
+      "cacheKey": "7cb5d5fe8842f4b6"
+    },
+    "gallerySection.heading": {
+      "value": "Galería de proyectos",
+      "tag": "misc",
+      "cacheKey": "8cfc08463999806a"
+    },
+    "gallerySection.subhead": {
+      "value": "Fotos de trabajos reales de Peninsula Pick Ups — limpiezas de garaje, retiro de escombros, acarreo de electrodomésticos y vaciados completos de propiedades en toda la Península.",
+      "tag": "misc",
+      "cacheKey": "395339fead1e8cef"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "58 fotos",
+      "tag": "misc",
+      "cacheKey": "cf1e472c5fe40657"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143+ publicaciones",
+      "tag": "misc",
+      "cacheKey": "e23c01236960f73b"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "143+ fotos de trabajos en Instagram",
+      "tag": "cta",
+      "cacheKey": "388cd0adfc888395"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "Síguenos",
+      "tag": "cta",
+      "cacheKey": "733d791b300e2de3"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "para fotos de antes y después de cada trabajo — limpiezas de garaje, retiro de escombros de construcción, retiro de electrodomésticos y más en toda la Península.",
+      "tag": "cta",
+      "cacheKey": "40a1dffbfe5d3ecd"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "Ver todas las fotos",
+      "tag": "cta",
+      "cacheKey": "cde4314d7bb2258f"
+    },
+    "gallerySection.photo1Label": {
+      "value": "Acarreo completado",
+      "tag": "misc",
+      "cacheKey": "4a5ae26102316cb0"
+    },
+    "gallerySection.photo2Label": {
+      "value": "Limpieza residencial",
+      "tag": "misc",
+      "cacheKey": "6ac622e394af46c9"
+    },
+    "gallerySection.photo3Label": {
+      "value": "Acarreo de carga completa",
+      "tag": "misc",
+      "cacheKey": "e9fb1b799ab7f7a8"
+    },
+    "gallerySection.photo4Label": {
+      "value": "Retiro de escombros",
+      "tag": "misc",
+      "cacheKey": "26124d8cc9b9050b"
+    },
+    "gallerySection.photo5Label": {
+      "value": "Limpieza de propiedad",
+      "tag": "misc",
+      "cacheKey": "75e1040c19c455f5"
+    },
+    "gallerySection.photo6Label": {
+      "value": "Sitio de trabajo",
+      "tag": "misc",
+      "cacheKey": "2ae5aee4f377e6f1"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "Condado de San Mateo",
+      "tag": "misc",
+      "cacheKey": "83bf6e84e32e684a"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "Península, CA",
+      "tag": "misc",
+      "cacheKey": "55f631a52be871f8"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "Área de la Bahía, CA",
+      "tag": "misc",
+      "cacheKey": "a548ecc9931ea012"
+    },
+    "shareCity.shareLabel": {
+      "value": "Comparte la página de {city}",
+      "tag": "cta",
+      "cacheKey": "66c01c794b832609"
+    },
+    "shareCity.copied": {
+      "value": "Enlace copiado",
+      "tag": "misc",
+      "cacheKey": "9e1d3c8aad263231"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups sirve {city}, CA — (650) 201-1543.",
+      "tag": "cta",
+      "cacheKey": "964a2debd3303cd0"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "Áreas de servicio",
+      "tag": "nav",
+      "cacheKey": "805be21f4ee6f5e0"
+    },
+    "areaPage.countyBadge": {
+      "value": "Condado de {county}",
+      "tag": "misc",
+      "cacheKey": "2efd0164d0c23af6"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "Base de operaciones",
+      "tag": "trust",
+      "cacheKey": "ef6761d85af19b71"
+    },
+    "areaPage.headlinePart1": {
+      "value": "Retiro de chatarra en",
+      "tag": "hero",
+      "cacheKey": "002e292f00630c1b"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "Solicita una recolección en {city}",
+      "tag": "cta",
+      "cacheKey": "28208caf4ec6b4c6"
+    },
+    "areaPage.callPrefix": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "areaPage.textUs": {
+      "value": "Escríbenos",
+      "tag": "cta",
+      "cacheKey": "caf17c7137093d07"
+    },
+    "areaPage.textMessage": {
+      "value": "Hola Peninsula Pick Ups — necesito una recolección en {city}, CA.",
+      "tag": "cta",
+      "cacheKey": "efa8c146b5f221bb"
+    },
+    "areaPage.servicesHeading": {
+      "value": "Servicios disponibles en {city}",
+      "tag": "service-description",
+      "cacheKey": "5c6f86ffcabcca41"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups ofrece los siguientes servicios en toda el área de {city}, CA.",
+      "tag": "service-description",
+      "cacheKey": "b8923d82af3e3774"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "También atendemos áreas cercanas",
+      "tag": "misc",
+      "cacheKey": "64c1156cf358585a"
+    },
+    "areaPage.faqHeading": {
+      "value": "Preguntas frecuentes sobre {city}",
+      "tag": "faq",
+      "cacheKey": "2d6cac82525520ee"
+    },
+    "areaPage.faqSubhead": {
+      "value": "Preguntas frecuentes sobre recolección de chatarra y acarreo en {city}, CA.",
+      "tag": "faq",
+      "cacheKey": "5589f135db968e0c"
+    },
+    "areaPage.backToHome": {
+      "value": "Volver a Peninsula Pick Ups",
+      "tag": "nav",
+      "cacheKey": "aa91ca27629285cc"
+    },
+    "areaPage.statHomeBase": {
+      "value": "Base de operaciones",
+      "tag": "trust",
+      "cacheKey": "ef6761d85af19b71"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "Sirviendo la Península",
+      "tag": "trust",
+      "cacheKey": "014bb5864cedb174"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "Línea verificada del negocio",
+      "tag": "trust",
+      "cacheKey": "94d146cea5de9ac5"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "Dueños locales",
+      "tag": "trust",
+      "cacheKey": "fa7cf7b5075725c7"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "Servicio profesional",
+      "tag": "trust",
+      "cacheKey": "aaeb916ca1063975"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "72367e92ab418f55"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "Establecidos desde el principio.\n\nHmm, let me reconsider — the source is just the single word \"Established\" used as a trust badge/label.\n\nCon trayectoria",
+      "tag": "trust",
+      "cacheKey": "c0507945761ee151"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "Servicios",
+      "tag": "nav",
+      "cacheKey": "b5262eed2b9d86a1"
+    },
+    "servicePage.serviceBadge": {
+      "value": "Servicio",
+      "tag": "service-description",
+      "cacheKey": "177f333d3b78afca"
+    },
+    "servicePage.requestQuote": {
+      "value": "Solicita una cotización",
+      "tag": "cta",
+      "cacheKey": "48e6d1d057de82f9"
+    },
+    "servicePage.callPrefix": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "Ciudades donde trabajamos",
+      "tag": "misc",
+      "cacheKey": "ab066ca64e3fbb0a"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service} está disponible en todas las áreas de servicio de Peninsula Pick Ups.",
+      "tag": "service-description",
+      "cacheKey": "9fbcd55e243c5952"
+    },
+    "servicePage.faqHeading": {
+      "value": "Preguntas frecuentes sobre {service}",
+      "tag": "faq",
+      "cacheKey": "fe9d87daad751534"
+    },
+    "servicePage.faqSubhead": {
+      "value": "Preguntas frecuentes sobre {service} con Peninsula Pick Ups.",
+      "tag": "faq",
+      "cacheKey": "b9f2c59fca601232"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "Otros Servicios",
+      "tag": "service-description",
+      "cacheKey": "43fd453217310997"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "Verifica",
+      "tag": "nav",
+      "cacheKey": "ea9cb0ae62e88af4"
+    },
+    "verifyPage.badge": {
+      "value": "Identidad verificada",
+      "tag": "trust",
+      "cacheKey": "ad92bf03c829b83e"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "Este es el",
+      "tag": "hero",
+      "cacheKey": "5f5d9c0767e7ff90"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "Peninsula Pick Ups legítimo.",
+      "tag": "hero",
+      "cacheKey": "ad0ff6d95955d27b"
+    },
+    "verifyPage.subhead": {
+      "value": "Verificación en registros públicos del negocio familiar de recolección de chatarra y acarreo con base en San Carlos, CA desde 2021.",
+      "tag": "trust",
+      "cacheKey": "aaca34398ba635b7"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "Negocio registrado",
+      "tag": "trust",
+      "cacheKey": "fb26f0c7bfa27fe6"
+    },
+    "verifyPage.factLegalName": {
+      "value": "Nombre legal",
+      "tag": "trust",
+      "cacheKey": "9a71d545c9bf356a"
+    },
+    "verifyPage.factDomain": {
+      "value": "Dominio",
+      "tag": "trust",
+      "cacheKey": "8a577424af309118"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "Teléfono verificado",
+      "tag": "trust",
+      "cacheKey": "02d72f732072b8a0"
+    },
+    "verifyPage.factAddress": {
+      "value": "Dirección",
+      "tag": "trust",
+      "cacheKey": "1e4910ccfdfcf27e"
+    },
+    "verifyPage.factOwners": {
+      "value": "Propietarios",
+      "tag": "trust",
+      "cacheKey": "7ca9e83fec3a6ad0"
+    },
+    "verifyPage.factFounded": {
+      "value": "Fundado",
+      "tag": "trust",
+      "cacheKey": "f9e1f2a055b21651"
+    },
+    "verifyPage.factLicensed": {
+      "value": "Con licencia y seguro",
+      "tag": "trust",
+      "cacheKey": "bd50246f9d92aff5"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "Sí",
+      "tag": "trust",
+      "cacheKey": "e7bada6484e8f04b"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "Una nota sobre sitios impostores",
+      "tag": "trust",
+      "cacheKey": "8f1dcee88a03f4b6"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "Perfiles y reseñas de referencia",
+      "tag": "trust",
+      "cacheKey": "372be773cd46058d"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "Cada enlace aquí abajo es un perfil publicado que nosotros manejamos. Estos son los destinos oficiales citados en nuestro esquema y en cada página de este sitio.",
+      "tag": "trust",
+      "cacheKey": "537de4d5d7365554"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "¿Necesitas confirmar algo en vivo?",
+      "tag": "trust",
+      "cacheKey": "40f40f5e5899e29b"
+    },
+    "verifyPage.confirmBody": {
+      "value": "Don o Melissa contestan directamente la línea verificada del negocio en horario de atención, de lunes a sábado.",
+      "tag": "trust",
+      "cacheKey": "d208b2d8d843210f"
+    },
+    "verifyPage.callCta": {
+      "value": "Llámanos",
+      "tag": "cta",
+      "cacheKey": "d7ecdc1adabb0f0b"
+    },
+    "verifyPage.textCta": {
+      "value": "Escríbenos",
+      "tag": "cta",
+      "cacheKey": "caf17c7137093d07"
+    },
+    "service.junk-removal.name": {
+      "value": "Recolección de chatarra",
+      "tag": "service-description",
+      "cacheKey": "c676b28bc1d409c9"
+    },
+    "service.junk-removal.shortName": {
+      "value": "Recolección de chatarra",
+      "tag": "service-description",
+      "cacheKey": "c676b28bc1d409c9"
+    },
+    "service.junk-removal.blurb": {
+      "value": "Recolección de chatarra completa para casas, garajes, patios y propiedades en general. Nosotros cargamos, hacemos el acarreo y dejamos el lugar limpio.",
+      "tag": "service-description",
+      "cacheKey": "f4ddd93d6e9f1b5f"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups se encarga de la recolección de chatarra en toda la Península de San Francisco — desde una sola pieza de mueble hasta una limpieza completa de garaje. Nuestro equipo llega con un camión de verdad y un plan de verdad: nosotros cargamos todo, barremos al terminar y desechamos de manera responsable. Sin cargos ocultos, sin sorpresas, y el precio no cambia cuando ya estamos en el lugar.",
+      "tag": "service-description",
+      "cacheKey": "9792a9f062023209"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "¿Qué tipo de chatarra se llevan?",
+      "tag": "faq",
+      "cacheKey": "b6706b8e29cb6346"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "Muebles, colchones, electrodomésticos, residuos electrónicos, desechos de jardín, escombros de construcción, triques del hogar — casi cualquier cosa que no sea peligrosa. Si no estás seguro, mándanos una foto cuando llames al (650) 201-1543 y te decimos en el momento.",
+      "tag": "faq",
+      "cacheKey": "56df4b2f18cf6175"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "¿Cómo se determina el precio?",
+      "tag": "faq",
+      "cacheKey": "67edc2b01ec421a0"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "El precio se basa en el volumen que ocupa en el camión más cualquier manejo especial. Te damos una cotización fija antes de empezar y el precio no cambia en el lugar.",
+      "tag": "faq",
+      "cacheKey": "78afb4e3bcdb41dc"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "¿Qué tan rápido pueden venir?",
+      "tag": "faq",
+      "cacheKey": "5ca1365993131c86"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "La mayoría de los trabajos se agendan dentro de 48 horas. Frecuentemente hay recolecciones el mismo día — llámanos al (650) 201-1543 para confirmar.",
+      "tag": "faq",
+      "cacheKey": "dcec153033496703"
+    },
+    "service.construction-debris.name": {
+      "value": "Retiro de escombros de construcción",
+      "tag": "service-description",
+      "cacheKey": "916252d43749128f"
+    },
+    "service.construction-debris.shortName": {
+      "value": "Retiro de escombros de construcción",
+      "tag": "service-description",
+      "cacheKey": "12c66f00e8d3a181"
+    },
+    "service.construction-debris.blurb": {
+      "value": "Limpieza post-remodelación, escombros de demolición, tablaroca, madera, concreto y sobrantes de contratista — todo se lleva rápido.",
+      "tag": "service-description",
+      "cacheKey": "e7ecb066d75640d7"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups retira escombros de obras y demoliciones en toda la Península — tablaroca, restos de estructura, concreto roto, azulejos, pisos, gabinetes y material de desecho de contratistas. Trabajamos con contratistas generales, remodeladores y propietarios de casa. Dinos el alcance del trabajo, te damos la cotización, y llegamos al lugar cuando necesites tenerlo despejado.",
+      "tag": "service-description",
+      "cacheKey": "46a1d21144aa7a37"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "¿Trabajan directamente con contratistas?",
+      "tag": "faq",
+      "cacheKey": "f6e7f8f7542c7390"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "Sí. Muchos de nuestros trabajos regulares son limpiezas post-construcción para contratistas generales y remodeladores. Podemos agendar de forma continua o bajo llamado.",
+      "tag": "faq",
+      "cacheKey": "323052d896b0d14d"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "¿Pueden retirar concreto y azulejo?",
+      "tag": "faq",
+      "cacheKey": "c3d051201681dbf6"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "Sí — los escombros pesados son parte de lo que hacemos. Te damos una cotización gratis basada en volumen que toma en cuenta el peso.",
+      "tag": "faq",
+      "cacheKey": "746089100b3e70f3"
+    },
+    "service.appliance-removal.name": {
+      "value": "Retiro de electrodomésticos",
+      "tag": "service-description",
+      "cacheKey": "3c7eac5d59057a27"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "Retiro de electrodomésticos",
+      "tag": "service-description",
+      "cacheKey": "3c7eac5d59057a27"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "Refrigeradores, lavadoras, secadoras, estufas y más. Los desconectamos, sacamos y nos los llevamos de manera segura.",
+      "tag": "service-description",
+      "cacheKey": "2d093853ced2d5cd"
+    },
+    "service.appliance-removal.description": {
+      "value": "¿Tienes un refrigerador viejo en el porche? ¿Una lavadora con secadora que no puedes levantar? Peninsula Pick Ups retira electrodomésticos de todo tamaño con el equipo adecuado para proteger tus pisos, paredes y marcos de puertas. También nos encargamos del desecho correcto y el reciclaje para que los refrigerantes y metales se procesen como se debe.",
+      "tag": "service-description",
+      "cacheKey": "3a32be5f37dc3454"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "¿Ustedes desconectan los electrodomésticos?",
+      "tag": "faq",
+      "cacheKey": "b1ee2e9b17cc1a0e"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "Las desconexiones estándar (agua, cierre de gas, enchufe) son parte del trabajo. Si algo requiere un plomero o electricista con licencia, te lo decimos desde el principio.",
+      "tag": "faq",
+      "cacheKey": "eefcf53962ef6eda"
+    },
+    "service.storage-cleanout.name": {
+      "value": "Vaciado de bodegas",
+      "tag": "service-description",
+      "cacheKey": "9a759a361e20123a"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "Vaciado de bodegas",
+      "tag": "service-description",
+      "cacheKey": "608f0884a6c40d5d"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "Vaciado de bodegas, garajes y cuartos de almacenamiento. Nosotros nos encargamos de clasificar, hacer el acarreo y dejar la propiedad completamente limpia.",
+      "tag": "service-description",
+      "cacheKey": "15fb8900fa0bba81"
+    },
+    "service.storage-cleanout.description": {
+      "value": "Bodegas, áticos, garajes, sótanos — Peninsula Pick Ups los vacía para que tú no tengas que hacerlo. Podemos separar y apartar artículos donables según tus indicaciones, y nos encargamos del trabajo pesado y del desecho. Muy común en mudanzas, reducciones de espacio y liquidaciones de herencias.",
+      "tag": "service-description",
+      "cacheKey": "b4e86bcf3dfbd0a4"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "¿Pueden apartar artículos para donar?",
+      "tag": "faq",
+      "cacheKey": "bb6282ac9a669a68"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "Sí — dinos qué quieres conservar, donar o tirar, y nosotros lo separamos mientras trabajamos.",
+      "tag": "faq",
+      "cacheKey": "c4bc7a0bdc41fe2b"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "Limpieza post-desalojo",
+      "tag": "service-description",
+      "cacheKey": "3587ef0053d7bd90"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "Limpieza post-desalojo",
+      "tag": "service-description",
+      "cacheKey": "9922404a6584965f"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "Vaciado completo de la propiedad para arrendadores y administradores de inmuebles tras un desalojo. Rápido, profesional y discreto.",
+      "tag": "service-description",
+      "cacheKey": "7a45ff91213cfe42"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups trabaja con propietarios y administradores de propiedades de la Península en limpiezas post-desalojo. Llegamos rápido, trabajamos de manera eficiente, documentamos el trabajo y dejamos la unidad lista para limpieza, pintura y volver a rentarla. Discreto, profesional y documentado.",
+      "tag": "service-description",
+      "cacheKey": "f9696c4a7d39802a"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "¿Nos pides fotos de antes y después?",
+      "tag": "faq",
+      "cacheKey": "04d7f5ae9558a25d"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "Sí — fotografiamos la unidad al llegar y al terminar, y te enviamos la documentación por correo el mismo día.",
+      "tag": "faq",
+      "cacheKey": "c4287ecc9cc5c6e2"
+    },
+    "service.commercial-hauling.name": {
+      "value": "Acarreos comerciales",
+      "tag": "service-description",
+      "cacheKey": "046468c4cbb37d6d"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "Acarreos comerciales",
+      "tag": "service-description",
+      "cacheKey": "046468c4cbb37d6d"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "Muebles de oficina, estantes de tienda, tarimas de bodega y escombros a escala comercial. Manejamos trabajos grandes y chicos.",
+      "tag": "service-description",
+      "cacheKey": "e0bd19ee2670cff8"
+    },
+    "service.commercial-hauling.description": {
+      "value": "Vaciado de oficinas, retiro de exhibidores de tiendas, acarreo de tarimas en bodegas, equipo de restaurantes — Peninsula Pick Ups se encarga de trabajos a escala comercial en toda la Península. Trabajamos fuera de horario cuando se necesita y nos coordinamos con los administradores de propiedades para el acceso, certificados de seguro y reservaciones de elevadores.",
+      "tag": "service-description",
+      "cacheKey": "ba7a3e9bad7a48a1"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "¿Cuentan con seguro para propiedades comerciales?",
+      "tag": "faq",
+      "cacheKey": "25cf7602243c03b4"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "Sí — contamos con seguro de responsabilidad general y podemos entregar un Certificado de Seguro con el nombre de la propiedad cuando se requiera.",
+      "tag": "faq",
+      "cacheKey": "0ab7b714217f16cf"
+    },
+    "service.residential-cleanout.name": {
+      "value": "Limpieza residencial",
+      "tag": "service-description",
+      "cacheKey": "b9ac44bca3d053df"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "Limpieza residencial",
+      "tag": "service-description",
+      "cacheKey": "5c14ff02aaf0d830"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "Vaciados completos de casas y propiedades, con el cuidado que merecen. Trabajamos con familias, albaceas y agentes de bienes raíces de la Península.",
+      "tag": "service-description",
+      "cacheKey": "9887f589eed6d615"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups hace limpiezas residenciales completas — vaciado de propiedades, mudanzas por reducción de espacio, preparación para la venta, y limpieza después de inquilinos. Nosotros clasificamos, acarreamos y limpiamos, y trabajamos al ritmo que la familia o el dueño necesite. El trabajo en propiedades de herencia, en especial, lo manejamos con discreción y cuidado.",
+      "tag": "service-description",
+      "cacheKey": "f7c92908dfed3626"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos es nuestra base de operaciones en Peninsula Pick Ups. Don y Melissa fundaron este negocio aquí en 2021 y conocen cada colonia personalmente. Desde Burton Park hasta White Oaks, nos encargamos de recolección de chatarra, acarreo y limpieza completa de propiedades para casas y negocios en todo San Carlos.",
+      "tag": "service-description",
+      "cacheKey": "5e75fd2bb2cfa8db"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "¿De verdad están ubicados en San Carlos?",
+      "tag": "faq",
+      "cacheKey": "4581ef354944941a"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "Sí. Peninsula Pick Ups opera desde San Carlos, CA 94070, y lo ha hecho desde 2021. La línea del negocio (650) 201-1543 comunica directamente con Don y Melissa.",
+      "tag": "faq",
+      "cacheKey": "16b7a5777b62d367"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "¿Qué tan rápido pueden venir a San Carlos?",
+      "tag": "faq",
+      "cacheKey": "46776f7d97277c53"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlos es nuestra base, así que frecuentemente hay servicio el mismo día. La mayoría de los trabajos se agendan dentro de 24 horas.",
+      "tag": "faq",
+      "cacheKey": "595125b818de3492"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups atiende todo San Mateo con recolección de chatarra y acarreo rápido y profesional. Ya sea que estés vaciando un garage en Shoreview, haciendo una limpieza completa cerca del centro, o retirando escombros después de una remodelación, nuestro equipo te da un servicio eficiente y de confianza.",
+      "tag": "service-description",
+      "cacheKey": "b4c20e50b99edefa"
+    },
+    "area.redwood-city.summary": {
+      "value": "De Broadway hasta Woodside Road, Peninsula Pick Ups se encarga de la recolección de chatarra, retiro de escombros de construcción y limpiezas completas en todo Redwood City. Trabajamos con dueños de casa, arrendadores y negocios que necesitan un servicio de acarreo rápido y profesional.",
+      "tag": "service-description",
+      "cacheKey": "2ffe4cb03d9befb6"
+    },
+    "area.belmont.summary": {
+      "value": "Los dueños de casa y negocios en Belmont confían en Peninsula Pick Ups para recolección de chatarra y limpieza completa de propiedades. Damos servicio en Belmont regularmente desde nuestra base en San Carlos. Horarios rápidos, precios honestos y un equipo profesional en cada visita.",
+      "tag": "service-description",
+      "cacheKey": "ad609aea359df645"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups ofrece recolección de chatarra y acarreo confiables para los residentes y negocios de Burlingame. Ya sea que necesites retirar un solo electrodoméstico o vaciar una oficina completa, agendamos rápido y hacemos el trabajo bien hecho.",
+      "tag": "service-description",
+      "cacheKey": "d2f2c3f7bfb61927"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups atiende Palo Alto con el mismo nivel profesional que llevamos a cada trabajo en toda la Península. Propietarios, arrendadores y negocios confían en nosotros para recolección de chatarra, limpiezas completas y acarreo de escombros sin complicaciones.",
+      "tag": "service-description",
+      "cacheKey": "fb43454503d149dd"
+    },
+    "area.menlo-park.summary": {
+      "value": "De Belle Haven hasta the Willows, Peninsula Pick Ups se encarga del retiro de chatarra en Menlo Park con profesionalismo y rapidez. Trabajamos según tu horario y dejamos la propiedad limpia. Sin cargos ocultos, sin sorpresas.",
+      "tag": "service-description",
+      "cacheKey": "c628a5ad18a09d37"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups ofrece recolección de chatarra, acarreo y limpieza completa comercial en todo South San Francisco. Nuestro equipo es local, con experiencia, y está listo para atender proyectos de cualquier tamaño de forma rápida y profesional.",
+      "tag": "service-description",
+      "cacheKey": "77cf1593358be7c3"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups ofrece recolección de chatarra rápida y accesible para dueños de casa y administradores de propiedades en Daly City. Nos encargamos de limpiezas residenciales y comerciales, retiro de electrodomésticos y acarreo de escombros en toda la zona.",
+      "tag": "service-description",
+      "cacheKey": "b3581906e6167b7d"
+    },
+    "area.millbrae.summary": {
+      "value": "Atendemos Millbrae con la misma confiabilidad que traemos a cada trabajo en la Península. Peninsula Pick Ups se encarga de la recolección de chatarra, vaciado de bodegas y acarreo de electrodomésticos con un equipo que llega a tiempo y deja el trabajo bien hecho.",
+      "tag": "service-description",
+      "cacheKey": "509c07b1b02b13cd"
+    },
+    "homepageFaq.0.q": {
+      "value": "¿Dónde está ubicado Peninsula Pick Ups?",
+      "tag": "faq",
+      "cacheKey": "ba2ba3b27ee2a115"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups opera desde San Carlos, CA 94070. Los dueños Don y Melissa llevan el negocio en la Península desde 2021. La línea verificada del negocio es (650) 201-1543.",
+      "tag": "faq",
+      "cacheKey": "f9cfd9196d25049e"
+    },
+    "homepageFaq.1.q": {
+      "value": "¿A qué áreas les dan servicio?",
+      "tag": "faq",
+      "cacheKey": "03ae47bcd1b9a0d2"
+    },
+    "homepageFaq.1.a": {
+      "value": "Damos servicio en la Península de San Francisco desde Daly City y South San Francisco hasta San Mateo, Belmont, San Carlos, Redwood City, Menlo Park y Palo Alto. Si tu ciudad no está en la lista, llámanos al (650) 201-1543 — casi siempre podemos ayudarte.",
+      "tag": "faq",
+      "cacheKey": "bbc1a7e329e971cd"
+    },
+    "homepageFaq.2.q": {
+      "value": "¿Qué tan rápido pueden venir?",
+      "tag": "faq",
+      "cacheKey": "79629db91fe7a226"
+    },
+    "homepageFaq.2.a": {
+      "value": "La mayoría de los trabajos se agendan dentro de 24 a 48 horas. El servicio el mismo día frecuentemente está disponible, especialmente en San Carlos y las ciudades cercanas.",
+      "tag": "faq",
+      "cacheKey": "42d1e374d1b99895"
+    },
+    "homepageFaq.3.q": {
+      "value": "¿Cómo se determina el precio?",
+      "tag": "faq",
+      "cacheKey": "67edc2b01ec421a0"
+    },
+    "homepageFaq.3.a": {
+      "value": "El precio se basa en el volumen que ocupa en el camión, más cualquier manejo especial. Te damos una cotización firme antes de comenzar el trabajo y el precio no cambia en el lugar.",
+      "tag": "faq",
+      "cacheKey": "78afb4e3bcdb41dc"
+    },
+    "homepageFaq.4.q": {
+      "value": "¿Cómo sé que tengo el Peninsula Pick Ups correcto?",
+      "tag": "faq",
+      "cacheKey": "11e8f284f89e62d8"
+    },
+    "homepageFaq.4.a": {
+      "value": "Nuestro dominio es thepeninsulapickup.com. La línea verificada del negocio es (650) 201-1543. Don y Melissa atienden esa línea directamente. Visita /verify para ver nuestro registro completo de identidad en Yelp, Instagram, Facebook, Nextdoor, Alignable y JunkSpots.",
+      "tag": "faq",
+      "cacheKey": "71e6c73773f7b288"
+    },
+    "map.badge": {
+      "value": "La Península",
+      "tag": "misc",
+      "cacheKey": "5b1f62ff9d4d3d81"
+    },
+    "map.heading": {
+      "value": "Dónde trabaja Peninsula Pick Ups",
+      "tag": "misc",
+      "cacheKey": "86b0799a0b4a9cb2"
+    },
+    "map.sub": {
+      "value": "Elige una ciudad para ver los detalles del servicio en tu área. Estamos ubicados en San Carlos y desde ahí cubrimos toda la Península de San Francisco.",
+      "tag": "misc",
+      "cacheKey": "fcce3c300e414704"
+    },
+    "map.tooltipPreview": {
+      "value": "Vista previa de {city}",
+      "tag": "meta",
+      "cacheKey": "4114bac4b3f913e2"
+    },
+    "map.homeBaseTag": {
+      "value": "Base de operaciones",
+      "tag": "misc",
+      "cacheKey": "f6bf6db7b481f451"
+    },
+    "map.servicesAvailable": {
+      "value": "{count} servicios disponibles",
+      "tag": "misc",
+      "cacheKey": "7ba6451a3d006fba"
+    },
+    "map.requestPickupHere": {
+      "value": "Solicita tu recolección aquí",
+      "tag": "cta",
+      "cacheKey": "2554a4797d1bd0be"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | Recolección de chatarra y acarreo | San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "0c088f19b6a6cc0f"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups ofrece recolección de chatarra, acarreo, limpieza completa y retiro de escombros de construcción en toda la Península de San Francisco. Negocio local de Don y Melissa en San Carlos desde 2021. Llámanos al (650) 201-1543.",
+      "tag": "meta",
+      "cacheKey": "cfd0ff994a08e8bd"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — Recolección de chatarra y acarreo, San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "e362bf9fb24274dc"
+    }
+  }
+}

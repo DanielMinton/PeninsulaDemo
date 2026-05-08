@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { AREAS, type Area } from '@/content/areas'
 import { LAND_PATH, SPINE_PATH, MAP_VIEWBOX } from '@/content/map-outline'
 import { SITE } from '@/content/site'
@@ -16,31 +17,35 @@ interface CardProps {
 }
 
 function MarkerCard({ area, flip }: CardProps) {
-  const horiz = flip ? 'right-full mr-3' : 'left-full ml-3'
+  const t = useTranslations()
+  const horiz = flip ? 'end-full me-3' : 'start-full ms-3'
   return (
     <div
       role="dialog"
-      aria-label={`${area.city} preview`}
-      className={`absolute top-1/2 -translate-y-1/2 ${horiz} w-56 p-3.5 rounded-xl bg-charcoal-800 border border-charcoal-500 shadow-card-hover text-left z-20 pointer-events-none`}
+      aria-label={t('map.tooltipPreview', { city: area.city })}
+      className={`absolute top-1/2 -translate-y-1/2 ${horiz} w-56 p-3.5 rounded-xl bg-charcoal-800 border border-charcoal-500 shadow-card-hover text-start z-20 pointer-events-none`}
     >
       <div className="flex items-center gap-2 mb-1">
         <p className="font-bold text-bone-100 text-sm">{area.city}, CA</p>
         {area.isHomeBase && (
           <span className="text-[10px] font-bold text-orange-500 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">
-            Home Base
+            {t('map.homeBaseTag')}
           </span>
         )}
       </div>
-      <p className="text-[11px] text-steel-500 mb-2">{area.county} County</p>
-      <p className="text-xs text-steel-300 leading-relaxed">
-        {area.services.length} services available
+      <p className="text-[11px] text-steel-500 mb-2">
+        {area.county} {t('serviceAreas.countySuffix')}
       </p>
-      <p className="mt-3 text-xs font-semibold text-orange-400">Request pickup here →</p>
+      <p className="text-xs text-steel-300 leading-relaxed">
+        {t('map.servicesAvailable', { count: area.services.length })}
+      </p>
+      <p className="mt-3 text-xs font-semibold text-orange-400">{t('map.requestPickupHere')} →</p>
     </div>
   )
 }
 
 export default function PeninsulaMap() {
+  const t = useTranslations()
   const reduce = useReducedMotion()
   const [active, setActive] = useState<string | null>(null)
 
@@ -60,14 +65,11 @@ export default function PeninsulaMap() {
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)] gap-10 lg:gap-14 items-center">
           <div className="lg:order-1 order-2">
-            <span className="badge-orange mb-4">The Peninsula</span>
+            <span className="badge-orange mb-4">{t('map.badge')}</span>
             <h2 id="map-heading" className="section-title mt-3">
-              Where {SITE.name} Works
+              {t('map.heading')}
             </h2>
-            <p className="section-subtitle mt-4 max-w-md">
-              Pick a city to see local service details. We are based in {SITE.address.city} and run the entire SF
-              Peninsula from there.
-            </p>
+            <p className="section-subtitle mt-4 max-w-md">{t('map.sub')}</p>
 
             <div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-2 max-w-sm">
               {ordered.map((area) => (

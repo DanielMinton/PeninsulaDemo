@@ -27,12 +27,12 @@ const LOCALES = [
   'fil',
   'pt-BR',
   'ru',
-  'th',
-  'km',
+  'id',
+  'nl',
+  'de',
+  'he',
   'ur',
-  'to',
-  'yi',
-  'ga',
+  'tlh',
 ]
 
 const nextConfig = {

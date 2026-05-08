@@ -1,0 +1,18 @@
+{
+  "$schema": "Few-shot examples for Hebrew (Modern Israeli). RTL. Hand-curated source→target pairs.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "שירות הפינוי שאפשר לסמוך עליו." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups מטפלים בפינוי גרוטאות, הובלות ופינוי מלא של נכסים ב-San Carlos ובכל אזור החצי-אי. בעלים אמיתיים. טלפון אמיתי. תוצאות אמיתיות." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "בקשו פינוי" },
+    { "tag": "cta", "source": "Call Now", "target": "התקשרו עכשיו" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "קבלו הצעת מחיר חינם" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "בעלי רישיון ומבוטחים משנת 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "עסק משפחתי בבעלות ובניהול של Don ו-Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "אנחנו מבצעים את כל ההעמסה, מסדרים את המקום בסיום ומשליכים באחריות. ללא עלויות נסתרות, ללא הפתעות, וההצעה לא משתנה אחרי שאנחנו מגיעים למקום." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "רוב העבודות מתואמות תוך 48 שעות. פינוי באותו יום זמין לעיתים קרובות — התקשרו ל-(650) 201-1543 לאישור." },
+    { "tag": "form-label", "source": "Service Location", "target": "מיקום השירות" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "הזינו מספר טלפון תקין." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "אני מסכים שPeninsula Pick Ups יצרו איתי קשר במספר הטלפון והאימייל שצוינו לעיל בנוגע לבקשת הצעת המחיר שלי, כולל באמצעות SMS ושיחה. ההסכמה אינה תנאי לקבלת השירות." }
+  ]
+}

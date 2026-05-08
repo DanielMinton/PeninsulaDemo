@@ -1,0 +1,18 @@
+{
+  "$schema": "Few-shot examples for German (Standard/Hochdeutsch). Hand-curated source→target pairs.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "Die Abholung, auf die Sie sich verlassen können." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups übernimmt Sperrmüllentsorgung, Transport und vollständige Entrümpelungen in San Carlos und auf der gesamten Halbinsel. Echte Inhaber. Echte Telefonnummer. Echte Ergebnisse." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "Abholung anfordern" },
+    { "tag": "cta", "source": "Call Now", "target": "Jetzt anrufen" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Kostenloses Angebot anfordern" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "Lizenziert und versichert seit 2021." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Familienbetrieb, geführt von Don und Melissa." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Wir übernehmen das gesamte Beladen, kehren anschließend auf und entsorgen verantwortungsvoll. Keine versteckten Kosten, keine Überraschungen und keine Preisänderungen vor Ort." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Die meisten Aufträge werden innerhalb von 48 Stunden eingeplant. Abholungen am gleichen Tag sind häufig möglich — rufen Sie (650) 201-1543 zur Bestätigung an." },
+    { "tag": "form-label", "source": "Service Location", "target": "Einsatzort" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "Bitte geben Sie eine gültige Telefonnummer ein." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "Ich willige ein, dass Peninsula Pick Ups mich unter der oben angegebenen Telefonnummer und E-Mail-Adresse bezüglich meiner Angebotsanfrage kontaktiert, einschließlich per SMS und Anruf. Die Einwilligung ist keine Bedingung für die Inanspruchnahme der Dienstleistung." }
+  ]
+}

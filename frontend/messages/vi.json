@@ -1,0 +1,1951 @@
+{
+  "$version": 1,
+  "$sourceVersion": 1,
+  "segments": {
+    "picker.openLabel": {
+      "value": "Chọn ngôn ngữ",
+      "tag": "picker",
+      "cacheKey": "c595da549e670ecc"
+    },
+    "picker.title": {
+      "value": "Chọn ngôn ngữ",
+      "tag": "picker",
+      "cacheKey": "c595da549e670ecc"
+    },
+    "picker.searchPlaceholder": {
+      "value": "Tìm kiếm ngôn ngữ…",
+      "tag": "picker",
+      "cacheKey": "1694605f59a62526"
+    },
+    "picker.recent": {
+      "value": "Gần đây",
+      "tag": "picker",
+      "cacheKey": "450cbccffaed82e1"
+    },
+    "picker.allLanguages": {
+      "value": "Tất cả ngôn ngữ",
+      "tag": "picker",
+      "cacheKey": "380333028ac43d6c"
+    },
+    "picker.beta": {
+      "value": "Beta",
+      "tag": "picker",
+      "cacheKey": "fb11b8babe3ee5d6"
+    },
+    "picker.noResults": {
+      "value": "Không tìm thấy ngôn ngữ phù hợp.",
+      "tag": "picker",
+      "cacheKey": "62b788655768c237"
+    },
+    "picker.footerReviewed": {
+      "value": "Các bản dịch được xem xét để đảm bảo độ chính xác về mặt văn hóa.",
+      "tag": "picker",
+      "cacheKey": "cf630925c769af75"
+    },
+    "picker.footerReportLink": {
+      "value": "Báo cáo lỗi dịch thuật",
+      "tag": "picker",
+      "cacheKey": "9e0180f0d4928403"
+    },
+    "picker.announceChange": {
+      "value": "Đã đổi ngôn ngữ sang {native}.",
+      "tag": "picker",
+      "cacheKey": "ac5795ebd6914b4f"
+    },
+    "picker.closeLabel": {
+      "value": "Đóng bộ chọn ngôn ngữ",
+      "tag": "picker",
+      "cacheKey": "b1ef00af574442b5"
+    },
+    "nav.servicesLink": {
+      "value": "Dịch vụ",
+      "tag": "nav",
+      "cacheKey": "4714106cd666ac81"
+    },
+    "nav.areasLink": {
+      "value": "Khu vực phục vụ",
+      "tag": "nav",
+      "cacheKey": "f5635377ea22003f"
+    },
+    "nav.aboutLink": {
+      "value": "Giới thiệu",
+      "tag": "nav",
+      "cacheKey": "d57f229518cf7e84"
+    },
+    "nav.contactLink": {
+      "value": "Liên hệ",
+      "tag": "nav",
+      "cacheKey": "b5c05c61e06a3332"
+    },
+    "nav.requestPickupCta": {
+      "value": "Yêu cầu thu gom",
+      "tag": "cta",
+      "cacheKey": "00ea11668d559909"
+    },
+    "nav.callNowCta": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "2777f32a466e953f"
+    },
+    "nav.openMenu": {
+      "value": "Mở menu",
+      "tag": "nav",
+      "cacheKey": "e3f5b0257e9460a7"
+    },
+    "nav.closeMenu": {
+      "value": "Đóng menu",
+      "tag": "nav",
+      "cacheKey": "c4a77d0569e160c9"
+    },
+    "nav.mainAriaLabel": {
+      "value": "Điều hướng chính",
+      "tag": "nav",
+      "cacheKey": "fff009768273a0bf"
+    },
+    "nav.homeAriaLabel": {
+      "value": "Trang chủ Peninsula Pick Ups",
+      "tag": "nav",
+      "cacheKey": "ecd1dd15bd37212d"
+    },
+    "nav.cityTagline": {
+      "value": "San Carlos, CA",
+      "tag": "misc",
+      "cacheKey": "26040083f643e0bb"
+    },
+    "nav.requestPickupLong": {
+      "value": "Yêu cầu thu gom",
+      "tag": "cta",
+      "cacheKey": "dc8dd2ca33a52655"
+    },
+    "hero.badge": {
+      "value": "San Carlos, CA. Có giấy phép và bảo hiểm đầy đủ từ năm 2021.",
+      "tag": "trust",
+      "cacheKey": "c23f1cf37a088500"
+    },
+    "hero.headlinePart1": {
+      "value": "Dịch vụ thu gom",
+      "tag": "hero",
+      "cacheKey": "f5b0a71f101df0e3"
+    },
+    "hero.headlinePart2": {
+      "value": "Bạn có thể tin cậy.",
+      "tag": "hero",
+      "cacheKey": "39d0a5a6564db7c0"
+    },
+    "hero.subhead": {
+      "value": "Peninsula Pick Ups xử lý dọn rác, vận chuyển và dọn dẹp toàn bộ tài sản ở San Carlos và khắp Bán đảo San Francisco. Chủ thật. Số điện thoại thật. Kết quả thật.",
+      "tag": "hero",
+      "cacheKey": "39194ff0a54276f3"
+    },
+    "hero.verifiedBusinessLine": {
+      "value": "Đường dây kinh doanh đã xác minh",
+      "tag": "trust",
+      "cacheKey": "8f07291080a1c052"
+    },
+    "hero.requestPickupCta": {
+      "value": "Yêu cầu thu gom",
+      "tag": "cta",
+      "cacheKey": "dc8dd2ca33a52655"
+    },
+    "hero.callNowCta": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "2777f32a466e953f"
+    },
+    "hero.scrollIndicator": {
+      "value": "Cuộn",
+      "tag": "misc",
+      "cacheKey": "5a48a5dd59ffc709"
+    },
+    "hero.heroAriaLabel": {
+      "value": "Peninsula Pick Ups hero",
+      "tag": "meta",
+      "cacheKey": "580bd0d5108d5094"
+    },
+    "hero.servicesListAriaLabel": {
+      "value": "Dịch vụ cung cấp",
+      "tag": "meta",
+      "cacheKey": "22270b3a728ccc20"
+    },
+    "hero.serviceJunkRemoval": {
+      "value": "Dọn dẹp rác thải",
+      "tag": "service-description",
+      "cacheKey": "aac4ebc7ca883547"
+    },
+    "hero.serviceConstructionDebris": {
+      "value": "Dọn xà bần xây dựng",
+      "tag": "service-description",
+      "cacheKey": "4c33c8e38bd8d4be"
+    },
+    "hero.serviceApplianceRemoval": {
+      "value": "Dọn đồ gia dụng",
+      "tag": "service-description",
+      "cacheKey": "83db751223742eab"
+    },
+    "hero.serviceStorageCleanouts": {
+      "value": "Dọn dẹp kho",
+      "tag": "service-description",
+      "cacheKey": "b52f71c834ea7b15"
+    },
+    "hero.serviceEvictionCleanouts": {
+      "value": "Dọn dẹp sau đuổi nhà",
+      "tag": "service-description",
+      "cacheKey": "6e2a920c748f4104"
+    },
+    "hero.serviceCommercialHauling": {
+      "value": "Vận chuyển thương mại",
+      "tag": "service-description",
+      "cacheKey": "55b82a8caf198686"
+    },
+    "trust.heading": {
+      "value": "Tại sao chọn Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "b5060b194a37e237"
+    },
+    "trust.licensedTitle": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "bffd05ae4d83faa9"
+    },
+    "trust.licensedSub": {
+      "value": "Bảo hiểm trách nhiệm dân sự. Có thể cung cấp giấy chứng nhận bảo hiểm (COI) cho các cơ sở thương mại.",
+      "tag": "trust",
+      "cacheKey": "6e15fb71bd0d1940"
+    },
+    "trust.familyTitle": {
+      "value": "Doanh nghiệp gia đình tự điều hành.",
+      "tag": "trust",
+      "cacheKey": "b1a6c0d327399125"
+    },
+    "trust.familySub": {
+      "value": "Don và Melissa điều hành doanh nghiệp này. Chính họ là người trực tiếp nghe điện thoại.",
+      "tag": "trust",
+      "cacheKey": "d045e91e6687d1e4"
+    },
+    "trust.localTitle": {
+      "value": "Doanh nghiệp địa phương tại San Carlos",
+      "tag": "trust",
+      "cacheKey": "add1b2eaa6a3c26f"
+    },
+    "trust.localSub": {
+      "value": "Hoạt động tại địa phương từ năm 2021. Chúng tôi quen thuộc với từng khu phố trên Bán đảo San Francisco.",
+      "tag": "trust",
+      "cacheKey": "6e01551910b313f2"
+    },
+    "trust.honestPricingTitle": {
+      "value": "Báo giá trung thực",
+      "tag": "trust",
+      "cacheKey": "6b20826d236a30df"
+    },
+    "trust.honestPricingSub": {
+      "value": "Báo giá rõ ràng trước khi bắt đầu công việc. Giá không thay đổi tại chỗ.",
+      "tag": "trust",
+      "cacheKey": "7f3db509487adf30"
+    },
+    "services.heading": {
+      "value": "Chúng Tôi Làm Gì",
+      "tag": "service-description",
+      "cacheKey": "1ba637bfeb353acf"
+    },
+    "services.sub": {
+      "value": "Từ một món đồ đến cả một căn nhà — cùng một đội ngũ tận tâm, cùng một mức giá cố định.",
+      "tag": "service-description",
+      "cacheKey": "21ac7cfe74b9ea5f"
+    },
+    "services.learnMore": {
+      "value": "Tìm hiểu thêm",
+      "tag": "cta",
+      "cacheKey": "627f577589d709c9"
+    },
+    "areas.heading": {
+      "value": "Khu Vực Chúng Tôi Phục Vụ",
+      "tag": "misc",
+      "cacheKey": "bb8a74f255d2821c"
+    },
+    "areas.sub": {
+      "value": "San Carlos là căn cứ của chúng tôi. Dịch vụ trong ngày trên toàn Bán đảo San Francisco.",
+      "tag": "misc",
+      "cacheKey": "d451e5bb627419d5"
+    },
+    "areas.viewArea": {
+      "value": "Xem khu vực",
+      "tag": "cta",
+      "cacheKey": "6004fdad4f7bc6aa"
+    },
+    "testimonials.heading": {
+      "value": "Khách Hàng Trên Bán Đảo Nói Gì",
+      "tag": "testimonial",
+      "cacheKey": "6ee5140e2255b4fc"
+    },
+    "testimonials.sub": {
+      "value": "Đánh giá từ hồ sơ Yelp đã xác minh của chúng tôi.",
+      "tag": "testimonial",
+      "cacheKey": "e81b6b38c2e790a2"
+    },
+    "testimonials.readMore": {
+      "value": "Đọc tất cả đánh giá trên Yelp",
+      "tag": "cta",
+      "cacheKey": "c4ef18dd8d31acf6"
+    },
+    "faq.heading": {
+      "value": "Câu Hỏi Thường Gặp",
+      "tag": "faq",
+      "cacheKey": "c366e2e935695e3d"
+    },
+    "faq.sub": {
+      "value": "Giải đáp nhanh — hãy gọi (650) 201-1543 nếu câu hỏi của anh chị chưa có ở đây.",
+      "tag": "faq",
+      "cacheKey": "bbea12816ca85602"
+    },
+    "verify.heading": {
+      "value": "Anh chị có hài lòng với dịch vụ không?",
+      "tag": "trust",
+      "cacheKey": "62cfbd029f1edcb3"
+    },
+    "verify.sub": {
+      "value": "Hãy xác minh danh tính của chúng tôi trên mọi nền tảng chúng tôi hoạt động. Cần xác nhận trực tiếp? Hãy gọi (650) 201-1543.",
+      "tag": "trust",
+      "cacheKey": "4d90f0d184c3f843"
+    },
+    "verify.confirmLive": {
+      "value": "Cần xác nhận điều gì ngay lập tức?",
+      "tag": "trust",
+      "cacheKey": "b4c6b938046e9c09"
+    },
+    "verify.businessOfRecord": {
+      "value": "Doanh nghiệp chính thức được đăng ký",
+      "tag": "trust",
+      "cacheKey": "f4b15a6f3eac22e9"
+    },
+    "verify.findOnline": {
+      "value": "Tìm Chúng Tôi Trực Tuyến",
+      "tag": "trust",
+      "cacheKey": "ca025520d4a2992d"
+    },
+    "quoteSelector.badge": {
+      "value": "Đường dẫn báo giá nhanh",
+      "tag": "cta",
+      "cacheKey": "aef50e544f3b773d"
+    },
+    "quoteSelector.heading": {
+      "value": "Nhận báo giá trong 60 giây",
+      "tag": "cta",
+      "cacheKey": "41386004ff244855"
+    },
+    "quoteSelector.sub": {
+      "value": "Chọn dịch vụ, cho chúng tôi biết khối lượng, và để lại thông tin liên hệ. Peninsula Pick Ups sẽ liên hệ lại với anh chị nhanh chóng.",
+      "tag": "cta",
+      "cacheKey": "1cc74436f6c7aea9"
+    },
+    "quoteSelector.stepService": {
+      "value": "Dịch vụ",
+      "tag": "form-label",
+      "cacheKey": "fd1c5b44dca8228d"
+    },
+    "quoteSelector.stepLoad": {
+      "value": "Kích thước hàng",
+      "tag": "form-label",
+      "cacheKey": "97c13751072e9d30"
+    },
+    "quoteSelector.stepLocation": {
+      "value": "Địa điểm",
+      "tag": "form-label",
+      "cacheKey": "75c5e97e56e30bf0"
+    },
+    "quoteSelector.stepUrgency": {
+      "value": "Mức độ khẩn cấp",
+      "tag": "form-label",
+      "cacheKey": "5a84101fa8258aae"
+    },
+    "quoteSelector.stepContact": {
+      "value": "Liên hệ",
+      "tag": "form-label",
+      "cacheKey": "442ff00529da3cc8"
+    },
+    "quoteSelector.askService": {
+      "value": "Bạn cần dịch vụ gì?",
+      "tag": "form-label",
+      "cacheKey": "8d5c3328a3be461b"
+    },
+    "quoteSelector.askLoad": {
+      "value": "Cần dọn dẹp bao nhiêu?",
+      "tag": "form-label",
+      "cacheKey": "cf8bd764a3d66f4c"
+    },
+    "quoteSelector.askLocation": {
+      "value": "Địa điểm thu gom ở đâu?",
+      "tag": "form-label",
+      "cacheKey": "b236b27fe024a9cc"
+    },
+    "quoteSelector.askUrgency": {
+      "value": "Anh chị cần hoàn thành trong bao lâu?",
+      "tag": "form-label",
+      "cacheKey": "9ce9f0e10cdbc7c1"
+    },
+    "quoteSelector.askContact": {
+      "value": "Chúng tôi nên gửi báo giá đến đâu?",
+      "tag": "form-label",
+      "cacheKey": "4752938a70f0309d"
+    },
+    "quoteSelector.cityLabel": {
+      "value": "Thành phố hoặc địa chỉ",
+      "tag": "form-label",
+      "cacheKey": "2f497907a1cbe491"
+    },
+    "quoteSelector.cityDefault": {
+      "value": "Chọn thành phố...",
+      "tag": "form-label",
+      "cacheKey": "21a9ac65bcc64568"
+    },
+    "quoteSelector.cityOtherOption": {
+      "value": "Khác / Không có trong danh sách",
+      "tag": "form-label",
+      "cacheKey": "3d0b165f42fa1550"
+    },
+    "quoteSelector.cityOtherLabel": {
+      "value": "Nhập thành phố hoặc địa chỉ của anh chị",
+      "tag": "form-label",
+      "cacheKey": "7a5eb3441348da27"
+    },
+    "quoteSelector.cityOtherPlaceholder": {
+      "value": "vd: Foster City, CA",
+      "tag": "form-label",
+      "cacheKey": "d3cfa6072c6cbf95"
+    },
+    "quoteSelector.loadSingle": {
+      "value": "Một món đồ",
+      "tag": "form-label",
+      "cacheKey": "301b204946300709"
+    },
+    "quoteSelector.loadSingleSub": {
+      "value": "1 món đồ lớn",
+      "tag": "form-label",
+      "cacheKey": "d5c5e447fd0e61d0"
+    },
+    "quoteSelector.loadQuarter": {
+      "value": "Tải nhỏ",
+      "tag": "form-label",
+      "cacheKey": "1e16c4b40580e312"
+    },
+    "quoteSelector.loadQuarterSub": {
+      "value": "1/4 xe tải trở xuống",
+      "tag": "form-label",
+      "cacheKey": "9954b6b9f38af78f"
+    },
+    "quoteSelector.loadHalf": {
+      "value": "Tải trọng vừa",
+      "tag": "form-label",
+      "cacheKey": "3071894782b319dc"
+    },
+    "quoteSelector.loadHalfSub": {
+      "value": "1/2 xe tải",
+      "tag": "form-label",
+      "cacheKey": "a12f270059c7be4a"
+    },
+    "quoteSelector.loadFull": {
+      "value": "Tải đầy đủ",
+      "tag": "form-label",
+      "cacheKey": "e0694a50149c43bb"
+    },
+    "quoteSelector.loadFullSub": {
+      "value": "Đầy xe tải hoặc nhiều hơn",
+      "tag": "form-label",
+      "cacheKey": "cff1b76eea1fff9f"
+    },
+    "quoteSelector.urgencyAsap": {
+      "value": "Càng sớm càng tốt",
+      "tag": "form-label",
+      "cacheKey": "64be6a82bf273801"
+    },
+    "quoteSelector.urgencyAsapSub": {
+      "value": "Trong vòng 1-2 ngày",
+      "tag": "form-label",
+      "cacheKey": "11d5a465a211430c"
+    },
+    "quoteSelector.urgencyThisWeek": {
+      "value": "Tuần này",
+      "tag": "form-label",
+      "cacheKey": "d62deffaaec41000"
+    },
+    "quoteSelector.urgencyThisWeekSub": {
+      "value": "Trong vòng 7 ngày",
+      "tag": "form-label",
+      "cacheKey": "773c42c6000d1450"
+    },
+    "quoteSelector.urgencyFlexible": {
+      "value": "Linh hoạt",
+      "tag": "form-label",
+      "cacheKey": "67d2239f636d2359"
+    },
+    "quoteSelector.urgencyFlexibleSub": {
+      "value": "Khi có thể",
+      "tag": "form-label",
+      "cacheKey": "31d072edcb94dee3"
+    },
+    "quoteSelector.serviceOther": {
+      "value": "Không chắc / Khác",
+      "tag": "form-label",
+      "cacheKey": "c6e8249ae17e7c0a"
+    },
+    "quoteSelector.nameLabel": {
+      "value": "Họ và tên",
+      "tag": "form-label",
+      "cacheKey": "07f39aaee0f84ddb"
+    },
+    "quoteSelector.namePlaceholder": {
+      "value": "Họ và tên",
+      "tag": "form-label",
+      "cacheKey": "110bebed68d6ce70"
+    },
+    "quoteSelector.phoneLabel": {
+      "value": "Số điện thoại",
+      "tag": "form-label",
+      "cacheKey": "0eac2660d1f6c435"
+    },
+    "quoteSelector.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "ac49572588ce7eab"
+    },
+    "quoteSelector.emailLabel": {
+      "value": "Email",
+      "tag": "form-label",
+      "cacheKey": "4e41c802d2d92bac"
+    },
+    "quoteSelector.emailOptional": {
+      "value": "(tùy chọn)",
+      "tag": "form-label",
+      "cacheKey": "f0c14e5a1946bb63"
+    },
+    "quoteSelector.emailPlaceholder": {
+      "value": "ban@vidu.com",
+      "tag": "form-label",
+      "cacheKey": "6f3ae763b86cca6c"
+    },
+    "quoteSelector.continueCta": {
+      "value": "Tiếp tục",
+      "tag": "cta",
+      "cacheKey": "7d1faca74ce7b24c"
+    },
+    "quoteSelector.backCta": {
+      "value": "Quay lại",
+      "tag": "cta",
+      "cacheKey": "810fbfe2d9d08a60"
+    },
+    "quoteSelector.requestQuoteCta": {
+      "value": "Yêu cầu báo giá của tôi",
+      "tag": "cta",
+      "cacheKey": "a3eb5a9d73a0eda9"
+    },
+    "quoteSelector.sendingCta": {
+      "value": "Đang gửi...",
+      "tag": "cta",
+      "cacheKey": "8020e1ed5c35ec68"
+    },
+    "quoteSelector.preferToCall": {
+      "value": "Thích gọi điện hơn?",
+      "tag": "cta",
+      "cacheKey": "25a5c907a1063084"
+    },
+    "quoteSelector.successHeading": {
+      "value": "Đã nhận yêu cầu báo giá",
+      "tag": "cta",
+      "cacheKey": "7d67bf7f9be514cf"
+    },
+    "quoteSelector.successSub": {
+      "value": "Peninsula Pick Ups sẽ liên hệ với anh chị sớm thôi. Nếu cần phản hồi ngay, hãy gọi cho chúng tôi.",
+      "tag": "cta",
+      "cacheKey": "39ad8332021d1aa5"
+    },
+    "quoteSelector.consentText": {
+      "value": "Tôi đồng ý để Peninsula Pick Ups liên hệ với tôi qua số điện thoại ở trên về yêu cầu báo giá của tôi, bao gồm cả tin nhắn và cuộc gọi. Sự đồng ý không phải là điều kiện của dịch vụ. Phí tin nhắn và dữ liệu có thể được áp dụng. Trả lời STOP để hủy đăng ký.",
+      "tag": "legal",
+      "cacheKey": "af3fae37d7de04e9"
+    },
+    "quoteSelector.privacyLink": {
+      "value": "Xem Chính sách Bảo mật của chúng tôi.",
+      "tag": "legal",
+      "cacheKey": "6236159d578503b2"
+    },
+    "quoteSelector.progressAria": {
+      "value": "Tiến trình biểu mẫu báo giá: bước {step} trên {total}, {label}",
+      "tag": "meta",
+      "cacheKey": "84b47b5ca4a5cd64"
+    },
+    "quoteSelector.headingAria": {
+      "value": "Nhận báo giá",
+      "tag": "meta",
+      "cacheKey": "33da8208298e335b"
+    },
+    "quoteForm.badge": {
+      "value": "Nhận báo giá miễn phí",
+      "tag": "cta",
+      "cacheKey": "7bd017742e3c0200"
+    },
+    "quoteForm.heading": {
+      "value": "Cho chúng tôi biết về công việc của anh chị",
+      "tag": "cta",
+      "cacheKey": "b32bdafca55a577b"
+    },
+    "quoteForm.subPrefix": {
+      "value": "Hãy điền vào biểu mẫu và Peninsula Pick Ups sẽ liên hệ lại với anh chị ngay.",
+      "tag": "cta",
+      "cacheKey": "bf4df80e36f269d4"
+    },
+    "quoteForm.subFasterResponse": {
+      "value": "Để được phản hồi nhanh hơn, hãy gọi hoặc nhắn tin cho chúng tôi.",
+      "tag": "cta",
+      "cacheKey": "1d09c38dd0278dac"
+    },
+    "quoteForm.contactPhoneSub": {
+      "value": "Đường dây kinh doanh đã xác minh. Don và Melissa.",
+      "tag": "trust",
+      "cacheKey": "b703fc3b7555ec89"
+    },
+    "quoteForm.contactCitySub": {
+      "value": "Hoạt động tại địa phương từ năm 2021.",
+      "tag": "trust",
+      "cacheKey": "b2dea9b527ec4331"
+    },
+    "quoteForm.contactSameDayTitle": {
+      "value": "Phản hồi trong ngày",
+      "tag": "trust",
+      "cacheKey": "bb1bcf569fdeb1b9"
+    },
+    "quoteForm.contactSameDaySub": {
+      "value": "Hầu hết các công việc được lên lịch trong vòng 48 giờ.",
+      "tag": "trust",
+      "cacheKey": "d0118ffcffa020f2"
+    },
+    "quoteForm.nameLabel": {
+      "value": "Họ tên",
+      "tag": "form-label",
+      "cacheKey": "7573f56d1b44a3ec"
+    },
+    "quoteForm.namePlaceholder": {
+      "value": "Họ và tên đầy đủ của quý khách",
+      "tag": "form-label",
+      "cacheKey": "89c8619633b7c46a"
+    },
+    "quoteForm.phoneLabel": {
+      "value": "Số điện thoại",
+      "tag": "form-label",
+      "cacheKey": "75917666a54c88e0"
+    },
+    "quoteForm.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "ac49572588ce7eab"
+    },
+    "quoteForm.emailLabel": {
+      "value": "Email",
+      "tag": "form-label",
+      "cacheKey": "4e41c802d2d92bac"
+    },
+    "quoteForm.emailOptional": {
+      "value": "(tùy chọn)",
+      "tag": "form-label",
+      "cacheKey": "f0c14e5a1946bb63"
+    },
+    "quoteForm.emailPlaceholder": {
+      "value": "bạn@example.com",
+      "tag": "form-label",
+      "cacheKey": "6f3ae763b86cca6c"
+    },
+    "quoteForm.serviceLabel": {
+      "value": "Dịch vụ cần thiết",
+      "tag": "form-label",
+      "cacheKey": "87086460eec08e61"
+    },
+    "quoteForm.serviceDefault": {
+      "value": "Chọn dịch vụ...",
+      "tag": "form-label",
+      "cacheKey": "eb5d966a6b9c1139"
+    },
+    "quoteForm.locationLabel": {
+      "value": "Địa điểm dịch vụ",
+      "tag": "form-label",
+      "cacheKey": "dfc2384bd89a7671"
+    },
+    "quoteForm.locationDefault": {
+      "value": "Chọn thành phố...",
+      "tag": "form-label",
+      "cacheKey": "a3ae29dc3d263a24"
+    },
+    "quoteForm.locationOther": {
+      "value": "Khác",
+      "tag": "form-label",
+      "cacheKey": "324d985aafcd71ce"
+    },
+    "quoteForm.dateLabel": {
+      "value": "Ngày ưu tiên",
+      "tag": "form-label",
+      "cacheKey": "8a1d6be277c9ff83"
+    },
+    "quoteForm.messageLabel": {
+      "value": "Tin nhắn",
+      "tag": "form-label",
+      "cacheKey": "a4a2f2606dfee158"
+    },
+    "quoteForm.messagePlaceholder": {
+      "value": "Mô tả những gì cần dọn dẹp, ghi chú về lối vào, hoặc các câu hỏi cụ thể...",
+      "tag": "form-label",
+      "cacheKey": "a054f89343394320"
+    },
+    "quoteForm.sendCta": {
+      "value": "Gửi yêu cầu báo giá",
+      "tag": "cta",
+      "cacheKey": "e7b20b0723332221"
+    },
+    "quoteForm.sendingCta": {
+      "value": "Đang gửi yêu cầu...",
+      "tag": "cta",
+      "cacheKey": "72347147dde71f89"
+    },
+    "quoteForm.consentText": {
+      "value": "Tôi đồng ý để Peninsula Pick Ups liên hệ với tôi qua số điện thoại và email ở trên về yêu cầu báo giá của tôi, bao gồm cả tin nhắn và cuộc gọi. Sự đồng ý không phải là điều kiện của dịch vụ. Phí tin nhắn và dữ liệu có thể áp dụng. Trả lời STOP để hủy đăng ký bất cứ lúc nào.",
+      "tag": "legal",
+      "cacheKey": "e077789baf9b4a51"
+    },
+    "quoteForm.consentSeePrivacy": {
+      "value": "Xem Chính sách Bảo mật của chúng tôi.",
+      "tag": "legal",
+      "cacheKey": "6236159d578503b2"
+    },
+    "quoteForm.successHeading": {
+      "value": "Yêu cầu đã được gửi",
+      "tag": "cta",
+      "cacheKey": "32602397fa53cc8f"
+    },
+    "quoteForm.successSub": {
+      "value": "Peninsula Pick Ups sẽ liên hệ với anh chị sớm thôi.",
+      "tag": "cta",
+      "cacheKey": "62737f4f48bd3738"
+    },
+    "quoteForm.submitAnotherCta": {
+      "value": "Gửi yêu cầu khác",
+      "tag": "cta",
+      "cacheKey": "60f3650ec002333b"
+    },
+    "quoteForm.errorFallback": {
+      "value": "Đã xảy ra lỗi. Hãy gọi cho chúng tôi theo số (650) 201-1543.",
+      "tag": "form-error",
+      "cacheKey": "104a9bb9af12d0bb"
+    },
+    "quoteForm.errorUnavailable": {
+      "value": "Không thể gửi biểu mẫu. Vui lòng gọi trực tiếp cho chúng tôi theo số (650) 201-1543.",
+      "tag": "form-error",
+      "cacheKey": "3b60ba71badeac14"
+    },
+    "errors.nameRequired": {
+      "value": "Hãy cho chúng tôi biết tên của anh chị.",
+      "tag": "form-error",
+      "cacheKey": "29c3653e4b818593"
+    },
+    "errors.nameTooShort": {
+      "value": "Vui lòng nhập tên của anh chị.",
+      "tag": "form-error",
+      "cacheKey": "0430c6fe58a2aa01"
+    },
+    "errors.phoneInvalid": {
+      "value": "Vui lòng nhập số điện thoại hợp lệ.",
+      "tag": "form-error",
+      "cacheKey": "14c5538285ef11fe"
+    },
+    "errors.emailInvalid": {
+      "value": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "tag": "form-error",
+      "cacheKey": "e80f7e2194c90b07"
+    },
+    "errors.noUrls": {
+      "value": "Không được phép nhập URL.",
+      "tag": "form-error",
+      "cacheKey": "78a3825e51be8a64"
+    },
+    "errors.noBrackets": {
+      "value": "Không được phép dùng dấu ngoặc nhọn.",
+      "tag": "form-error",
+      "cacheKey": "3207dedb8fe56b48"
+    },
+    "errors.maxLength": {
+      "value": "Phải có {max} ký tự hoặc ít hơn.",
+      "tag": "form-error",
+      "cacheKey": "472c098435cb3ec0"
+    },
+    "errors.consentRequired": {
+      "value": "Cần có sự đồng ý.",
+      "tag": "form-error",
+      "cacheKey": "18303ee01bed9aa4"
+    },
+    "footer.tagline": {
+      "value": "Dịch vụ dọn dẹp rác thải và vận chuyển có giấy phép trên Bán đảo San Francisco. Doanh nghiệp gia đình do Don và Melissa điều hành từ năm 2021.",
+      "tag": "trust",
+      "cacheKey": "d1c21498e62d0f27"
+    },
+    "footer.servicesHeading": {
+      "value": "Dịch vụ",
+      "tag": "nav",
+      "cacheKey": "4714106cd666ac81"
+    },
+    "footer.areasHeading": {
+      "value": "Khu vực phục vụ",
+      "tag": "nav",
+      "cacheKey": "f5635377ea22003f"
+    },
+    "footer.getQuoteHeading": {
+      "value": "Nhận báo giá",
+      "tag": "cta",
+      "cacheKey": "4844fc2a1a0b1426"
+    },
+    "footer.getQuoteSub": {
+      "value": "Sẵn sàng dọn dẹp chưa? Hãy nhận báo giá miễn phí hoặc gọi thẳng cho chúng tôi. Chúng tôi phản hồi nhanh chóng.",
+      "tag": "cta",
+      "cacheKey": "6ee71e103cf97ac2"
+    },
+    "footer.requestPickupCta": {
+      "value": "Yêu cầu thu gom",
+      "tag": "cta",
+      "cacheKey": "00ea11668d559909"
+    },
+    "footer.callPrefix": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "footer.licensedTag": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "079408f80f4ebfc8"
+    },
+    "footer.insuredTag": {
+      "value": "Có bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "6992120078bb9223"
+    },
+    "footer.localTag": {
+      "value": "Doanh nghiệp địa phương",
+      "tag": "trust",
+      "cacheKey": "ad7385e23dc50cc9"
+    },
+    "footer.findUsOnline": {
+      "value": "Tìm Chúng Tôi Trực Tuyến",
+      "tag": "misc",
+      "cacheKey": "c7a63f2279d62066"
+    },
+    "footer.allRightsReserved": {
+      "value": "Tất cả các quyền được bảo lưu.",
+      "tag": "legal",
+      "cacheKey": "ed731cc50b2276b5"
+    },
+    "footer.verifyLink": {
+      "value": "Xác minh",
+      "tag": "nav",
+      "cacheKey": "abc493eb2b30f337"
+    },
+    "footer.privacyLink": {
+      "value": "Chính sách Bảo mật",
+      "tag": "nav",
+      "cacheKey": "573ae211ab1ed790"
+    },
+    "footer.termsLink": {
+      "value": "Điều khoản Dịch vụ",
+      "tag": "nav",
+      "cacheKey": "7f16228c7658f0c7"
+    },
+    "footer.verifyBusinessLink": {
+      "value": "Xác minh doanh nghiệp này",
+      "tag": "trust",
+      "cacheKey": "f0c7086e15f74a6d"
+    },
+    "common.loading": {
+      "value": "Đang tải…",
+      "tag": "misc",
+      "cacheKey": "8ea33f1d6308cc3f"
+    },
+    "common.error": {
+      "value": "Đã xảy ra lỗi.",
+      "tag": "misc",
+      "cacheKey": "6b7de1dfcb4aabf5"
+    },
+    "common.required": {
+      "value": "bắt buộc",
+      "tag": "form-label",
+      "cacheKey": "ccdac06d48ae718c"
+    },
+    "common.optional": {
+      "value": "tùy chọn",
+      "tag": "form-label",
+      "cacheKey": "6420086b1cc575c5"
+    },
+    "faqSection.badge": {
+      "value": "Câu hỏi thường gặp",
+      "tag": "faq",
+      "cacheKey": "9a18a24b1fc1a658"
+    },
+    "faqSection.defaultHeading": {
+      "value": "Câu hỏi thường gặp",
+      "tag": "faq",
+      "cacheKey": "e957c890a87c5a8b"
+    },
+    "faqSection.moreQuestions": {
+      "value": "Còn thắc mắc?",
+      "tag": "faq",
+      "cacheKey": "792a71a44f1c293a"
+    },
+    "faqSection.callPrefix": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "trustSection.badge": {
+      "value": "Tại sao chọn Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "b5060b194a37e237"
+    },
+    "trustSection.headlinePart1": {
+      "value": "Lý Do Khách Hàng Tin Tưởng",
+      "tag": "trust",
+      "cacheKey": "b40bd780429623af"
+    },
+    "trustSection.headlinePart2": {
+      "value": "Peninsula Pick Ups thật sự",
+      "tag": "trust",
+      "cacheKey": "ed00fdc6fb9ebb9e"
+    },
+    "trustSection.subhead": {
+      "value": "Don và Melissa xây dựng Peninsula Pick Ups dựa trên một nguyên tắc: có mặt đúng giờ, làm việc đúng cách, và luôn liên lạc được. Không có số điện thoại bí ẩn. Không có địa chỉ mơ hồ. Đây là một doanh nghiệp thực sự tại San Carlos, CA mà anh chị có thể xác minh.",
+      "tag": "trust",
+      "cacheKey": "71774712360d85f9"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "Yêu cầu báo giá miễn phí",
+      "tag": "cta",
+      "cacheKey": "5c971c7b29c6dc47"
+    },
+    "trustSection.callCta": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "trustSection.ownersTitle": {
+      "value": "Chủ doanh nghiệp: Don và Melissa",
+      "tag": "trust",
+      "cacheKey": "34e9bec75efd7d75"
+    },
+    "trustSection.ownersBody": {
+      "value": "Doanh nghiệp gia đình hoạt động tại San Carlos, CA 94070. Khi anh chị yêu cầu báo giá hoặc gọi điện cho chúng tôi, anh chị sẽ liên hệ trực tiếp với chúng tôi. Đó chính là điều chúng tôi muốn.",
+      "tag": "trust",
+      "cacheKey": "2962e5cac1958afe"
+    },
+    "trustSection.establishedNote": {
+      "value": "Thành lập năm 2021 tại Bán đảo San Francisco.",
+      "tag": "trust",
+      "cacheKey": "a7c59e5d92ae0d9d"
+    },
+    "trustSection.signal1Title": {
+      "value": "Một số điện thoại đã xác minh",
+      "tag": "trust",
+      "cacheKey": "7e4cb5dea232eb27"
+    },
+    "trustSection.signal1Body": {
+      "value": "Khi anh chị gọi (650) 201-1543, sẽ gặp trực tiếp Don và Melissa. Không qua tổng đài, không chuyển máy vòng vòng, không mất thời gian.",
+      "tag": "trust",
+      "cacheKey": "f08c04dbaaecff35"
+    },
+    "trustSection.signal2Title": {
+      "value": "Có trụ sở tại San Carlos từ năm 2021.",
+      "tag": "trust",
+      "cacheKey": "0de1de41ddef73e0"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups được xây dựng ngay trên Bán đảo và đã phục vụ cộng đồng từ năm 2021. Chúng tôi hiểu rõ từng khu phố, từng con đường, và những gì anh chị ở đây mong đợi.",
+      "tag": "trust",
+      "cacheKey": "fa206bca00b619a1"
+    },
+    "trustSection.signal3Title": {
+      "value": "Ảnh thực tế của dự án sắp ra mắt",
+      "tag": "trust",
+      "cacheKey": "9b294da18e39a72f"
+    },
+    "trustSection.signal3Body": {
+      "value": "Chúng tôi ghi lại công việc bằng ảnh trước và sau cho mỗi lần dọn dẹp. Hình ảnh dự án đã xác minh đang được cập nhật liên tục.",
+      "tag": "trust",
+      "cacheKey": "9ef8623ae2e57d79"
+    },
+    "trustSection.signal4Title": {
+      "value": "Giá cả minh bạch, không có bất ngờ nào cả.",
+      "tag": "trust",
+      "cacheKey": "b333dfb8920fe7e3"
+    },
+    "trustSection.signal4Body": {
+      "value": "Báo giá miễn phí, không có phí ẩn. Anh chị biết trước giá tiền trước khi chúng tôi đến, và giá không thay đổi tại chỗ.",
+      "tag": "trust",
+      "cacheKey": "114145880f9b8d0d"
+    },
+    "trustSection.signal5Title": {
+      "value": "Lên lịch nhanh chóng, có người thật trả lời.",
+      "tag": "trust",
+      "cacheKey": "fb4d8f0e6b6f0e98"
+    },
+    "trustSection.signal5Body": {
+      "value": "Chúng tôi phản hồi trong ngày. Hầu hết các công việc có thể được lên lịch trong vòng 48 giờ. Anh chị làm việc trực tiếp với chủ nhà, không qua trung gian điều phối.",
+      "tag": "trust",
+      "cacheKey": "833f70a797e50a9b"
+    },
+    "trustSection.signal6Title": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "bffd05ae4d83faa9"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups có đầy đủ giấy phép và bảo hiểm cho mọi công việc. Tài sản của anh chị luôn được bảo vệ, không có gì phải lo.",
+      "tag": "trust",
+      "cacheKey": "b5e7d8488dcae81c"
+    },
+    "servicesGrid.badge": {
+      "value": "Chúng Tôi Làm Gì",
+      "tag": "service-description",
+      "cacheKey": "1ba637bfeb353acf"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "Vận Chuyển Trọn Gói",
+      "tag": "service-description",
+      "cacheKey": "ce8f64d082b8a656"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "Từ Một Món Đồ Đến Cả Căn Nhà",
+      "tag": "service-description",
+      "cacheKey": "10b5f052169fbb2e"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups xử lý các công việc nhà ở và thương mại trên khắp Bán đảo. Dù là đồ gì cần dọn, chúng tôi sẽ bốc lên xe và dọn sạch cho anh chị.",
+      "tag": "service-description",
+      "cacheKey": "027d627cd1ed9ec4"
+    },
+    "servicesGrid.learnMore": {
+      "value": "Tìm hiểu thêm",
+      "tag": "cta",
+      "cacheKey": "627f577589d709c9"
+    },
+    "servicesGrid.getQuote": {
+      "value": "Nhận báo giá",
+      "tag": "cta",
+      "cacheKey": "0eb4c38a7b8716c3"
+    },
+    "serviceAreas.badge": {
+      "value": "Khu Vực Phục Vụ",
+      "tag": "misc",
+      "cacheKey": "bb8a74f255d2821c"
+    },
+    "serviceAreas.heading": {
+      "value": "Phục vụ toàn bộ Bán đảo San Francisco",
+      "tag": "misc",
+      "cacheKey": "97ed6d18c1260488"
+    },
+    "serviceAreas.subhead": {
+      "value": "Có trụ sở tại San Carlos, Peninsula Pick Ups phục vụ các cộng đồng từ South San Francisco đến Palo Alto. Hãy nhấp vào tên thành phố của anh chị để xem thông tin dịch vụ tại địa phương.",
+      "tag": "misc",
+      "cacheKey": "fa1e133a3cf5f631"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "Yêu cầu thu gom",
+      "tag": "cta",
+      "cacheKey": "00ea11668d559909"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "Căn cứ địa",
+      "tag": "misc",
+      "cacheKey": "bec50e3c1dd6bae1"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "Quận",
+      "tag": "misc",
+      "cacheKey": "e08e64bce1db0b24"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "+ {count} thêm",
+      "tag": "misc",
+      "cacheKey": "1e37db7fb0dfab1b"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "Không thấy thành phố của anh chị trong danh sách?",
+      "tag": "misc",
+      "cacheKey": "853eecb848b84e9f"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "Yêu cầu báo giá",
+      "tag": "cta",
+      "cacheKey": "2f78eb8312e19aad"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "và chúng tôi sẽ xác nhận khả năng phục vụ.",
+      "tag": "misc",
+      "cacheKey": "c11f3303de74c757"
+    },
+    "testimonialsSection.badge": {
+      "value": "Đánh Giá Của Khách Hàng",
+      "tag": "testimonial",
+      "cacheKey": "a545ac140a54f128"
+    },
+    "testimonialsSection.heading": {
+      "value": "Khách Hàng Nói Gì",
+      "tag": "testimonial",
+      "cacheKey": "5e6d7e4c73aa89fe"
+    },
+    "testimonialsSection.subhead": {
+      "value": "Đánh giá thực từ khách hàng khắp Bán đảo. Peninsula Pick Ups có {count} đánh giá và đang tiếp tục tăng trên Yelp, cùng với các lời giới thiệu trên Nextdoor và Alignable.",
+      "tag": "testimonial",
+      "cacheKey": "7b853a6d2ef5cb71"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count} đánh giá",
+      "tag": "testimonial",
+      "cacheKey": "0fdfb285ba970324"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "Được giới thiệu trên Nextdoor",
+      "tag": "testimonial",
+      "cacheKey": "ab1bcb03f72ea8c0"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "Khách hàng {source} đã xác minh",
+      "tag": "testimonial",
+      "cacheKey": "c7f478dc0a33c718"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "Xem trên {source}",
+      "tag": "meta",
+      "cacheKey": "89872260a4756ad4"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "{count} trên 5 sao",
+      "tag": "meta",
+      "cacheKey": "2a802a5cbab01699"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "Anh Chị Có Hài Lòng Với Dịch Vụ Không?",
+      "tag": "testimonial",
+      "cacheKey": "b6188f1ce018de60"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "Nếu Peninsula Pick Ups đã dọn dẹp cho anh chị, chúng tôi rất muốn nghe ý kiến của anh chị. Đánh giá từ những khách hàng thực sự giúp hàng xóm tìm được dịch vụ địa phương đáng tin cậy.",
+      "tag": "testimonial",
+      "cacheKey": "79bb1ed7edf39a6c"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "Để lại đánh giá trên Yelp",
+      "tag": "cta",
+      "cacheKey": "9656553e786e15f7"
+    },
+    "testimonialsSection.callCta": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "Xác minh doanh nghiệp",
+      "tag": "meta",
+      "cacheKey": "5955b9758f278528"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "Căn cứ hoạt động",
+      "tag": "trust",
+      "cacheKey": "e30df2f8efd44ca8"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "Hoạt động từ năm 2021",
+      "tag": "trust",
+      "cacheKey": "3848148a5192b247"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "Thành lập năm 2021",
+      "tag": "trust",
+      "cacheKey": "ef10fdc1eee2ae1a"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "Đường dây kinh doanh đã xác minh",
+      "tag": "trust",
+      "cacheKey": "8f07291080a1c052"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "Don và Melissa",
+      "tag": "trust",
+      "cacheKey": "1fe5cc8576214fc1"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "Chủ doanh nghiệp địa phương",
+      "tag": "trust",
+      "cacheKey": "073418f57c5311a7"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "a1173dfd795df334"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "Dịch vụ chuyên nghiệp",
+      "tag": "trust",
+      "cacheKey": "e33bccaa783c400a"
+    },
+    "gallerySection.badge": {
+      "value": "Công việc thực, kết quả thực",
+      "tag": "misc",
+      "cacheKey": "2b751a8db083be97"
+    },
+    "gallerySection.heading": {
+      "value": "Thư viện dự án",
+      "tag": "misc",
+      "cacheKey": "1d748f2f6c570565"
+    },
+    "gallerySection.subhead": {
+      "value": "Hình ảnh thực tế từ các công việc của Peninsula Pick Ups — dọn dẹp nhà xe, dọn xà bần, chở đồ gia dụng, và dọn sạch toàn bộ bất động sản khắp vùng Bán đảo.",
+      "tag": "misc",
+      "cacheKey": "5c7ec1147812c67f"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "58 ảnh",
+      "tag": "misc",
+      "cacheKey": "0c9fff4c6c903f79"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143+ bài đăng",
+      "tag": "misc",
+      "cacheKey": "c2760ba492601139"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "143+ ảnh công việc nữa trên Instagram",
+      "tag": "cta",
+      "cacheKey": "2985723c2f7757ce"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "Theo dõi",
+      "tag": "cta",
+      "cacheKey": "be8fa496b4eeafeb"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "để xem ảnh trước và sau của từng công việc — dọn dẹp nhà xe, dọn xà bần xây dựng, dọn đồ gia dụng, và nhiều hơn nữa trên khắp Bán đảo.",
+      "tag": "cta",
+      "cacheKey": "64fba6c0d107337a"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "Xem tất cả ảnh",
+      "tag": "cta",
+      "cacheKey": "a288df6347339ffd"
+    },
+    "gallerySection.photo1Label": {
+      "value": "Hoàn tất thu gom",
+      "tag": "misc",
+      "cacheKey": "153b4349164b5219"
+    },
+    "gallerySection.photo2Label": {
+      "value": "Dọn dẹp nhà ở",
+      "tag": "misc",
+      "cacheKey": "190490f6b14275ca"
+    },
+    "gallerySection.photo3Label": {
+      "value": "Chở Đầy Xe",
+      "tag": "misc",
+      "cacheKey": "286be0d0bad760da"
+    },
+    "gallerySection.photo4Label": {
+      "value": "Dọn xà bần",
+      "tag": "misc",
+      "cacheKey": "9af5fd4951167443"
+    },
+    "gallerySection.photo5Label": {
+      "value": "Dọn dẹp bất động sản",
+      "tag": "misc",
+      "cacheKey": "079f295187e81b3e"
+    },
+    "gallerySection.photo6Label": {
+      "value": "Công trường thi công",
+      "tag": "misc",
+      "cacheKey": "4d8fbbd1d4cb5a44"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "San Mateo County",
+      "tag": "misc",
+      "cacheKey": "1bb5c83df8679a2f"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "Bán đảo, CA",
+      "tag": "misc",
+      "cacheKey": "42a936b323a4dfa0"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "Vùng Vịnh, CA",
+      "tag": "misc",
+      "cacheKey": "be9c96b0a3b172c2"
+    },
+    "shareCity.shareLabel": {
+      "value": "Chia sẻ trang {city}",
+      "tag": "cta",
+      "cacheKey": "76a6671281dc697c"
+    },
+    "shareCity.copied": {
+      "value": "Đã sao chép liên kết",
+      "tag": "misc",
+      "cacheKey": "0dce8efcc17de203"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups phục vụ {city}, CA — (650) 201-1543.",
+      "tag": "cta",
+      "cacheKey": "8178a93679081c35"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "Khu vực phục vụ",
+      "tag": "nav",
+      "cacheKey": "f5635377ea22003f"
+    },
+    "areaPage.countyBadge": {
+      "value": "Hạt {county}",
+      "tag": "misc",
+      "cacheKey": "84853541df6bcb71"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "Căn cứ chính",
+      "tag": "trust",
+      "cacheKey": "e30df2f8efd44ca8"
+    },
+    "areaPage.headlinePart1": {
+      "value": "Dọn dẹp rác thải tại",
+      "tag": "hero",
+      "cacheKey": "6bc181afe31304dc"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "Yêu cầu thu gom tại {city}",
+      "tag": "cta",
+      "cacheKey": "9610605644e2f272"
+    },
+    "areaPage.callPrefix": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "areaPage.textUs": {
+      "value": "Nhắn tin cho chúng tôi",
+      "tag": "cta",
+      "cacheKey": "a6e5fd9d22b68b20"
+    },
+    "areaPage.textMessage": {
+      "value": "Xin chào Peninsula Pick Ups — Tôi cần thu gom tại {city}, CA.",
+      "tag": "cta",
+      "cacheKey": "61bbeb7cce3b7b8f"
+    },
+    "areaPage.servicesHeading": {
+      "value": "Các dịch vụ có sẵn tại {city}",
+      "tag": "service-description",
+      "cacheKey": "78e1cbdf48891c7c"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups cung cấp các dịch vụ sau đây trên toàn {city}, CA.",
+      "tag": "service-description",
+      "cacheKey": "9d84b2d91b3d4b4f"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "Cũng Phục Vụ Các Khu Vực Lân Cận",
+      "tag": "misc",
+      "cacheKey": "aac6c91f4f015f4a"
+    },
+    "areaPage.faqHeading": {
+      "value": "Câu hỏi thường gặp tại {city}",
+      "tag": "faq",
+      "cacheKey": "a31201804e09e5f7"
+    },
+    "areaPage.faqSubhead": {
+      "value": "Các câu hỏi thường gặp về dọn dẹp rác thải và vận chuyển tại {city}, CA.",
+      "tag": "faq",
+      "cacheKey": "e5aa4096f6fa8f0f"
+    },
+    "areaPage.backToHome": {
+      "value": "Quay lại Peninsula Pick Ups",
+      "tag": "nav",
+      "cacheKey": "eaddfc99af765408"
+    },
+    "areaPage.statHomeBase": {
+      "value": "Trụ sở chính",
+      "tag": "trust",
+      "cacheKey": "e30df2f8efd44ca8"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "Phục vụ khắp Bán đảo San Francisco",
+      "tag": "trust",
+      "cacheKey": "4cad198afb72406c"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "Đường dây đã xác minh",
+      "tag": "trust",
+      "cacheKey": "6129c11143b7f926"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "Chủ doanh nghiệp địa phương",
+      "tag": "trust",
+      "cacheKey": "073418f57c5311a7"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "Dịch vụ chuyên nghiệp",
+      "tag": "trust",
+      "cacheKey": "e33bccaa783c400a"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "a1173dfd795df334"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "Thành lập từ lâu",
+      "tag": "trust",
+      "cacheKey": "d2db3e3dd513a8fe"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "Dịch vụ",
+      "tag": "nav",
+      "cacheKey": "4714106cd666ac81"
+    },
+    "servicePage.serviceBadge": {
+      "value": "Dịch vụ",
+      "tag": "service-description",
+      "cacheKey": "5700ffaa3f08db69"
+    },
+    "servicePage.requestQuote": {
+      "value": "Yêu cầu báo giá",
+      "tag": "cta",
+      "cacheKey": "9b8247536a94256b"
+    },
+    "servicePage.callPrefix": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "Các Thành Phố Chúng Tôi Phục Vụ",
+      "tag": "misc",
+      "cacheKey": "592979ec8cf48b33"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service} có mặt trên toàn bộ khu vực phục vụ của Peninsula Pick Ups.",
+      "tag": "service-description",
+      "cacheKey": "dbaf39c4635c1c2d"
+    },
+    "servicePage.faqHeading": {
+      "value": "Câu hỏi thường gặp về {service}",
+      "tag": "faq",
+      "cacheKey": "758fec1559e06618"
+    },
+    "servicePage.faqSubhead": {
+      "value": "Các câu hỏi thường gặp về {service} với Peninsula Pick Ups.",
+      "tag": "faq",
+      "cacheKey": "db1c737f1058152e"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "Dịch vụ khác",
+      "tag": "service-description",
+      "cacheKey": "1f2b1669c53f3822"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "Xác minh",
+      "tag": "nav",
+      "cacheKey": "abc493eb2b30f337"
+    },
+    "verifyPage.badge": {
+      "value": "Danh tính đã xác minh",
+      "tag": "trust",
+      "cacheKey": "728b2389bbac71a1"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "Đây là",
+      "tag": "hero",
+      "cacheKey": "40835042f14f350c"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "Peninsula Pick Ups chính thống.",
+      "tag": "hero",
+      "cacheKey": "950415f8bdcc70b1"
+    },
+    "verifyPage.subhead": {
+      "value": "Xác minh hồ sơ công khai cho doanh nghiệp gia đình chuyên dọn dẹp rác thải và vận chuyển có trụ sở tại San Carlos, CA từ năm 2021.",
+      "tag": "trust",
+      "cacheKey": "ed6d5b5bb37248b0"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "Doanh nghiệp được đăng ký chính thức",
+      "tag": "trust",
+      "cacheKey": "f4b15a6f3eac22e9"
+    },
+    "verifyPage.factLegalName": {
+      "value": "Tên pháp lý",
+      "tag": "trust",
+      "cacheKey": "340ea98456cc900e"
+    },
+    "verifyPage.factDomain": {
+      "value": "Tên miền",
+      "tag": "trust",
+      "cacheKey": "e48ea42178e718dd"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "Số điện thoại đã xác minh",
+      "tag": "trust",
+      "cacheKey": "c0646db041b39e1f"
+    },
+    "verifyPage.factAddress": {
+      "value": "Địa chỉ",
+      "tag": "trust",
+      "cacheKey": "924fcf6e8e79f179"
+    },
+    "verifyPage.factOwners": {
+      "value": "Chủ doanh nghiệp",
+      "tag": "trust",
+      "cacheKey": "1b9631e3316c258a"
+    },
+    "verifyPage.factFounded": {
+      "value": "Thành lập",
+      "tag": "trust",
+      "cacheKey": "099634f634cedacd"
+    },
+    "verifyPage.factLicensed": {
+      "value": "Có giấy phép và bảo hiểm đầy đủ",
+      "tag": "trust",
+      "cacheKey": "bffd05ae4d83faa9"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "Có",
+      "tag": "trust",
+      "cacheKey": "2f00d3fbeeaa4f45"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "Lưu ý về các trang web giả mạo",
+      "tag": "trust",
+      "cacheKey": "263650e71881f1f1"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "Hồ sơ & Đánh giá chính thức",
+      "tag": "trust",
+      "cacheKey": "c63cc6c5a506521d"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "Mỗi liên kết dưới đây là một hồ sơ đã được đăng tải do chúng tôi quản lý. Đây là các địa chỉ chính thức được trích dẫn trong schema của chúng tôi và trên mọi trang của trang web này.",
+      "tag": "trust",
+      "cacheKey": "39da03748cc1f356"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "Cần xác nhận điều gì trực tiếp?",
+      "tag": "trust",
+      "cacheKey": "b4c6b938046e9c09"
+    },
+    "verifyPage.confirmBody": {
+      "value": "Don hoặc Melissa trực tiếp trả lời đường dây kinh doanh đã xác minh trong giờ làm việc, từ thứ Hai đến thứ Bảy.",
+      "tag": "trust",
+      "cacheKey": "7a607aebaa1ed545"
+    },
+    "verifyPage.callCta": {
+      "value": "Gọi ngay",
+      "tag": "cta",
+      "cacheKey": "a754d9daac8f74a5"
+    },
+    "verifyPage.textCta": {
+      "value": "Nhắn tin cho chúng tôi",
+      "tag": "cta",
+      "cacheKey": "a6e5fd9d22b68b20"
+    },
+    "service.junk-removal.name": {
+      "value": "Dọn dẹp rác thải",
+      "tag": "service-description",
+      "cacheKey": "aac4ebc7ca883547"
+    },
+    "service.junk-removal.shortName": {
+      "value": "Dọn dẹp rác thải",
+      "tag": "service-description",
+      "cacheKey": "aac4ebc7ca883547"
+    },
+    "service.junk-removal.blurb": {
+      "value": "Dọn dẹp rác thải toàn bộ tài sản cho nhà ở, nhà để xe, sân vườn và bất động sản. Chúng tôi bốc xếp, vận chuyển và để lại không gian sạch sẽ.",
+      "tag": "service-description",
+      "cacheKey": "6595300c14cbb186"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups nhận dọn dẹp rác thải tổng quát khắp vùng Bán đảo SF — từ một món đồ nội thất đơn lẻ đến dọn sạch toàn bộ garage. Đội của chúng tôi đến với xe tải thật và kế hoạch rõ ràng: chúng tôi tự bốc xếp, quét dọn sau khi xong và xử lý có trách nhiệm. Không có phí ẩn, không có bất ngờ, và báo giá không thay đổi khi đã đến nơi.",
+      "tag": "service-description",
+      "cacheKey": "288b12ea4cc7fd0e"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "Chúng tôi nhận loại rác thải nào?",
+      "tag": "faq",
+      "cacheKey": "6288e0087f7a7eab"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "Đồ nội thất, nệm, đồ gia dụng, rác điện tử, rác sân vườn, xà bần xây dựng, đồ lặt vặt trong nhà — hầu như bất cứ thứ gì không nguy hiểm. Nếu anh chị không chắc, hãy gửi ảnh khi gọi (650) 201-1543 và chúng tôi sẽ cho biết ngay.",
+      "tag": "faq",
+      "cacheKey": "70f9a20ff13ad7a2"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "Giá được tính như thế nào?",
+      "tag": "faq",
+      "cacheKey": "dfaa13c649f91d11"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "Giá được tính dựa trên khối lượng trên xe và các yêu cầu xử lý đặc biệt. Chúng tôi sẽ báo giá rõ ràng trước khi bắt đầu công việc và giá không thay đổi tại chỗ.",
+      "tag": "faq",
+      "cacheKey": "fa93f6bca9653790"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "Anh chị có thể đến sớm không?",
+      "tag": "faq",
+      "cacheKey": "99e7fc94c033c9a2"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "Hầu hết các công việc được sắp xếp trong vòng 48 giờ. Thu gom trong ngày cũng thường có — hãy gọi (650) 201-1543 để xác nhận.",
+      "tag": "faq",
+      "cacheKey": "d10f61fe1e7d72e9"
+    },
+    "service.construction-debris.name": {
+      "value": "Dọn xà bần xây dựng",
+      "tag": "service-description",
+      "cacheKey": "06ecc60d82f99922"
+    },
+    "service.construction-debris.shortName": {
+      "value": "Dọn xà bần xây dựng",
+      "tag": "service-description",
+      "cacheKey": "4c33c8e38bd8d4be"
+    },
+    "service.construction-debris.blurb": {
+      "value": "Dọn dẹp sau cải tạo, xà bần phá dỡ, tấm thạch cao, gỗ, bê tông và phế liệu công trình — chúng tôi chở đi nhanh chóng.",
+      "tag": "service-description",
+      "cacheKey": "c670c875abd21b60"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups dọn xà bần sau cải tạo và phá dỡ trên khắp Bán đảo — thạch cao, gỗ khung vụn, bê tông vỡ, gạch men, sàn nhà, tủ bếp, và rác thải công trình. Chúng tôi làm việc với nhà thầu tổng, đơn vị cải tạo, và chủ nhà. Anh chị cho biết phạm vi công việc, chúng tôi sẽ báo giá, và sẽ có mặt đúng lúc khi anh chị cần dọn sạch công trình.",
+      "tag": "service-description",
+      "cacheKey": "62cd21a01090bf13"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "Chúng tôi có làm việc trực tiếp với các nhà thầu không?",
+      "tag": "faq",
+      "cacheKey": "61bacea4ed02b5b7"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "Có. Nhiều công việc thường xuyên của chúng tôi là dọn dẹp sau xây dựng cho các nhà thầu và đơn vị cải tạo. Chúng tôi có thể sắp xếp lịch định kỳ hoặc theo yêu cầu.",
+      "tag": "faq",
+      "cacheKey": "692c6eed84374e98"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "Chúng tôi có thể xử lý bê tông và gạch không?",
+      "tag": "faq",
+      "cacheKey": "0c1dd5ac795b49e4"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "Có — dọn mảnh vụn nặng là một phần công việc của chúng tôi. Chúng tôi sẽ báo giá theo khối lượng có tính đến trọng lượng.",
+      "tag": "faq",
+      "cacheKey": "e9d187e6bb67b292"
+    },
+    "service.appliance-removal.name": {
+      "value": "Dọn đồ gia dụng",
+      "tag": "service-description",
+      "cacheKey": "83db751223742eab"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "Dọn đồ gia dụng",
+      "tag": "service-description",
+      "cacheKey": "83db751223742eab"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "Tủ lạnh, máy giặt, máy sấy, bếp lò, và nhiều thiết bị khác. Chúng tôi ngắt kết nối, tháo dỡ và vận chuyển đồ gia dụng cũ đi một cách an toàn.",
+      "tag": "service-description",
+      "cacheKey": "e17bff6f0c0b0105"
+    },
+    "service.appliance-removal.description": {
+      "value": "Tủ lạnh cũ để ngoài hiên? Máy giặt và máy sấy nặng không nhấc nổi? Peninsula Pick Ups tháo dỡ và thu gom đồ gia dụng mọi kích cỡ với thiết bị phù hợp để bảo vệ sàn nhà, tường và khung cửa của anh chị. Chúng tôi cũng lo việc xử lý và tái chế đúng quy định, đảm bảo chất làm lạnh và kim loại được xử lý đúng cách.",
+      "tag": "service-description",
+      "cacheKey": "a551fb84840e28b3"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "Chúng tôi có tháo kết nối đồ gia dụng không?",
+      "tag": "faq",
+      "cacheKey": "b5e099d907166bed"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "Các việc ngắt kết nối thông thường (nước, khóa gas, rút phích cắm) đều nằm trong phạm vi công việc. Nếu cần thợ sửa ống nước hay thợ điện có giấy phép, chúng tôi sẽ thông báo trước cho anh chị biết.",
+      "tag": "faq",
+      "cacheKey": "4cb4587c0d864967"
+    },
+    "service.storage-cleanout.name": {
+      "value": "Dọn dẹp kho",
+      "tag": "service-description",
+      "cacheKey": "b52f71c834ea7b15"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "Dọn dẹp kho",
+      "tag": "service-description",
+      "cacheKey": "98de5bbba68fb10c"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "Dọn sạch kho, nhà xe và phòng chứa đồ. Chúng tôi lo việc phân loại, vận chuyển và dọn dẹp toàn bộ mặt bằng.",
+      "tag": "service-description",
+      "cacheKey": "f7e3f769cf4bc4d3"
+    },
+    "service.storage-cleanout.description": {
+      "value": "Kho chứa đồ, gác mái, nhà để xe, tầng hầm — Peninsula Pick Ups sẽ dọn sạch để anh chị khỏi phải lo. Chúng tôi có thể phân loại, để riêng những món có thể quyên góp theo ý anh chị, và lo phần bê vác nặng cùng xử lý rác thải. Thường được sử dụng khi thu gọn nhà cửa, chuyển chỗ ở, hoặc giải quyết di sản.",
+      "tag": "service-description",
+      "cacheKey": "ee68a0be81047e8b"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "Anh chị có thể yêu cầu chúng tôi để riêng đồ đạc để quyên góp không?",
+      "tag": "faq",
+      "cacheKey": "109d869b4b2868af"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "Được — hãy cho chúng tôi biết món nào cần giữ lại, đem đi quyên góp, hay vứt bỏ, và chúng tôi sẽ phân loại theo đó trong khi làm việc.",
+      "tag": "faq",
+      "cacheKey": "b4102ff67c6af750"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "Dọn dẹp sau đuổi nhà",
+      "tag": "service-description",
+      "cacheKey": "6e2a920c748f4104"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "Dọn dẹp sau đuổi nhà",
+      "tag": "service-description",
+      "cacheKey": "2fd5056fb025a56d"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "Dọn dẹp toàn bộ tài sản cho chủ nhà và quản lý bất động sản sau khi đuổi nhà. Nhanh chóng, chuyên nghiệp, kín đáo.",
+      "tag": "service-description",
+      "cacheKey": "fc4d8157478ef56f"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups hợp tác với các chủ nhà và quản lý bất động sản trên Bán đảo để dọn dẹp sau khi đuổi nhà. Chúng tôi đến nhanh, làm việc hiệu quả, ghi lại công việc đã thực hiện, và để lại căn phòng sẵn sàng cho việc vệ sinh, sơn lại và cho thuê mới. Kín đáo, chuyên nghiệp và có đầy đủ hồ sơ.",
+      "tag": "service-description",
+      "cacheKey": "96b94e6e8f2ce651"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "Chúng tôi có cung cấp tài liệu chụp ảnh trước/sau không?",
+      "tag": "faq",
+      "cacheKey": "7c83ced07b14ef22"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "Có — chúng tôi chụp ảnh khu vực trước khi bắt đầu và sau khi hoàn thành, rồi gửi email tài liệu đó cho anh chị trong ngày.",
+      "tag": "faq",
+      "cacheKey": "fed6a1069cb78502"
+    },
+    "service.commercial-hauling.name": {
+      "value": "Vận chuyển thương mại",
+      "tag": "service-description",
+      "cacheKey": "55b82a8caf198686"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "Vận chuyển thương mại",
+      "tag": "service-description",
+      "cacheKey": "55b82a8caf198686"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "Đồ nội thất văn phòng, kệ trưng bày bán lẻ, pallet kho hàng và rác thải quy mô thương mại. Chúng tôi xử lý mọi công việc, dù lớn hay nhỏ.",
+      "tag": "service-description",
+      "cacheKey": "4b3afc1d46f1cafb"
+    },
+    "service.commercial-hauling.description": {
+      "value": "Dọn dẹp văn phòng, tháo dỡ kệ hàng bán lẻ, vận chuyển pallet kho, thiết bị nhà hàng — Peninsula Pick Ups xử lý các công việc quy mô thương mại khắp Bán đảo. Chúng tôi làm việc ngoài giờ khi cần và phối hợp với quản lý tòa nhà về quyền ra vào, COIs, và đặt trước thang máy.",
+      "tag": "service-description",
+      "cacheKey": "c0e6476c6510afab"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "Chúng tôi có bảo hiểm cho bất động sản thương mại không?",
+      "tag": "faq",
+      "cacheKey": "535e0fa7b67fcb9f"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "Có — chúng tôi có bảo hiểm trách nhiệm chung và có thể cung cấp Giấy chứng nhận Bảo hiểm ghi tên bất động sản khi được yêu cầu.",
+      "tag": "faq",
+      "cacheKey": "900ddace1b947c4c"
+    },
+    "service.residential-cleanout.name": {
+      "value": "Dọn dẹp nhà ở",
+      "tag": "service-description",
+      "cacheKey": "0fb21f3294a0853f"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "Dọn dẹp nhà ở",
+      "tag": "service-description",
+      "cacheKey": "09feb2e0e319f585"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "Dọn dẹp toàn bộ nhà và bất động sản được thực hiện cẩn thận. Chúng tôi làm việc với các gia đình, người thực thi di chúc và các đại lý bất động sản trên Bán đảo San Francisco.",
+      "tag": "service-description",
+      "cacheKey": "732336792e40fe9f"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups thực hiện dọn dẹp toàn bộ nhà ở — dọn dẹp di sản, thu gọn đồ đạc, chuẩn bị trước khi bán, dọn dẹp sau khi thuê nhà. Chúng tôi phân loại, vận chuyển và dọn sạch, và làm việc theo nhịp độ mà gia đình hoặc chủ nhà cần. Đặc biệt, công việc liên quan đến di sản được xử lý với sự kín đáo và tận tâm.",
+      "tag": "service-description",
+      "cacheKey": "b4b9c429d23b2f3b"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos là quê nhà của Peninsula Pick Ups. Don và Melissa xây dựng doanh nghiệp này tại đây vào năm 2021 và biết rõ từng khu phố. Từ Burton Park đến White Oaks, chúng tôi đảm nhận dọn dẹp rác thải, vận chuyển và dọn dẹp toàn bộ tài sản cho chủ nhà và doanh nghiệp khắp San Carlos.",
+      "tag": "service-description",
+      "cacheKey": "b602114aabc4b5d8"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "Chúng tôi có thực sự ở San Carlos không?",
+      "tag": "faq",
+      "cacheKey": "1faeede2f10a7516"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "Có. Peninsula Pick Ups hoạt động từ San Carlos, CA 94070, và đã làm vậy từ năm 2021. Đường dây kinh doanh (650) 201-1543 sẽ kết nối trực tiếp với Don và Melissa.",
+      "tag": "faq",
+      "cacheKey": "31bf9557e748f589"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "Chúng tôi có thể đến San Carlos nhanh như thế nào?",
+      "tag": "faq",
+      "cacheKey": "e2b5c1d7e5064c40"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlos là trụ sở của chúng tôi, vì vậy dịch vụ trong ngày thường có sẵn. Hầu hết các công việc được sắp xếp trong vòng 24 giờ.",
+      "tag": "faq",
+      "cacheKey": "95f9bd9317f0dc5c"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups phục vụ toàn bộ San Mateo với dịch vụ dọn dẹp rác thải và vận chuyển nhanh chóng, chuyên nghiệp. Dù anh chị đang dọn garage ở Shoreview, dọn dẹp toàn bộ tài sản gần trung tâm, hay xử lý xà bần sau cải tạo, đội ngũ của chúng tôi luôn mang đến dịch vụ hiệu quả và đáng tin cậy.",
+      "tag": "service-description",
+      "cacheKey": "16b424f711b5201b"
+    },
+    "area.redwood-city.summary": {
+      "value": "Từ Broadway đến Woodside Road, Peninsula Pick Ups xử lý dọn dẹp rác thải, xà bần xây dựng, và dọn dẹp toàn bộ khắp Redwood City. Chúng tôi làm việc với chủ nhà, chủ cho thuê, và các doanh nghiệp cần dịch vụ vận chuyển nhanh chóng và chuyên nghiệp.",
+      "tag": "service-description",
+      "cacheKey": "0ac3c6f5e567fc5d"
+    },
+    "area.belmont.summary": {
+      "value": "Chủ nhà và doanh nghiệp tại Belmont tin tưởng Peninsula Pick Ups cho dịch vụ dọn dẹp rác thải và dọn dẹp toàn bộ bất động sản đáng tin cậy. Chúng tôi phục vụ Belmont thường xuyên từ căn cứ tại San Carlos, CA. Đặt lịch nhanh chóng, báo giá minh bạch, và đội ngũ chuyên nghiệp mỗi lần.",
+      "tag": "service-description",
+      "cacheKey": "4e7bade49da35079"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups cung cấp dịch vụ dọn dẹp rác thải và vận chuyển đáng tin cậy cho cư dân và chủ doanh nghiệp tại Burlingame. Dù anh chị cần dọn một món đồ gia dụng hay dọn sạch toàn bộ văn phòng, chúng tôi sắp xếp lịch nhanh chóng và hoàn thành công việc đúng cách.",
+      "tag": "service-description",
+      "cacheKey": "bdcebadccaa93203"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups phục vụ Palo Alto với tiêu chuẩn chuyên nghiệp như chúng tôi mang đến cho mọi công việc trên khắp Bán đảo. Chủ nhà, chủ cho thuê và các doanh nghiệp tin tưởng chúng tôi để dọn dẹp đồ phế thải, dọn dẹp toàn bộ và vận chuyển xà bần một cách hiệu quả, không rườm rà.",
+      "tag": "service-description",
+      "cacheKey": "7857f10ea48a1ed4"
+    },
+    "area.menlo-park.summary": {
+      "value": "Từ Belle Haven đến the Willows, Peninsula Pick Ups thực hiện dịch vụ dọn dẹp rác thải tại Menlo Park với sự chuyên nghiệp và tốc độ nhanh chóng. Chúng tôi làm việc theo lịch của anh chị và để lại mặt bằng sạch sẽ. Không có phí ẩn, không có bất ngờ.",
+      "tag": "service-description",
+      "cacheKey": "69c7f94af15a002a"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups cung cấp dịch vụ dọn dẹp rác thải, vận chuyển và dọn dẹp toàn bộ cho thương mại tại khắp South San Francisco. Đội ngũ của chúng tôi là người địa phương, giàu kinh nghiệm, và sẵn sàng xử lý các công việc ở mọi quy mô một cách nhanh chóng và chuyên nghiệp.",
+      "tag": "service-description",
+      "cacheKey": "70bded92d75a5d3e"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups mang đến dịch vụ dọn dẹp rác thải nhanh chóng, giá cả phải chăng cho các chủ nhà và quản lý bất động sản tại Daly City. Chúng tôi đảm nhận dọn dẹp nhà ở và thương mại, dọn đồ gia dụng, và vận chuyển xà bần trên toàn khu vực.",
+      "tag": "service-description",
+      "cacheKey": "efac247f3f855da8"
+    },
+    "area.millbrae.summary": {
+      "value": "Phục vụ Millbrae với sự đáng tin cậy như chúng tôi mang đến cho mọi công việc trên bán đảo. Peninsula Pick Ups đảm nhận dọn dẹp rác thải, dọn dẹp kho và vận chuyển đồ gia dụng với đội ngũ đến đúng giờ và hoàn thành công việc chu đáo.",
+      "tag": "service-description",
+      "cacheKey": "9c12041eff1abcdd"
+    },
+    "homepageFaq.0.q": {
+      "value": "Peninsula Pick Ups có trụ sở ở đâu?",
+      "tag": "faq",
+      "cacheKey": "067d367bf161110c"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups hoạt động từ San Carlos, CA 94070. Chủ doanh nghiệp Don và Melissa đã điều hành hoạt động trên Bán đảo từ năm 2021. Đường dây kinh doanh đã xác minh là (650) 201-1543.",
+      "tag": "faq",
+      "cacheKey": "005b8a7672d19a09"
+    },
+    "homepageFaq.1.q": {
+      "value": "Quý khách ở khu vực nào chúng tôi phục vụ?",
+      "tag": "faq",
+      "cacheKey": "73406b42f1737c74"
+    },
+    "homepageFaq.1.a": {
+      "value": "Chúng tôi phục vụ toàn bộ Bán đảo SF từ Daly City và South San Francisco xuống qua San Mateo, Belmont, San Carlos, Redwood City, Menlo Park, và Palo Alto. Nếu thành phố của anh chị không có trong danh sách, hãy gọi (650) 201-1543 — thường thì chúng tôi vẫn có thể giúp được.",
+      "tag": "faq",
+      "cacheKey": "e1ddf322a777687b"
+    },
+    "homepageFaq.2.q": {
+      "value": "Chúng tôi có thể đến nhanh như thế nào?",
+      "tag": "faq",
+      "cacheKey": "95dba0b829af6e45"
+    },
+    "homepageFaq.2.a": {
+      "value": "Hầu hết các công việc được sắp xếp trong vòng 24 đến 48 giờ. Dịch vụ trong ngày cũng thường có, đặc biệt tại San Carlos và các thành phố lân cận.",
+      "tag": "faq",
+      "cacheKey": "8c7bc406e2e01e4a"
+    },
+    "homepageFaq.3.q": {
+      "value": "Giá được tính như thế nào?",
+      "tag": "faq",
+      "cacheKey": "dfaa13c649f91d11"
+    },
+    "homepageFaq.3.a": {
+      "value": "Giá được tính dựa trên khối lượng trên xe cộng với bất kỳ yêu cầu xử lý đặc biệt nào. Chúng tôi sẽ báo giá cố định trước khi bắt đầu công việc và giá không thay đổi tại chỗ.",
+      "tag": "faq",
+      "cacheKey": "fa93f6bca9653790"
+    },
+    "homepageFaq.4.q": {
+      "value": "Làm sao tôi biết mình đang liên hệ đúng Peninsula Pick Ups?",
+      "tag": "faq",
+      "cacheKey": "42f91e2e35440bfe"
+    },
+    "homepageFaq.4.a": {
+      "value": "Tên miền của chúng tôi là thepeninsulapickup.com. Đường dây kinh doanh đã xác minh là (650) 201-1543. Don và Melissa trực tiếp trả lời đường dây đó. Xem /verify để biết hồ sơ danh tính đầy đủ của chúng tôi trên Yelp, Instagram, Facebook, Nextdoor, Alignable và JunkSpots.",
+      "tag": "faq",
+      "cacheKey": "09f20fab9fc1431f"
+    },
+    "map.badge": {
+      "value": "Bán đảo",
+      "tag": "misc",
+      "cacheKey": "2525237239e46fea"
+    },
+    "map.heading": {
+      "value": "Khu Vực Phục Vụ Của Peninsula Pick Ups",
+      "tag": "misc",
+      "cacheKey": "a5eada317a17c3b2"
+    },
+    "map.sub": {
+      "value": "Hãy chọn một thành phố để xem thông tin dịch vụ tại khu vực đó. Chúng tôi đặt trụ sở tại San Carlos và phục vụ toàn bộ Bán đảo San Francisco từ đây.",
+      "tag": "misc",
+      "cacheKey": "14bfd924018ccd38"
+    },
+    "map.tooltipPreview": {
+      "value": "Xem trước {city}",
+      "tag": "meta",
+      "cacheKey": "6cc7a41703042e0c"
+    },
+    "map.homeBaseTag": {
+      "value": "Căn cứ chính",
+      "tag": "misc",
+      "cacheKey": "bec50e3c1dd6bae1"
+    },
+    "map.servicesAvailable": {
+      "value": "{count} dịch vụ hiện có",
+      "tag": "misc",
+      "cacheKey": "195a9fd3d1bc8072"
+    },
+    "map.requestPickupHere": {
+      "value": "Yêu cầu thu gom tại đây",
+      "tag": "cta",
+      "cacheKey": "0125918dcddcc1f9"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | Dọn Dẹp Rác Thải & Vận Chuyển | San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "b071fe3a10f73c82"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups cung cấp dịch vụ dọn dẹp rác thải, vận chuyển, dọn dẹp toàn bộ và dọn xà bần xây dựng trên khắp Bán đảo San Francisco. Doanh nghiệp địa phương do Don và Melissa làm chủ tại San Carlos từ năm 2021. Hãy gọi (650) 201-1543.",
+      "tag": "meta",
+      "cacheKey": "2bb00133ae3bc1d7"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — Dọn dẹp rác thải & Vận chuyển, San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "c1983577cc6c9008"
+    }
+  }
+}

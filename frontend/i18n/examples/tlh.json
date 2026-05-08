@@ -1,0 +1,18 @@
+{
+  "$schema": "Few-shot examples for Klingon (tlhIngan Hol), KLI Latin transliteration. Best-effort approximations — Klingon lacks vocabulary for many modern-business concepts and these renderings prioritize spirit over canonical accuracy.",
+  "$version": 1,
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "veQ teqwI' Daj wIghaj." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "veQ wIteq, wIlup, 'ej juHmey wISay'moH Peninsula Pick Ups San Carlos 'ej Sech naQ. Sechpu' tu'lu'pu'bogh. ghogh tu'lu'pu'bogh. tu'lu'pu'bogh meq." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "qemwI' yIpoQ" },
+    { "tag": "cta", "source": "Call Now", "target": "DaH HItlhob" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "Huch poQbe'bogh jang yISuq" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "DIS 2021 'oH chaw' wIghajchugh 'ej Hub wIghajqu'." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Don 'ej Melissa qorDu' Daj 'oH 'ej chaH lulIH." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "Hoch maHvaD wISay'moH, 'oS 'oH wISay'moH, 'ej teqlu'meH chaq. pegh DIl pagh, ngeb merlaw' pagh, 'ej Daq wISaH'a'taHvIS choHqa'be'pu' jang." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "Hoch Qu'mey 48 rep DungDaq lupommeylu'. tu'be'lu'bogh jaj qem rurnISbe'lu'bogh tu'lu'taH — (650) 201-1543 yItlhob 'ej yISuy." },
+    { "tag": "form-label", "source": "Service Location", "target": "Daq Qu'" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "ghogh mI' lughbogh yIqonqa'." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "ghogh mI' 'ej De'wI' QIn DaQochbogh Peninsula Pick Ups jIH lutlhobpu' jIH wIvjaj — Huch poQbe'bogh jang vIpoQpu'bogh wIvbej, ngeD QIn 'ej ghogh ngeD lab. wIvjaj rurnISbe'lu'bogh Qu' rurnISbe'." }
+  ]
+}

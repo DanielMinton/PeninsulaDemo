@@ -11,11 +11,6 @@
  * Build-time cost: every family below is downloaded and self-hosted at
  * build time. Bundle delta per *locale* is bounded — only the active
  * locale's font reaches the browser.
- *
- * Follow-up (logged in SHIPLOG_I18N.md): replace the broad-subset Noto
- * loads with content-subset WOFF2 emitted by `subset-font` in the translate
- * script tail. That's the path to the spec's < 30kb gz delta for
- * Hebrew/Thai/Khmer.
  */
 
 import {
@@ -23,8 +18,6 @@ import {
   Noto_Sans_SC,
   Noto_Sans_JP,
   Noto_Sans_KR,
-  Noto_Sans_Thai,
-  Noto_Sans_Khmer,
   Noto_Sans_Hebrew,
   Noto_Nastaliq_Urdu,
 } from 'next/font/google'
@@ -58,20 +51,6 @@ const notoKR = Noto_Sans_KR({
   display: 'swap',
   preload: false,
 })
-const notoThai = Noto_Sans_Thai({
-  subsets: ['thai'],
-  weight: ['400', '600'],
-  variable: '--font-noto-thai',
-  display: 'swap',
-  preload: false,
-})
-const notoKhmer = Noto_Sans_Khmer({
-  subsets: ['khmer'],
-  weight: ['400', '600'],
-  variable: '--font-noto-khmer',
-  display: 'swap',
-  preload: false,
-})
 const notoHebrew = Noto_Sans_Hebrew({
   subsets: ['hebrew'],
   weight: ['400', '600'],
@@ -92,8 +71,6 @@ const FONT_BY_KEY: Record<LocaleMeta['font'], { variable: string; className: str
   'noto-sc': { variable: `${inter.variable} ${notoSC.variable}`, className: notoSC.className },
   'noto-jp': { variable: `${inter.variable} ${notoJP.variable}`, className: notoJP.className },
   'noto-kr': { variable: `${inter.variable} ${notoKR.variable}`, className: notoKR.className },
-  'noto-thai': { variable: `${inter.variable} ${notoThai.variable}`, className: notoThai.className },
-  'noto-khmer': { variable: `${inter.variable} ${notoKhmer.variable}`, className: notoKhmer.className },
   'noto-hebrew': { variable: `${inter.variable} ${notoHebrew.variable}`, className: notoHebrew.className },
   'noto-nastaliq': { variable: `${inter.variable} ${notoNastaliq.variable}`, className: notoNastaliq.className },
 }
@@ -123,10 +100,6 @@ export function fontFamilyStyle(fontKey: LocaleMeta['font']): React.CSSPropertie
       return { fontFamily: 'var(--font-noto-jp), var(--font-inter), sans-serif' }
     case 'noto-kr':
       return { fontFamily: 'var(--font-noto-kr), var(--font-inter), sans-serif' }
-    case 'noto-thai':
-      return { fontFamily: 'var(--font-noto-thai), var(--font-inter), sans-serif' }
-    case 'noto-khmer':
-      return { fontFamily: 'var(--font-noto-khmer), var(--font-inter), sans-serif' }
     case 'noto-hebrew':
       return { fontFamily: 'var(--font-noto-hebrew), var(--font-inter), sans-serif' }
     case 'noto-nastaliq':

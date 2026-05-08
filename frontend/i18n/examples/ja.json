@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for ja. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Japanese. Hand-curated source→target pairs the translator retrieves by tag.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "信頼できる回収サービス。" },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Upsは、San Carlosとペニンスラ地域全域で不用品回収、運搬、全敷地の片付けサービスを提供しています。本物のオーナー、本物の電話、確かな結果。" },
+    { "tag": "cta", "source": "Request a Pickup", "target": "回収を依頼する" },
+    { "tag": "cta", "source": "Call Now", "target": "今すぐお電話" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "無料見積もりを取得" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "2021年より認可・保険完備。" },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "DonとMelissaが運営する家族経営の事業です。" },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "積み込み作業はすべて私たちが行い、作業後の清掃まで責任を持ち、適切に処分いたします。隠れた費用や追加料金はなく、現場到着後に見積もりが変わることもありません。" },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "ほとんどの作業は48時間以内に予約されます。当日対応も可能な場合が多いので、(650) 201-1543までお電話でご確認ください。" },
+    { "tag": "form-label", "source": "Service Location", "target": "サービス場所" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "有効な電話番号を入力してください。" },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "見積もり依頼に関して、Peninsula Pick Upsから上記の電話番号およびメールアドレスへ、SMSや通話を含めて連絡を受けることに同意します。同意はサービス利用の条件ではありません。" }
+  ]
 }

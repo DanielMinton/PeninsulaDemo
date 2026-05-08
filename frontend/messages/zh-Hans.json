@@ -1,0 +1,1951 @@
+{
+  "$version": 1,
+  "$sourceVersion": 1,
+  "segments": {
+    "picker.openLabel": {
+      "value": "选择语言",
+      "tag": "picker",
+      "cacheKey": "cef7d7613621b498"
+    },
+    "picker.title": {
+      "value": "选择语言",
+      "tag": "picker",
+      "cacheKey": "cef7d7613621b498"
+    },
+    "picker.searchPlaceholder": {
+      "value": "搜索语言…",
+      "tag": "picker",
+      "cacheKey": "e74abaf7ba439e2e"
+    },
+    "picker.recent": {
+      "value": "最近",
+      "tag": "picker",
+      "cacheKey": "4dd27e6ee7724f99"
+    },
+    "picker.allLanguages": {
+      "value": "所有语言",
+      "tag": "picker",
+      "cacheKey": "8bdaef04ba1a2b6e"
+    },
+    "picker.beta": {
+      "value": "测试版",
+      "tag": "picker",
+      "cacheKey": "3c1ee72dacd44bb5"
+    },
+    "picker.noResults": {
+      "value": "没有匹配的语言。",
+      "tag": "picker",
+      "cacheKey": "29f913751c97c54c"
+    },
+    "picker.footerReviewed": {
+      "value": "译文经过文化准确性审核。",
+      "tag": "picker",
+      "cacheKey": "2c5caf9ade563202"
+    },
+    "picker.footerReportLink": {
+      "value": "报告翻译问题",
+      "tag": "picker",
+      "cacheKey": "1568c818fc993f85"
+    },
+    "picker.announceChange": {
+      "value": "语言已切换为{native}。",
+      "tag": "picker",
+      "cacheKey": "c2b0e55129219d59"
+    },
+    "picker.closeLabel": {
+      "value": "关闭语言选择器",
+      "tag": "picker",
+      "cacheKey": "a793ecf87d3cc114"
+    },
+    "nav.servicesLink": {
+      "value": "服务项目",
+      "tag": "nav",
+      "cacheKey": "2595df2ba5f34a6b"
+    },
+    "nav.areasLink": {
+      "value": "服务区域",
+      "tag": "nav",
+      "cacheKey": "0594a33f740b6a45"
+    },
+    "nav.aboutLink": {
+      "value": "关于我们",
+      "tag": "nav",
+      "cacheKey": "b0f76ce32fb5f762"
+    },
+    "nav.contactLink": {
+      "value": "联系我们",
+      "tag": "nav",
+      "cacheKey": "65430a9793e675ba"
+    },
+    "nav.requestPickupCta": {
+      "value": "申请上门服务",
+      "tag": "cta",
+      "cacheKey": "e640452408b6651a"
+    },
+    "nav.callNowCta": {
+      "value": "立即致电",
+      "tag": "cta",
+      "cacheKey": "7da52179c6d9eaec"
+    },
+    "nav.openMenu": {
+      "value": "打开菜单",
+      "tag": "nav",
+      "cacheKey": "67424842f123777b"
+    },
+    "nav.closeMenu": {
+      "value": "关闭菜单",
+      "tag": "nav",
+      "cacheKey": "a7a4cefc081d5e7c"
+    },
+    "nav.mainAriaLabel": {
+      "value": "主导航",
+      "tag": "nav",
+      "cacheKey": "b385cba38a10c5fd"
+    },
+    "nav.homeAriaLabel": {
+      "value": "Peninsula Pick Ups 首页",
+      "tag": "nav",
+      "cacheKey": "6616e2f613140586"
+    },
+    "nav.cityTagline": {
+      "value": "San Carlos, CA",
+      "tag": "misc",
+      "cacheKey": "4d755883124ec8d6"
+    },
+    "nav.requestPickupLong": {
+      "value": "申请上门服务",
+      "tag": "cta",
+      "cacheKey": "f4e240a7feb304b6"
+    },
+    "hero.badge": {
+      "value": "San Carlos, CA。自 2021 年起持证经营，全险保障。",
+      "tag": "trust",
+      "cacheKey": "8079cfb56dae4794"
+    },
+    "hero.headlinePart1": {
+      "value": "上门收取",
+      "tag": "hero",
+      "cacheKey": "b337220c167920cc"
+    },
+    "hero.headlinePart2": {
+      "value": "值得信赖。",
+      "tag": "hero",
+      "cacheKey": "30da39f30bf4328b"
+    },
+    "hero.subhead": {
+      "value": "Peninsula Pick Ups 提供 San Carlos 及整个旧金山半岛的垃圾清运、搬运和全屋清理服务。真人老板，真实电话，真实可靠。",
+      "tag": "hero",
+      "cacheKey": "464c8ef60b1fc648"
+    },
+    "hero.verifiedBusinessLine": {
+      "value": "经核实的业务专线",
+      "tag": "trust",
+      "cacheKey": "d676dff56ec27f17"
+    },
+    "hero.requestPickupCta": {
+      "value": "申请上门服务",
+      "tag": "cta",
+      "cacheKey": "f4e240a7feb304b6"
+    },
+    "hero.callNowCta": {
+      "value": "立即致电",
+      "tag": "cta",
+      "cacheKey": "7da52179c6d9eaec"
+    },
+    "hero.scrollIndicator": {
+      "value": "滚动",
+      "tag": "misc",
+      "cacheKey": "83ffec25a1c3941b"
+    },
+    "hero.heroAriaLabel": {
+      "value": "Peninsula Pick Ups 主页横幅",
+      "tag": "meta",
+      "cacheKey": "3bafa9a6c0063477"
+    },
+    "hero.servicesListAriaLabel": {
+      "value": "提供的服务",
+      "tag": "meta",
+      "cacheKey": "a71cd0505c7486d5"
+    },
+    "hero.serviceJunkRemoval": {
+      "value": "垃圾清运",
+      "tag": "service-description",
+      "cacheKey": "e10fbd43713c36ea"
+    },
+    "hero.serviceConstructionDebris": {
+      "value": "建筑废料清运",
+      "tag": "service-description",
+      "cacheKey": "c69e214bc595bd90"
+    },
+    "hero.serviceApplianceRemoval": {
+      "value": "家电搬运清运",
+      "tag": "service-description",
+      "cacheKey": "68c11b1f9de4fee0"
+    },
+    "hero.serviceStorageCleanouts": {
+      "value": "仓库清理",
+      "tag": "service-description",
+      "cacheKey": "9056206fd65b9a56"
+    },
+    "hero.serviceEvictionCleanouts": {
+      "value": "房产腾退清理",
+      "tag": "service-description",
+      "cacheKey": "985322e115c30bb4"
+    },
+    "hero.serviceCommercialHauling": {
+      "value": "商业搬运",
+      "tag": "service-description",
+      "cacheKey": "01888859f9dff929"
+    },
+    "trust.heading": {
+      "value": "为什么选择 Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "832b40cc31394a77"
+    },
+    "trust.licensedTitle": {
+      "value": "持证经营，全险保障",
+      "tag": "trust",
+      "cacheKey": "a0dca4d5e6e246a2"
+    },
+    "trust.licensedSub": {
+      "value": "投保一般责任险，可为商业地产提供保险证明（COI）。",
+      "tag": "trust",
+      "cacheKey": "490e7e791b116d8a"
+    },
+    "trust.familyTitle": {
+      "value": "家庭经营",
+      "tag": "trust",
+      "cacheKey": "989a9570fd0ad2d5"
+    },
+    "trust.familySub": {
+      "value": "Don 和 Melissa 亲自打理这份生意，来电也由他们亲自接听。",
+      "tag": "trust",
+      "cacheKey": "a2bff18036d596b2"
+    },
+    "trust.localTitle": {
+      "value": "本地经营，扎根 San Carlos。",
+      "tag": "trust",
+      "cacheKey": "94456b2471d3ada1"
+    },
+    "trust.localSub": {
+      "value": "自 2021 年起扎根本地。我们熟悉旧金山半岛的每一个社区。",
+      "tag": "trust",
+      "cacheKey": "36515b2659df94bb"
+    },
+    "trust.honestPricingTitle": {
+      "value": "诚实透明的定价",
+      "tag": "trust",
+      "cacheKey": "b8f283538b240683"
+    },
+    "trust.honestPricingSub": {
+      "value": "开工前提供明确报价，现场价格绝不更改。",
+      "tag": "trust",
+      "cacheKey": "cef4c7165edca7c0"
+    },
+    "services.heading": {
+      "value": "我们的服务",
+      "tag": "service-description",
+      "cacheKey": "5aec8424e793278a"
+    },
+    "services.sub": {
+      "value": "无论是单件物品还是整套房产清运，都是同一支稳健的团队，同样透明的定价。",
+      "tag": "service-description",
+      "cacheKey": "17a84dc3436fab89"
+    },
+    "services.learnMore": {
+      "value": "了解更多",
+      "tag": "cta",
+      "cacheKey": "3b2a0307f3b20cf2"
+    },
+    "areas.heading": {
+      "value": "我们的服务区域",
+      "tag": "misc",
+      "cacheKey": "fac68ae24c4e9214"
+    },
+    "areas.sub": {
+      "value": "San Carlos 是我们的根据地。旧金山半岛全区，当天上门服务。",
+      "tag": "misc",
+      "cacheKey": "5003c5228cc9fe27"
+    },
+    "areas.viewArea": {
+      "value": "查看服务区域",
+      "tag": "cta",
+      "cacheKey": "beda38043de8bcfc"
+    },
+    "testimonials.heading": {
+      "value": "半岛客户怎么说",
+      "tag": "testimonial",
+      "cacheKey": "3619873ab5dfe958"
+    },
+    "testimonials.sub": {
+      "value": "来自我们经核实的 Yelp 主页的评价。",
+      "tag": "testimonial",
+      "cacheKey": "8ca04b85af2e51c4"
+    },
+    "testimonials.readMore": {
+      "value": "在 Yelp 上查看所有评价",
+      "tag": "cta",
+      "cacheKey": "0b37d8a65da39740"
+    },
+    "faq.heading": {
+      "value": "常见问题",
+      "tag": "faq",
+      "cacheKey": "7f623dc520a23f1a"
+    },
+    "faq.sub": {
+      "value": "快速解答 — 如果您的问题未在此处，请致电 (650) 201-1543。",
+      "tag": "faq",
+      "cacheKey": "6baeb788261e7fe1"
+    },
+    "verify.heading": {
+      "value": "有过愉快的体验？",
+      "tag": "trust",
+      "cacheKey": "4ad92c2357da0f58"
+    },
+    "verify.sub": {
+      "value": "您可以在我们所有的平台上核实我们的身份。需要即时确认？请拨打 (650) 201-1543。",
+      "tag": "trust",
+      "cacheKey": "102a320f6f2f27c1"
+    },
+    "verify.confirmLive": {
+      "value": "需要实时确认什么吗？",
+      "tag": "trust",
+      "cacheKey": "7ae255390318c443"
+    },
+    "verify.businessOfRecord": {
+      "value": "正规持牌企业。",
+      "tag": "trust",
+      "cacheKey": "c629a003c86d7a9d"
+    },
+    "verify.findOnline": {
+      "value": "在线找到我们",
+      "tag": "trust",
+      "cacheKey": "4e2a6f574dc99a6d"
+    },
+    "quoteSelector.badge": {
+      "value": "快速报价通道",
+      "tag": "cta",
+      "cacheKey": "7b1a0ec80c39873b"
+    },
+    "quoteSelector.heading": {
+      "value": "60秒内获取报价",
+      "tag": "cta",
+      "cacheKey": "c36d3e379664f3a6"
+    },
+    "quoteSelector.sub": {
+      "value": "选择您需要的服务，告诉我们清运量，留下您的联系方式。Peninsula Pick Ups 会尽快与您联系。",
+      "tag": "cta",
+      "cacheKey": "71f35a924821f56b"
+    },
+    "quoteSelector.stepService": {
+      "value": "服务类型",
+      "tag": "form-label",
+      "cacheKey": "ab67d2eaeabbaaca"
+    },
+    "quoteSelector.stepLoad": {
+      "value": "货物规模",
+      "tag": "form-label",
+      "cacheKey": "50b8972c8818fd3e"
+    },
+    "quoteSelector.stepLocation": {
+      "value": "地点",
+      "tag": "form-label",
+      "cacheKey": "6b28747a162b37dc"
+    },
+    "quoteSelector.stepUrgency": {
+      "value": "紧急程度",
+      "tag": "form-label",
+      "cacheKey": "50ffb2018a40636a"
+    },
+    "quoteSelector.stepContact": {
+      "value": "联系方式",
+      "tag": "form-label",
+      "cacheKey": "6371d16a76adeb2e"
+    },
+    "quoteSelector.askService": {
+      "value": "您需要什么服务？",
+      "tag": "form-label",
+      "cacheKey": "f44a3e2f6b0211c3"
+    },
+    "quoteSelector.askLoad": {
+      "value": "需要清运多少？",
+      "tag": "form-label",
+      "cacheKey": "0cae0a685f81db6c"
+    },
+    "quoteSelector.askLocation": {
+      "value": "取件地点在哪里？",
+      "tag": "form-label",
+      "cacheKey": "38d52768fa0c210c"
+    },
+    "quoteSelector.askUrgency": {
+      "value": "您希望多快完成？",
+      "tag": "form-label",
+      "cacheKey": "9026b832f09b2a55"
+    },
+    "quoteSelector.askContact": {
+      "value": "报价发送至哪里？",
+      "tag": "form-label",
+      "cacheKey": "5441587ce4844a7b"
+    },
+    "quoteSelector.cityLabel": {
+      "value": "城市或地址",
+      "tag": "form-label",
+      "cacheKey": "c88524dbc89ba394"
+    },
+    "quoteSelector.cityDefault": {
+      "value": "请选择城市…",
+      "tag": "form-label",
+      "cacheKey": "faa0c5199d134f87"
+    },
+    "quoteSelector.cityOtherOption": {
+      "value": "其他／未列出",
+      "tag": "form-label",
+      "cacheKey": "b37287b17cf1d572"
+    },
+    "quoteSelector.cityOtherLabel": {
+      "value": "请输入您的城市或地址",
+      "tag": "form-label",
+      "cacheKey": "1a495cd493e77ad6"
+    },
+    "quoteSelector.cityOtherPlaceholder": {
+      "value": "例如：Foster City, CA",
+      "tag": "form-label",
+      "cacheKey": "3b2cfd37d1b5642e"
+    },
+    "quoteSelector.loadSingle": {
+      "value": "单件物品",
+      "tag": "form-label",
+      "cacheKey": "85259c90e33ae78e"
+    },
+    "quoteSelector.loadSingleSub": {
+      "value": "1件大型物品",
+      "tag": "form-label",
+      "cacheKey": "497eee6ca59bb802"
+    },
+    "quoteSelector.loadQuarter": {
+      "value": "小件清运",
+      "tag": "form-label",
+      "cacheKey": "41becb09fd99828f"
+    },
+    "quoteSelector.loadQuarterSub": {
+      "value": "四分之一卡车或以下",
+      "tag": "form-label",
+      "cacheKey": "bf545be5044f4f89"
+    },
+    "quoteSelector.loadHalf": {
+      "value": "中等载量",
+      "tag": "form-label",
+      "cacheKey": "32445259928e4856"
+    },
+    "quoteSelector.loadHalfSub": {
+      "value": "半车",
+      "tag": "form-label",
+      "cacheKey": "210d00d200292247"
+    },
+    "quoteSelector.loadFull": {
+      "value": "整车装载",
+      "tag": "form-label",
+      "cacheKey": "ee485a22fc2a3b64"
+    },
+    "quoteSelector.loadFullSub": {
+      "value": "整车或更多",
+      "tag": "form-label",
+      "cacheKey": "37db9b147358156d"
+    },
+    "quoteSelector.urgencyAsap": {
+      "value": "尽快",
+      "tag": "form-label",
+      "cacheKey": "7d8acde438035c9e"
+    },
+    "quoteSelector.urgencyAsapSub": {
+      "value": "1至2天内",
+      "tag": "form-label",
+      "cacheKey": "60ab9e8230bd4735"
+    },
+    "quoteSelector.urgencyThisWeek": {
+      "value": "本周",
+      "tag": "form-label",
+      "cacheKey": "75780877b37a3cbe"
+    },
+    "quoteSelector.urgencyThisWeekSub": {
+      "value": "7天内",
+      "tag": "form-label",
+      "cacheKey": "5c7f89f92d35b628"
+    },
+    "quoteSelector.urgencyFlexible": {
+      "value": "灵活安排",
+      "tag": "form-label",
+      "cacheKey": "913c07d1dc032906"
+    },
+    "quoteSelector.urgencyFlexibleSub": {
+      "value": "如有空档时",
+      "tag": "form-label",
+      "cacheKey": "c80fdf5979a4499f"
+    },
+    "quoteSelector.serviceOther": {
+      "value": "不确定／其他",
+      "tag": "form-label",
+      "cacheKey": "b3f38a5cd74b24e9"
+    },
+    "quoteSelector.nameLabel": {
+      "value": "您的姓名",
+      "tag": "form-label",
+      "cacheKey": "8fc55f513e459f10"
+    },
+    "quoteSelector.namePlaceholder": {
+      "value": "姓名",
+      "tag": "form-label",
+      "cacheKey": "4b6a58203008e3a7"
+    },
+    "quoteSelector.phoneLabel": {
+      "value": "电话号码",
+      "tag": "form-label",
+      "cacheKey": "182f2b7f8b748a13"
+    },
+    "quoteSelector.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "ddfb77034058012a"
+    },
+    "quoteSelector.emailLabel": {
+      "value": "电子邮件",
+      "tag": "form-label",
+      "cacheKey": "2295633051edccc9"
+    },
+    "quoteSelector.emailOptional": {
+      "value": "（可选）",
+      "tag": "form-label",
+      "cacheKey": "e4ce69343183e01f"
+    },
+    "quoteSelector.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "0993df07a88e1a25"
+    },
+    "quoteSelector.continueCta": {
+      "value": "继续",
+      "tag": "cta",
+      "cacheKey": "58a851dde44c5e3f"
+    },
+    "quoteSelector.backCta": {
+      "value": "返回",
+      "tag": "cta",
+      "cacheKey": "8ee2d9e9ea6ba380"
+    },
+    "quoteSelector.requestQuoteCta": {
+      "value": "申请我的报价",
+      "tag": "cta",
+      "cacheKey": "6bbf75ca583c76ca"
+    },
+    "quoteSelector.sendingCta": {
+      "value": "发送中…",
+      "tag": "cta",
+      "cacheKey": "26a39590217f6bba"
+    },
+    "quoteSelector.preferToCall": {
+      "value": "更喜欢致电？",
+      "tag": "cta",
+      "cacheKey": "2263399e01784863"
+    },
+    "quoteSelector.successHeading": {
+      "value": "报价申请已收到",
+      "tag": "cta",
+      "cacheKey": "b59a74dfbc0a2e4c"
+    },
+    "quoteSelector.successSub": {
+      "value": "Peninsula Pick Ups 将尽快与您联系。如需即时回复，请致电我们。",
+      "tag": "cta",
+      "cacheKey": "d7452b9d874bac5e"
+    },
+    "quoteSelector.consentText": {
+      "value": "本人同意 Peninsula Pick Ups 通过上述电话就我的报价请求与我联系，包括短信和通话。同意并非接受服务的前提条件。短信及数据费用可能另行收取。如需退订，请回复 STOP。",
+      "tag": "legal",
+      "cacheKey": "f7684e733b15d6f3"
+    },
+    "quoteSelector.privacyLink": {
+      "value": "请查阅我们的隐私政策。",
+      "tag": "legal",
+      "cacheKey": "ec05b1f7e01227ac"
+    },
+    "quoteSelector.progressAria": {
+      "value": "报价表单进度：第 {step} 步，共 {total} 步，{label}",
+      "tag": "meta",
+      "cacheKey": "a59b1ec28ed3a5af"
+    },
+    "quoteSelector.headingAria": {
+      "value": "获取报价",
+      "tag": "meta",
+      "cacheKey": "19077c8b4799b491"
+    },
+    "quoteForm.badge": {
+      "value": "获取免费报价",
+      "tag": "cta",
+      "cacheKey": "2038406c41ce1e70"
+    },
+    "quoteForm.heading": {
+      "value": "告诉我们您的需求",
+      "tag": "cta",
+      "cacheKey": "84b8e08bbf1f0959"
+    },
+    "quoteForm.subPrefix": {
+      "value": "填写表单，Peninsula Pick Ups 将直接与您联系。",
+      "tag": "cta",
+      "cacheKey": "765d71393c56a3ab"
+    },
+    "quoteForm.subFasterResponse": {
+      "value": "如需更快回复，请致电或发短信联系我们。",
+      "tag": "cta",
+      "cacheKey": "1eadeadfdf347cb5"
+    },
+    "quoteForm.contactPhoneSub": {
+      "value": "经核实的业务专线。由 Don 和 Melissa 接听。",
+      "tag": "trust",
+      "cacheKey": "6d8ec846f235e24a"
+    },
+    "quoteForm.contactCitySub": {
+      "value": "自 2021 年起扎根本地。",
+      "tag": "trust",
+      "cacheKey": "7a68e7dfae3f11d9"
+    },
+    "quoteForm.contactSameDayTitle": {
+      "value": "当天回复",
+      "tag": "trust",
+      "cacheKey": "f4675b202c3e6e41"
+    },
+    "quoteForm.contactSameDaySub": {
+      "value": "大多数工作可在 48 小时内安排上门。",
+      "tag": "trust",
+      "cacheKey": "e93abd335750af03"
+    },
+    "quoteForm.nameLabel": {
+      "value": "姓名",
+      "tag": "form-label",
+      "cacheKey": "aeacee1ea7c0d63e"
+    },
+    "quoteForm.namePlaceholder": {
+      "value": "您的全名",
+      "tag": "form-label",
+      "cacheKey": "f278cac6acd3ab22"
+    },
+    "quoteForm.phoneLabel": {
+      "value": "电话",
+      "tag": "form-label",
+      "cacheKey": "b052a8088f576326"
+    },
+    "quoteForm.phonePlaceholder": {
+      "value": "(650) 555-0100",
+      "tag": "form-label",
+      "cacheKey": "ddfb77034058012a"
+    },
+    "quoteForm.emailLabel": {
+      "value": "电子邮件",
+      "tag": "form-label",
+      "cacheKey": "2295633051edccc9"
+    },
+    "quoteForm.emailOptional": {
+      "value": "（可选）",
+      "tag": "form-label",
+      "cacheKey": "e4ce69343183e01f"
+    },
+    "quoteForm.emailPlaceholder": {
+      "value": "you@example.com",
+      "tag": "form-label",
+      "cacheKey": "0993df07a88e1a25"
+    },
+    "quoteForm.serviceLabel": {
+      "value": "所需服务",
+      "tag": "form-label",
+      "cacheKey": "9ba0943864b330e0"
+    },
+    "quoteForm.serviceDefault": {
+      "value": "请选择服务…",
+      "tag": "form-label",
+      "cacheKey": "b401f5901ab5d4a3"
+    },
+    "quoteForm.locationLabel": {
+      "value": "服务地点",
+      "tag": "form-label",
+      "cacheKey": "7de50e46f9b2f2fb"
+    },
+    "quoteForm.locationDefault": {
+      "value": "选择城市……",
+      "tag": "form-label",
+      "cacheKey": "47c04c420572d075"
+    },
+    "quoteForm.locationOther": {
+      "value": "其他",
+      "tag": "form-label",
+      "cacheKey": "bd1bd60a25c9e097"
+    },
+    "quoteForm.dateLabel": {
+      "value": "首选日期",
+      "tag": "form-label",
+      "cacheKey": "794d4806b7e13443"
+    },
+    "quoteForm.messageLabel": {
+      "value": "留言",
+      "tag": "form-label",
+      "cacheKey": "1ef91081f87c8d47"
+    },
+    "quoteForm.messagePlaceholder": {
+      "value": "请描述需要清运的物品、进出通道说明或具体问题……",
+      "tag": "form-label",
+      "cacheKey": "9dd6ed749dfeb22f"
+    },
+    "quoteForm.sendCta": {
+      "value": "发送报价申请",
+      "tag": "cta",
+      "cacheKey": "8412462e9d815ce1"
+    },
+    "quoteForm.sendingCta": {
+      "value": "正在发送请求……",
+      "tag": "cta",
+      "cacheKey": "4f400d9b16d7db97"
+    },
+    "quoteForm.consentText": {
+      "value": "本人同意 Peninsula Pick Ups 通过上述电话和电子邮件就我的报价请求与我联系，包括短信和通话。同意并非接受服务的前提条件。可能产生短信及数据费用。如需退订，请随时回复 STOP。",
+      "tag": "legal",
+      "cacheKey": "09660bf6eeaea5e8"
+    },
+    "quoteForm.consentSeePrivacy": {
+      "value": "请查阅我们的隐私政策。",
+      "tag": "legal",
+      "cacheKey": "ec05b1f7e01227ac"
+    },
+    "quoteForm.successHeading": {
+      "value": "申请已提交",
+      "tag": "cta",
+      "cacheKey": "495bb53e0cd7c728"
+    },
+    "quoteForm.successSub": {
+      "value": "Peninsula Pick Ups 将很快与您联系。",
+      "tag": "cta",
+      "cacheKey": "9a84b7d24120ab0d"
+    },
+    "quoteForm.submitAnotherCta": {
+      "value": "提交另一份申请",
+      "tag": "cta",
+      "cacheKey": "c44597fa98120273"
+    },
+    "quoteForm.errorFallback": {
+      "value": "出现了问题。请致电 (650) 201-1543 联系我们。",
+      "tag": "form-error",
+      "cacheKey": "b438dfc52c74432f"
+    },
+    "quoteForm.errorUnavailable": {
+      "value": "无法提交。请直接致电 (650) 201-1543 与我们联系。",
+      "tag": "form-error",
+      "cacheKey": "b376b7734af6efa8"
+    },
+    "errors.nameRequired": {
+      "value": "请告诉我们您的姓名",
+      "tag": "form-error",
+      "cacheKey": "5bbededa64852214"
+    },
+    "errors.nameTooShort": {
+      "value": "请输入您的姓名。",
+      "tag": "form-error",
+      "cacheKey": "04934bcdcae7de0d"
+    },
+    "errors.phoneInvalid": {
+      "value": "请输入有效的电话号码。",
+      "tag": "form-error",
+      "cacheKey": "abf9f05f6f8ad104"
+    },
+    "errors.emailInvalid": {
+      "value": "请输入有效的电子邮件地址。",
+      "tag": "form-error",
+      "cacheKey": "b1f27720eda6b597"
+    },
+    "errors.noUrls": {
+      "value": "不允许填写网址。",
+      "tag": "form-error",
+      "cacheKey": "9f10c59a629bab18"
+    },
+    "errors.noBrackets": {
+      "value": "不允许使用尖括号。",
+      "tag": "form-error",
+      "cacheKey": "1b5387fb624c925d"
+    },
+    "errors.maxLength": {
+      "value": "不得超过 {max} 个字符",
+      "tag": "form-error",
+      "cacheKey": "e0d3219d1d7648e3"
+    },
+    "errors.consentRequired": {
+      "value": "需要您的同意。",
+      "tag": "form-error",
+      "cacheKey": "f049e858a93c5d21"
+    },
+    "footer.tagline": {
+      "value": "持证经营的垃圾清运与搬运服务，服务于旧金山半岛。由 Don 和 Melissa 家庭经营，自 2021 年起持证经营，全险保障。",
+      "tag": "trust",
+      "cacheKey": "cd59552c949932b6"
+    },
+    "footer.servicesHeading": {
+      "value": "服务项目",
+      "tag": "nav",
+      "cacheKey": "2595df2ba5f34a6b"
+    },
+    "footer.areasHeading": {
+      "value": "服务区域",
+      "tag": "nav",
+      "cacheKey": "0594a33f740b6a45"
+    },
+    "footer.getQuoteHeading": {
+      "value": "获取报价",
+      "tag": "cta",
+      "cacheKey": "a67a9d3f490dc9c8"
+    },
+    "footer.getQuoteSub": {
+      "value": "准备好清理了吗？申请免费报价或直接致电我们。我们响应迅速。",
+      "tag": "cta",
+      "cacheKey": "bd858b8106c2efa7"
+    },
+    "footer.requestPickupCta": {
+      "value": "申请上门服务",
+      "tag": "cta",
+      "cacheKey": "e640452408b6651a"
+    },
+    "footer.callPrefix": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "footer.licensedTag": {
+      "value": "持证经营",
+      "tag": "trust",
+      "cacheKey": "01bce2ea63b1084c"
+    },
+    "footer.insuredTag": {
+      "value": "全险保障",
+      "tag": "trust",
+      "cacheKey": "df326d71755c07e8"
+    },
+    "footer.localTag": {
+      "value": "本地经营",
+      "tag": "trust",
+      "cacheKey": "47bf95a7c7ed72f9"
+    },
+    "footer.findUsOnline": {
+      "value": "在网上找到我们",
+      "tag": "misc",
+      "cacheKey": "ca77a8ee97fde766"
+    },
+    "footer.allRightsReserved": {
+      "value": "保留所有权利。",
+      "tag": "legal",
+      "cacheKey": "ff3131f6e5df2e9d"
+    },
+    "footer.verifyLink": {
+      "value": "验证",
+      "tag": "nav",
+      "cacheKey": "209957299da48745"
+    },
+    "footer.privacyLink": {
+      "value": "隐私政策",
+      "tag": "nav",
+      "cacheKey": "5c23ef6c0dab488b"
+    },
+    "footer.termsLink": {
+      "value": "服务条款",
+      "tag": "nav",
+      "cacheKey": "fae718a334e07ed6"
+    },
+    "footer.verifyBusinessLink": {
+      "value": "验证此业务",
+      "tag": "trust",
+      "cacheKey": "e72238a80c24fa06"
+    },
+    "common.loading": {
+      "value": "加载中…",
+      "tag": "misc",
+      "cacheKey": "4da579621b025769"
+    },
+    "common.error": {
+      "value": "出了点问题。",
+      "tag": "misc",
+      "cacheKey": "1218e449c994c4b6"
+    },
+    "common.required": {
+      "value": "必填",
+      "tag": "form-label",
+      "cacheKey": "aa6fb069347fd8d7"
+    },
+    "common.optional": {
+      "value": "可填可不填",
+      "tag": "form-label",
+      "cacheKey": "ebb79dee2f6f88c2"
+    },
+    "faqSection.badge": {
+      "value": "常见问题",
+      "tag": "faq",
+      "cacheKey": "d28585e471a582cd"
+    },
+    "faqSection.defaultHeading": {
+      "value": "常见问题",
+      "tag": "faq",
+      "cacheKey": "aa3d50bf09ffc7ec"
+    },
+    "faqSection.moreQuestions": {
+      "value": "还有其他问题？",
+      "tag": "faq",
+      "cacheKey": "a2ee61eeac330387"
+    },
+    "faqSection.callPrefix": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "trustSection.badge": {
+      "value": "为什么选择 Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "832b40cc31394a77"
+    },
+    "trustSection.headlinePart1": {
+      "value": "客户信任我们的理由",
+      "tag": "trust",
+      "cacheKey": "9ef59d19534141c0"
+    },
+    "trustSection.headlinePart2": {
+      "value": "真正的 Peninsula Pick Ups",
+      "tag": "trust",
+      "cacheKey": "9ae8733f6634ae6a"
+    },
+    "trustSection.subhead": {
+      "value": "Don 和 Melissa 创立 Peninsula Pick Ups，秉持一个原则：准时上门，把活儿做好，随时保持联系。没有神秘号码，没有模糊地址。一家真实的 San Carlos 本地企业，您可以亲自核实。",
+      "tag": "trust",
+      "cacheKey": "3e1d6a2432996cc1"
+    },
+    "trustSection.requestQuoteCta": {
+      "value": "申请免费报价",
+      "tag": "cta",
+      "cacheKey": "de068a0729459509"
+    },
+    "trustSection.callCta": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "trustSection.ownersTitle": {
+      "value": "业主：Don 和 Melissa",
+      "tag": "trust",
+      "cacheKey": "847b59363b44c96f"
+    },
+    "trustSection.ownersBody": {
+      "value": "家庭经营，总部位于 San Carlos, CA 94070。当您申请报价或致电业务专线时，直接与我们联系。这正是我们的初衷。",
+      "tag": "trust",
+      "cacheKey": "efac6341b9c05f63"
+    },
+    "trustSection.establishedNote": {
+      "value": "扎根旧金山半岛，自 2021 年起服务至今。",
+      "tag": "trust",
+      "cacheKey": "f11a09b5493017ec"
+    },
+    "trustSection.signal1Title": {
+      "value": "一个经核实的业务专线",
+      "tag": "trust",
+      "cacheKey": "6fabb625e51a1577"
+    },
+    "trustSection.signal1Body": {
+      "value": "拨打 (650) 201-1543，您将直接联系到 Don 和 Melissa 本人。没有客服中心，没有转接，没有繁琐流程。",
+      "tag": "trust",
+      "cacheKey": "ce3ff7f31f1e8548"
+    },
+    "trustSection.signal2Title": {
+      "value": "自 2021 年起扎根 San Carlos。",
+      "tag": "trust",
+      "cacheKey": "924d7bc9ba5ee059"
+    },
+    "trustSection.signal2Body": {
+      "value": "Peninsula Pick Ups 扎根于旧金山半岛，自 2021 年起服务本地社区。我们熟悉这里的每条街道、每个社区，也深知邻里们的需求与期待。",
+      "tag": "trust",
+      "cacheKey": "7cd36ce716f44724"
+    },
+    "trustSection.signal3Title": {
+      "value": "真实项目照片即将上线",
+      "tag": "trust",
+      "cacheKey": "6c17ed4ad23aed9e"
+    },
+    "trustSection.signal3Body": {
+      "value": "我们为每项工作提供清运前后的对比记录。经核实的项目影像资料正在持续更新中。",
+      "tag": "trust",
+      "cacheKey": "421687bee062454c"
+    },
+    "trustSection.signal4Title": {
+      "value": "价格透明，无隐藏费用。",
+      "tag": "trust",
+      "cacheKey": "c47d6974de307073"
+    },
+    "trustSection.signal4Body": {
+      "value": "免费报价，无隐性收费。我们上门前您就已知晓费用，现场价格绝不更改。",
+      "tag": "trust",
+      "cacheKey": "d7a0af060185e3a6"
+    },
+    "trustSection.signal5Title": {
+      "value": "快速预约，真人响应",
+      "tag": "trust",
+      "cacheKey": "e28c2117a8c647a0"
+    },
+    "trustSection.signal5Body": {
+      "value": "我们当天回复。大多数工作可在 48 小时内安排上门。您直接与老板沟通，无需通过调度员。",
+      "tag": "trust",
+      "cacheKey": "a0647b40d795888b"
+    },
+    "trustSection.signal6Title": {
+      "value": "持证经营，全险保障",
+      "tag": "trust",
+      "cacheKey": "a0dca4d5e6e246a2"
+    },
+    "trustSection.signal6Body": {
+      "value": "Peninsula Pick Ups 持证经营，全险保障，每项工作均在承保范围之内。您的财产受到全面保护，没有任何例外。",
+      "tag": "trust",
+      "cacheKey": "f07968ba28a76a8b"
+    },
+    "servicesGrid.badge": {
+      "value": "我们的服务",
+      "tag": "service-description",
+      "cacheKey": "5aec8424e793278a"
+    },
+    "servicesGrid.headlinePart1": {
+      "value": "全程搬运服务",
+      "tag": "service-description",
+      "cacheKey": "c4c7575ca903bdbc"
+    },
+    "servicesGrid.headlinePart2": {
+      "value": "无论一件物品还是整套房产，我们都能为您清运。",
+      "tag": "service-description",
+      "cacheKey": "e00590e870b32d43"
+    },
+    "servicesGrid.subhead": {
+      "value": "Peninsula Pick Ups 承接旧金山半岛地区的住宅及商业清运工作。无论您有什么需要处理的，我们来装车、来清运。",
+      "tag": "service-description",
+      "cacheKey": "3d365a9d777999f2"
+    },
+    "servicesGrid.learnMore": {
+      "value": "了解更多",
+      "tag": "cta",
+      "cacheKey": "3b2a0307f3b20cf2"
+    },
+    "servicesGrid.getQuote": {
+      "value": "获取报价",
+      "tag": "cta",
+      "cacheKey": "ea3d36be6a709de1"
+    },
+    "serviceAreas.badge": {
+      "value": "我们的服务区域",
+      "tag": "misc",
+      "cacheKey": "fac68ae24c4e9214"
+    },
+    "serviceAreas.heading": {
+      "value": "服务整个旧金山半岛",
+      "tag": "misc",
+      "cacheKey": "ba2350ddc7f0d8c0"
+    },
+    "serviceAreas.subhead": {
+      "value": "总部位于 San Carlos，Peninsula Pick Ups 服务范围覆盖 South San Francisco 至 Palo Alto 沿线各社区。点击您所在的城市，查看当地服务详情。",
+      "tag": "misc",
+      "cacheKey": "e79d0ae805fe086d"
+    },
+    "serviceAreas.requestPickup": {
+      "value": "申请上门收取",
+      "tag": "cta",
+      "cacheKey": "e640452408b6651a"
+    },
+    "serviceAreas.homeBaseTag": {
+      "value": "我们的所在地",
+      "tag": "misc",
+      "cacheKey": "9d18334f2054c12d"
+    },
+    "serviceAreas.countySuffix": {
+      "value": "县",
+      "tag": "misc",
+      "cacheKey": "e8c9efab80b4f4db"
+    },
+    "serviceAreas.moreSuffix": {
+      "value": "另有 {count} 项",
+      "tag": "misc",
+      "cacheKey": "403df1e7a0bcc91e"
+    },
+    "serviceAreas.dontSeeCity": {
+      "value": "没有看到您所在的城市？",
+      "tag": "misc",
+      "cacheKey": "b28e198f293c2974"
+    },
+    "serviceAreas.requestQuoteLink": {
+      "value": "申请免费报价",
+      "tag": "cta",
+      "cacheKey": "ecab9c7c104e3091"
+    },
+    "serviceAreas.weConfirm": {
+      "value": "我们将确认服务是否可用。",
+      "tag": "misc",
+      "cacheKey": "311d3da0193406e6"
+    },
+    "testimonialsSection.badge": {
+      "value": "客户评价",
+      "tag": "testimonial",
+      "cacheKey": "0ee046a83b4dcef6"
+    },
+    "testimonialsSection.heading": {
+      "value": "客户怎么说",
+      "tag": "testimonial",
+      "cacheKey": "46ee5ff51ca08e10"
+    },
+    "testimonialsSection.subhead": {
+      "value": "来自旧金山半岛各地客户的真实评价。Peninsula Pick Ups 在 Yelp 上已累计 {count} 条评价，并持续增加，同时在 Nextdoor 和 Alignable 上也获得了众多推荐。",
+      "tag": "testimonial",
+      "cacheKey": "0036da11cd1f6550"
+    },
+    "testimonialsSection.yelpReviewsCount": {
+      "value": "{count} 条评价",
+      "tag": "testimonial",
+      "cacheKey": "5bc7a759c612ce7e"
+    },
+    "testimonialsSection.recommendedNextdoor": {
+      "value": "已在 Nextdoor 上获得推荐",
+      "tag": "testimonial",
+      "cacheKey": "47c1b2fca6d868e0"
+    },
+    "testimonialsSection.verifiedCustomer": {
+      "value": "经核实的 {source} 客户",
+      "tag": "testimonial",
+      "cacheKey": "717687661be691e5"
+    },
+    "testimonialsSection.viewOnSource": {
+      "value": "在{source}上查看",
+      "tag": "meta",
+      "cacheKey": "44cd4fff68a359b2"
+    },
+    "testimonialsSection.starRatingLabel": {
+      "value": "{count} 星（满分5星）",
+      "tag": "meta",
+      "cacheKey": "41c197591dcf97ab"
+    },
+    "testimonialsSection.experienceHeading": {
+      "value": "有过愉快的服务体验吗？",
+      "tag": "testimonial",
+      "cacheKey": "c8d39fccb4e0c1f3"
+    },
+    "testimonialsSection.experienceBody": {
+      "value": "如果您曾使用过 Peninsula Pick Ups 的服务，我们非常希望听到您的评价。来自真实客户的评价，能帮助邻居们找到值得信赖的本地服务。",
+      "tag": "testimonial",
+      "cacheKey": "c420f92679ca9ba0"
+    },
+    "testimonialsSection.leaveYelpReview": {
+      "value": "在 Yelp 上留下评价",
+      "tag": "cta",
+      "cacheKey": "0cd9ef6cc79a582d"
+    },
+    "testimonialsSection.callCta": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "verifyStrip.ariaLabel": {
+      "value": "业务验证",
+      "tag": "meta",
+      "cacheKey": "3ede6ba88f249ce4"
+    },
+    "verifyStrip.homeBaseSublabel": {
+      "value": "主要服务地区",
+      "tag": "trust",
+      "cacheKey": "40e68acd0d464046"
+    },
+    "verifyStrip.establishedSublabel": {
+      "value": "自 2021 年起营业。",
+      "tag": "trust",
+      "cacheKey": "8f2442064dcb9789"
+    },
+    "verifyStrip.establishedLabel": {
+      "value": "创立于 2021 年。",
+      "tag": "trust",
+      "cacheKey": "7286fbc735efa204"
+    },
+    "verifyStrip.verifiedBusinessSublabel": {
+      "value": "经核实的业务专线",
+      "tag": "trust",
+      "cacheKey": "d676dff56ec27f17"
+    },
+    "verifyStrip.ownersLabel": {
+      "value": "Don 和 Melissa",
+      "tag": "trust",
+      "cacheKey": "aa27bd01d6bdd712"
+    },
+    "verifyStrip.ownersSublabel": {
+      "value": "本地经营者",
+      "tag": "trust",
+      "cacheKey": "e4c3b5671ad25e54"
+    },
+    "verifyStrip.licensedLabel": {
+      "value": "持证经营，全险保障",
+      "tag": "trust",
+      "cacheKey": "3eafd1b1a3265ad1"
+    },
+    "verifyStrip.licensedSublabel": {
+      "value": "专业服务",
+      "tag": "trust",
+      "cacheKey": "207b336250c35de9"
+    },
+    "gallerySection.badge": {
+      "value": "真实劳动，真实成效",
+      "tag": "misc",
+      "cacheKey": "2dcc43a2144b4d05"
+    },
+    "gallerySection.heading": {
+      "value": "项目案例展示",
+      "tag": "misc",
+      "cacheKey": "79fc9e252857f5cb"
+    },
+    "gallerySection.subhead": {
+      "value": "来自 Peninsula Pick Ups 真实工作现场的照片——涵盖车库清理、废料清运、家电搬运清运，以及旧金山半岛各地的整体清理服务。",
+      "tag": "misc",
+      "cacheKey": "53ec77e38c600dae"
+    },
+    "gallerySection.yelpPhotosCount": {
+      "value": "58 张照片",
+      "tag": "misc",
+      "cacheKey": "b4d76956387ccfb2"
+    },
+    "gallerySection.instagramPostsCount": {
+      "value": "143+ 条帖子",
+      "tag": "misc",
+      "cacheKey": "ce0d611661c4d374"
+    },
+    "gallerySection.ctaTitle": {
+      "value": "Instagram 上有超过143张工作现场照片",
+      "tag": "cta",
+      "cacheKey": "01004c8c8f9a684b"
+    },
+    "gallerySection.ctaBodyPre": {
+      "value": "关注",
+      "tag": "cta",
+      "cacheKey": "cda4ce8d5b55171d"
+    },
+    "gallerySection.ctaBodyPost": {
+      "value": "欢迎查看我们每次作业的前后对比照片——涵盖车库清理、建筑废料清运、家电搬运清运等，服务遍及整个旧金山半岛。",
+      "tag": "cta",
+      "cacheKey": "74d8e0b3b3960adb"
+    },
+    "gallerySection.viewAllCta": {
+      "value": "查看全部照片",
+      "tag": "cta",
+      "cacheKey": "958c7281106f8f32"
+    },
+    "gallerySection.photo1Label": {
+      "value": "清运完成",
+      "tag": "misc",
+      "cacheKey": "67c546ca9e145e4f"
+    },
+    "gallerySection.photo2Label": {
+      "value": "住宅清理",
+      "tag": "misc",
+      "cacheKey": "3ff98433204be9b6"
+    },
+    "gallerySection.photo3Label": {
+      "value": "整车搬运清运",
+      "tag": "misc",
+      "cacheKey": "c68732a832195baf"
+    },
+    "gallerySection.photo4Label": {
+      "value": "清运杂物",
+      "tag": "misc",
+      "cacheKey": "9bd00008926b5d61"
+    },
+    "gallerySection.photo5Label": {
+      "value": "房产清理",
+      "tag": "misc",
+      "cacheKey": "17cb8030177e12c6"
+    },
+    "gallerySection.photo6Label": {
+      "value": "施工现场",
+      "tag": "misc",
+      "cacheKey": "1cf74fb0c5323443"
+    },
+    "gallerySection.locationSanMateoCounty": {
+      "value": "圣马刁县",
+      "tag": "misc",
+      "cacheKey": "98784bdfe2a3c1e3"
+    },
+    "gallerySection.locationPeninsula": {
+      "value": "旧金山半岛，CA",
+      "tag": "misc",
+      "cacheKey": "9857efa238b376fd"
+    },
+    "gallerySection.locationBayArea": {
+      "value": "湾区，CA",
+      "tag": "misc",
+      "cacheKey": "ce55ec2e77a987b1"
+    },
+    "shareCity.shareLabel": {
+      "value": "分享 {city} 页面",
+      "tag": "cta",
+      "cacheKey": "cf58ad76a3c73a8b"
+    },
+    "shareCity.copied": {
+      "value": "链接已复制",
+      "tag": "misc",
+      "cacheKey": "4e13c22faaf042b0"
+    },
+    "shareCity.shareText": {
+      "value": "Peninsula Pick Ups 服务于 {city}, CA — (650) 201-1543。",
+      "tag": "cta",
+      "cacheKey": "828fc6b803711b2a"
+    },
+    "areaPage.breadcrumbServiceAreas": {
+      "value": "服务区域",
+      "tag": "nav",
+      "cacheKey": "0594a33f740b6a45"
+    },
+    "areaPage.countyBadge": {
+      "value": "{county}县",
+      "tag": "misc",
+      "cacheKey": "1dd3bfb4a6757510"
+    },
+    "areaPage.homeBaseBadge": {
+      "value": "总部所在地",
+      "tag": "trust",
+      "cacheKey": "40e68acd0d464046"
+    },
+    "areaPage.headlinePart1": {
+      "value": "垃圾清运服务，覆盖",
+      "tag": "hero",
+      "cacheKey": "42c366747459f8cd"
+    },
+    "areaPage.requestPickupIn": {
+      "value": "申请在 {city} 的上门服务",
+      "tag": "cta",
+      "cacheKey": "02b0edf5eaa45fb8"
+    },
+    "areaPage.callPrefix": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "areaPage.textUs": {
+      "value": "发短信联系我们",
+      "tag": "cta",
+      "cacheKey": "a7aa48f06e269c21"
+    },
+    "areaPage.textMessage": {
+      "value": "您好，Peninsula Pick Ups——我需要在 {city}, CA 安排一次上门收取服务。",
+      "tag": "cta",
+      "cacheKey": "3fb47d34069ee8b1"
+    },
+    "areaPage.servicesHeading": {
+      "value": "{city} 可提供的服务",
+      "tag": "service-description",
+      "cacheKey": "be4a84b61bac6b47"
+    },
+    "areaPage.servicesSubhead": {
+      "value": "Peninsula Pick Ups 为 {city}, CA 全境提供以下服务。",
+      "tag": "service-description",
+      "cacheKey": "e3555ba5b1234b6e"
+    },
+    "areaPage.nearbyHeading": {
+      "value": "同时服务周边地区",
+      "tag": "misc",
+      "cacheKey": "d4b6c44dc0ad0776"
+    },
+    "areaPage.faqHeading": {
+      "value": "{city} 常见问题",
+      "tag": "faq",
+      "cacheKey": "8298f040c6c28e3d"
+    },
+    "areaPage.faqSubhead": {
+      "value": "关于在 {city}, CA 垃圾清运与搬运服务的常见问题。",
+      "tag": "faq",
+      "cacheKey": "9c57c980f64dee63"
+    },
+    "areaPage.backToHome": {
+      "value": "返回 Peninsula Pick Ups",
+      "tag": "nav",
+      "cacheKey": "44d29eda230c5a3c"
+    },
+    "areaPage.statHomeBase": {
+      "value": "总部所在地",
+      "tag": "trust",
+      "cacheKey": "40e68acd0d464046"
+    },
+    "areaPage.statServingPeninsula": {
+      "value": "服务于旧金山半岛。",
+      "tag": "trust",
+      "cacheKey": "d63d4c16d79505ec"
+    },
+    "areaPage.statVerifiedLine": {
+      "value": "经核实的业务专线",
+      "tag": "trust",
+      "cacheKey": "638db79fe9cfa91d"
+    },
+    "areaPage.statLocalOwners": {
+      "value": "本地业主",
+      "tag": "trust",
+      "cacheKey": "e4c3b5671ad25e54"
+    },
+    "areaPage.statProfessionalService": {
+      "value": "专业服务",
+      "tag": "trust",
+      "cacheKey": "207b336250c35de9"
+    },
+    "areaPage.statLicensedAndInsured": {
+      "value": "持证经营，全险保障",
+      "tag": "trust",
+      "cacheKey": "3eafd1b1a3265ad1"
+    },
+    "areaPage.statEstablishedPrefix": {
+      "value": "信誉有成。",
+      "tag": "trust",
+      "cacheKey": "8f1b970c0ed08932"
+    },
+    "servicePage.breadcrumbServices": {
+      "value": "服务项目",
+      "tag": "nav",
+      "cacheKey": "2595df2ba5f34a6b"
+    },
+    "servicePage.serviceBadge": {
+      "value": "服务项目",
+      "tag": "service-description",
+      "cacheKey": "4d42d879903cf26e"
+    },
+    "servicePage.requestQuote": {
+      "value": "申请免费报价",
+      "tag": "cta",
+      "cacheKey": "f18eac6e1f7e9e88"
+    },
+    "servicePage.callPrefix": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "servicePage.citiesWeServeHeading": {
+      "value": "我们服务的城市",
+      "tag": "misc",
+      "cacheKey": "7a2c64d485011001"
+    },
+    "servicePage.citiesWeServeSubhead": {
+      "value": "{service} 覆盖 Peninsula Pick Ups 的所有服务区域。",
+      "tag": "service-description",
+      "cacheKey": "61af4ee76d5e5960"
+    },
+    "servicePage.faqHeading": {
+      "value": "{service} 常见问题",
+      "tag": "faq",
+      "cacheKey": "64ba253d1829b25f"
+    },
+    "servicePage.faqSubhead": {
+      "value": "关于 Peninsula Pick Ups 提供的 {service} 的常见问题。",
+      "tag": "faq",
+      "cacheKey": "babfec6a91896bb4"
+    },
+    "servicePage.otherServicesHeading": {
+      "value": "其他服务",
+      "tag": "service-description",
+      "cacheKey": "061314369fe4cfd5"
+    },
+    "verifyPage.breadcrumb": {
+      "value": "验证",
+      "tag": "nav",
+      "cacheKey": "209957299da48745"
+    },
+    "verifyPage.badge": {
+      "value": "身份已验证",
+      "tag": "trust",
+      "cacheKey": "76a2aed3d9d21555"
+    },
+    "verifyPage.headlinePart1": {
+      "value": "这是",
+      "tag": "hero",
+      "cacheKey": "88764a3174e2905e"
+    },
+    "verifyPage.headlinePart2": {
+      "value": "正规的 Peninsula Pick Ups。",
+      "tag": "hero",
+      "cacheKey": "387e0d634ce9e028"
+    },
+    "verifyPage.subhead": {
+      "value": "自 2021 年起在 San Carlos, CA 扎根经营的家庭经营垃圾清运与搬运企业，可供公开记录查证。",
+      "tag": "trust",
+      "cacheKey": "90b1a43a073974d0"
+    },
+    "verifyPage.businessOfRecord": {
+      "value": "正规注册企业",
+      "tag": "trust",
+      "cacheKey": "c629a003c86d7a9d"
+    },
+    "verifyPage.factLegalName": {
+      "value": "营业名称",
+      "tag": "trust",
+      "cacheKey": "51d5e06aef902ef9"
+    },
+    "verifyPage.factDomain": {
+      "value": "域名",
+      "tag": "trust",
+      "cacheKey": "02a856718203cfbc"
+    },
+    "verifyPage.factVerifiedPhone": {
+      "value": "经核实的电话号码",
+      "tag": "trust",
+      "cacheKey": "a0fd688d21a6dd7e"
+    },
+    "verifyPage.factAddress": {
+      "value": "地址",
+      "tag": "trust",
+      "cacheKey": "ed6a743c20ddfcd1"
+    },
+    "verifyPage.factOwners": {
+      "value": "经营者",
+      "tag": "trust",
+      "cacheKey": "48b89aace00cdd56"
+    },
+    "verifyPage.factFounded": {
+      "value": "创立于",
+      "tag": "trust",
+      "cacheKey": "d4bf116c8f216c67"
+    },
+    "verifyPage.factLicensed": {
+      "value": "持证经营，全险保障",
+      "tag": "trust",
+      "cacheKey": "a0dca4d5e6e246a2"
+    },
+    "verifyPage.factLicensedYes": {
+      "value": "是的",
+      "tag": "trust",
+      "cacheKey": "ba62925ac7436c9f"
+    },
+    "verifyPage.imposterHeading": {
+      "value": "关于冒充网站的提示",
+      "tag": "trust",
+      "cacheKey": "37900d32aca460ce"
+    },
+    "verifyPage.profilesHeading": {
+      "value": "备案档案与评价记录",
+      "tag": "trust",
+      "cacheKey": "ac9c81c3f1ad1b24"
+    },
+    "verifyPage.profilesSubhead": {
+      "value": "以下每个链接均为我们运营的已发布主页，也是本网站各页面及业务信息架构所引用的官方来源。",
+      "tag": "trust",
+      "cacheKey": "fbf61e595a5e756b"
+    },
+    "verifyPage.confirmHeading": {
+      "value": "需要实时确认什么信息？",
+      "tag": "trust",
+      "cacheKey": "7ae255390318c443"
+    },
+    "verifyPage.confirmBody": {
+      "value": "工作日及周六营业时间内，Don 或 Melissa 将亲自接听经核实的业务专线。",
+      "tag": "trust",
+      "cacheKey": "af388a1ed4f2c384"
+    },
+    "verifyPage.callCta": {
+      "value": "致电",
+      "tag": "cta",
+      "cacheKey": "e02fcc9e3e6f318c"
+    },
+    "verifyPage.textCta": {
+      "value": "发短信给我们",
+      "tag": "cta",
+      "cacheKey": "a7aa48f06e269c21"
+    },
+    "service.junk-removal.name": {
+      "value": "垃圾清运",
+      "tag": "service-description",
+      "cacheKey": "e10fbd43713c36ea"
+    },
+    "service.junk-removal.shortName": {
+      "value": "垃圾清运",
+      "tag": "service-description",
+      "cacheKey": "e10fbd43713c36ea"
+    },
+    "service.junk-removal.blurb": {
+      "value": "全面的住宅垃圾清运服务，涵盖室内、车库、庭院及整体房产。我们负责装载、搬运，并将空间打扫干净。",
+      "tag": "service-description",
+      "cacheKey": "8f8a63ea519ca52e"
+    },
+    "service.junk-removal.description": {
+      "value": "Peninsula Pick Ups 承接旧金山半岛全区的垃圾清运服务——小到单件家具，大到整个车库的全面清理，我们都能搞定。我们的团队开着真实的货车，带着周全的方案上门：负责全程装载、清扫后场，并妥善处理废弃物。没有隐性费用，没有意外，到场后报价绝不变更。",
+      "tag": "service-description",
+      "cacheKey": "c0f9f010e9f62994"
+    },
+    "service.junk-removal.faq.0.q": {
+      "value": "您这里收哪些种类的垃圾？",
+      "tag": "faq",
+      "cacheKey": "c83aecdc2be41e7a"
+    },
+    "service.junk-removal.faq.0.a": {
+      "value": "家具、床垫、家电、电子废品、庭院垃圾、建筑废料、家庭杂物——几乎所有非危险品都可清运。如果您不确定，拨打 (650) 201-1543 时发张照片，我们当场告诉您。",
+      "tag": "faq",
+      "cacheKey": "4e47f7bdff6fedf6"
+    },
+    "service.junk-removal.faq.1.q": {
+      "value": "定价是如何确定的？",
+      "tag": "faq",
+      "cacheKey": "574c1b53c81a1eeb"
+    },
+    "service.junk-removal.faq.1.a": {
+      "value": "报价依据装车量及是否需要特殊处理而定。我们会在开工前给出明确报价，现场价格不会有任何变动。",
+      "tag": "faq",
+      "cacheKey": "228932410ddd54f2"
+    },
+    "service.junk-removal.faq.2.q": {
+      "value": "你们多快能上门？\n\nWait, I need to use 您 form and appropriate phrasing.\n\n您们多快能上门？\n\nActually, let me reconsider — this is a question directed at the business, so it's asking about the business's speed, not addressing the reader with 您. The natural phrasing:\n\n你们多快能上门？\n\nBut per voice guide, let me check — the 您/你 rule applies to addressing the customer. Here the subject is \"you (the business)\" — colloquially 你们 is fine for referring to the company. This is a FAQ question from a customer's perspective.\n\n你们多快能上门？",
+      "tag": "faq",
+      "cacheKey": "6266a06de9f2d8fb"
+    },
+    "service.junk-removal.faq.2.a": {
+      "value": "大多数工作可在 48 小时内安排。当天上门服务也常有 — 请致电 (650) 201-1543 确认。",
+      "tag": "faq",
+      "cacheKey": "ad855195f5b78b79"
+    },
+    "service.construction-debris.name": {
+      "value": "建筑废料清运",
+      "tag": "service-description",
+      "cacheKey": "17001121afafcae5"
+    },
+    "service.construction-debris.shortName": {
+      "value": "建筑废料清运",
+      "tag": "service-description",
+      "cacheKey": "c69e214bc595bd90"
+    },
+    "service.construction-debris.blurb": {
+      "value": "装修后清理、拆迁废料、干墙、木材、混凝土及施工边角料，快速上门搬运清走。",
+      "tag": "service-description",
+      "cacheKey": "385a3cb9fda779d5"
+    },
+    "service.construction-debris.description": {
+      "value": "Peninsula Pick Ups 承接旧金山半岛各类翻修与拆除后的建筑废料清运——石膏板、木框架碎料、破损混凝土、瓷砖、地板材料、橱柜及承包商遗留垃圾。我们为总承包商、装修商及房主提供服务。告知我们工程范围，我们即可报价，并在您需要清场时准时到位。",
+      "tag": "service-description",
+      "cacheKey": "046abf6506dddfdf"
+    },
+    "service.construction-debris.faq.0.q": {
+      "value": "您们是否直接与承包商合作？",
+      "tag": "faq",
+      "cacheKey": "89f4bfb4c2ae99f6"
+    },
+    "service.construction-debris.faq.0.a": {
+      "value": "是的。我们有很多常规工作是为总承包商和装修商提供竣工后的清理服务。我们可以按滚动排期或随叫随到的方式安排上门。",
+      "tag": "faq",
+      "cacheKey": "9c066b7970bb70fe"
+    },
+    "service.construction-debris.faq.1.q": {
+      "value": "您需要清运混凝土和瓷砖吗？",
+      "tag": "faq",
+      "cacheKey": "7fd5c0842da4a0ad"
+    },
+    "service.construction-debris.faq.1.a": {
+      "value": "可以——重型废料正是我们的专项服务之一。我们将根据体积提供报价，并将重量因素一并纳入考量。",
+      "tag": "faq",
+      "cacheKey": "4bf2544bf3d09389"
+    },
+    "service.appliance-removal.name": {
+      "value": "家电搬运清运",
+      "tag": "service-description",
+      "cacheKey": "68c11b1f9de4fee0"
+    },
+    "service.appliance-removal.shortName": {
+      "value": "家电搬运清运",
+      "tag": "service-description",
+      "cacheKey": "68c11b1f9de4fee0"
+    },
+    "service.appliance-removal.blurb": {
+      "value": "冰箱、洗衣机、烘干机、炉灶等各类家电，我们均可提供断电拆卸、搬运及清运服务，安全可靠。",
+      "tag": "service-description",
+      "cacheKey": "15c42f1500946fd3"
+    },
+    "service.appliance-removal.description": {
+      "value": "门廊上有旧冰箱？搬不动的洗烘套装？Peninsula Pick Ups 配备专业设备，清运各类尺寸的家电，全程保护您的地板、墙壁和门框。我们还负责妥善处理和回收，确保制冷剂与金属材料得到规范处置。",
+      "tag": "service-description",
+      "cacheKey": "797b72fe6af8c85b"
+    },
+    "service.appliance-removal.faq.0.q": {
+      "value": "您是否提供家电拆接服务？",
+      "tag": "faq",
+      "cacheKey": "904903b11f5f2600"
+    },
+    "service.appliance-removal.faq.0.a": {
+      "value": "标准断连操作（如关水、关气、拔插头）均包含在服务范围内。如需持牌水管工或电工处理的项目，我们会提前告知您。",
+      "tag": "faq",
+      "cacheKey": "cb1f824b9a16c1bc"
+    },
+    "service.storage-cleanout.name": {
+      "value": "仓库清理",
+      "tag": "service-description",
+      "cacheKey": "9056206fd65b9a56"
+    },
+    "service.storage-cleanout.shortName": {
+      "value": "仓库清理",
+      "tag": "service-description",
+      "cacheKey": "b55b8c978ddaea49"
+    },
+    "service.storage-cleanout.blurb": {
+      "value": "清空储物间、车库和储藏室。我们负责分拣、搬运和全面清理。",
+      "tag": "service-description",
+      "cacheKey": "20b5705baee1d57a"
+    },
+    "service.storage-cleanout.description": {
+      "value": "储藏室、阁楼、车库、地下室——Peninsula Pick Ups 帮您一一清理，省去您的麻烦。我们可以按照您的指示分拣物品、单独放置可捐赠的东西，并负责搬运和处置。常见于缩减居住规模、搬迁及遗产清理等情况。",
+      "tag": "service-description",
+      "cacheKey": "08990ea41101af88"
+    },
+    "service.storage-cleanout.faq.0.q": {
+      "value": "您可以指定哪些物品捐赠吗？",
+      "tag": "faq",
+      "cacheKey": "4253b75dc3b26844"
+    },
+    "service.storage-cleanout.faq.0.a": {
+      "value": "可以——请告诉我们哪些需要保留、捐赠或丢弃，我们在工作过程中会按照您的要求分类处理。",
+      "tag": "faq",
+      "cacheKey": "7c853ebc5104a426"
+    },
+    "service.eviction-cleanout.name": {
+      "value": "房产腾退清理",
+      "tag": "service-description",
+      "cacheKey": "985322e115c30bb4"
+    },
+    "service.eviction-cleanout.shortName": {
+      "value": "房产腾退清理",
+      "tag": "service-description",
+      "cacheKey": "83693ec736d155d1"
+    },
+    "service.eviction-cleanout.blurb": {
+      "value": "专为房东和物业管理方提供的房产腾退后整体清理服务。高效、专业、低调。",
+      "tag": "service-description",
+      "cacheKey": "bba69084582fdab4"
+    },
+    "service.eviction-cleanout.description": {
+      "value": "Peninsula Pick Ups 与旧金山半岛的房东及物业管理方合作，提供房产腾退清理服务。我们快速上门、高效作业、全程记录，完工后单元即可进行清洁、粉刷和重新出租。服务低调、专业，并提供完整记录。",
+      "tag": "service-description",
+      "cacheKey": "82b89d280770ae35"
+    },
+    "service.eviction-cleanout.faq.0.q": {
+      "value": "您是否提供清运前后的对比记录？",
+      "tag": "faq",
+      "cacheKey": "7c03901fc9beae71"
+    },
+    "service.eviction-cleanout.faq.0.a": {
+      "value": "是的 — 我们会在到达时和完工后分别拍照记录，并于当天将相关文件发送至您的邮箱。",
+      "tag": "faq",
+      "cacheKey": "eb5895f32ad0d079"
+    },
+    "service.commercial-hauling.name": {
+      "value": "商业搬运",
+      "tag": "service-description",
+      "cacheKey": "01888859f9dff929"
+    },
+    "service.commercial-hauling.shortName": {
+      "value": "商业搬运",
+      "tag": "service-description",
+      "cacheKey": "01888859f9dff929"
+    },
+    "service.commercial-hauling.blurb": {
+      "value": "办公家具、零售货架、仓库托盘，以及各类商业废料——无论规模大小，我们都能承接。",
+      "tag": "service-description",
+      "cacheKey": "269719885b5cc730"
+    },
+    "service.commercial-hauling.description": {
+      "value": "办公室清理、零售设备拆除、仓库托盘搬运、餐厅设备清运——Peninsula Pick Ups 承接旧金山半岛各类商业规模的清运作业。如有需要，我们可在下班后上门服务，并与物业管理方协调进场安排、保险证明及电梯预约事宜。",
+      "tag": "service-description",
+      "cacheKey": "9216ec07c1a246ca"
+    },
+    "service.commercial-hauling.faq.0.q": {
+      "value": "您为商业地产提供保险保障吗？",
+      "tag": "faq",
+      "cacheKey": "83183a98a3987b54"
+    },
+    "service.commercial-hauling.faq.0.a": {
+      "value": "是的 — 我们持有一般责任险，如有需要，可提供以物业名称为被保险方的保险证明。",
+      "tag": "faq",
+      "cacheKey": "79604643243c6d83"
+    },
+    "service.residential-cleanout.name": {
+      "value": "住宅清理",
+      "tag": "service-description",
+      "cacheKey": "25cf0bea12e58996"
+    },
+    "service.residential-cleanout.shortName": {
+      "value": "住宅清理",
+      "tag": "service-description",
+      "cacheKey": "87a7d27cd5624958"
+    },
+    "service.residential-cleanout.blurb": {
+      "value": "整屋及房产清理，我们用心完成每一项工作。服务对象包括普通家庭、遗产执行人及旧金山半岛的房产经纪人。",
+      "tag": "service-description",
+      "cacheKey": "c8d34109cfcd19cb"
+    },
+    "service.residential-cleanout.description": {
+      "value": "Peninsula Pick Ups 承接完整的住宅清理服务——包括遗产清理、缩减搬迁、售前准备及租客离场后的房屋复原。我们负责分类、搬运与清洁，并按照家属或业主所需的节奏推进工作。遗产类清理项目尤为注重保密与细心。",
+      "tag": "service-description",
+      "cacheKey": "665e8040902b242b"
+    },
+    "area.san-carlos.summary": {
+      "value": "San Carlos 是 Peninsula Pick Ups 的根据地。Don 和 Melissa 于 2021 年在此创立了这家公司，对每一个街区都了如指掌。从 Burton Park 到 White Oaks，我们为 San Carlos 的住宅和商业客户提供垃圾清运、搬运及整体清理服务。",
+      "tag": "service-description",
+      "cacheKey": "a1bfaaa1afe51e9e"
+    },
+    "area.san-carlos.faq.0.q": {
+      "value": "您的服务团队真的位于 San Carlos 吗？",
+      "tag": "faq",
+      "cacheKey": "2d069187e2841448"
+    },
+    "area.san-carlos.faq.0.a": {
+      "value": "是的。Peninsula Pick Ups 总部位于 San Carlos, CA 94070，自 2021 年起开始运营。拨打业务专线 (650) 201-1543，可直接联系 Don 和 Melissa。",
+      "tag": "faq",
+      "cacheKey": "c03159ba2b244cd9"
+    },
+    "area.san-carlos.faq.1.q": {
+      "value": "在 San Carlos，你们多快能上门？",
+      "tag": "faq",
+      "cacheKey": "8f78bd7213f775de"
+    },
+    "area.san-carlos.faq.1.a": {
+      "value": "San Carlos 是我们的根据地，因此当天上门服务通常可以安排。大多数工作可在 24 小时内完成预约。",
+      "tag": "faq",
+      "cacheKey": "82bdfa9fed5cfd26"
+    },
+    "area.san-mateo.summary": {
+      "value": "Peninsula Pick Ups 为整个 San Mateo 提供快速、专业的垃圾清运与搬运服务。无论您是在 Shoreview 清理车库、在市中心附近进行整体房产清理，还是处理装修后的废料，我们的团队都能为您提供高效、可靠的服务。",
+      "tag": "service-description",
+      "cacheKey": "26bc179de22beb4f"
+    },
+    "area.redwood-city.summary": {
+      "value": "从百老汇大道到Woodside Road，Peninsula Pick Ups 为整个 Redwood City 提供垃圾清运、建筑废料清运及大规模整体清理服务。我们为需要快速、专业搬运服务的房主、房东及企业提供支持。",
+      "tag": "service-description",
+      "cacheKey": "71a1721b8d0fa270"
+    },
+    "area.belmont.summary": {
+      "value": "Belmont 的住宅业主和商家信赖 Peninsula Pick Ups，我们提供可靠的垃圾清运与房产清理服务。我们以 San Carlos 为基地，定期服务 Belmont 地区。每次上门，预约快捷、报价透明、团队专业。",
+      "tag": "service-description",
+      "cacheKey": "bbacba567d328802"
+    },
+    "area.burlingame.summary": {
+      "value": "Peninsula Pick Ups 为 Burlingame 的居民和企业主提供可靠的垃圾清运与搬运服务。无论您需要清运单件家电，还是整间办公室的清空，我们都能快速安排上门，把工作做到位。",
+      "tag": "service-description",
+      "cacheKey": "95b7719c91b7cd6d"
+    },
+    "area.palo-alto.summary": {
+      "value": "Peninsula Pick Ups 为 Palo Alto 提供服务，始终保持我们在整个旧金山半岛每项工作中一贯的专业水准。业主、房东和企业客户都信赖我们，高效完成垃圾清运、清理及废料搬运，省心省力，毫无繁琐周折。",
+      "tag": "service-description",
+      "cacheKey": "234632f140b75600"
+    },
+    "area.menlo-park.summary": {
+      "value": "从Belle Haven到Willows社区，Peninsula Pick Ups 为 Menlo Park 提供专业、高效的垃圾清运服务。我们灵活配合您的时间安排，完工后彻底清洁场地。没有隐性费用，没有意外。",
+      "tag": "service-description",
+      "cacheKey": "3b5ab9f0a8dbd1f9"
+    },
+    "area.south-san-francisco.summary": {
+      "value": "Peninsula Pick Ups 在 South San Francisco 全境提供垃圾清运、搬运及商业清理服务。我们的团队扎根本地，经验丰富，能够迅速、专业地处理各种规模的项目。",
+      "tag": "service-description",
+      "cacheKey": "7e2037cf0af057ad"
+    },
+    "area.daly-city.summary": {
+      "value": "Peninsula Pick Ups 为 Daly City 的房主和物业管理者提供快速、实惠的垃圾清运服务。我们承接住宅清理、商业清理、家电搬运清运及建筑废料清运，服务覆盖整个区域。",
+      "tag": "service-description",
+      "cacheKey": "0504915679727337"
+    },
+    "area.millbrae.summary": {
+      "value": "为 Millbrae 提供服务，秉持我们在旧金山半岛每一份工作中一贯的可靠态度。Peninsula Pick Ups 承接垃圾清运、仓库清理及家电搬运清运，团队准时到场，确保每项工作圆满完成。",
+      "tag": "service-description",
+      "cacheKey": "9183e1f1bd31e98f"
+    },
+    "homepageFaq.0.q": {
+      "value": "Peninsula Pick Ups 的总部在哪里？",
+      "tag": "faq",
+      "cacheKey": "7f734acf974376c5"
+    },
+    "homepageFaq.0.a": {
+      "value": "Peninsula Pick Ups 总部位于 San Carlos, CA 94070。业主 Don 和 Melissa 自 2021 年起在旧金山半岛经营此业务。经核实的业务专线为 (650) 201-1543。",
+      "tag": "faq",
+      "cacheKey": "840ae178096796a4"
+    },
+    "homepageFaq.1.q": {
+      "value": "您的服务范围涵盖哪些地区？",
+      "tag": "faq",
+      "cacheKey": "7ffb6453125c9794"
+    },
+    "homepageFaq.1.a": {
+      "value": "我们的服务覆盖旧金山半岛，从 Daly City、South San Francisco 一直延伸至 San Mateo、Belmont、San Carlos、Redwood City、Menlo Park 和 Palo Alto。如果您所在的城市不在列表中，请致电 (650) 201-1543 — 通常我们也可以上门服务。",
+      "tag": "faq",
+      "cacheKey": "3407204b08fff005"
+    },
+    "homepageFaq.2.q": {
+      "value": "您多快能上门？",
+      "tag": "faq",
+      "cacheKey": "a9826110b805e211"
+    },
+    "homepageFaq.2.a": {
+      "value": "大多数工作可在 24 至 48 小时内安排。当天上门服务也常有，尤其是在 San Carlos 及周边城市。",
+      "tag": "faq",
+      "cacheKey": "5d7a0e96f8361690"
+    },
+    "homepageFaq.3.q": {
+      "value": "费用如何计算？",
+      "tag": "faq",
+      "cacheKey": "574c1b53c81a1eeb"
+    },
+    "homepageFaq.3.a": {
+      "value": "收费依据货车装载量及特殊处理情况而定。我们会在开始作业前提供明确报价，且现场价格不会更改。",
+      "tag": "faq",
+      "cacheKey": "228932410ddd54f2"
+    },
+    "homepageFaq.4.q": {
+      "value": "如何确认我找到的是正确的 Peninsula Pick Ups？",
+      "tag": "faq",
+      "cacheKey": "4d3c7e21c8acc5ab"
+    },
+    "homepageFaq.4.a": {
+      "value": "我们的网址是 thepeninsulapickup.com。经核实的业务专线是 (650) 201-1543。Don 和 Melissa 亲自接听该电话。请访问 /verify 查看我们在 Yelp、Instagram、Facebook、Nextdoor、Alignable 和 JunkSpots 上的完整身份记录。",
+      "tag": "faq",
+      "cacheKey": "aeb66ee3274fd308"
+    },
+    "map.badge": {
+      "value": "旧金山半岛",
+      "tag": "misc",
+      "cacheKey": "37ef36790f6d597a"
+    },
+    "map.heading": {
+      "value": "Peninsula Pick Ups 的服务范围",
+      "tag": "misc",
+      "cacheKey": "264568ab4743b4d7"
+    },
+    "map.sub": {
+      "value": "请选择您所在的城市，查看当地服务详情。我们以 San Carlos 为大本营，服务覆盖整个旧金山半岛。",
+      "tag": "misc",
+      "cacheKey": "67db4382b690e24a"
+    },
+    "map.tooltipPreview": {
+      "value": "{city} 预览",
+      "tag": "meta",
+      "cacheKey": "46c0e12891f8a483"
+    },
+    "map.homeBaseTag": {
+      "value": "主营地点",
+      "tag": "misc",
+      "cacheKey": "9d18334f2054c12d"
+    },
+    "map.servicesAvailable": {
+      "value": "{count} 项服务可供选择",
+      "tag": "misc",
+      "cacheKey": "b720b0c70037906a"
+    },
+    "map.requestPickupHere": {
+      "value": "在此申请上门服务",
+      "tag": "cta",
+      "cacheKey": "327092ac86297773"
+    },
+    "meta.home.title": {
+      "value": "Peninsula Pick Ups | 垃圾清运与搬运服务 | San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "7614facf64cfbd24"
+    },
+    "meta.home.description": {
+      "value": "Peninsula Pick Ups 提供垃圾清运、搬运、清理及建筑废料清运服务，服务范围覆盖旧金山半岛。由 Don 和 Melissa 在 San Carlos 本地经营，自2021年起为社区服务。欢迎致电 (650) 201-1543。",
+      "tag": "meta",
+      "cacheKey": "3d9228e7d07e66dd"
+    },
+    "meta.home.ogAlt": {
+      "value": "Peninsula Pick Ups — 垃圾清运与搬运服务，San Carlos, CA",
+      "tag": "meta",
+      "cacheKey": "21b097a1c944e2a2"
+    }
+  }
+}

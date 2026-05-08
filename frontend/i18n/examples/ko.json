@@ -1,5 +1,18 @@
 {
-  "$schema": "Few-shot examples for ko. Hand-curated source→target pairs the translator retrieves by tag.",
+  "$schema": "Few-shot examples for Korean. Hand-curated source→target pairs the translator retrieves by tag.",
   "$version": 1,
-  "examples": []
+  "examples": [
+    { "tag": "hero", "source": "The Pickup You Can Count On.", "target": "믿고 맡길 수 있는 수거 서비스." },
+    { "tag": "hero", "source": "Peninsula Pick Ups handles junk removal, hauling, and full-property cleanouts across San Carlos and the entire Peninsula. Real owners. Real phone. Real results.", "target": "Peninsula Pick Ups는 San Carlos와 전체 페닌슐라 지역에서 쓰레기 수거, 운반, 전체 부지 정리 서비스를 제공합니다. 실제 운영진, 실제 전화번호, 실제 결과." },
+    { "tag": "cta", "source": "Request a Pickup", "target": "수거 요청하기" },
+    { "tag": "cta", "source": "Call Now", "target": "지금 전화하기" },
+    { "tag": "cta", "source": "Get a Free Quote", "target": "무료 견적 받기" },
+    { "tag": "trust", "source": "Licensed and insured since 2021.", "target": "2021년부터 정식 면허 및 보험 가입." },
+    { "tag": "trust", "source": "Family owned and operated by Don and Melissa.", "target": "Don과 Melissa가 가족이 운영하는 사업체입니다." },
+    { "tag": "service-description", "source": "We do all the loading, sweep up after, and dispose responsibly. No hidden fees, no surprises, and no estimates that change once we are on-site.", "target": "저희가 모든 적재 작업을 하고, 작업 후 청소까지 책임지며, 책임감 있게 처리합니다. 숨겨진 비용, 예상치 못한 추가 요금이 없으며, 현장에 도착한 후 견적이 달라지는 일도 없습니다." },
+    { "tag": "faq", "source": "Most jobs are scheduled within 48 hours. Same-day pickups are often available — call (650) 201-1543 to check.", "target": "대부분의 작업은 48시간 이내에 예약됩니다. 당일 수거도 자주 가능하니 (650) 201-1543으로 전화하여 확인해 주세요." },
+    { "tag": "form-label", "source": "Service Location", "target": "서비스 위치" },
+    { "tag": "form-error", "source": "Please enter a valid phone number.", "target": "유효한 전화번호를 입력해 주세요." },
+    { "tag": "legal", "source": "I agree to be contacted by Peninsula Pick Ups at the phone number and email above regarding my quote request, including by SMS and call. Consent is not a condition of service.", "target": "본인은 견적 요청과 관련하여 Peninsula Pick Ups가 위에 기재한 전화번호와 이메일로 SMS 및 전화를 포함하여 연락하는 것에 동의합니다. 동의는 서비스의 조건이 아닙니다." }
+  ]
 }

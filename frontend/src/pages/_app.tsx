@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { DefaultSeo } from 'next-seo'
@@ -16,6 +17,41 @@ interface PageLocaleProps {
 
 export default function App({ Component, pageProps }: AppProps<PageLocaleProps>) {
   const router = useRouter()
+
+  /**
+   * Performance.mark/measure for locale switches.
+   * LocalePicker marks `pup.locale.switch.start` on click. Here we mark
+   * `pup.locale.switch.paint` after the next paint following routeChangeComplete,
+   * then measure between them. The measure entry shows up in DevTools >
+   * Performance and any tracing tool that reads the User Timing API.
+   */
+  useEffect(() => {
+    const onComplete = () => {
+      if (typeof performance === 'undefined' || typeof performance.mark !== 'function') return
+      // Wait one frame so the new locale's paint is committed before we mark.
+      requestAnimationFrame(() => {
+        try {
+          performance.mark('pup.locale.switch.paint')
+          performance.measure(
+            'pup.locale.switch',
+            'pup.locale.switch.start',
+            'pup.locale.switch.paint',
+          )
+          const entries = performance.getEntriesByName('pup.locale.switch', 'measure')
+          const last = entries[entries.length - 1]
+          if (last && process.env.NODE_ENV !== 'production') {
+            // eslint-disable-next-line no-console
+            console.log(`[i18n] locale switch: ${last.duration.toFixed(1)}ms`)
+          }
+        } catch {
+          /* mark wasn't set — not a locale switch, ignore */
+        }
+      })
+    }
+    router.events.on('routeChangeComplete', onComplete)
+    return () => router.events.off('routeChangeComplete', onComplete)
+  }, [router.events])
+
   // The locale shipped via getStaticProps is authoritative; fall back to the
   // router locale when a page doesn't yet thread getStaticProps through.
   const fallback: Locale = isLocale(router.locale) ? router.locale : DEFAULT_LOCALE

@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { SITE, absoluteUrl } from '@/content/site'
 
 interface Props {
@@ -8,9 +9,10 @@ interface Props {
 }
 
 export default function ShareCity({ city, slug }: Props) {
+  const t = useTranslations()
   const [copied, setCopied] = useState(false)
   const url = absoluteUrl(`/areas/${slug}`)
-  const text = `${SITE.name} serves ${city}, CA — ${SITE.phone.display}.`
+  const text = t('shareCity.shareText', { city })
 
   async function handleShare() {
     const data = { title: SITE.name, text, url }
@@ -45,7 +47,7 @@ export default function ShareCity({ city, slug }: Props) {
           strokeLinejoin="round"
         />
       </svg>
-      {copied ? 'Link copied' : `Share ${city} page`}
+      {copied ? t('shareCity.copied') : t('shareCity.shareLabel', { city })}
     </button>
   )
 }

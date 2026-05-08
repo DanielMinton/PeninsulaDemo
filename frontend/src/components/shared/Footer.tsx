@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { AREAS } from '@/content/areas'
 import { SERVICES } from '@/content/services'
+import { getServiceName } from '@/content/copy'
 import { SITE } from '@/content/site'
 import SocialIcons from './SocialIcons'
 
@@ -88,7 +89,7 @@ export default function Footer() {
               {SERVICES.map((s) => (
                 <li key={s.slug}>
                   <Link href={`/services/${s.slug}`} className="text-steel-400 hover:text-bone-200 text-sm transition-colors">
-                    {s.name}
+                    {getServiceName(s.slug, t)}
                   </Link>
                 </li>
               ))}
@@ -133,7 +134,7 @@ export default function Footer() {
         </div>
 
         <div className="divider mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-steel-500 text-xs text-center sm:text-left">
+          <p className="text-steel-500 text-xs text-center sm:text-start">
             &copy; {year} {SITE.name}. <span dir="ltr">{SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}.</span> {t('footer.allRightsReserved')}
           </p>
           <div className="flex gap-5 text-xs">

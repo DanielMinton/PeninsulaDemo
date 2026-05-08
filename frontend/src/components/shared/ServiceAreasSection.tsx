@@ -1,27 +1,27 @@
+'use client'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import FadeIn from '@/components/motion/FadeIn'
 import { AREAS } from '@/content/areas'
-import { serviceShortName } from '@/content/services'
+import { getServiceShortName } from '@/content/copy'
 
 export default function ServiceAreasSection() {
+  const t = useTranslations()
   return (
     <section id="service-areas" className="bg-charcoal-900 py-24" aria-labelledby="service-areas-heading">
       <div className="container-max section-padding">
         <FadeIn>
           <div className="mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div>
-              <span className="badge-orange mb-4">Where We Work</span>
+              <span className="badge-orange mb-4">{t('serviceAreas.badge')}</span>
               <h2 id="service-areas-heading" className="section-title mt-3">
-                Serving the Entire Peninsula
+                {t('serviceAreas.heading')}
               </h2>
-              <p className="section-subtitle mt-3 max-w-lg">
-                Based in San Carlos, Peninsula Pick Ups covers communities from South San Francisco down to Palo Alto.
-                Click your city for local service details.
-              </p>
+              <p className="section-subtitle mt-3 max-w-lg">{t('serviceAreas.subhead')}</p>
             </div>
             <div className="flex-shrink-0">
               <a href="#quote" className="btn-primary">
-                Request Pickup
+                {t('serviceAreas.requestPickup')}
               </a>
             </div>
           </div>
@@ -53,14 +53,18 @@ export default function ServiceAreasSection() {
                     </p>
                     {area.isHomeBase && (
                       <span className="text-[10px] font-bold text-orange-500 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">
-                        Home Base
+                        {t('serviceAreas.homeBaseTag')}
                       </span>
                     )}
                   </div>
-                  <p className="text-steel-500 text-xs">{area.county} County</p>
+                  <p className="text-steel-500 text-xs">
+                    {area.county} {t('serviceAreas.countySuffix')}
+                  </p>
                   <p className="text-steel-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                    {area.services.slice(0, 3).map(serviceShortName).join(', ')}
-                    {area.services.length > 3 ? ` + ${area.services.length - 3} more` : ''}
+                    {area.services.slice(0, 3).map((s) => getServiceShortName(s, t)).join(', ')}
+                    {area.services.length > 3
+                      ? ` ${t('serviceAreas.moreSuffix', { count: area.services.length - 3 })}`
+                      : ''}
                   </p>
                 </div>
               </Link>
@@ -71,11 +75,11 @@ export default function ServiceAreasSection() {
         <FadeIn delay={0.3}>
           <div className="mt-8 text-center">
             <p className="text-steel-500 text-sm">
-              Don&apos;t see your city?{' '}
+              {t('serviceAreas.dontSeeCity')}{' '}
               <a href="#quote" className="text-orange-400 hover:text-orange-300 font-semibold transition-colors">
-                Request a quote
+                {t('serviceAreas.requestQuoteLink')}
               </a>{' '}
-              and we&apos;ll confirm service availability.
+              {t('serviceAreas.weConfirm')}
             </p>
           </div>
         </FadeIn>

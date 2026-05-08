@@ -1,5 +1,29 @@
 {
-  "$schema": "Glossary stub for pt-BR. Run scripts/translate.ts to populate locked terms, then have a native speaker review.",
+  "$schema": "Brazilian Portuguese glossary. Locked translations the translator must use verbatim. Use BR forms only — never Continental Portuguese.",
   "$version": 1,
-  "terms": {}
+  "terms": {
+    "brand_name": "Peninsula Pick Ups",
+    "brand_alt": "The Peninsula Pickup",
+    "tagline": "A retirada em que você pode confiar.",
+    "owner_first": "Don",
+    "owner_second": "Melissa",
+    "phone_display": "(650) 201-1543",
+    "service_junk_removal": "Remoção de entulho",
+    "service_construction_debris": "Remoção de entulho de construção",
+    "service_appliance_removal": "Remoção de eletrodomésticos",
+    "service_storage_cleanout": "Limpeza de depósito",
+    "service_eviction_cleanout": "Limpeza pós-despejo",
+    "service_commercial_hauling": "Transporte comercial",
+    "service_residential_cleanout": "Limpeza residencial",
+    "industry_term_hauling": "transporte",
+    "industry_term_cleanout": "limpeza completa",
+    "industry_term_pickup": "retirada",
+    "trust_phrase_licensed": "Licenciados e segurados",
+    "trust_phrase_family_owned": "Empresa familiar",
+    "trust_phrase_locally_owned": "Empresa local",
+    "trust_phrase_same_day": "Atendimento no mesmo dia",
+    "region_label": "Península de São Francisco",
+    "city_homebase": "San Carlos, CA",
+    "verify_label": "Verificar esta empresa"
+  }
 }
