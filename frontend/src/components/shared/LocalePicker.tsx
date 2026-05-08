@@ -1,5 +1,6 @@
 'use client'
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useRouter } from 'next/router'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
@@ -81,6 +82,7 @@ export default function LocalePicker() {
   const [recent, setRecent] = useState<Locale[]>([])
   const [activeIndex, setActiveIndex] = useState(0)
   const [announcement, setAnnouncement] = useState('')
+  const [mounted, setMounted] = useState(false)
 
   const triggerRef = useRef<HTMLButtonElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
@@ -88,6 +90,7 @@ export default function LocalePicker() {
   const titleId = useId()
 
   useEffect(() => setRecent(readRecent()), [])
+  useEffect(() => setMounted(true), [])
 
   // Filter the list, weave recent locales to the top.
   const filtered = useMemo(() => {
@@ -280,31 +283,38 @@ export default function LocalePicker() {
         <span className="text-steel-400 hidden sm:inline"><ChevronDown /></span>
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <>
-            <motion.div
-              key="backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.6 }}
-              exit={{ opacity: 0 }}
-              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.2 }}
-              onClick={close}
-              className="fixed inset-0 bg-charcoal-950 z-[80]"
-              aria-hidden="true"
-            />
-            <motion.div
-              key="panel"
-              ref={panelRef}
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby={titleId}
-              initial={panelInitial}
-              animate={panelAnimate}
-              exit={panelExit}
-              transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.28, ease: [0.32, 0.72, 0, 1] }}
-              className={`fixed top-0 bottom-0 ${isSlideRight ? 'right-0' : 'left-0'} z-[81] w-full sm:w-[420px] max-w-full bg-charcoal-900 border-${isSlideRight ? 'l' : 'r'} border-charcoal-700 shadow-2xl flex flex-col max-sm:top-auto max-sm:max-h-[70vh] max-sm:rounded-t-2xl`}
-            >
+      {mounted &&
+        createPortal(
+          // The panel must render outside the header — Nav's `backdrop-blur-md`
+          // (applied once scrolled) creates a containing block for `position:
+          // fixed` descendants, which collapses the panel to the header's
+          // ~80px height and hides the locale list. Portaling to <body>
+          // escapes that containing block.
+          <AnimatePresence>
+            {open && (
+              <>
+                <motion.div
+                  key="backdrop"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.6 }}
+                  exit={{ opacity: 0 }}
+                  transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.2 }}
+                  onClick={close}
+                  className="fixed inset-0 bg-charcoal-950 z-[80]"
+                  aria-hidden="true"
+                />
+                <motion.div
+                  key="panel"
+                  ref={panelRef}
+                  role="dialog"
+                  aria-modal="true"
+                  aria-labelledby={titleId}
+                  initial={panelInitial}
+                  animate={panelAnimate}
+                  exit={panelExit}
+                  transition={prefersReducedMotion ? { duration: 0 } : { duration: 0.28, ease: [0.32, 0.72, 0, 1] }}
+                  className={`fixed top-0 bottom-0 ${isSlideRight ? 'right-0' : 'left-0'} z-[81] w-full sm:w-[420px] max-w-full bg-charcoal-900 border-${isSlideRight ? 'l' : 'r'} border-charcoal-700 shadow-2xl flex flex-col max-sm:top-auto max-sm:max-h-[70vh] max-sm:rounded-t-2xl`}
+                >
               <div className="flex items-center justify-between p-5 border-b border-charcoal-700">
                 <h2 id={titleId} className="text-base font-bold text-bone-100">
                   {t('picker.title')}
@@ -387,12 +397,14 @@ export default function LocalePicker() {
               </div>
             </motion.div>
 
-            <div role="status" aria-live="polite" className="sr-only">
-              {announcement}
-            </div>
-          </>
+                <div role="status" aria-live="polite" className="sr-only">
+                  {announcement}
+                </div>
+              </>
+            )}
+          </AnimatePresence>,
+          document.body,
         )}
-      </AnimatePresence>
     </>
   )
 }
