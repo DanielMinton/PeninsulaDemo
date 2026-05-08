@@ -5,13 +5,8 @@ export interface Area {
   city: string
   county: string
   isHomeBase: boolean
-  /** Real-world lat/lng (for JSON-LD geo + secondary uses). */
+  /** Real-world lat/lng — projected to SVG by `latLngToSvg` in `@/lib/map-projection`. */
   geo: { lat: number; lng: number }
-  /**
-   * Map coordinates inside the 1000x1100 SVG viewBox.
-   * Computed from `geo` + a fixed projection — see `coordsFromGeo` if recomputing.
-   */
-  coords: { x: number; y: number }
   summary: string
   services: ServiceSlug[]
   seoTitle: string
@@ -21,13 +16,6 @@ export interface Area {
   faqs?: FAQ[]
 }
 
-/**
- * Cities are projected onto the SVG using a simple linear projection over the bounding box
- * of the Peninsula service area. North=top, west=left.
- *   x = 100 + (lng + 122.50) * 2125
- *   y =  50 + (37.70 - lat)  * 3373
- * Coords are pre-computed below so the file is the single source of truth.
- */
 export const AREAS: readonly Area[] = [
   {
     slug: 'san-carlos',
@@ -35,7 +23,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: true,
     geo: { lat: 37.5074, lng: -122.2585 },
-    coords: { x: 614, y: 700 },
     summary:
       'San Carlos is home base for Peninsula Pick Ups. Don and Melissa built this business here in 2021 and know every neighborhood personally. From Burton Park to White Oaks, we handle junk removal, hauling, and full-property cleanouts for homeowners and businesses throughout San Carlos.',
     services: [
@@ -68,7 +55,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.5630, lng: -122.3255 },
-    coords: { x: 471, y: 512 },
     summary:
       'Peninsula Pick Ups serves all of San Mateo with fast, professional junk removal and hauling. Whether you are clearing a garage in Shoreview, doing a full property cleanout near downtown, or handling post-renovation debris, our crew delivers efficient, reliable service.',
     services: ['junk-removal', 'appliance-removal', 'storage-cleanout', 'construction-debris', 'commercial-hauling'],
@@ -84,7 +70,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.4852, lng: -122.2364 },
-    coords: { x: 661, y: 775 },
     summary:
       'From Broadway to Woodside Road, Peninsula Pick Ups handles junk removal, construction debris, and full-scale cleanouts throughout Redwood City. We work with homeowners, landlords, and businesses who need fast and professional hauling service.',
     services: ['junk-removal', 'construction-debris', 'eviction-cleanout', 'appliance-removal', 'commercial-hauling'],
@@ -100,7 +85,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.5202, lng: -122.2758 },
-    coords: { x: 577, y: 670 },
     summary:
       'Belmont homeowners and businesses trust Peninsula Pick Ups for dependable junk removal and property cleanouts. We service Belmont regularly from our San Carlos base. Quick scheduling, honest pricing, and a professional crew every time.',
     services: ['junk-removal', 'storage-cleanout', 'appliance-removal', 'residential-cleanout'],
@@ -115,7 +99,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.5841, lng: -122.3661 },
-    coords: { x: 385, y: 441 },
     summary:
       'Peninsula Pick Ups brings reliable junk removal and hauling to Burlingame residents and business owners. Whether you need a single appliance removed or a full office cleared out, we schedule fast and get the job done right.',
     services: ['junk-removal', 'appliance-removal', 'commercial-hauling', 'storage-cleanout', 'residential-cleanout'],
@@ -130,7 +113,6 @@ export const AREAS: readonly Area[] = [
     county: 'Santa Clara',
     isHomeBase: false,
     geo: { lat: 37.4419, lng: -122.143 },
-    coords: { x: 859, y: 920 },
     summary:
       'Peninsula Pick Ups serves Palo Alto with the same professional standard we bring to every job across the Peninsula. Homeowners, landlords, and businesses rely on us for efficient junk removal, cleanouts, and debris hauling without the runaround.',
     services: ['junk-removal', 'construction-debris', 'appliance-removal', 'storage-cleanout', 'commercial-hauling'],
@@ -145,7 +127,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.453, lng: -122.1817 },
-    coords: { x: 777, y: 883 },
     summary:
       'From Belle Haven to the Willows, Peninsula Pick Ups handles Menlo Park junk removal with professionalism and speed. We work around your schedule and leave the property clean. No hidden fees, no surprises.',
     services: ['junk-removal', 'appliance-removal', 'construction-debris', 'residential-cleanout'],
@@ -160,7 +141,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.6547, lng: -122.4077 },
-    coords: { x: 297, y: 203 },
     summary:
       'Peninsula Pick Ups provides junk removal, hauling, and commercial cleanouts throughout South San Francisco. Our team is local, experienced, and ready to handle projects of any size quickly and professionally.',
     services: ['junk-removal', 'commercial-hauling', 'appliance-removal', 'construction-debris', 'storage-cleanout'],
@@ -175,7 +155,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.6879, lng: -122.4702 },
-    coords: { x: 164, y: 90 },
     summary:
       'Peninsula Pick Ups brings fast, affordable junk removal to Daly City homeowners and property managers. We handle residential and commercial cleanouts, appliance removal, and debris hauling throughout the area.',
     services: ['junk-removal', 'appliance-removal', 'residential-cleanout', 'eviction-cleanout'],
@@ -190,7 +169,6 @@ export const AREAS: readonly Area[] = [
     county: 'San Mateo',
     isHomeBase: false,
     geo: { lat: 37.5985, lng: -122.3872 },
-    coords: { x: 340, y: 392 },
     summary:
       'Serving Millbrae with the same reliability we bring to every job on the Peninsula. Peninsula Pick Ups handles junk removal, storage cleanouts, and appliance hauls with a crew that shows up on time and leaves the job done right.',
     services: ['junk-removal', 'appliance-removal', 'storage-cleanout', 'residential-cleanout'],

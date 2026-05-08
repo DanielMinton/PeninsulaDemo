@@ -1,17 +1,29 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useReducedMotion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { AREAS, type Area } from '@/content/areas'
-import { LAND_PATH, SPINE_PATH, MAP_VIEWBOX } from '@/content/map-outline'
-import { SITE } from '@/content/site'
+import { MAP_VIEWBOX, latLngToSvg, routePath, type Point } from '@/lib/map-projection'
 
 const W = MAP_VIEWBOX.width
 const H = MAP_VIEWBOX.height
+const ROUTE_AUTOCLEAR_MS = 8000
+
+interface ProjectedArea extends Area {
+  svg: Point
+}
+
+const PROJECTED: readonly ProjectedArea[] = AREAS.map((a) => ({
+  ...a,
+  svg: latLngToSvg(a.geo.lat, a.geo.lng),
+}))
+
+const HOME = PROJECTED.find((a) => a.isHomeBase) as ProjectedArea
 
 interface CardProps {
-  area: Area
+  area: ProjectedArea
   /** Place the card on the left of the marker when the marker is in the right half of the map. */
   flip: boolean
 }
@@ -48,9 +60,18 @@ export default function PeninsulaMap() {
   const t = useTranslations()
   const reduce = useReducedMotion()
   const [active, setActive] = useState<string | null>(null)
+  const clearTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  // Markers tab in geographic order, north (smallest y) to south.
-  const ordered = useMemo(() => [...AREAS].sort((a, b) => a.coords.y - b.coords.y), [])
+  const ordered = useMemo(() => [...PROJECTED].sort((a, b) => a.svg.y - b.svg.y), [])
+
+  function activate(slug: string, autoclear: boolean) {
+    setActive(slug)
+    if (clearTimer.current) clearTimeout(clearTimer.current)
+    if (autoclear) clearTimer.current = setTimeout(() => setActive(null), ROUTE_AUTOCLEAR_MS)
+  }
+  function deactivate(slug: string) {
+    setActive((c) => (c === slug ? null : c))
+  }
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -59,6 +80,13 @@ export default function PeninsulaMap() {
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [])
+
+  useEffect(
+    () => () => {
+      if (clearTimer.current) clearTimeout(clearTimer.current)
+    },
+    [],
+  )
 
   return (
     <section id="service-map" className="bg-charcoal-900 py-20 sm:py-24" aria-labelledby="map-heading">
@@ -77,10 +105,10 @@ export default function PeninsulaMap() {
                   key={area.slug}
                   href={`/areas/${area.slug}`}
                   className="text-sm text-steel-300 hover:text-bone-100 transition-colors flex items-center gap-2"
-                  onMouseEnter={() => setActive(area.slug)}
-                  onMouseLeave={() => setActive((c) => (c === area.slug ? null : c))}
-                  onFocus={() => setActive(area.slug)}
-                  onBlur={() => setActive((c) => (c === area.slug ? null : c))}
+                  onMouseEnter={() => activate(area.slug, false)}
+                  onMouseLeave={() => deactivate(area.slug)}
+                  onFocus={() => activate(area.slug, false)}
+                  onBlur={() => deactivate(area.slug)}
                 >
                   <span
                     className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
@@ -99,72 +127,123 @@ export default function PeninsulaMap() {
           </div>
 
           <div
-            className="relative w-full aspect-[10/11] lg:order-2 order-1"
+            className="relative w-full aspect-[10/11] lg:order-2 order-1 rounded-2xl overflow-hidden ring-1 ring-charcoal-500/40"
             role="region"
             aria-label="Peninsula service area map"
           >
+            <Image
+              src="/maps/peninsula-basemap.webp"
+              alt=""
+              aria-hidden="true"
+              fill
+              loading="lazy"
+              sizes="(min-width: 1024px) 640px, 100vw"
+              className="object-cover opacity-30"
+            />
+
             <svg
               viewBox={`0 0 ${W} ${H}`}
               className="absolute inset-0 w-full h-full"
               aria-hidden="true"
               focusable="false"
+              preserveAspectRatio="xMidYMid slice"
             >
-              <defs>
-                <linearGradient id="ppu-land-fill" x1="20%" y1="0%" x2="80%" y2="100%">
-                  <stop offset="0%" stopColor="#1c1c1c" />
-                  <stop offset="100%" stopColor="#111111" />
-                </linearGradient>
-                <linearGradient id="ppu-land-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#404040" />
-                  <stop offset="100%" stopColor="#2a2a2a" />
-                </linearGradient>
-                <radialGradient id="ppu-glow" cx="62%" cy="68%" r="38%">
-                  <stop offset="0%" stopColor="rgba(232,93,26,0.10)" />
-                  <stop offset="100%" stopColor="rgba(232,93,26,0)" />
-                </radialGradient>
-              </defs>
+              {ordered
+                .filter((a) => !a.isHomeBase)
+                .map((area) => {
+                  const isActive = active === area.slug
+                  return (
+                    <motion.path
+                      key={`route-${area.slug}`}
+                      d={routePath(HOME.svg, area.svg)}
+                      fill="none"
+                      stroke="rgba(232,93,26,0.85)"
+                      strokeWidth="2.2"
+                      strokeDasharray="6 7"
+                      strokeLinecap="round"
+                      initial={{ pathLength: 0, opacity: 0 }}
+                      animate={{
+                        pathLength: isActive ? 1 : 0,
+                        opacity: isActive ? 1 : 0,
+                      }}
+                      transition={{
+                        duration: reduce ? 0 : isActive ? 0.6 : 0.25,
+                        ease: [0.22, 1, 0.36, 1],
+                      }}
+                    />
+                  )
+                })}
 
-              <rect x="0" y="0" width={W} height={H} fill="url(#ppu-glow)" />
-
-              <path
-                d={LAND_PATH}
-                fill="url(#ppu-land-fill)"
-                stroke="url(#ppu-land-stroke)"
-                strokeWidth="3"
-                strokeLinejoin="round"
-              />
-
-              <path
-                d={SPINE_PATH}
-                fill="none"
-                stroke="#2e2e2e"
-                strokeWidth="1.6"
-                strokeDasharray="4 9"
-                strokeLinecap="round"
-              />
-
-              {/* Compass + region labels — pure decoration */}
-              <g aria-hidden="true">
-                <line x1="940" y1="50" x2="940" y2="92" stroke="#3a3a3a" strokeWidth="1.4" strokeLinecap="round" />
-                <polygon points="934,58 940,42 946,58" fill="#3a3a3a" />
-                <text x="940" y="120" fill="#4a4a4a" fontSize="18" fontWeight="600" letterSpacing="2" textAnchor="middle">
-                  N
-                </text>
-                <text x="820" y="320" fill="#3a3a3a" fontSize="13" letterSpacing="3" textAnchor="middle">
+              <g
+                aria-hidden="true"
+                fill="rgba(255,255,255,0.7)"
+                stroke="rgba(0,0,0,0.65)"
+                strokeWidth="3.5"
+                paintOrder="stroke"
+                fontFamily="system-ui, -apple-system, sans-serif"
+              >
+                <text x="830" y="280" fontSize="18" letterSpacing="4" fontWeight="600" textAnchor="middle">
                   SF BAY
                 </text>
-                <g transform="rotate(-90 130 700)">
-                  <text x="130" y="700" fill="#3a3a3a" fontSize="13" letterSpacing="3" textAnchor="middle">
+                <text x="500" y="60" fontSize="13" letterSpacing="5" fontWeight="500" textAnchor="middle" opacity="0.65">
+                  ↑ SAN FRANCISCO
+                </text>
+                <text x="900" y="1060" fontSize="13" letterSpacing="5" fontWeight="500" textAnchor="end" opacity="0.65">
+                  SAN JOSE →
+                </text>
+                <g transform="rotate(-90 80 620)">
+                  <text x="80" y="620" fontSize="18" letterSpacing="4" fontWeight="600" textAnchor="middle">
                     PACIFIC
                   </text>
                 </g>
+                <text
+                  x={HOME.svg.x}
+                  y={HOME.svg.y - 26}
+                  fontSize="12"
+                  letterSpacing="2.5"
+                  fontWeight="700"
+                  textAnchor="middle"
+                  fill="rgba(232,93,26,1)"
+                  stroke="rgba(0,0,0,0.7)"
+                  strokeWidth="3.5"
+                  paintOrder="stroke"
+                >
+                  HOME BASE
+                </text>
+              </g>
+
+              <g aria-hidden="true">
+                <line
+                  x1="940"
+                  y1="50"
+                  x2="940"
+                  y2="92"
+                  stroke="rgba(255,255,255,0.4)"
+                  strokeWidth="1.4"
+                  strokeLinecap="round"
+                />
+                <polygon points="934,58 940,42 946,58" fill="rgba(255,255,255,0.4)" />
+                <text
+                  x="940"
+                  y="120"
+                  fill="rgba(255,255,255,0.55)"
+                  stroke="rgba(0,0,0,0.55)"
+                  strokeWidth="3"
+                  paintOrder="stroke"
+                  fontSize="18"
+                  fontWeight="600"
+                  letterSpacing="2"
+                  textAnchor="middle"
+                >
+                  N
+                </text>
               </g>
             </svg>
 
             <div className="absolute inset-0">
               {ordered.map((area, i) => {
-                const leftPct = (area.coords.x / W) * 100
-                const topPct = (area.coords.y / H) * 100
+                const leftPct = (area.svg.x / W) * 100
+                const topPct = (area.svg.y / H) * 100
                 const isActive = active === area.slug
                 const flip = leftPct > 55
                 return (
@@ -183,10 +262,11 @@ export default function PeninsulaMap() {
                     <Link
                       href={`/areas/${area.slug}`}
                       aria-label={`${area.city}, CA — ${area.services.length} services. Open city page.`}
-                      onMouseEnter={() => setActive(area.slug)}
-                      onMouseLeave={() => setActive((c) => (c === area.slug ? null : c))}
-                      onFocus={() => setActive(area.slug)}
-                      onBlur={() => setActive((c) => (c === area.slug ? null : c))}
+                      onMouseEnter={() => activate(area.slug, false)}
+                      onMouseLeave={() => deactivate(area.slug)}
+                      onFocus={() => activate(area.slug, false)}
+                      onBlur={() => deactivate(area.slug)}
+                      onTouchStart={() => activate(area.slug, true)}
                       className={`relative grid place-items-center w-7 h-7 rounded-full transition-transform duration-200 ${
                         isActive ? 'scale-110' : 'hover:scale-105'
                       }`}
@@ -194,7 +274,7 @@ export default function PeninsulaMap() {
                       <span
                         className={`w-3 h-3 rounded-full ${
                           area.isHomeBase
-                            ? 'bg-orange-500 shadow-orange-glow animate-pulse-glow'
+                            ? `bg-orange-500 shadow-orange-glow ${reduce ? '' : 'animate-pulse-glow'}`
                             : 'bg-orange-400'
                         }`}
                         aria-hidden="true"
