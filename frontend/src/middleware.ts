@@ -11,22 +11,31 @@ import { NextResponse, type NextRequest } from 'next/server'
  * recovery sprint. Logged in DECISIONS.md. Everything else (frame-ancestors,
  * connect-src, form-action, etc.) is locked down strictly.
  */
+const isProductionDeploy =
+  process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production'
+
+// Dev needs 'unsafe-eval' for webpack HMR and ws: for the dev WebSocket. Prod stays strict.
+const SCRIPT_SRC = isProductionDeploy
+  ? "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com"
+  : "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com"
+
+const CONNECT_SRC = isProductionDeploy
+  ? "connect-src 'self' https://challenges.cloudflare.com"
+  : "connect-src 'self' ws: wss: https://challenges.cloudflare.com"
+
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com",
+  SCRIPT_SRC,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  "connect-src 'self' https://challenges.cloudflare.com",
+  CONNECT_SRC,
   "frame-src https://challenges.cloudflare.com",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",
   'upgrade-insecure-requests',
 ].join('; ')
-
-const isProductionDeploy =
-  process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production'
 
 export function middleware(request: NextRequest) {
   const response = NextResponse.next()
