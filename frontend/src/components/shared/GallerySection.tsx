@@ -138,9 +138,6 @@ export default function GallerySection() {
               <p className="text-white font-bold text-sm">{featured.label}</p>
               <p className="text-bone-300 text-xs mt-0.5">{featured.location}</p>
             </div>
-            <div className="absolute top-4 right-4">
-              <span className="badge-orange text-[10px]">Peninsula Pick Ups</span>
-            </div>
           </div>
         </FadeIn>
 
