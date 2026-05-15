@@ -33,8 +33,9 @@ class PupDocument extends Document<Props> {
       <Html lang={locale} dir={meta.dir}>
         <Head>
           <meta name="format-detection" content="telephone=yes" />
-          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-          <link rel="alternate icon" href="/favicon.ico" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
           {/* IndieWeb-style identity links: each rel="me" anchor names a profile we own. */}
           {SITE.socials.map((s) => (

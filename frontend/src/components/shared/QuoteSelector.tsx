@@ -151,7 +151,7 @@ export default function QuoteSelector() {
   }
 
   return (
-    <section id="quote-selector" className="bg-charcoal-900 py-24" aria-labelledby="quote-selector-heading">
+    <section id="quote" className="bg-charcoal-900 py-24" aria-labelledby="quote-selector-heading">
       <div className="container-max section-padding">
         <FadeIn>
           <div className="mb-12">

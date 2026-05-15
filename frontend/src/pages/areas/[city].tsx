@@ -54,7 +54,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  'radial-gradient(ellipse 70% 50% at 10% 20%, rgba(232,93,26,0.06) 0%, transparent 70%)',
+                  'radial-gradient(ellipse 70% 50% at 10% 20%, rgba(20,184,166,0.06) 0%, transparent 70%)',
               }}
               aria-hidden="true"
             />
@@ -91,7 +91,7 @@ const AreaPage: NextPage<AreaPageProps> = ({ area, locale }) => {
                   <br />
                   <span
                     style={{
-                      background: 'linear-gradient(90deg, #f07030 0%, #e85d1a 100%)',
+                      background: 'linear-gradient(90deg, #5eead4 0%, #14b8a6 100%)',
                       WebkitBackgroundClip: 'text',
                       WebkitTextFillColor: 'transparent',
                       backgroundClip: 'text',

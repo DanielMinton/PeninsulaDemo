@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { SITE } from '@/content/site'
@@ -8,24 +10,36 @@ import LocalePicker from './LocalePicker'
 
 function PUPLogo() {
   return (
-    <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M3 12L8 4L13 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M5.5 12H10.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-      </svg>
-    </div>
+    <Image
+      src="/images/gallery/PeninsulaPickupsLogo.png"
+      alt=""
+      width={36}
+      height={36}
+      priority
+      className="w-9 h-9 rounded-lg flex-shrink-0"
+    />
   )
 }
 
 export default function Nav() {
   const t = useTranslations()
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
+  // #services, #service-areas, #about only exist on the home page; from any other route, send them through "/".
+  // #contact is in the Footer which renders on every page, so same-page anchor is always valid.
+  // #quote exists on home (QuoteSelector), /areas/[city] and /services/[slug] (QuoteForm); elsewhere route through "/".
+  const onHome = router.pathname === '/'
+  const homeAnchor = (id: string) => (onHome ? `#${id}` : `/#${id}`)
+  const hasQuoteInPage =
+    onHome || router.pathname.startsWith('/areas/') || router.pathname.startsWith('/services/')
+  const quoteHref = hasQuoteInPage ? '#quote' : '/#quote'
+
   const NAV_LINKS = [
-    { labelKey: 'nav.servicesLink', href: '#services' },
-    { labelKey: 'nav.areasLink', href: '#service-areas' },
-    { labelKey: 'nav.aboutLink', href: '#about' },
+    { labelKey: 'nav.servicesLink', href: homeAnchor('services') },
+    { labelKey: 'nav.areasLink', href: homeAnchor('service-areas') },
+    { labelKey: 'nav.aboutLink', href: homeAnchor('about') },
     { labelKey: 'nav.contactLink', href: '#contact' },
   ] as const
 
@@ -78,7 +92,7 @@ export default function Nav() {
             >
               {SITE.phone.display}
             </a>
-            <a href="#quote" className="hidden lg:inline-flex btn-primary text-sm py-2 px-3 xl:px-5 whitespace-nowrap">
+            <a href={quoteHref} className="hidden lg:inline-flex btn-primary text-sm py-2 px-3 xl:px-5 whitespace-nowrap">
               {t('nav.requestPickupCta')}
             </a>
             <a href={SITE.phone.href} className="lg:hidden btn-primary text-sm py-2 px-4">
@@ -151,7 +165,7 @@ export default function Nav() {
                   {SITE.phone.display}
                 </a>
                 <a
-                  href="#quote"
+                  href={quoteHref}
                   onClick={() => setMobileOpen(false)}
                   className="btn-primary justify-center text-base py-3"
                 >

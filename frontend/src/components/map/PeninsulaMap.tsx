@@ -22,6 +22,91 @@ const PROJECTED: readonly ProjectedArea[] = AREAS.map((a) => ({
 
 const HOME = PROJECTED.find((a) => a.isHomeBase) as ProjectedArea
 
+interface Highway {
+  name: string
+  label: { lat: number; lng: number }
+  coords: ReadonlyArray<readonly [number, number]>
+}
+
+const HIGHWAYS: readonly Highway[] = [
+  {
+    name: '101',
+    label: { lat: 37.538, lng: -122.302 },
+    coords: [
+      [37.715, -122.402],
+      [37.69, -122.412],
+      [37.658, -122.408],
+      [37.628, -122.408],
+      [37.612, -122.387],
+      [37.583, -122.355],
+      [37.56, -122.327],
+      [37.52, -122.275],
+      [37.495, -122.235],
+      [37.47, -122.205],
+      [37.445, -122.165],
+      [37.43, -122.15],
+      [37.405, -122.118],
+    ],
+  },
+  {
+    name: '280',
+    label: { lat: 37.51, lng: -122.38 },
+    coords: [
+      [37.71, -122.46],
+      [37.68, -122.467],
+      [37.65, -122.475],
+      [37.62, -122.46],
+      [37.575, -122.435],
+      [37.535, -122.395],
+      [37.5, -122.355],
+      [37.465, -122.305],
+      [37.432, -122.25],
+      [37.41, -122.183],
+      [37.398, -122.14],
+    ],
+  },
+  {
+    name: '92',
+    label: { lat: 37.555, lng: -122.45 },
+    coords: [
+      [37.5, -122.495],
+      [37.515, -122.43],
+      [37.54, -122.38],
+      [37.555, -122.325],
+      [37.58, -122.23],
+      [37.605, -122.15],
+    ],
+  },
+  {
+    name: '84',
+    label: { lat: 37.482, lng: -122.205 },
+    coords: [
+      [37.43, -122.26],
+      [37.46, -122.225],
+      [37.485, -122.19],
+      [37.495, -122.15],
+    ],
+  },
+  {
+    name: '380',
+    label: { lat: 37.638, lng: -122.438 },
+    coords: [
+      [37.633, -122.405],
+      [37.633, -122.43],
+      [37.638, -122.452],
+    ],
+  },
+]
+
+function highwayPoints(coords: ReadonlyArray<readonly [number, number]>): string {
+  return coords
+    .map(([lat, lng]) => {
+      const p = latLngToSvg(lat, lng)
+      return `${p.x.toFixed(1)},${p.y.toFixed(1)}`
+    })
+    .join(' ')
+}
+
 interface CardProps {
   area: ProjectedArea
   /** Place the card on the left of the marker when the marker is in the right half of the map. */
@@ -148,6 +233,33 @@ export default function PeninsulaMap() {
               focusable="false"
               preserveAspectRatio="xMidYMid slice"
             >
+              <g aria-hidden="true" opacity="0.2">
+                <g fill="none" stroke="rgba(255,255,255,1)" strokeLinecap="round" strokeLinejoin="round">
+                  {HIGHWAYS.map((hw) => (
+                    <polyline key={`hw-${hw.name}`} points={highwayPoints(hw.coords)} strokeWidth="6" />
+                  ))}
+                </g>
+                <g
+                  fill="rgba(255,255,255,1)"
+                  stroke="rgba(0,0,0,0.85)"
+                  strokeWidth="3"
+                  paintOrder="stroke"
+                  fontFamily="system-ui, -apple-system, sans-serif"
+                  fontSize="20"
+                  fontWeight="700"
+                  textAnchor="middle"
+                >
+                  {HIGHWAYS.map((hw) => {
+                    const p = latLngToSvg(hw.label.lat, hw.label.lng)
+                    return (
+                      <text key={`hwl-${hw.name}`} x={p.x} y={p.y}>
+                        {hw.name}
+                      </text>
+                    )
+                  })}
+                </g>
+              </g>
+
               {ordered
                 .filter((a) => !a.isHomeBase)
                 .map((area) => {
@@ -157,7 +269,7 @@ export default function PeninsulaMap() {
                       key={`route-${area.slug}`}
                       d={routePath(HOME.svg, area.svg)}
                       fill="none"
-                      stroke="rgba(232,93,26,0.85)"
+                      stroke="rgba(20,184,166,0.85)"
                       strokeWidth="2.2"
                       strokeDasharray="6 7"
                       strokeLinecap="round"
@@ -203,7 +315,7 @@ export default function PeninsulaMap() {
                   letterSpacing="2.5"
                   fontWeight="700"
                   textAnchor="middle"
-                  fill="rgba(232,93,26,1)"
+                  fill="rgba(20,184,166,1)"
                   stroke="rgba(0,0,0,0.7)"
                   strokeWidth="3.5"
                   paintOrder="stroke"
@@ -291,6 +403,19 @@ export default function PeninsulaMap() {
                       />
                       <span className="sr-only">{area.city}, CA</span>
                     </Link>
+
+                    <span
+                      aria-hidden="true"
+                      className={`absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap text-[11px] font-semibold pointer-events-none transition-colors ${
+                        isActive ? 'text-white' : 'text-bone-100'
+                      }`}
+                      style={{
+                        textShadow:
+                          '0 0 4px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,0.9), 0 0 1px rgba(0,0,0,1)',
+                      }}
+                    >
+                      {area.city}
+                    </span>
 
                     {isActive && <MarkerCard area={area} flip={flip} />}
                   </motion.div>

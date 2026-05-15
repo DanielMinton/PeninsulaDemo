@@ -24,7 +24,7 @@ export default function HeroSection() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 10% 20%, rgba(232,93,26,0.07) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 90% 80%, rgba(232,93,26,0.04) 0%, transparent 60%)',
+            'radial-gradient(ellipse 80% 60% at 10% 20%, rgba(20,184,166,0.07) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 90% 80%, rgba(20,184,166,0.04) 0%, transparent 60%)',
         }}
         aria-hidden="true"
       />
@@ -64,7 +64,7 @@ export default function HeroSection() {
             <br />
             <span
               style={{
-                background: 'linear-gradient(90deg, #f07030 0%, #e85d1a 50%, #c44d14 100%)',
+                background: 'linear-gradient(90deg, #5eead4 0%, #14b8a6 50%, #155e75 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',

@@ -174,7 +174,7 @@ export default function GallerySection() {
                 className="flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center text-orange-400"
                 style={{
                   background:
-                    'linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.1), rgba(232,93,26,0.15))',
+                    'linear-gradient(135deg, rgba(168,85,247,0.15), rgba(236,72,153,0.1), rgba(20,184,166,0.15))',
                   border: '1px solid rgba(168,85,247,0.2)',
                 }}
                 aria-hidden="true"

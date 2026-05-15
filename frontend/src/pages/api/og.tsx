@@ -50,10 +50,14 @@ function copyFor(citySlug: string | null, serviceSlug: string | null): CardCopy 
 }
 
 export default function handler(req: NextRequest) {
-  const { searchParams } = new URL(req.url)
+  const url = new URL(req.url)
+  const { searchParams } = url
   const city = searchParams.get('city')
   const serviceParam = searchParams.get('service')
   const localeParam = searchParams.get('locale')
+
+  // Absolute URL so the edge runtime can fetch the logo asset for embedding.
+  const logoUrl = `${url.protocol}//${url.host}/images/gallery/PeninsulaPickupsLogo.png`
 
   if (city && !CITY_SLUGS.has(city)) return notFound()
   if (serviceParam && !SERVICE_SLUGS.has(serviceParam)) return notFound()
@@ -92,7 +96,7 @@ export default function handler(req: NextRequest) {
             width: '560px',
             height: '380px',
             borderRadius: '50%',
-            background: 'radial-gradient(ellipse at center, rgba(232,93,26,0.22) 0%, transparent 68%)',
+            background: 'radial-gradient(ellipse at center, rgba(20,184,166,0.22) 0%, transparent 68%)',
             display: 'flex',
           }}
         />
@@ -104,28 +108,20 @@ export default function handler(req: NextRequest) {
             width: '400px',
             height: '300px',
             borderRadius: '50%',
-            background: 'radial-gradient(ellipse at center, rgba(232,93,26,0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, rgba(20,184,166,0.07) 0%, transparent 70%)',
             display: 'flex',
           }}
         />
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '44px' }}>
-          <div
-            style={{
-              width: '46px',
-              height: '46px',
-              backgroundColor: '#e85d1a',
-              borderRadius: '10px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <svg width="22" height="22" viewBox="0 0 16 16" fill="none">
-              <path d="M3 12L8 4L13 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M5.5 12H10.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-            </svg>
-          </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '44px' }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={logoUrl}
+            alt=""
+            width={64}
+            height={64}
+            style={{ width: '64px', height: '64px', borderRadius: '12px', display: 'flex' }}
+          />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span style={{ color: '#faf8f5', fontSize: '19px', fontWeight: 700 }}>{SITE.name}</span>
             <span style={{ color: '#6b7585', fontSize: '13px', marginTop: '1px' }}>
@@ -165,7 +161,7 @@ export default function handler(req: NextRequest) {
                   fontWeight: 900,
                   lineHeight: 1.02,
                   letterSpacing: '-2.5px',
-                  color: i === 1 ? '#e85d1a' : '#faf8f5',
+                  color: i === 1 ? '#14b8a6' : '#faf8f5',
                   display: 'flex',
                 }}
               >
@@ -187,7 +183,7 @@ export default function handler(req: NextRequest) {
             marginTop: '28px',
           }}
         >
-          <span style={{ color: '#e85d1a', fontSize: '26px', fontWeight: 900 }}>{PHONE}</span>
+          <span style={{ color: '#14b8a6', fontSize: '26px', fontWeight: 900 }}>{PHONE}</span>
 
           <div style={{ display: 'flex', gap: '10px' }}>
             {['Junk Removal', 'Hauling', 'Cleanouts'].map((tag) => (

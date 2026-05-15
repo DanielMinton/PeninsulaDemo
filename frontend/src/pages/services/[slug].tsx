@@ -54,7 +54,7 @@ const ServicePage: NextPage<ServicePageProps> = ({ service, locale }) => {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  'radial-gradient(ellipse 70% 50% at 80% 30%, rgba(232,93,26,0.06) 0%, transparent 70%)',
+                  'radial-gradient(ellipse 70% 50% at 80% 30%, rgba(20,184,166,0.06) 0%, transparent 70%)',
               }}
               aria-hidden="true"
             />

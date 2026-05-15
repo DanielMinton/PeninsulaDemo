@@ -1,5 +1,7 @@
 'use client'
+import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useTranslations } from 'next-intl'
 import { AREAS } from '@/content/areas'
 import { SERVICES } from '@/content/services'
@@ -9,18 +11,25 @@ import SocialIcons from './SocialIcons'
 
 function PUPLogo() {
   return (
-    <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M3 12L8 4L13 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M5.5 12H10.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-      </svg>
-    </div>
+    <Image
+      src="/images/gallery/PeninsulaPickupsLogo.png"
+      alt=""
+      width={36}
+      height={36}
+      className="w-9 h-9 rounded-lg flex-shrink-0"
+    />
   )
 }
 
 export default function Footer() {
   const t = useTranslations()
+  const router = useRouter()
   const year = new Date().getFullYear()
+
+  // #quote lives on home (QuoteSelector), /areas/[city] and /services/[slug] (QuoteForm). From elsewhere, route through "/".
+  const hasQuoteInPage =
+    router.pathname === '/' || router.pathname.startsWith('/areas/') || router.pathname.startsWith('/services/')
+  const quoteHref = hasQuoteInPage ? '#quote' : '/#quote'
 
   return (
     <footer id="contact" className="bg-charcoal-950 border-t border-charcoal-600">
@@ -113,7 +122,7 @@ export default function Footer() {
             <h3 className="font-semibold text-bone-200 mb-4 text-xs uppercase tracking-widest">{t('footer.getQuoteHeading')}</h3>
             <p className="text-steel-400 text-sm mb-5 leading-relaxed">{t('footer.getQuoteSub')}</p>
             <div className="flex flex-col gap-3">
-              <a href="#quote" className="btn-primary text-sm justify-center py-3">
+              <a href={quoteHref} className="btn-primary text-sm justify-center py-3">
                 {t('footer.requestPickupCta')}
               </a>
               <a href={SITE.phone.href} className="btn-secondary text-sm justify-center py-3">
